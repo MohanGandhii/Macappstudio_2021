@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>amazon rds</title>
+    <g id="amazon-rds" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="aws-rds" transform="translate(20.000000, 16.000000)" fill-rule="nonzero">
+            <polyline id="Path" fill="#1A476F" points="0 45.1814741 6.0880625 52.2429013 6.63548437 51.5993816 6.63548437 6.43318637 6.0880625 5.7506655 0 12.8094792 0 45.1814741"></polyline>
+            <polyline id="Path" fill="#1F5B98" points="6.088875 52.2429013 17.7218437 57.9991959 18.2056875 57.2286207 18.2136094 0.603111222 17.7299687 0 6.088875 5.73779913 6.088875 52.2429013"></polyline>
+            <polyline id="Path" fill="#2D72B8" points="52 12.8094792 45.9103125 5.7506655 45.2292344 5.96416687 45.3645156 51.666528 45.9103125 52.2429013 52 45.1822782 52 12.8094792"></polyline>
+            <polyline id="Path" fill="#5294CF" points="34.2773437 57.9991959 45.9103125 52.2429013 45.9103125 5.73779913 34.2692187 0 33.71875 0.73720295 33.7266719 57.1614744 34.2773437 57.9991959"></polyline>
+            <polygon id="Path" fill="#2D72B8" points="17.7299688 0 34.2692188 0 34.2692188 58 17.7299688 58"></polygon>
+        </g>
+        <rect id="Rectangle" x="0" y="0" width="90" height="90"></rect>
+    </g>
+</svg>

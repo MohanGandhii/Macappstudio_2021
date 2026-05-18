@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>video</title>
+    <g id="video" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iconfinder_video_camera_172629" transform="translate(3.000000, 3.000000)">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            <polygon id="Path" stroke-opacity="0.85" stroke="#000000" stroke-width="1.4" stroke-linecap="round" points="23.6065574 6.68852459 17.3114754 10.0685544 17.3114754 13.9314456 23.6065574 17.3114754"></polygon>
+            <path d="M17.3114754,17.3377049 C17.3114754,18.4096131 16.4457555,19.2786885 15.3779859,19.2786885 L2.32693208,19.2786885 C1.25916253,19.2786885 0.393442623,18.4096131 0.393442623,17.3377049 L0.393442623,6.66229508 C0.393442623,5.59038689 1.25916253,4.72131148 2.32693208,4.72131148 L15.3779859,4.72131148 C16.4457555,4.72131148 17.3114754,5.59038689 17.3114754,6.66229508 L17.3114754,17.3377049 Z" id="Path" stroke-opacity="0.85" stroke="#000000" stroke-width="1.4" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

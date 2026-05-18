@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>geolocation</title>
+    <g id="geolocation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.85">
+        <g id="iconfinder_2264136_geo_geolocation_gps_icon">
+            <rect id="Rectangle" x="0" y="0" width="30" height="30"></rect>
+            <path d="M23.6419922,5.77734375 L4.85332031,14.0191406 L4.91660156,14.8980469 L12.8818359,17.1041016 L15.1289062,25.0693359 L16.0078125,25.1308594 L24.2578125,6.39550781 L23.6419922,5.77734375 Z M15.6767578,23.5611328 L13.7109375,16.5978516 L13.3851563,16.2732422 L6.43652344,14.3484375 L22.9160156,7.11914063 L15.6767578,23.5611328 Z" id="Shape" stroke="#000000" stroke-width="0.4" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

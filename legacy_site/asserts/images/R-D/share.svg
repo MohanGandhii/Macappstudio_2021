@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1</title>
+    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="iconfinder_20_5378812" transform="translate(4.000000, 5.000000)" stroke="#000000" stroke-width="1.3728">
+            <ellipse id="Oval" cx="12.0362416" cy="3.35449813" rx="3.15503356" ry="3.35449813"></ellipse>
+            <ellipse id="Oval" cx="20.8449664" cy="15.9782859" rx="3.15503356" ry="3.35449813"></ellipse>
+            <ellipse id="Oval" cx="3.15503356" cy="15.9782859" rx="3.15503356" ry="3.35449813"></ellipse>
+            <path d="M15.1369128,3.84472153 C18.6812693,5.18291075 21.1150614,8.66384274 21.2989933,12.6580392" id="Path"></path>
+            <path d="M2.77449664,12.6494764 C2.9612789,8.66704693 5.38444647,5.19571483 8.91543624,3.85221403" id="Path"></path>
+            <path d="M19.4899329,19.0073956 C17.7373516,21.5236663 14.9649877,23.0054754 12.02007,23 C9.07515223,22.9944942 6.30769322,21.5023567 4.56342282,18.9795663" id="Path"></path>
+        </g>
+    </g>
+</svg>

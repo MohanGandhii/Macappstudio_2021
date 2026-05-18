@@ -1,0 +1,868 @@
+@media only screen and (max-width:1200px){
+.banner_right_img {
+    width: 90%;
+}
+.banner_right_box {
+    width: 95%;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+}
+
+@media only screen and (max-width:1024px){
+.smarter_section_header_box h2{
+    width: 70%;
+}
+.market_sales_header_box{
+    width: 80%;
+}
+.it_consulting_header_box {
+    width: 85%;
+}
+.banner_left_box h2 {
+    font: 28px/35px 'CircularStd-Black',sans-serif;
+}
+.banner_left_box p {
+    font: 20px/30px 'AvenirNext-Medium',sans-serif;
+}
+.propel_business_header_box {
+    width: 65%;
+}
+.industries_solution_list_box {
+     padding: 6px 2px 2px 20px; 
+}
+.industries_solution_resposive_box4,.industries_solution_resposive_box8,.industries_solution_resposive_box16,.industries_solution_resposive_box20{
+    border-right: 1px solid transparent;
+}
+.industries_solution_resposive_box6,.industries_solution_resposive_box18{
+    border-right: 1px solid #bbb;
+}
+.industries_solution_resposive_box17,.industries_solution_resposive_box18{
+    border-bottom: 1px solid transparent;
+}
+.our_offices_around_world_list_box {
+    width: 90%;
+    margin-right: 0px !important;
+}
+.right_border:after{
+    top: 0px;
+    height: 100%;
+}
+.filter_list_box::-webkit-scrollbar {display:none;} /* Safari */
+.filter_list_box::-moz-scrollbars {display:none;}
+.filter_list_box::-o-scrollbar {display:none;} /* opera */
+.filter_list_box::-google-ms-scrollbar {display:none;}
+.filter_list_box::-khtml-scrollbar {display:none;} 
+.solution_header_para {
+    width: 80%;
+}
+.solution_boxs{
+    min-height: 350px;
+}
+.product_desc{
+    min-height: 120px;
+}
+.solution_note_box{
+    min-height: 70px;
+}
+.banner_right_img {
+    width: 85%;
+    right:0px;
+}
+.banner_right_box {
+    margin: 0px auto 0px;
+}
+.about_ceo_left_box {
+    width: 90%;
+}
+.about_separate_right_box p,.about_separate_left_box p {
+    width: 100%;
+}
+.about_ceo_desc_boldtext1 {
+    font: 80px/80px 'CircularStd-Bold', sans-serif;
+}
+.declutter_app_logo{
+    width: 40% !important;
+}
+.our_highlights_note,.our_highlights_sub_boxunserline,.our_highlights_sub_mainbox {
+    width: 90%;
+}
+}
+@media only screen and (min-width:992px){
+.container_body {
+    width: 95%;
+}
+.navigation {
+    display: block !important;
+}
+.industries_solution_list_box{
+    /*padding: 6px 2px 2px 5px;*/
+}
+#rinvt_acc_dtj_tab li a {
+    padding: 10px 8px;
+}
+.footer_mail_box{
+    padding-left: 5px;
+}
+}
+@media only screen and (max-width:991px){
+.smarter_service_list_box{
+    margin-bottom: 20px;
+}
+.industries_solution_resposive_box3,.industries_solution_resposive_box9,.industries_solution_resposive_box15{
+    border-right: 1px solid transparent;
+}
+#rinvt_acc_dtj_tab{
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    overflow-x: scroll;
+}
+#rinvt_acc_dtj_tab li{
+    margin-bottom: 20px;
+}
+.degitize_box{
+    padding-left: 20px;
+}
+.cus_insight_header_box{
+    width: 100%;
+}
+.about_speed_learning_app_box{
+    display: inline-block;
+}
+.about_speed_learning_app_desc_box {
+    width: 100%;
+}
+.speedlearning_logo{
+    margin-bottom: 20px;
+}
+.market_sales_header_box,.it_consulting_header_box{
+    margin-bottom: 20px;
+}
+.cus_insight_leftbox,.market_sales_leftbox,.it_consulting_leftbox{
+    min-height: auto;
+}
+#rinvt_acc_dtj_tab li p {
+    font: 16px/25px 'AvenirNext-SemiBold',sans-serif;
+    padding-top: 10px;
+}
+.craftedapp_list_header_box{
+    padding: 30px 0px 0px;
+}
+.craftedapp_list_box{
+    height: auto;
+}
+.craftedapp_list_box{
+    margin-bottom: 40px;
+}
+.banner_left_box{
+    width: 100%;
+    min-height: 320px;
+}
+.banner_right_box {
+    min-height: 320px;
+}
+.banner_right_img {
+    width: 80%;
+}
+.our_highlights_sub_mainbox,
+.our_highlights_sub_boxunserline,
+.our_highlights_note{
+    width: 100%;
+}
+.our_approach_left_box {
+    min-height: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+.approach_image {
+    width: 100%;
+}
+.header_box{
+    margin:30px auto;
+}
+.frame_box {
+    width: 100%;
+}
+#filter-list {
+    margin-bottom: 0px;
+}
+.filter_list_box{
+    width: 100%;
+    overflow-x: scroll;
+}
+.clearfix{
+    width: 950px;
+}
+.section-paragraph-text span {
+    display: initial;
+}
+.days_finish {
+    font: 28px/30px 'CircularStd-Black', sans-serif;
+}
+ul.timeline::before {
+    left: 75px;
+}
+.timeline > li > .timeline-badge {
+    left: 68px;
+}
+.days_finish {
+    top: -10px;
+    left: -65px;
+}
+.about_separate_left_box,
+.about_separate_right_box{
+    min-height: auto;
+    margin-bottom: 20px;
+    margin-left:0px;
+}
+.about_ceo_right_box {
+    width: 100%;
+}
+.about_ceo_left_box,.about_ceo_right_box{
+    min-height: 180px;
+}
+.about_ceo_desc_boldtext1 {
+    font: 60px/70px 'CircularStd-Bold', sans-serif;
+    padding-bottom: 0px;
+}
+.solution_note_box {
+    min-height: 40px;
+}
+.product_desc {
+    min-height: 100px;
+}
+.solution_boxs {
+    min-height: 300px;
+}
+.timeline:after{
+    left:49px;
+}
+.m_bottom_50 {
+    margin-bottom: 0px;
+}
+.our_initiatives_header_box p span {
+    display: initial;
+}
+.our_initiatives_left_box,.our_initiatives_right_box{
+    min-height: 200px;
+}
+.our_initiatives_left_box{
+    margin-bottom: 30px;
+}
+.worked_company_logo_box li img {
+    padding: 0px 6px;
+}
+.our_initiatives_section {
+    padding: 30px 0px;
+}
+.consulted_btn{
+    margin-top:20px;
+}
+.intel_interview_box {
+    width: 100%;
+}    
+}
+
+@media only screen and (max-width:768px){
+    .banner_left_box h2 {
+        font: 30px/40px 'CircularStd-Black',sans-serif;
+        padding-bottom: 5px;
+    }
+    .banner_left_box p{
+        padding-bottom: 20px;
+    }
+    .list_2:after{
+        border-right: 0px solid transparent;
+    }
+    .list_1,.list_2{
+        margin-bottom: 30px;
+    }
+    .market_sales_header_box,.it_consulting_header_box {
+        width: 100%;
+    }
+    .trns_business_consulting_box h2{
+        line-height: 45px;
+    }
+    .trns_business_consulting_box{
+        padding: 50px 10px;
+    }
+    .solution_header_para {
+        width: 95%;
+    }
+    .freshfromformers_logo {
+        width: 200px;
+    }
+    .about_ceo_right_box {
+        width: 98%;
+    }
+    .timeline > li {
+        margin-bottom: 20px;
+    }
+    .descktop_view{
+        display:none;
+    }
+    .mobile_view{
+        display:block;
+    }
+    .greatwork_logo_box{
+        width:90%;
+        margin:0px auto;
+        text-align:center;
+        min-height:55px;
+    }
+    .greatwork_logo_box img{
+        width:150px;
+        height:30px;
+    }
+    .intel_interview_box {
+        padding: 25px 30px;
+    }
+    .greatwork_logo_box{
+        text-align: left;
+    }
+    .greatwork_logo17{
+        width:120px !important;
+    }
+    .greatwork_logo7{
+        width:60px !important;
+    }
+    .greatwork_logo15{
+        width:50px !important;
+    }
+}
+@media only screen and (max-width:736px){
+    .tab_result_inner_box{
+        width: 95%;
+        margin: 0px auto;
+        padding: 0px 0px 30px;
+    }
+    .degitize_side_border:after{
+        border-right: 0px solid transparent;
+    }
+    .degitize_box {
+        width: 95%;
+        margin: 0px auto;
+        padding-bottom: 30px;
+    }
+    .cus_insight_leftbox, .market_sales_leftbox, .it_consulting_leftbox{
+        width: 95%;
+        margin:0px auto;
+    }
+    .about_speed_learning_app_box{
+        display: block;
+        width: 95%;
+        margin:0px auto;
+    }
+    .banner_left_box {
+        width: 96%;
+        margin: 40px auto 20px;
+        min-height: auto;
+    }
+    .banner_left_box p {
+        padding-bottom: 0px;
+    }
+    .banner_right_img {
+        width: 65%;
+    }
+    .right_border:after {
+        top: 0px;
+        height: 85%;
+    }
+    .list_1, .list_2 {
+        margin-bottom: 20px !important;
+    }
+    .our_offices_around_world_list_box {
+        width: 95%;
+        margin: 0px auto;
+    }
+    /*.window_view{*/
+    /*    display:none;*/
+    /*}*/
+    /*.mobile_view{*/
+    /*    width:100%;*/
+    /*    margin:20px auto 40px;*/
+    /*    display:block;*/
+    /*}*/
+    .banner_right_box {
+        min-height: 500px;
+    }
+    .product_desc {
+        min-height: 70px;
+    }
+    .solution_boxs {
+        min-height: 260px;
+    }
+    .solution_boxs {
+        width: 100%;
+    }
+    .our_highlights_note li {
+        display: block;
+        margin: 0px auto;
+        width: 95%;
+        padding: 20px 0px;
+    }
+    .our_highlights_note li p{
+        padding-left: 0px;
+        font: 30px/35px 'AvenirNext-SemiBold';
+    }
+    .our_highlights_note li img{
+        margin-bottom:10px;
+    }
+    .our_highlights_note {
+        margin: 30px auto 0px;
+    }
+    .our_approach_section {
+        padding: 30px 0px;
+    }
+    .about_ceo_left_box, .about_ceo_right_box {
+        min-height: auto;
+    }
+    .about_ceo_left_box {
+        width: 50%;
+        margin-left: 10px;
+    }
+    .about_ceo_right_box {
+        width: 100%;
+        padding: 20px;
+    }
+    .odyssey_image04_responsive{
+        width: 70%;
+        margin: 20px;
+    }
+    .declutter_app_logo{
+        margin-left:10px !important;
+        padding-top: 20px;
+    }
+    .about_ceo_desc_boldtext1 {
+        font: 54px/60px 'CircularStd-Bold', sans-serif;
+    }
+    .greatwork_logo9{
+        width:100px !important;
+    }
+}
+@media only screen and (max-width:684px){
+    #rinvt_acc_dtj_tab {
+        /*display: -webkit-inline-box;*/
+        margin-top: 10px;
+    }
+    .right_arrow_box{
+        display:block;
+    }
+    .propel_business_header_box {
+        width: 100%;
+    }
+    .tab_result_inner_rightbox{
+        padding-bottom:0px !important;
+    }
+    .tab_result_inner_box p {
+        font: 22px/30px 'AvenirNext-Medium',sans-serif;
+    }
+    .tab_result_inner_box {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 0px 30px 10px;
+    }
+    #rinvt_acc_dtj_tab li a {
+        padding: 0px 10px;
+    }
+    .degitize_section_header_box h2{
+        padding-bottom: 50px;
+    }
+    .banner_left_box h2{
+        padding-bottom: 15px;
+    }
+    .solution_header_para {
+        width: 100%;
+    }
+    .banner_right_box {
+        min-height: 450px;
+    }
+    .banner_right_img {
+        width: 60%;
+    }
+    .our_highlights_sub_mainbox{
+        display: inline-block;
+        width: 100%;
+    }
+    .our_highlights_sub_mainbox li{
+        float: left;
+        width: 50%;
+        padding: 0px 40px;
+    }
+    .declutter_app_logo {
+        margin-top: 20px !important;
+        margin-left: 20px !important;
+    }
+    .our_highlights_sub_box {
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 667px) {
+.propel_track_list_mainbox{
+    display: inline-block;
+}
+.propel_track_list_mainbox:after {
+    content: '';
+    width: 50%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    border-left: 2px dashed #686868;
+    border-bottom: 0px dashed transparent;
+}
+.right_arrow:after {
+    content: '';
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 110px;
+    left: 49.6%;
+    box-sizing: border-box;
+    height: 7px;
+    width: 7px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    margin-bottom: 5px;
+}
+.propel_track_list_box p{
+    background-color: #ffff;
+    z-index: 12;
+    padding: 0px;
+    position: relative;
+    top: 5px;
+}
+.propel_track_list_box{
+    padding: 0px 0px;
+    padding-bottom: 40px;
+}
+.banner_right_box {
+    min-height: 430px;
+}
+.our_highlights_sub_mainbox li {
+    padding: 10px 30px;
+}
+.our_highlights_section {
+    padding: 30px 0px;
+}
+.our_highlights_note li p {
+    font: 26px/32px 'AvenirNext-SemiBold';
+}
+.our_highlights_sub_box p {
+    font: 18px/22px 'AvenirNext-SemiBold';
+    padding-bottom: 10px;
+}
+}
+@media only screen and (max-width: 600px) {
+    .our_highlights_sub_mainbox li {
+        padding: 10px 20px;
+    }
+    .timeline > li > .timeline-badge{
+        position:relative;
+    }
+    .days_finish {
+        top: -10px;
+        left: 15px;
+    }
+    .person_task{
+        top: 20px;
+        margin-bottom: 60px;
+    }
+    ul.timeline::before {
+        left: 20px;
+    }
+    .timeline > li > .timeline-badge {
+        left: 15px;
+    }
+    .person_task {
+        width: 95%;
+    }
+    .timeline:after {
+        left: -6px;
+    }
+    .m_bottom_50 {
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .mobile_responsive_view{
+        width: 50%;
+    }
+    .industries_solution_resposive_box2,.industries_solution_resposive_box4,.industries_solution_resposive_box8,
+    .industries_solution_resposive_box10,.industries_solution_resposive_box14,.industries_solution_resposive_box16,.industries_solution_resposive_box20{
+        border-right: 1px solid transparent;
+    }
+    .industries_solution_resposive_box3, .industries_solution_resposive_box9, .industries_solution_resposive_box15 {
+        border-right: 1px solid #bbb;
+    }
+    .industries_solution_list_box{
+        display: flex;
+        text-align: center;
+        padding: 20px 0px;
+        height: 145px;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #rinvt_acc_dtj_tab li a {
+        padding: 10px 5px;
+        width: 180px;
+    }
+    .rinvt_acc_dtj_tab_box{
+        position: relative;
+        overflow: hidden;
+        width: 520px;
+    }
+    .degitize_section_header_box h2{
+        padding-bottom: 50px;
+    }
+    .right_arrow:after{
+        top: 115px;
+    }
+    .banner_left_box{
+        width: 100%;
+    }
+    .banner_right_box {
+        width: 100%;
+        margin-bottom: 0px;
+        min-height: 450px;
+    }
+    .list_box1,.list_box2,.list_box3{
+        width: 100%;
+    }
+    .list_1:after,.list_2:after,.list_3:after{
+        content: '';
+        border-right: 0px solid transparent;
+        border-bottom: 2px solid #E6E6E6;
+        bottom: 0px;
+        width: 100%;
+        height: 90%;
+    }
+    .trns_business_consulting_box {
+        padding: 50px 20px;
+    }
+    .list_1, .list_2 {
+        margin-bottom: 30px !important;
+    }
+    .product_desc {
+        min-height: auto;
+        margin-bottom: 30px;
+    }
+    .solution_note_box {
+        min-height: auto;
+        margin-bottom: 30px;
+    }
+    .banner_right_img {
+        width: 70%;
+    }
+    .our_highlights1,.our_highlights2{
+        min-height:100px;
+    }
+    ul.timeline::before {
+        left: 10px;
+    }
+    .timeline > li > .timeline-badge {
+        left: 5px;
+    }
+    .timeline > li {
+        margin-bottom: 0px;
+    }
+    .person_task {
+        margin-bottom: 40px;
+    }
+    .timeline:after {
+        left: -16px;
+    }
+    .greatwork_logo_box{
+        text-align:left;
+    }
+    .greatwork_logo7{
+        width:60px !important;
+    }
+    .greatwork_logo9{
+        width:100px !important;
+    }
+    .greatwork_logo6{
+        width:200px !important;
+    }
+    .greatwork_logo15{
+        width:50px !important;
+    }
+    .greatwork_logo17{
+        width:120px !important;
+    }
+    .our_initiatives_header_box {
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .rinvt_acc_dtj_tab_box{
+        width: 470px;
+    }
+    .trns_business_consulting_box{
+        padding: 30px 0px;
+    }
+    .trns_business_consulting_box h2 {
+        line-height: 40px;
+    }
+    .craftedapp_list_header_box {
+        padding: 20px 0px 0px;
+    }
+    .banner_left_box {
+        margin: 20px auto 20px;
+    }
+    .our_solutions_tabbox {
+        margin-top: 30px;
+    }
+    .our_highlights1, .our_highlights2 {
+        min-height: 110px;
+    }
+    .banner_right_box {
+        min-height: 360px;
+    }
+    #myGallery img{
+        left:0px;
+    }
+    .our_highlights_sub_box {
+        margin-bottom: 0px;
+    }
+    .about_ceo_left_box img {
+        margin-left: 10px;
+    }
+    .about_ceo_right_box {
+        padding: 10px 10px;
+    }
+    .about_separate_left_box,.about_separate_right_box {
+        padding: 20px 20px 20px;
+    }
+    .odyssey_image03_left_img_box{
+        margin-top:10px;
+    }
+    .consulted_btn {
+        width: 100%;
+        font: 20px/44px 'AvenirNext-SemiBold';
+        padding: 4px 25px;
+        letter-spacing: -0.571429px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .degitize_box {
+        padding-left: 0px;
+    }
+    .propel_track_list_mainbox{
+        padding: 30px 0px 0px;
+    }
+    .banner_left_box, .banner_right_box {
+        width: 100%;
+    }
+    .banner_left_box {
+        margin: 20px auto 0px;
+    }
+    .banner_right_img {
+        width: 90%;
+    }
+    .banner_right_box{
+        min-height: 400px;
+    }
+    .banner_left_box p {
+        font: 20px/30px 'AvenirNext-Medium',sans-serif;
+    }
+    .our_highlights_sub_mainbox li {
+        padding: 10px 10px;
+    }
+    .our_highlights_note {
+        margin: 30px auto 0px;
+    }
+    .our_highlights_note li {
+        padding: 0px 0px;
+        padding-bottom: 25px;
+    }
+    .consulted_btn {
+        width: 100%;
+    }
+    .trns_business_consulting_box {
+        padding: 30px;
+    }
+    .trns_business_consulting_box h2 {
+        font: 30px/35px 'CircularStd-Black',sans-serif;
+    }
+    .about_ceo_left_box {
+        width: 80%;
+    }
+    .about_separate_right_box span {
+        font: 70px/75px 'CircularStd-Bold', sans-serif;
+    }
+    .our_initiatives_left_box,.our_initiatives_right_box{
+        padding:15px;
+        width:98%;
+    }
+    .greatwork_logo6 {
+        width: 160px !important;
+    }
+    .consulted_btn {
+        width: 100%;
+        height:50px;
+        font: 20px/44px 'AvenirNext-SemiBold';
+        padding: 4px 25px;
+        letter-spacing: -0.571429px;
+    }
+    .about_ceo_desc_text1 {
+        margin: 10px 20px;
+    }
+    .person_task {
+        margin-bottom: 70px;
+    }
+    .about_ceo_desc_boldtext1,.about_ceo_desc_mediumtext1{
+        margin: 0px 10px;
+    }
+    .consulted_btn{
+        margin-bottom:20px;
+    }
+    .clearfix {
+        width: 920px;
+    }
+    .our_offices_around_world_section {
+        margin-top: 0px;
+    }
+    .btn_tab {
+        padding: 5px 5px;
+    }
+    .our_solutions_tabbox {
+        margin-bottom: 20px;
+    }
+    .section-paragraph-text {
+        margin: 15px auto 0px;
+    }
+    #filter-list {
+        margin-top: 25px;
+    }
+    #pills-tabContent {
+        padding-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    
+}
+@media only screen and (max-width: 375px) {
+    .rinvt_acc_dtj_tab_box {
+        width: 350px;
+    }
+    .smarter_service_list_box p{
+        font: 16px/28px 'AvenirNext-Medium',sans-serif;
+    }
+    .industries_solution_list_box{
+        padding: 20px 3px;
+    }
+    .about_speed_learning_app_desc_box h2 {
+        font: 28px/40px 'AvenirNext-Medium',sans-serif;
+    }
+}
+
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>health</title>
+    <g id="health" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0" x="1.5" y="0.5" width="49" height="49"></rect>
+        <g id="iconfinder_heart_beat_pulse_healthcare_2730852" transform="translate(1.000000, 10.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.85" stroke-width="2">
+            <path d="M9.54215878,19.9030103 C13.8287271,24.2392008 19.4845658,29.9137898 19.5820699,30 C19.7433729,29.8581506 34.3954679,15.0458898 34.3954679,15.0458898 C37.8195464,11.5675215 37.8749191,5.93145203 34.5176489,2.52156274 C31.1615825,-0.888326557 25.6128779,-0.832075918 22.1887994,2.64629241 L19.5832736,5.26561566 L16.9807573,2.64568099 C13.5572806,-0.832075918 8.00857605,-0.888937977 4.65250961,2.52095132 C1.88267142,5.33531754 1.43547677,9.66539392 3.28805433,13.0471579" id="Path"></path>
+            <polyline id="Path" points="6.41489051e-15 16.4692756 10.4618269 16.4692756 12.869937 13.1590478 16.2548935 20.1475783 19.5098446 9.37558084 22.048562 16.5218577 26.0847496 16.5218577"></polyline>
+        </g>
+    </g>
+</svg>

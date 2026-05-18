@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>9</title>
+    <g id="9" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-opacity="0.85">
+        <g id="iconfinder_rocket_school_science_education_2818863" transform="translate(7.000000, 7.000000)" stroke="#000000" stroke-width="2.3">
+            <g id="Group" transform="translate(3.033873, 31.087922)" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4.81275305" y1="0" x2="1.21989921" y2="3.58975907" id="Path"></line>
+                <line x1="8.34711857" y1="3.53462197" x2="0" y2="11.8787024" id="Path"></line>
+                <line x1="11.8814841" y1="7.06757312" x2="8.12319186" y2="10.8260851" id="Path"></line>
+            </g>
+            <ellipse id="Oval" cx="30.7506511" cy="15.2535507" rx="4.57879977" ry="4.57804973"></ellipse>
+            <line x1="33.9190469" y1="2.14094693" x2="43.8654032" y2="12.0856739" id="Path" stroke-linejoin="round"></line>
+            <path d="M45.6551457,0.338130992 C43.0682909,-0.306805941 26.8820666,-2.89156614 10.4861199,27.7880503 L18.2149334,35.5155978 C48.9948287,19.0705414 46.2893262,2.84686883 45.6551457,0.338130992 Z" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+            <g id="Group" transform="translate(0.000000, 13.865934)" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.4708455,0 C10.8428987,0.435248889 5.12274113,2.32828916 0,9.94556242 C0,9.94556242 3.02050387,8.56295798 8.30450565,9.54122372" id="Path"></path>
+                <path d="M32.1384954,17.6655912 C31.7040107,21.2929437 29.8098247,27.0121642 22.1929746,32.1340662 C22.1929746,32.1340662 23.5758056,29.1140571 22.5982151,23.8309209" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>SMS</title>
+    <g id="SMS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round" stroke-opacity="0.85">
+        <g id="iconfinder_2677275_cell_mail_message_mobile_phone_icon" transform="translate(7.000000, 3.000000)" stroke="#000000">
+            <g id="Group" transform="translate(7.318679, 4.730232)">
+                <rect id="Rectangle" stroke-linecap="round" x="0" y="0" width="9.68132067" height="6.59377349"></rect>
+                <polyline id="Path" points="9.49756396 0.183821296 4.85433615 3.91512496 4.82659929 3.91512496 0.183371479 0.183821296"></polyline>
+            </g>
+            <g id="Group" stroke-width="1.12">
+                <path d="M13.3445127,13.1533923 L13.3445127,22.9124226 C13.3445127,23.5107053 12.8533391,24 12.252759,24 L1.09560606,24 C0.494640712,24 0.003852342,23.5107053 0.003852342,22.9124226 L0.003852342,1.08719359 C0.003852342,0.48891092 0.494640712,0 1.09560606,0 L12.252759,0 C12.8533391,0 13.3445127,0.48891092 13.3445127,1.08719359 L13.3445127,2.83982795" id="Path"></path>
+                <line x1="0" y1="19.0740498" x2="13.3445127" y2="19.0740498" id="Path"></line>
+                <line x1="5.7673412" y1="21.5189882" x2="7.58102382" y2="21.5189882" id="Path" stroke-linecap="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

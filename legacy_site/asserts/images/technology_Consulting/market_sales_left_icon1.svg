@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>7</title>
+    <g id="7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0" x="0.5" y="0.5" width="23" height="23"></rect>
+        <g id="iconfinder_interface_view_4525327" transform="translate(1.000000, 5.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.85" stroke-width="1.032">
+            <ellipse id="Oval" cx="4.71565217" cy="9.03458187" rx="4.71565217" ry="4.96541813"></ellipse>
+            <ellipse id="Oval" cx="17.2843478" cy="9.03458187" rx="4.71565217" ry="4.96541813"></ellipse>
+            <path d="M9.43130435,9.03458187 L10.1295652,2.75982428 C10.1295652,1.59935908 9.44009896,0.562871661 8.40435965,0.166290729 C7.36862033,-0.230290202 6.20791345,0.0977724463 5.5,0.98718008 L5.5,0.98718008 L1.56869565,5.33821584" id="Path"></path>
+            <path d="M12.5686957,9.03458187 L11.8704348,2.75982428 C11.8704348,1.59935908 12.559901,0.562871661 13.5956404,0.166290729 C14.6313797,-0.230290202 15.7920865,0.0977724463 16.5,0.98718008 L16.5,0.98718008 L20.4313043,5.33821584" id="Path"></path>
+            <ellipse id="Oval" cx="11" cy="8.37991214" rx="1.43478261" ry="1.51077631"></ellipse>
+            <path d="M10.1295652,2.84039902 C10.3863819,2.6579551 10.6902428,2.5630234 11,2.56845928 C11.3154222,2.56528244 11.6224508,2.67541434 11.8704348,2.88068638" id="Path"></path>
+        </g>
+    </g>
+</svg>

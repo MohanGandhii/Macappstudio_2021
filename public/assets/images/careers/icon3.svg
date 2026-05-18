@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>3</title>
+    <g id="3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.85">
+        <g id="iconfinder_aami17-78_853802" transform="translate(2.000000, 8.000000)" stroke="#000000" stroke-width="2">
+            <polygon id="Path" points="28 26.3 33.5 29.2 32.5 23.1 36.9 18.7 30.8 17.8 28 12.2 25.2 17.8 19.1 18.7 23.5 23.1 22.5 29.2"></polygon>
+            <polyline id="Path" points="47 12.3 56 12.3 50 19.3 56 26.3 46 26.3"></polyline>
+            <polyline id="Path" points="10 26.3 0 26.3 6 19.3 0 12.3 10 12.3"></polyline>
+            <path d="M47.2,6.9 C38.4,6.9 28,0 28,0 C28,0 17.6,6.9 8.8,6.9 C11.4,13.6 10.1,27.8 10.1,27.8 C10.1,36.8 25.6,43.7 28,44.5 C30.4,43.7 45.9,36.7 45.9,27.8 C45.9,27.8 45.2,20.1 45.9,13.4 L47.2,6.9 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

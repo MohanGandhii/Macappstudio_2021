@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>8</title>
+    <g id="8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-opacity="0.85">
+        <g id="iconfinder_scales-justice-balance-equality_5468740" transform="translate(7.000000, 6.000000)" stroke="#000000" stroke-width="2">
+            <line x1="23" y1="0" x2="23" y2="37.6708861" id="Path"></line>
+            <line x1="3.63157895" y1="7.29113924" x2="42.3684211" y2="7.29113924" id="Path" stroke-linecap="round"></line>
+            <path d="M46,23.0886076 C46,27.1153926 42.7481734,30.3797468 38.7368421,30.3797468 C34.7255108,30.3797468 31.4736842,27.1153926 31.4736842,23.0886076 L46,23.0886076 Z" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline id="Path" stroke-linecap="round" stroke-linejoin="round" points="31.4736842 23.0886076 38.7368421 7.29113924 46 23.0886076"></polyline>
+            <path d="M14.5263158,23.0886076 C14.5263158,27.1153926 11.2744892,30.3797467 7.26315789,30.3797467 C3.2518266,30.3797467 0,27.1153926 0,23.0886076 L14.5263158,23.0886076 Z" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline id="Path" stroke-linecap="round" stroke-linejoin="round" points="0 23.0886076 7.26315789 7.29113924 14.5263158 23.0886076"></polyline>
+            <line x1="16.9473684" y1="37.6708861" x2="29.0526316" y2="37.6708861" id="Path"></line>
+            <line x1="14.5263158" y1="42.5316456" x2="31.4736842" y2="42.5316456" id="Path"></line>
+            <line x1="12.1052632" y1="47.3924051" x2="33.8947368" y2="47.3924051" id="Path"></line>
+        </g>
+    </g>
+</svg>

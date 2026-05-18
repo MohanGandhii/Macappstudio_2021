@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>media</title>
+    <g id="media" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0" x="0.5" y="0.5" width="49" height="49"></rect>
+        <g id="iconfinder_aami16-36_807467" transform="translate(1.000000, 7.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.85" stroke-width="1.9">
+            <path d="M34.72,19.8300654 L27.2,24.1830065 L27.2,17.5729847 C27.2,16.6862745 26.48,16.0413943 25.6,16.0413943 L1.6,16.0413943 C0.72,16.0413943 0,16.6862745 0,17.5729847 L0,35.3071895 C0,36.1938998 0.72,37 1.6,37 L25.6,37 C26.48,37 27.2,36.1938998 27.2,35.3071895 L27.2,28.6971678 L34.72,33.0501089 C35.28,33.372549 36,32.9694989 36,32.3246187 L36,20.5555556 C36,19.9106754 35.28,19.5882353 34.72,19.8300654 Z" id="Path"></path>
+            <line x1="27.2" y1="24.1023965" x2="27.2" y2="30.5511983" id="Path"></line>
+            <ellipse id="Oval" cx="6.8" cy="6.2875817" rx="6.24" ry="6.2875817"></ellipse>
+            <ellipse id="Oval" cx="20.96" cy="7.33551198" rx="4.56" ry="4.59477124"></ellipse>
+        </g>
+    </g>
+</svg>

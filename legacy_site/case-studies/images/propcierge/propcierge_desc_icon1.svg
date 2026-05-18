@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1</title>
+    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-opacity="0.85">
+        <g id="iconfinder_2728475_clean_cleaning_house_housekeeping_icon" transform="translate(1.000000, 1.000000)" stroke="#000000" stroke-width="1.3568">
+            <g id="Group" transform="translate(4.452043, 6.248407)" stroke-linejoin="round">
+                <polyline id="Path" stroke-linecap="round" points="6.20471583 2.96770296 3.20579091 7.50100477 0 7.50100477 4.79962808 0 8.94537424 7.50100477 20.7620148 7.50100477 16.6423902 0 4.79962808 0"></polyline>
+                <line x1="3.07476174" y1="7.59515085" x2="3.07476174" y2="12.5382403" id="Path"></line>
+                <line x1="18.147751" y1="7.53336748" x2="18.147751" y2="12.6407923" id="Path"></line>
+                <line x1="11.3329701" y1="7.53336748" x2="11.3329701" y2="13.238872" id="Path"></line>
+            </g>
+            <line x1="15.2271908" y1="2.90844136" x2="15.2457287" y2="0" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+            <g id="Group" transform="translate(1.472498, 4.599170)" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="25.4415679" y1="2.23092583" x2="27.5275017" y2="0.176944193" id="Path"></line>
+                <line x1="2.08888308" y1="2.11114176" x2="0" y2="0" id="Path"></line>
+            </g>
+            <g id="Group" transform="translate(7.787177, 0.415133)" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="1.13165388" y1="2.78697611" x2="0" y2="0.126088498" id="Path"></line>
+                <line x1="13.7955602" y1="2.7205695" x2="14.8981433" y2="0" id="Path"></line>
+            </g>
+            <g id="Group" transform="translate(0.000000, 19.381777)">
+                <path d="M20.6107624,2.89836298 L25.7322757,0.287070182 C26.7223675,-0.243342101 27.8830922,-0.0306728336 28.3621281,0.85825108 C28.8394787,1.74717499 28.420691,2.90887036 27.4305991,3.43928264 L16.8037541,9.12167097 L16.241719,9.2620495 L6.33111053,9.52935711 C6.33111053,9.52935711 5.05494537,9.88618756 3.52177766,11.6182232" id="Path" stroke-linejoin="round"></path>
+                <path d="M0,6.42085533 L4.49543817,2.2927179 C6.69259937,0.814960695 9.29759414,1.63033298 9.29759414,1.63033298 C10.5590132,1.96194574 12.9019497,2.03675824 12.9019497,2.03675824 L16.7915359,2.03675824 C17.950154,2.03675824 18.8981142,2.86179732 18.8981142,3.8709256 C18.8981142,4.88005388 17.950154,5.70509296 16.7915359,5.70509296 L11.4109135,5.70509296" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

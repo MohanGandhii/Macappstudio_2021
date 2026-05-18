@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>10</title>
+    <g id="10" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0" x="0.5" y="0.5" width="23" height="23"></rect>
+        <g id="iconfinder_light_bulb_idea_genius_2668606" opacity="0.85" transform="translate(3.000000, 1.000000)" stroke="#000000">
+            <line x1="5.77577598" y1="20.710146" x2="11.224224" y2="20.710146" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="7.09086006" y1="22.4" x2="9.90913994" y2="22.4" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="8.5" y1="1.52022811" x2="8.5" y2="0" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+            <g id="Group" transform="translate(0.000000, 3.581464)" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="15.7487516" y1="1.2352062" x2="17" y2="0" id="Path"></line>
+                <line x1="0" y1="0" x2="1.25124835" y2="1.2352062" id="Path"></line>
+            </g>
+            <line x1="8.5" y1="18.4373132" x2="8.5" y2="12.6611139" id="Path" stroke-linejoin="round"></line>
+            <g id="Group" transform="translate(6.409719, 10.614897)" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="2.10623976" y1="2.04621702" x2="4.18056166" y2="0" id="Path"></line>
+                <line x1="2.0743219" y1="2.04621702" x2="2.41266059e-15" y2="0" id="Path"></line>
+            </g>
+            <path d="M8.49762314,3.77170096 C4.74319898,3.77170096 1.68893061,6.71536988 1.68893061,10.3338799 C1.68893061,11.8467655 2.10929573,13.1213542 2.91980586,14.1015759 C3.20502936,14.404954 3.49568569,14.6746234 3.77649503,14.9346142 C4.72724004,15.8160461 5.6284105,16.6560931 5.90208924,18.4326407 L11.093157,18.4373132 C11.3671753,16.6484169 12.2724204,15.8120411 13.2262214,14.9292742 C13.5066912,14.6706185 13.7963288,14.4026178 14.0679703,14.1155933 C14.9392602,13.1050004 15.3114089,11.973924 15.3114089,10.3338799 C15.3117485,6.71536988 12.2551033,3.77170096 8.49762314,3.77170096 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

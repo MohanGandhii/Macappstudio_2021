@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="157px" height="37px" viewBox="0 0 157 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>burp</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.85">
+        <g id="App-Development" transform="translate(-1155.000000, -5869.000000)" fill="#000000">
+            <g id="burp" transform="translate(1155.000000, 5869.000000)">
+                <g id="Burp-Suite-595b40b85ba036ed117dcabc" transform="translate(0.000000, 6.270000)" fill-rule="nonzero">
+                    <path d="M2.28101701,0 C1.02303613,0 0,1.02258 0,2.28 L0,21.66 C0,22.91742 1.02303613,23.94 2.28101701,23.94 L11.4050851,23.94 L11.4050851,19.7139847 L16.3012527,14.82 L11.4050851,14.82 L11.4050851,11.97 L11.4050851,11.4 L11.4050851,9.69 L4.89616766,9.69 L11.4050851,3.18398438 L11.4050851,0 L2.28101701,0 Z M12.5455936,0 L12.5455936,3.65601534 L7.64942591,8.55 L12.5455936,8.55 L12.5455936,11.4 L12.5455936,11.97 L12.5455936,13.68 L19.054511,13.68 L12.5455936,20.1860153 L12.5455936,23.94 L21.6696616,23.94 C22.9276425,23.94 23.9506786,22.91742 23.9506786,21.66 L23.9506786,2.28 C23.9506786,1.02258 22.9276425,0 21.6696616,0 L12.5455936,0 Z" id="Shape"></path>
+                </g>
+                <text id="Burp-Suite" font-family="DINAlternate-Bold, DIN Alternate" font-size="32" font-weight="bold" letter-spacing="-1.48571429">
+                    <tspan x="27.9424584" y="30">Burp Suite</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

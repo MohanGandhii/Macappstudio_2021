@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>back</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Case-Study" transform="translate(-521.000000, -3508.000000)" stroke="#000000">
+            <g id="Group-5" transform="translate(522.000000, 3509.000000)">
+                <g id="back" transform="translate(18.500000, 18.500000) scale(-1, 1) translate(-18.500000, -18.500000) ">
+                    <path d="M5.41818851,5.41773779 C-1.80606284,12.6413882 -1.80606284,24.3586118 5.41818851,31.5822622 C12.6414118,38.8059126 24.3593593,38.8059126 31.5825825,31.5822622 C38.8058058,24.3596401 38.8058058,12.6413882 31.5825825,5.41773779 C24.3583312,-1.8059126 12.6414118,-1.8059126 5.41818851,5.41773779 L5.41818851,5.41773779 Z" id="Shape" stroke-width="1.3596993"></path>
+                    <polyline id="Shape" stroke-opacity="0.85" stroke-width="1.63572848" points="14.730451 9.67789203 23.6499906 18.5971722 14.730451 27.5164524"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

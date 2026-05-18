@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>implement</title>
+    <g id="implement" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0" x="0.5" y="0.5" width="74" height="74"></rect>
+        <g id="Group-29" transform="translate(2.000000, 2.000000)" stroke="#000000" stroke-opacity="0.85">
+            <circle id="Oval" stroke-width="1.4" fill="#FFFFFF" cx="36" cy="36" r="35.3"></circle>
+            <g id="iconfinder_release-promote-startup-rocket-marketing-launch_4573410" transform="translate(22.000000, 18.000000)" stroke-width="1.8">
+                <path d="M20.4447161,16.178483 C20.4447161,16.178483 20.4447161,6.7423491 14.3349633,0.55251128 C13.9823391,0.198965959 13.5016027,3.10866857e-15 13,3.10866857e-15 C12.4983973,3.10866857e-15 12.0176609,0.198965959 11.6650367,0.55251128 C5.55528389,6.7423491 5.55528389,16.178483 5.55528389,16.178483 L5.55528389,23.367585 C5.55528389,24.3862886 6.38856212,25.2121111 7.41646292,25.2121111 L18.5835371,25.2121111 C19.6114379,25.2121111 20.4447161,24.3862886 20.4447161,23.367585 L20.4447161,16.178483 Z" id="Path"></path>
+                <path d="M5.58353708,15.0672172 C3.00297199,16.0254779 0.966912163,18.0433202 0,20.6007957 L0,23.367585 L2.68405325,23.367585" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M20.4164629,15.0672172 C22.997028,16.0254779 25.0330878,18.0433202 26,20.6007957 L26,23.367585 L23.3159468,23.367585" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10.8492258,27.9789004 C10.8492258,27.9789004 11.4213529,35 1.54333062,35" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M15.1507742,27.9789004 C15.1507742,27.9789004 14.5786471,35 24.4566694,35" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10.2082315,11.4726662 C10.2082315,10.6781549 11.4584352,10.0358958 13,10.0358958 C14.5415648,10.0358958 15.7917685,10.6781549 15.7917685,11.4726662" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

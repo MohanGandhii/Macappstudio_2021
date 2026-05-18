@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>12</title>
+    <g id="12" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0" x="0.5" y="0.5" width="23" height="23"></rect>
+        <g id="iconfinder_unlock_2069619" transform="translate(4.000000, 2.000000)" stroke="#000000" stroke-linejoin="round" stroke-opacity="0.85" stroke-width="1.21143871">
+            <path d="M2.69512195,9.12319885 L2.69512195,5.64841499 C2.69512195,2.52665706 5.29176829,0 8.5,0 L8.5,0 C10.977439,0 13.0920732,1.50792507 13.9265244,3.63616715" id="Path"></path>
+            <ellipse id="Oval" stroke-linecap="round" cx="8.5" cy="14.2622478" rx="1.12987805" ry="1.09942363"></ellipse>
+            <line x1="8.52408537" y1="15.4927954" x2="8.52408537" y2="17.5403458" id="Path"></line>
+            <path d="M14.9268293,21 L2.07317073,21 C0.927743902,21 0,20.0972622 0,18.9827089 L0,11.074928 C0,9.96037464 0.927743902,9.05763689 2.07317073,9.05763689 L14.9268293,9.05763689 C16.0722561,9.05763689 17,9.96037464 17,11.074928 L17,18.9877522 C17,20.0972622 16.0722561,21 14.9268293,21 Z" id="Path" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

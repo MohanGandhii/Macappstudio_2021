@@ -1,0 +1,872 @@
+@media only screen and (max-width:1200px){
+.banner_right_img {
+    width: 90%;
+}
+.casestudy_container_body {
+    /*width: 90%;*/
+}
+.casestudy_image {
+    margin-left: 30px;
+}
+}
+
+@media only screen and (max-width:1024px){
+.smarter_section_header_box h2{
+    width: 70%;
+}
+.market_sales_header_box{
+    width: 80%;
+}
+.it_consulting_header_box {
+    width: 85%;
+}
+.banner_left_box h2 {
+    font: 34px/45px 'CircularStd-Black',sans-serif;
+}
+.propel_business_header_box {
+    width: 65%;
+}
+.industries_solution_list_box {
+     padding: 6px 2px 2px 20px; 
+}
+.industries_solution_resposive_box4,.industries_solution_resposive_box8,.industries_solution_resposive_box16,.industries_solution_resposive_box20{
+    border-right: 1px solid transparent;
+}
+.industries_solution_resposive_box6,.industries_solution_resposive_box18{
+    border-right: 1px solid #bbb;
+}
+.industries_solution_resposive_box17,.industries_solution_resposive_box18{
+    border-bottom: 1px solid transparent;
+}
+.our_offices_around_world_list_box {
+    width: 90%;
+    margin-right: 0px !important;
+}
+.right_border:after{
+    top: 0px;
+    height: 100%;
+}
+.Tool_tech_list_box h2 {
+    font: 20px/30px 'AvenirNext-Bold',sans-serif;
+    padding-bottom: 0px;
+}
+.toolimg {
+    min-height: 100px;
+}
+.app_delivery_left_box h2 {
+    font: 44px/50px 'CircularStd-Black',sans-serif;
+}
+.app_delivery_right_box {
+    width: 100%;
+    min-height: 250px;
+}
+.app_delivery_left_box{
+    min-height: 250px;
+}
+.app_delivery_left_box p {
+    font: 24px/40px 'CircularStd-Medium',sans-serif;
+}
+.banner_right_box,.banner_left_box{
+    min-height: 400px;
+    justify-content: center;
+}
+.How_help_list_box {
+    width: 100%;
+}
+.How_help_list_boxs{
+    width: 90%;
+    min-height: 295px;
+}
+.How_help_list_boxs p{
+   padding: 8px 0px;
+}
+.case_study_list p span{
+    padding-left: 5px;
+}
+.case_study_list p {
+    font: 16px/20px 'AvenirNext-Medium',sans-serif;
+}
+.our_develop_header_box p,.tool_tech_header_box p{
+    padding-bottom: 30px;
+}
+.Tool_tech_section {
+    padding: 30px 0px;
+}
+.tool_tech_list_box4, .tool_tech_list_box5, .tool_tech_list_box6 {
+    min-height: 260px;
+}
+.casestudy_left_box p{
+    padding-top:5px;
+}
+.Rapid_app_list_box {
+    min-height: 450px;
+}
+.rocket_img {
+    width: 60%;
+}
+.why_choose_list_box {
+    width: 90%;
+    margin: 0px auto;
+}
+.why_choose_list_box1,.why_choose_list_box2{
+    margin-bottom:20px;
+}
+.How_help_section,.our_develop_section {
+    padding: 50px 0px;
+}
+.oneside_img {
+    padding-bottom: 25px;
+}
+.Rapid_app_list_box1,.Rapid_app_list_box2,
+.Rapid_app_list_box3,.Rapid_app_list_box4{
+    width:100%;
+}
+.casestudy_container_body {
+    /*width: 95%;*/
+}
+.case_study_list p{
+    padding-top: 0px;
+}
+#casestudy_section .owl-nav,#casestudy_section .owl-dots{
+    width:30%;
+}
+.our_develop_list_box img{
+    margin: 0 auto;
+}
+}
+@media only screen and (min-width:992px){
+.container_body {
+    width: 95%;
+}
+.navigation {
+    display: block !important;
+}
+.industries_solution_list_box{
+    /*padding: 6px 2px 2px 5px;*/
+}
+#rinvt_acc_dtj_tab li a {
+    padding: 10px 8px;
+}
+.footer_mail_box{
+    padding-left: 5px;
+}
+.casestudy_image {
+    /*width: 100% !important;*/
+}
+}
+@media only screen and (max-width:991px){
+.smarter_service_list_box{
+    margin-bottom: 20px;
+}
+.industries_solution_resposive_box3,.industries_solution_resposive_box9,.industries_solution_resposive_box15{
+    border-right: 1px solid transparent;
+}
+#rinvt_acc_dtj_tab{
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    overflow-x: scroll;
+}
+#rinvt_acc_dtj_tab li{
+    margin-bottom: 20px;
+}
+.degitize_box{
+    padding-left: 20px;
+}
+.cus_insight_header_box{
+    width: 100%;
+}
+.about_speed_learning_app_box{
+    display: inline-block;
+}
+.about_speed_learning_app_desc_box {
+    width: 100%;
+}
+.speedlearning_logo{
+    margin-bottom: 20px;
+}
+.market_sales_header_box,.it_consulting_header_box{
+    margin-bottom: 20px;
+}
+.cus_insight_leftbox,.market_sales_leftbox,.it_consulting_leftbox{
+    min-height: auto;
+}
+#rinvt_acc_dtj_tab li p {
+    font: 16px/25px 'AvenirNext-SemiBold',sans-serif;
+    padding-top: 10px;
+}
+.craftedapp_list_header_box{
+    padding: 30px 0px 0px;
+}
+.craftedapp_list_box{
+    height: auto;
+}
+.craftedapp_list_box{
+    margin-bottom: 40px;
+}
+.right_border:after{
+    display:none;
+}
+.our_offices_around_world_list_box {
+    width: 95%;
+    padding: 15px;
+}
+.casestudy_left_box, .casestudy_right_box {
+    min-height: auto;
+}
+.toolimg {
+    min-height: 150px;
+}
+.rocket_img {
+    width: 70%;
+}
+.banner_right_img {
+    width: 100%;
+}
+.digital_service_we_provide_header_box p{
+    padding-bottom: 30px;
+}
+.list_7,.list_8{
+    border-bottom: 1px solid #e6e6e6;
+}
+.list_3,.list_9{
+    border-right: 1px solid #e6e6e6;
+}
+.list_1{
+    /*border-bottom: 1px solid transparent;*/
+}
+.list_2,.list_4,.list_8{
+    border-right: 1px solid transparent;
+}
+.digital_service_we_provide_section {
+    padding: 30px 0px;
+}
+.why_choose_list_box1,.why_choose_list_box2{
+    margin-bottom:30px;
+}
+.How_help_header_box p{
+    padding-bottom:30px;
+}
+.How_help_list_boxs {
+    width: 100%;
+    min-height: 320px;
+}
+.How_help_list_box {
+    width: 90%;
+    margin-left: 0px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+.How_help_imgs {
+    margin-right: 10px;
+}
+.How_help_list_boxs p {
+    padding: 0px 0px;
+    padding-bottom: 15px;
+    line-height:24px;
+}
+.How_help_section {
+    padding: 40px 0px;
+}
+.case_study_list {
+    width: 100%;
+}
+.case_study_data{
+    padding: 5px 0;
+}
+.oneside_img {
+    padding-bottom: 25px;
+}
+#casestudy_section .owl-nav {
+    bottom: 0px;
+    width: 40%;
+    margin-top: 30px !important;
+}
+#casestudy_section .owl-dots {
+    bottom: 8px;
+    width: 40%;
+}
+.tool_tech_list_box3,.tool_tech_list_box4{
+    min-height:300px;
+}
+.tool_tech_list_box5,.tool_tech_list_box6{
+    min-height:310px;
+}
+.tool_tech_list_box7,.tool_tech_list_box8{
+    min-height:250px;
+}
+.banner_right_box, .banner_left_box {
+    min-height: 300px;
+}
+.casestudy_left_box{
+    min-height: auto;
+}
+.casestudy_container_body {
+    /*width: 80%;*/
+}
+.casestudy_image {
+    margin-left: 0px;
+    width: 100% !important;
+}
+.tool_tech_list_box7, .tool_tech_list_box8 {
+    min-height: auto;
+}
+.trns_business_consulting_box {
+    padding: 50px 20px;
+}
+.trns_business_consulting_box h2 {
+    font: 34px/45px 'CircularStd-Black',sans-serif;
+}
+}
+@media only screen and (max-width:768px){
+    .banner_left_box h2 {
+        font: 30px/40px 'CircularStd-Black',sans-serif;
+        padding-bottom: 20px;
+    }
+    .banner_left_box p{
+        padding-bottom: 20px;
+    }
+    .list_2:after{
+        border-right: 0px solid transparent;
+    }
+    .market_sales_header_box,.it_consulting_header_box {
+        width: 100%;
+    }
+    .trns_business_consulting_box h2{
+        line-height: 45px;
+    }
+    .trns_business_consulting_box{
+        padding: 50px 10px;
+    }
+    #casestudy_section .owl-nav, #casestudy_section .owl-dots {
+        width: 50%;
+        margin: 0px auto;
+    }
+    .tool_tech_list_box7, .tool_tech_list_box8 {
+        min-height: 200px;
+    }
+    .app_delivery_left_box h2 {
+       padding: 0px;
+    }
+    .app_delivery_left_box p span {
+        display: inline;
+    }
+    .banner_right_box{
+        min-height: auto;
+        margin-top: 30px;
+    }
+    .banner_left_box{
+        min-height: 250px;
+    }
+    .our_offices_around_world_list_box {
+        width: 85%;
+    }
+    .How_help_list_box{
+        display:block;
+        width:100%;
+    }
+    .How_help_list_boxs {
+        min-height: auto;
+        margin-top: 30px;
+    }
+    .casestudy_right_box{
+        display:none;
+    }
+    .casestudy_inner_box{
+        display:block;
+        margin: 30px 0px;
+    }
+    #casestudy_section {
+        padding: 30px 0px;
+    }
+    .casestudy_image {
+        width: 95% !important;
+    }
+    .app_delivery_left_box {
+        min-height: auto;
+        display: block;
+    }
+    .app_delivery_right_box {
+        width: 70%;
+        min-height: auto;
+    }
+    .app_delivery_section {
+        padding: 50px 0px;
+    }
+    .case_study_list {
+        align-items: center;
+    }
+    .casestudy_container_body {
+        /*width: 90%;*/
+    }
+    .let_digitize_header_box h2 {
+        padding-bottom: 15px;
+    }
+    .let_digitize_header_box p {
+        font: 26px/35px 'AvenirNext-Medium',sans-serif;
+    }
+    .why_choose_list_box img {
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width:767px){
+.casestudy_right_box{
+    display:none;
+}
+.casestudy_left_box {
+    min-height: auto;
+     width: 100%;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
+.casestudy_left_box h2 {
+    margin: 0 auto;
+}
+.casestudy_inner_box{
+    width: 100%;
+    margin: 0 auto;     
+    display:block;
+}
+.casestudy_inner_box img{
+     width: 90% !important;
+}
+.case_study_list p {
+    font: 18px/25px 'AvenirNext-Medium',sans-serif;
+    padding-top: 0px;
+}
+.case_study_list p span img {
+    width: 30px !important;
+}
+.rocket_img {
+    width: 100%;
+}
+#casestudy_section .owl-nav, #casestudy_section .owl-dots {
+    width: 45%;
+    left: 0;
+    right: 0;
+    margin: 0px auto !important;
+}
+.devices_desk{
+    display:none;
+}
+.devices_mob{
+    display:block;
+}
+.desktop_size{
+    display:none !important;
+}
+.mobile_size{
+    display:block !important;
+}
+.case_study_list {
+    padding: 10px 0px;
+}
+}
+
+@media only screen and (max-width:736px){
+    .banner_left_box h2 {
+        padding-bottom: 10px;
+    }
+    .tab_result_inner_box{
+        width: 95%;
+        margin: 0px auto;
+        padding: 0px 0px 30px;
+    }
+    .degitize_side_border:after{
+        border-right: 0px solid transparent;
+    }
+    .degitize_box {
+        width: 95%;
+        margin: 0px auto;
+        padding-bottom: 30px;
+    }
+    .cus_insight_leftbox, .market_sales_leftbox, .it_consulting_leftbox{
+        width: 95%;
+        margin:0px auto;
+    }
+    .about_speed_learning_app_box{
+        display: block;
+        width: 95%;
+        margin:0px auto;
+    }
+    .banner_left_box {
+        width: 95%;
+        margin: 50px auto 20px;
+        min-height: auto;
+    }
+    .banner_right_img {
+        width: 100%;
+    }
+    .right_border:after {
+        top: 0px;
+        height: 85%;
+    }
+    .window_view{
+        display:none;
+    }
+    .mobile_view{
+        width:100%;
+        margin:20px auto 40px;
+        display:block;
+    }
+    .list_boxs1{
+        width:100% !important;
+    }
+    .How_help_list_boxs {
+        min-height: auto;
+    } 
+    .How_help_list_boxs p {
+        font: 18px/25px 'AvenirNext-Medium',sans-serif;
+        padding-bottom: 15px;
+    }
+    .why_choose_list_box {
+        width: 90%;
+        margin: 0px auto;
+    }
+    .why_choose_list_box1, .why_choose_list_box2 {
+        margin-bottom: 30px !important;
+    }
+    .casestudy_speedlogo{
+        margin-left: 0px !important;
+    }
+    .our_develop_list_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .let_digitize_section {
+        padding: 40px 0px 0px;
+    }
+    .casestudy_inner_box img {
+        width: 90% !important;
+        margin: 30px auto;
+    }
+}
+@media only screen and (max-width:684px){
+    .footer_CR_dash {
+        margin: 0px 10px;
+    }
+    #rinvt_acc_dtj_tab {
+        /*display: -webkit-inline-box;*/
+        margin-top: 10px;
+    }
+    .right_arrow_box{
+        display:block;
+    }
+    .propel_business_header_box {
+        width: 100%;
+    }
+    .tab_result_inner_rightbox{
+        padding-bottom:0px !important;
+    }
+    .tab_result_inner_box p {
+        font: 22px/30px 'AvenirNext-Medium',sans-serif;
+    }
+    .tab_result_inner_box {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 0px 30px 10px;
+    }
+    #rinvt_acc_dtj_tab li a {
+        padding: 0px 10px;
+    }
+    .degitize_section_header_box h2{
+        padding-bottom: 50px;
+    }
+    .case_study_list p {
+        font: 18px/35px 'AvenirNext-Medium',sans-serif;
+    }
+    #casestudy_section .owl-dots .owl-dot span {
+        width: 50px;
+    }
+    .How_help_list_box img {
+        width: 100%;
+    }
+    .Rapid_app_list_box {
+        margin: 15px auto;
+    }
+    #casestudy_section .owl-nav, #casestudy_section .owl-dots {
+        width: 60%;
+    }
+    .let_digitize_header_box p {
+        padding-bottom: 40px;
+    }
+    .tool_tech_list_box3, .tool_tech_list_box4 {
+        min-height: 270px;
+    }
+    .tool_tech_list_box5, .tool_tech_list_box6 {
+        min-height: 270px;
+    }
+    .Rapid_app_section {
+        padding: 20px 0px 50px;
+    }
+}
+@media only screen and (max-width: 667px) {
+.propel_track_list_mainbox{
+    display: inline-block;
+}
+.propel_track_list_mainbox:after {
+    content: '';
+    width: 50%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    border-left: 2px dashed #686868;
+    border-bottom: 0px dashed transparent;
+}
+.right_arrow:after {
+    content: '';
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 110px;
+    left: 49.6%;
+    box-sizing: border-box;
+    height: 7px;
+    width: 7px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    margin-bottom: 5px;
+}
+.propel_track_list_box p{
+    background-color: #ffff;
+    z-index: 12;
+    padding: 0px;
+    position: relative;
+    top: 5px;
+}
+.propel_track_list_box{
+    padding: 0px 0px;
+    padding-bottom: 40px;
+}
+}
+@media only screen and (max-width: 550px) {
+    .mobile_responsive_view{
+        width: 50%;
+    }
+    .industries_solution_resposive_box2,.industries_solution_resposive_box4,.industries_solution_resposive_box8,
+    .industries_solution_resposive_box10,.industries_solution_resposive_box14,.industries_solution_resposive_box16,.industries_solution_resposive_box20{
+        border-right: 1px solid transparent;
+    }
+    .industries_solution_resposive_box3, .industries_solution_resposive_box9, .industries_solution_resposive_box15 {
+        border-right: 1px solid #bbb;
+    }
+    .industries_solution_list_box{
+        display: flex;
+        text-align: center;
+        padding: 20px 0px;
+        height: 145px;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #rinvt_acc_dtj_tab li a {
+        padding: 10px 5px;
+        width: 180px;
+    }
+    .rinvt_acc_dtj_tab_box{
+        position: relative;
+        overflow: hidden;
+        width: 520px;
+    }
+    .degitize_section_header_box h2{
+        padding-bottom: 50px;
+    }
+    .right_arrow:after{
+        top: 115px;
+    }
+    .banner_left_box, .banner_right_box {
+        width: 100%;
+    }
+    .banner_left_box{
+        margin: 50px auto 0px;
+    }
+    .list_box1,.list_box2,.list_box3,.list_box4{
+        width: 100%;
+    }
+    .list_boxs2{
+        width: 50%;
+    }
+    .trns_business_consulting_box {
+        padding: 50px 20px;
+        margin: 0px 0px 10px;
+    }
+    .How_help_list_boxs p {
+        font: 18px/25px 'AvenirNext-Medium',sans-serif;
+        padding-bottom: 20px;
+    }
+    .How_help_list_boxs {
+        width: 95%;
+        margin: 20px auto 0px;
+    }
+    #casestudy_section .owl-nav, #casestudy_section .owl-dots {
+        width: 70%;
+    }
+    .our_develop_list_box {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .toolimg {
+        min-height: 150px;
+        text-align: center;
+    }
+    .Tool_tech_list_box h2 {
+        font: 32px/40px 'CircularStd-Black',sans-serif;
+        min-height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    .our_offices_around_world_list_box {
+        width: 95%;
+    }
+    .why_choose_list_box3{
+        margin-bottom: 30px !important;
+    }
+    .case_study_list img {
+        width: 30px !important;
+    }
+    .case_study_list {
+        padding: 5px 0px;
+    }
+    .Rapid_app_section {
+        padding: 20px 0px 20px;
+    }
+    .How_help_header_box p span{
+        display:inline;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .rinvt_acc_dtj_tab_box{
+        width: 470px;
+    }
+    .trns_business_consulting_box{
+        padding: 30px 0px;
+    }
+    .trns_business_consulting_box h2 {
+        line-height: 40px;
+    }
+    .banner_right_img {
+        width: 100%;
+    }
+    .craftedapp_list_header_box {
+        padding: 20px 0px 0px;
+    }
+    .banner_left_box {
+        margin: 20px auto 20px;
+    }
+    .How_help_list_boxs {
+        width: 95%;
+    }
+    .tool_tech_list_box1,.tool_tech_list_box2,.tool_tech_list_box3,
+    .tool_tech_list_box4,.tool_tech_list_box5,.tool_tech_list_box6,
+    .tool_tech_list_box7,.tool_tech_list_box8,.tool_tech_list_box9{
+        min-height:auto;
+    }
+    #casestudy_section .owl-nav, #casestudy_section .owl-dots {
+        width: 80%;
+    }
+    .app_delivery_right_box {
+        width: 100%;
+    }
+    .banner_left_box h2 {
+        font: 35px/45px 'CircularStd-Black',sans-serif;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    
+    .How_help_list_boxs {
+    width: 98%;
+    }
+    .degitize_box {
+        padding-left: 0px;
+    }
+    .propel_track_list_mainbox{
+        padding: 30px 0px 0px;
+    }
+    .banner_left_box, .banner_right_box {
+        width: 100%;
+    }
+    .banner_left_box p {
+        font: 20px/30px 'AvenirNext-Medium',sans-serif;
+    }
+    .consulted_btn {
+        width: 100%;
+    }
+    .trns_business_consulting_box {
+        padding: 30px;
+    }
+    .trns_business_consulting_box h2 {
+        font: 30px/35px 'CircularStd-Black',sans-serif;
+    }
+    #casestudy_section .owl-nav, #casestudy_section .owl-dots {
+        width: 98%;
+    }
+    .our_offices_around_world_list_box p {
+        min-height: 70px;
+    }  
+    .our_develop_list_box {
+       width: 95%;
+    }
+    .Tool_tech_list_box h2 {
+        font: 26px/30px 'CircularStd-Black',sans-serif;
+        min-height: auto;
+    }
+    .toolimg {
+        min-height: auto;
+    }
+    .Rapid_app_section {
+        padding: 30px 0px;
+    }
+    .app_delivery_left_box h2 {
+        padding-bottom: 15px;
+    }
+    .app_delivery_left_box p {
+        font: 30px/40px 'CircularStd-Medium',sans-serif;
+    }
+    .consulted_btn {
+        width: 100%;
+        font: 20px/44px 'AvenirNext-SemiBold';
+        padding: 4px 25px;
+        letter-spacing: -0.571429px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .our_offices_around_world_header_box h2 {
+        font: 30px/40px 'CircularStd-Black',sans-serif;
+    }
+    .why_choose_section {
+        padding: 50px 0px 30px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .rinvt_acc_dtj_tab_box {
+        width: 350px;
+    }
+    .smarter_service_list_box p{
+        font: 16px/28px 'AvenirNext-Medium',sans-serif;
+    }
+    .industries_solution_list_box{
+        padding: 20px 3px;
+    }
+    .about_speed_learning_app_desc_box h2 {
+        font: 28px/40px 'AvenirNext-Medium',sans-serif;
+    }
+    .rocket_img {
+        width: 90%;
+    }
+    #casestudy_section .owl-dots .owl-dot span {
+        width: 40px;
+    }
+}
+
+

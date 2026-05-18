@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>insurancve</title>
+    <g id="insurancve" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0" x="0.5" y="0.5" width="49" height="49"></rect>
+        <g id="iconfinder_umbrella_protection_insurance_logistics_shipping_2851532" transform="translate(1.000000, 8.000000)" stroke="#000000" stroke-opacity="0.85" stroke-width="1.8">
+            <path d="M-6.3374253e-15,19.9836494 C1.32419397,11.3291744 8.86264535,4.70141369 18,4.70141369 C27.1373547,4.70141369 34.675806,11.3291744 36,19.9836494" id="Path" stroke-linecap="round"></path>
+            <path d="M25.6228858,20.3311197 C25.6228858,20.3311197 17.5367997,15.4007982 10.3759249,20.3164461" id="Path" stroke-linecap="round"></path>
+            <g id="Group" transform="translate(-0.000000, 18.500772)" stroke-linecap="round">
+                <path d="M10.3765196,1.81567383 C10.3765196,1.81567383 6.46637156,-2.03819412 -2.1124751e-15,1.48346407" id="Path"></path>
+                <path d="M25.6228858,1.83034741 C25.6228858,1.83034741 29.5336284,-2.03819412 36,1.48287713" id="Path"></path>
+            </g>
+            <g id="Group" transform="translate(10.345600, 4.701414)">
+                <path d="M7.65440011,4.17048108e-15 C7.65440011,4.17048108e-15 0.743261099,2.08306082 -4.2249502e-15,15.5093827" id="Path"></path>
+                <path d="M7.65440011,4.17048108e-15 C7.65440011,4.17048108e-15 14.5649445,2.08306082 15.3082056,15.5093827" id="Path"></path>
+            </g>
+            <path d="M12.6027352,31.8692459 L12.6027352,32.6522279 C12.6027352,33.9429156 13.6730312,35 14.9811707,35 L15.5757796,35 C16.8839191,35 17.9542151,33.9429156 17.9542151,32.6522279 L17.9542151,21.2667069" id="Path" stroke-linecap="round"></path>
+            <line x1="18" y1="1.73441666" x2="18" y2="-1.04262027e-15" id="Path" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>

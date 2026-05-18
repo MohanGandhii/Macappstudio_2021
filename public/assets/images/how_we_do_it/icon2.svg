@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2</title>
+    <g id="2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iconfinder_thin-0663_like_thumb_up_vote_388604" transform="translate(7.000000, 7.000000)">
+            <g id="Group" transform="translate(0.958333, 3.728213)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.85" stroke-width="2">
+                <line x1="38.53765" y1="22.2276698" x2="34.9964167" y2="22.2276698" id="Path"></line>
+                <line x1="36.5976" y1="28.0217532" x2="34.0539917" y2="28.0217532" id="Path"></line>
+                <path d="M11.5,35.6842032 C21.7957583,39.1987948 34.0539917,38.9824032 34.0539917,38.9824032 C38.7573,38.9824032 37.7575667,33.8156448 34.3574,33.8156448 L33.0007833,33.8156448" id="Path"></path>
+                <path d="M11.5,18.1863782 C11.5,18.1863782 21.20715,10.5555532 20.510825,2.57397817 C19.9825917,-3.4809635 31.223075,1.14970317 24.9663083,16.4339698 L38.837225,16.4339698 C42.7064,16.4339698 42.6949,22.2278615 38.837225,22.2278615 L38.53765,22.2278615 C42.4376833,22.2278615 42.3351417,28.0217532 38.53765,28.0217532 L36.5976,28.0217532 C40.465625,28.0217532 40.455275,33.8156448 36.5976,33.8156448 L34.3577833,33.8156448" id="Path"></path>
+                <rect id="Rectangle" x="0" y="16.3967865" width="11.5" height="23"></rect>
+            </g>
+            <rect id="Rectangle" x="0" y="0" width="46" height="46"></rect>
+        </g>
+    </g>
+</svg>

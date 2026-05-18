@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>html</title>
+    <g id="html" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="web" transform="translate(20.000000, 17.000000)" fill-rule="nonzero">
+            <g id="html5-without-wordmark-color">
+                <polygon id="Path" fill="#E34E26" points="4.64342036 52.1995866 0 0 51 0 46.3509407 52.2037202 25.4875943 58"></polygon>
+                <polygon id="Path" fill="#EF662A" points="25.5 4.26673467 25.5 53.5661146 42.3705623 48.8793396 46.3453018 4.26673467"></polygon>
+                <polygon id="Path" fill="#FFFFFF" points="9.50050798 10.6695493 11.2224128 30.0300629 33.3638316 30.0300629 32.6207812 38.3341199 25.491751 40.2657826 18.3762221 38.3369294 17.9004894 33.004932 11.488216 33.004932 12.4051389 43.2834404 25.4902366 46.9256205 38.5918644 43.2834404 40.3483117 23.6286046 17.0650894 23.6286046 16.480477 17.072364 40.9077584 17.072364 40.927253 17.072364 41.499492 10.6695493"></polygon>
+                <g id="Group" transform="translate(9.500508, 10.669549)" fill="#EBEBEB">
+                    <polygon id="Path" points="15.999492 0 0 0 1.72190484 19.3605136 15.999492 19.3605136 15.999492 12.9590553 7.56458143 12.9590553 6.97996899 6.40281465 15.999492 6.40281465"></polygon>
+                    <polygon id="Path" points="15.999492 29.593456 15.9912431 29.5962333 8.87571411 27.6673801 8.39998142 22.3353827 1.98770807 22.3353827 2.90463094 32.6138911 15.9897286 36.2560712 15.999492 36.2533262"></polygon>
+                </g>
+            </g>
+        </g>
+        <rect id="Rectangle" x="0" y="0" width="90" height="90"></rect>
+    </g>
+</svg>

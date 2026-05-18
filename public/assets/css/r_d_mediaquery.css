@@ -1,0 +1,802 @@
+@media only screen and (max-width:1550px){
+.macapp_formula_mainbox {
+    /*width: 70%;*/
+}
+.macapp_formula_mainbox:after{
+    /*width: 33%;*/
+}
+.macapp_formula_mainbox h2 {
+    display: inline-flex;
+}
+.formula_shortform {
+    display: inline;
+    width: 125px;
+}
+.formula_fullform{
+    display:flex;
+}
+}
+@media only screen and (max-width:1450px){
+    .macapp_formula_mainbox {
+        /*width: 65%;*/
+    }
+    .macapp_formula_mainbox:after {
+        /*width: 35%;*/
+    }
+}
+@media only screen and (max-width:1350px){
+    .macapp_formula_mainbox:after{
+        /*right: 30px;*/
+        /*top: 35px;*/
+        /*height: 92%;*/
+    }
+    .innovation_partner_log_box {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1200px){
+.banner_right_img {
+    width: 90%;
+}
+.macapp_formula_mainbox {
+    /*width: 55%;*/
+}
+.macapp_formula_mainbox:after{
+    /*width:40%;*/
+    /*right: 10px;*/
+    /*height: 70%;*/
+    /*top: 60px;*/
+}
+.innovation_partner_log_box {
+    width: 100%;
+}
+.banner_left_box{
+   min-height: 405PX;
+}
+.formula_shortform {
+    display: inline;
+    width: 92px;
+}
+.banner_left_box h2 {
+    padding-bottom: 40px;
+}
+}
+
+@media only screen and (max-width:1199px){
+    .innovation_solution_left_box{
+        margin-bottom: 70px;
+    }
+}
+@media only screen and (max-width:1024px){
+.navigation a{
+    margin:0px 0px;
+}
+.smarter_section_header_box h2{
+    width: 70%;
+}
+.market_sales_header_box{
+    width: 80%;
+}
+.it_consulting_header_box {
+    width: 85%;
+}
+.banner_left_box h2 {
+    font: 34px/45px 'CircularStd-Black',sans-serif;
+}
+.banner_left_box {
+    min-height: 375px;
+}
+.banner_right_img {
+    width: 100%;
+}
+.Inventing_poster_img_box{
+    min-height: 390px;
+}
+.propel_business_header_box {
+    width: 65%;
+}
+.industries_solution_list_box {
+     padding: 6px 2px 2px 20px; 
+}
+.industries_solution_resposive_box4,.industries_solution_resposive_box8,.industries_solution_resposive_box16,.industries_solution_resposive_box20{
+    border-right: 1px solid transparent;
+}
+.industries_solution_resposive_box6,.industries_solution_resposive_box18{
+    border-right: 1px solid #bbb;
+}
+.industries_solution_resposive_box17,.industries_solution_resposive_box18{
+    border-bottom: 1px solid transparent;
+}
+.our_offices_around_world_list_box {
+    width: 90%;
+    margin-right: 0px !important;
+}
+.right_border:after{
+    top: 0px;
+    height: 100%;
+}
+.macapp_formula_mainbox h2 {
+    font: 40px/50px 'CircularStd-Black',sans-serif;
+    padding-bottom: 20px;
+}
+.macapp_formula_mainbox:after{
+    /*top: 40px;*/
+    /*height: 90%;*/
+    /*background-size: 90% 90%;*/
+}
+.formula_shortform {
+    width: 100px;
+}
+.macapp_formula_mainbox {
+    /*width: 65%;*/
+    min-height:360px;
+}
+.macapp_formula_mainbox h2 .square {
+    top: -25px;
+}
+.macapp_formula_right_poster_box{
+    min-height:360px;
+}
+.innovation_Partner_right_box_one {
+    width: 100%;
+    margin-top: 50px;
+}
+#innovation_solution_slider .owl-nav,
+#innovation_solution_slider .owl-dots{
+    width: 40%;
+}
+.innovation_solution_left_box p {
+    font: 24px/33px 'AvenirNext-Medium',sans-serif;
+}
+.innovation_solution_desc_list li {
+    padding-bottom: 10px;
+}
+.innovation_partner_log_box{
+    justify-content: space-around;
+}
+.innovation_partner_header h2 {
+    font: 34px/45px 'CircularStd-Black',sans-serif;
+}
+.innovation_solution_header_box h2 {
+    font: 45px/50px 'CircularStd-Black',sans-serif;
+}
+.innovation_solution_left_box {
+    margin-bottom: 100px;
+}
+}
+@media only screen and (min-width:992px){
+.navigation {
+    display: block !important;
+}
+.industries_solution_list_box{
+    /*padding: 6px 2px 2px 5px;*/
+}
+#rinvt_acc_dtj_tab li a {
+    padding: 10px 8px;
+}
+.footer_mail_box{
+    padding-left: 5px;
+}
+}
+@media only screen and (max-width:991px){
+.login{
+   display: block;
+}
+.banner_left_box,
+.banner_right_box{
+    min-height: 260px;
+}
+.banner_right_box {
+    width: 98%;
+}
+.banner_left_box h2{
+    padding-bottom: 30px;
+}
+.smarter_service_list_box{
+    margin-bottom: 20px;
+}
+.industries_solution_resposive_box3,.industries_solution_resposive_box9,.industries_solution_resposive_box15{
+    border-right: 1px solid transparent;
+}
+#rinvt_acc_dtj_tab{
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    overflow-x: scroll;
+}
+#rinvt_acc_dtj_tab li{
+    margin-bottom: 20px;
+}
+.degitize_box{
+    padding-left: 20px;
+}
+.cus_insight_header_box{
+    width: 100%;
+}
+.about_speed_learning_app_box{
+    display: inline-block;
+}
+.about_speed_learning_app_desc_box {
+    width: 100%;
+}
+.speedlearning_logo{
+    margin-bottom: 20px;
+}
+.market_sales_header_box,.it_consulting_header_box{
+    margin-bottom: 20px;
+}
+.cus_insight_leftbox,.market_sales_leftbox,.it_consulting_leftbox{
+    min-height: auto;
+}
+.footer_inner_box {
+    padding: 15px 10px;
+}
+#rinvt_acc_dtj_tab li p {
+    font: 16px/25px 'AvenirNext-SemiBold',sans-serif;
+    padding-top: 10px;
+}
+.craftedapp_list_header_box{
+    padding: 30px 0px 0px;
+}
+.craftedapp_list_box{
+    height: auto;
+}
+.craftedapp_list_box{
+    margin-bottom: 40px;
+}
+.inventing_section_header_mainbox {
+    width: 100%;
+}
+.Inventing_poster_img_box {
+    min-height: auto;
+    width: 95%;
+}
+.macapp_formula_mainbox {
+    /*width: 100%;*/
+    min-height: auto;
+}
+.macapp_formula_mainbox:after{
+    /*background:none;*/
+    /*top: 0px;*/
+    /*height: auto;*/
+}
+.macapp_formula_right_poster_box{
+    display:block;
+    margin-top: 30px;
+}
+.macapp_formula_section {
+    padding: 40px 0px 0px;
+}
+.innovation_partner_log_box {
+    justify-content: space-between;
+}
+.innovation_solution_left_box {
+    margin-bottom: 0px;
+    padding-right: 40px;
+}
+.demo_case_study_box {
+    width: 55% !important;
+}
+.innovation_solution_right_box {
+    padding-right: 0px;
+}
+#innovation_solution_slider .owl-nav,
+#innovation_solution_slider .owl-dots {
+    width: 50%;
+    margin: 0px auto;
+}
+.trns_business_consulting_box {
+    padding: 50px 20px;
+}
+.trns_business_consulting_box h2 {
+    font: 34px/45px 'CircularStd-Black',sans-serif;
+}
+#innovation_solution_slider .owl-nav{
+    position:relative;
+    bottom: 5px;
+}
+#innovation_solution_slider .owl-dots {
+    position: relative;
+    bottom: 6px;
+    margin-bottom:20px;
+}
+.trns_business_consulting_section {
+    padding: 50px 0px 30px;
+}
+}
+@media only screen and (max-width:768px){
+    .banner_left_box p{
+        padding-bottom: 20px;
+    }
+    .list_2:after{
+        border-right: 0px solid transparent;
+    }
+    .list_1,.list_2{
+        margin-bottom: 30px;
+    }
+    .market_sales_header_box,.it_consulting_header_box {
+        width: 100%;
+    }
+    .trns_business_consulting_box h2{
+        line-height: 45px;
+    }
+    .trns_business_consulting_box{
+        padding: 50px 10px;
+    }
+    .footer_portfolio_box{
+        margin-bottom:20px;
+    }
+    .inventing_poster_list2 {
+        padding-bottom: 10px;
+    }
+    .inventing_poster_list3 {
+        padding-top: 10px;
+    }
+    .innovation_partner_log_box {
+        justify-content: space-around;
+    }
+    .dabb_logo,.howdy_logo {
+        width: 150px;
+    }
+    .intel_logo {
+        width: 90px;
+    }
+    .jio_logo {
+        width: 70px;
+    }
+    .innovation_Partner_left_box_one p span {
+        display: initial;
+    }
+}
+@media only screen and (max-width:736px){
+    .tab_result_inner_box{
+        width: 95%;
+        margin: 0px auto;
+        padding: 0px 0px 30px;
+    }
+    .degitize_side_border:after{
+        border-right: 0px solid transparent;
+    }
+    .degitize_box {
+        width: 95%;
+        margin: 0px auto;
+        padding-bottom: 30px;
+    }
+    .cus_insight_leftbox, .market_sales_leftbox, .it_consulting_leftbox{
+        width: 95%;
+        margin:0px auto;
+    }
+    .about_speed_learning_app_box{
+        display: block;
+        width: 95%;
+        margin:0px auto;
+    }
+    .banner_left_box, .banner_right_box{
+        width: 95%;
+        min-height: auto;
+    }
+    .banner_right_box {
+        width: 60%;
+        margin: 0px auto;
+    }
+    .banner_left_box {
+        margin: 50px auto 20px;
+    }
+    .banner_right_img {
+        width: 100%;
+    }
+    .right_border:after {
+        top: 0px;
+        height: 85%;
+    }
+    .list_1, .list_2 {
+        margin-bottom: 20px !important;
+    }
+    .our_offices_around_world_list_box {
+        width: 95%;
+        margin: 0px auto;
+    }
+    .window_view{
+        display:none;
+    }
+    .mobile_view{
+        width:100%;
+        margin:20px auto 40px;
+        display:block;
+        box-shadow: 1px -40px 20px #ffffff;
+    }
+    .innovation_solution_banner_box {
+        padding: 40px 0px 0px 25px;
+    }
+}
+@media only screen and (max-width:684px){
+    .footer_CR_dash {
+        margin: 0px 10px;
+    }
+    #rinvt_acc_dtj_tab {
+        /*display: -webkit-inline-box;*/
+        margin-top: 10px;
+    }
+    .right_arrow_box{
+        display:block;
+    }
+    .propel_business_header_box {
+        width: 100%;
+    }
+    .tab_result_inner_rightbox{
+        padding-bottom:0px !important;
+    }
+    .tab_result_inner_box p {
+        font: 22px/30px 'AvenirNext-Medium',sans-serif;
+    }
+    .tab_result_inner_box {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 0px 30px 10px;
+    }
+    #rinvt_acc_dtj_tab li a {
+        padding: 0px 10px;
+    }
+    .degitize_section_header_box h2{
+        padding-bottom: 50px;
+    }
+    .innovation_Partner_right_box_one {
+        margin-top: 10px;
+    }
+    .dabb_logo, .howdy_logo {
+        width: 120px;
+    }
+    .intel_logo {
+        width: 80px;
+    }
+    .jio_logo {
+        width: 60px;
+    }
+    .innovation_solution_section {
+        padding: 50px 0px 0px;
+    }
+    .inventing_section {
+        margin: 50px auto;
+    }
+    .underline_container_body {
+        width: 98%;
+    }
+    .innovation_Partner_section {
+        padding: 30px 0px;
+    }
+    .innovation_solution_section {
+        padding: 40px 0px 0px;
+    }
+    #video-popup-container {
+        width: 98% !important;
+        left: 1% !important;
+        margin-left: 0% !important;
+    }
+}
+@media only screen and (max-width: 667px) {
+.propel_track_list_mainbox{
+    display: inline-block;
+}
+.propel_track_list_mainbox:after {
+    content: '';
+    width: 50%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    border-left: 2px dashed #686868;
+    border-bottom: 0px dashed transparent;
+}
+.right_arrow:after {
+    content: '';
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 110px;
+    left: 49.6%;
+    box-sizing: border-box;
+    height: 7px;
+    width: 7px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    margin-bottom: 5px;
+}
+.propel_track_list_box p{
+    background-color: #ffff;
+    z-index: 12;
+    padding: 0px;
+    position: relative;
+    top: 5px;
+}
+.propel_track_list_box{
+    padding: 0px 0px;
+    padding-bottom: 40px;
+}
+.banner_left_box, .banner_right_box {
+    width: 98%;
+}
+.banner_right_box {
+    width: 80%;
+}
+.innovation_solution_header_box p {
+    padding-bottom: 30px;
+}
+.demo_case_study_box {
+    width: 60% !important;
+}
+}
+@media only screen and (max-width: 600px) {
+    .demo_case_study_box {
+        width: 65% !important;
+    }
+    #innovation_solution_slider .owl-nav, #innovation_solution_slider .owl-dots {
+        width: 70%;
+    }
+    .inventing_section_header_mainbox p {
+        padding-bottom: 30px;
+    }
+    .Inventing_poster_img_box {
+        min-height: auto;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .mobile_responsive_view{
+        width: 50%;
+    }
+    .industries_solution_resposive_box2,.industries_solution_resposive_box4,.industries_solution_resposive_box8,
+    .industries_solution_resposive_box10,.industries_solution_resposive_box14,.industries_solution_resposive_box16,.industries_solution_resposive_box20{
+        border-right: 1px solid transparent;
+    }
+    .industries_solution_resposive_box3, .industries_solution_resposive_box9, .industries_solution_resposive_box15 {
+        border-right: 1px solid #bbb;
+    }
+    .industries_solution_list_box{
+        display: flex;
+        text-align: center;
+        padding: 20px 0px;
+        height: 145px;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #rinvt_acc_dtj_tab li a {
+        padding: 10px 5px;
+        width: 180px;
+    }
+    .rinvt_acc_dtj_tab_box{
+        position: relative;
+        overflow: hidden;
+        width: 520px;
+    }
+    .degitize_section_header_box h2{
+        padding-bottom: 50px;
+    }
+    .right_arrow:after{
+        top: 115px;
+    }
+    .banner_left_box{
+        width: 100%;
+    }
+    .banner_right_box {
+        width: 100%;
+    }
+    .list_box1,.list_box2,.list_box3{
+        width: 100%;
+    }
+    .list_1:after,.list_2:after,.list_3:after{
+        content: '';
+        border-right: 0px solid transparent;
+        border-bottom: 2px solid #E6E6E6;
+        bottom: 0px;
+        width: 100%;
+        height: 90%;
+    }
+    .trns_business_consulting_box {
+        padding: 50px 20px;
+    }
+    .list_1, .list_2 {
+        margin-bottom: 30px !important;
+    }
+    .Inventing_poster_img_box {
+        width: 100%;
+    }
+    .Inventing_poster_img_box{
+        flex-direction: column;
+    }
+    .Inventing_poster_img_subbox{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .inventing_poster_list1 {
+        padding-right: 0px;
+        padding-bottom: 15px;
+    }
+    .inventing_poster_list2 {
+        padding-bottom: 0px;
+        padding-right: 8px;
+    }
+    .inventing_poster_list3 {
+        padding-top: 0px;
+        padding-left: 8px;
+    }
+    #innovation_solution_slider .owl-nav, #innovation_solution_slider .owl-dots {
+        width: 70%;
+    }
+    .trns_business_consulting_section {
+        padding: 50px 0px 30px;
+    }
+    .innovation_partner_log_box {
+        justify-content: space-between;
+    }
+    .dabb_logo, .howdy_logo {
+        width: 120px;
+    }
+    .intel_logo {
+        width: 70px;
+    }
+    .jio_logo {
+        width: 50px;
+    }
+    .formula_shortform {
+        width: 140px;
+    }
+    .innovation_partner_header span {
+        display: inline;
+    }
+    .macapp_formula_right_poster_box {
+        min-height: auto;
+    }
+    .innovation_solution_header_box h2 {
+        font: 46px/60px 'CircularStd-Black',sans-serif;
+    }
+    .innovation_solution_section {
+        padding: 30px 0px 0px;
+    }
+    .demo_case_study_box {
+        width: 75% !important;
+    }
+    .innovation_partner_section {
+        padding: 35px 0px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .rinvt_acc_dtj_tab_box{
+        width: 470px;
+    }
+    .trns_business_consulting_box{
+        padding: 30px 0px;
+    }
+    .trns_business_consulting_box h2 {
+        line-height: 40px;
+    }
+    .banner_right_img {
+        width: 100%;
+    }
+    .craftedapp_list_header_box {
+        padding: 20px 0px 0px;
+    }
+    .banner_left_box {
+        width:100%;
+        margin: 20px auto 20px;
+    }
+    .banner_right_box {
+        width: 80%;
+    }
+    .demo_case_study_box {
+        width: 80% !important;
+    }
+    .innovation_solution_header_box h2 {
+        font: 46px/55px 'CircularStd-Black',sans-serif;
+    }
+    .innovation_solution_right_box {
+        margin-bottom: 20px;
+    }
+    .consulted_btn {
+        width: 100%;
+    }
+    .trns_business_consulting_box {
+        padding: 30px 15px;
+        margin: 0px 0px 20px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .degitize_box {
+        padding-left: 0px;
+    }
+    .propel_track_list_mainbox{
+        padding: 30px 0px 0px;
+    }
+    .banner_left_box p {
+        font: 20px/30px 'AvenirNext-Medium',sans-serif;
+    }
+    .consulted_btn {
+        width: 100%;
+        font: 20px/44px 'AvenirNext-SemiBold';
+        padding: 4px 25px;
+        letter-spacing: -0.571429px;
+    }
+    .trns_business_consulting_box {
+        padding: 30px 20px;
+    }
+    .trns_business_consulting_box h2 {
+        font: 28px/36px 'CircularStd-Black',sans-serif;
+        letter-spacing: -0.7px;
+    }
+    .innovation_partner_log_box{
+        justify-content: space-between;
+        display: inline-block;
+    }
+    .innovation_partner_log_box li{
+        display: flex;
+        width: 50%;
+        float: left;
+        min-height: 80px;
+        align-items: center;
+    }
+    .dabb_logo {
+        width: 150px;
+    }
+    .howdy_logo {
+        width: 150px;
+    }
+    .intel_logo {
+        width: 90px;
+    }
+    .jio_logo {
+        width: 84px;
+    }
+    .demo_case_study_box {
+        width: 100% !important;
+    }
+    #innovation_solution_slider .owl-nav,
+    #innovation_solution_slider .owl-dots {
+        width: 90%;
+        margin-right: 10%;
+    }
+    .innovation_partner_log_box li:first-child,
+    .innovation_partner_log_box li:nth-child(2){
+        margin-bottom:15px;    
+    }
+    .innovation_solution_header_box h2 {
+        font: 40px/50px 'CircularStd-Black',sans-serif;
+    }
+    .btn_demo{
+        font: 15px/20px 'AvenirNext-SemiBold',sans-serif;
+        width: 140px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    
+}
+@media only screen and (max-width: 375px) {
+    .rinvt_acc_dtj_tab_box {
+        width: 350px;
+    }
+    .smarter_service_list_box p{
+        font: 16px/28px 'AvenirNext-Medium',sans-serif;
+    }
+    .industries_solution_list_box{
+        padding: 20px 3px;
+    }
+    .about_speed_learning_app_desc_box h2 {
+        font: 28px/40px 'AvenirNext-Medium',sans-serif;
+    }
+    .demo_case_study_responsive_box {
+        min-height: 90px;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+}
+
+

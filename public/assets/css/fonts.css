@@ -1,0 +1,75 @@
+
+@font-face{
+    font-family:'NHaasGroteskTXPro-Bold';
+    src:url("../../fonts/NHaasGroteskTXPro-Bold.ttf")format("truetype");
+    font-weight:normal;font-style:normal}
+
+@font-face{
+    font-family:'NHaasGroteskTXPro-Medium';
+    src:url("../../fonts/NHaasGroteskTXPro-Medium.ttf")format("truetype");
+    font-weight:normal;font-style:normal}
+@font-face{
+    font-family:'NHaasGroteskTXPro-Regular';
+    src:url("../../fonts/NHaasGroteskTXPro-Regular.ttf")format("truetype");
+    font-weight:normal;font-style:normal}
+@font-face{
+    font-family:'NHaasGroteskTXPro-Light';
+    src:url("../../fonts/NHaasGroteskTXPro-Light.otf")format("opentype");
+    font-weight:normal;font-style:normal}
+
+
+@font-face{
+    font-family:'AvenirNextLTPro-Regular';
+    src:url("../../fonts/AvenirNext-Regular.ttf")format("truetype");
+    font-weight:normal;font-style:normal}
+@font-face{
+    font-family:'AvenirNext-Medium';
+    src:url("../../fonts/AvenirNext-Medium.ttf")format("truetype");
+    font-weight:normal;font-style:normal}
+@font-face{
+    font-family:'AvenirNext-SemiBold';
+    src:url("../../fonts/AvenirNext-SemiBold.ttf")format("truetype");
+    font-weight:normal;font-style:normal}
+@font-face{
+    font-family:'AvenirNext-Bold';
+    src:url("../../fonts/AvenirNext-Bold.ttf")format("opentype");
+    font-weight:normal;font-style:normal}
+    
+@font-face{
+    font-family:'AvenirNextLTPro-It';
+    src:url("../../fonts/AvenirNextLTPro-It.otf")format("truetype");
+    font-weight:normal;font-style:normal}
+@font-face{
+    font-family:'AvenirNextLTPro-MediumCn';
+    src:url("../../fonts/AvenirNextLTPro-MediumCn.otf")format("truetype");
+    font-weight:normal;font-style:normal}
+
+
+@font-face{
+    font-family:'Circular-Std-Font';
+    src:url("../../fonts/Circular-Std-Font.otf")format("truetype");
+    font-weight:normal;font-style:normal}
+@font-face{
+    font-family:'Circular-Regular';
+    src:url("../../fonts/Circular-Regular.ttf")format("truetype");
+    font-weight:normal;font-style:normal}
+@font-face{
+    font-family:'CircularStd-Medium';
+    src:url("../../fonts/CircularStd-Medium.otf")format("truetype");
+    font-weight:normal;font-style:normal}
+@font-face{
+    font-family:'CircularStd-MediumItalic';
+    src:url("../../fonts/CircularStd-MediumItalic.otf")format("truetype");
+    font-weight:normal;font-style:normal}
+@font-face{
+    font-family:'CircularStd-Bold';
+    src:url("../../fonts/CircularStd-Bold.otf")format("opentype");
+    font-weight:normal;font-style:normal}
+@font-face{
+    font-family:'CircularStd-Book';
+    src:url("../../fonts/CircularStd-Book.otf")format("truetype");
+    font-weight:normal;font-style:normal}
+@font-face{
+    font-family:'CircularStd-Black';
+    src:url("../../fonts/CircularStd-Black.otf")format("opentype");
+    font-weight:normal;font-style:normal}

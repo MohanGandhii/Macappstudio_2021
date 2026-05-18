@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!-- Primary Meta Tags -->
+        <title>How We do it</title>
+        <meta name="title" content=""/>
+        <meta name="description" content=""/>
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content=""/>
+        <meta property="og:title" content=""/>
+        <meta property="og:description" content=""/>
+        <meta property="og:image" content=""/>
+        <!-- Twitter -->
+        <meta property="twitter:card" content=""/>
+        <meta property="twitter:url" content=""/>
+        <meta property="twitter:title" content=""/>
+        <meta property="twitter:description" content=""/>
+        <meta property="twitter:image" content=""/>
+
+        <link rel="shortcut icon" href="asserts/images/favicon.ico"/>
+        <link rel="stylesheet" href="asserts/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="asserts/css/normalize.min.css">
+        <link rel='stylesheet' href='asserts/css/intlTelInput.css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="asserts/css/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="asserts/css/owl.theme.default.min.css"/>
+        <link rel="stylesheet" href="asserts/css/fonts.css"/>
+        <link rel="stylesheet" href="asserts/css/nav.css"/>
+        <link rel="stylesheet" href="asserts/css/custom.css"/>
+        <link rel="stylesheet" href="asserts/css/getProposal.css"/>
+        <link rel="stylesheet" href="asserts/css/how_we_do_it.css"/>
+        <link rel="stylesheet" href="asserts/css/how_we_do_it_mediaquery.css"/>
+        <style>
+        #video-popup-container {
+          display:none;
+          position: fixed;
+          z-index: 10000;
+          width: 60%;
+          left: 50%;
+          margin-left: -30%;
+          top: 20%;
+          background-color: #fff;
+        }
+        
+        #video-popup-close {
+          cursor: pointer;
+          position: absolute;
+          right: -10px;
+          top: -10px;
+          z-index: 9999;
+          width: 25px;
+          height: 25px;
+          border-radius: 25px;
+          text-align: center;
+          font-size: 12px;
+          background-color: #000;
+          line-height: 25px;
+          color: #fff;
+        }
+        
+        #video-popup-iframe-container {
+          position: absolute;
+          z-index: 1000;
+          width: 100%;
+          padding-bottom: 56.25%;
+          border: 2px solid #000;
+          border-radius: 2px;
+          background-color: #000;
+        }
+        
+        #video-popup-iframe {
+          z-index: 999;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: #000;
+        }
+        
+        #video-popup-overlay {
+          display: none;
+          position: fixed;
+          z-index: 9999;
+          top: 0;
+          background-color: #000;
+          opacity: 0.8;
+          width: 100%;
+          height: 100%;
+        }
+        
+        #video-popup-close:hover {
+          color: #DE0023;
+        }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="headall">
+                     
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="bannersec" id="bannersection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center padding_zero">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero">
+                            <div class="banner_left_box">
+                                <h2>Great! You are in the right place</h2>
+                                <p>Welcome to the MacAppStudio family! We believe in making people’s life better by providing world class products.</p>
+                                <!--<div class="banner_left_sub_box banner_left_sub_desktop_view_box">-->
+                                <!--    <h2>Our 3 promises to you</h2>-->
+                                <!--    <ul>-->
+                                <!--        <li><img src="asserts/images/how_we_do_it/diamond.svg" class="" alt=""> <p>You will get a world class product</p></li>-->
+                                <!--        <li><img src="asserts/images/how_we_do_it/star.svg" class="" alt=""> <p>You will have a delightful experience</p></li>-->
+                                <!--        <li><img src="asserts/images/how_we_do_it/rocket.svg" class="" alt=""> <p>We will surpass your expectation</p></li>-->
+                                <!--    </ul>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero">
+                            <div class="banner_right_box" id="myGallery">
+                                <img src="asserts/images/how_we_do_it/banner_rigth_image1.png" class="banner_right_img active" alt="">
+                            </div>
+                        </div>
+                        <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_zero">-->
+                        <!--    <div class="banner_left_sub_box banner_left_sub_movile_view_box">-->
+                        <!--        <h2>Our 3 promises to you</h2>-->
+                        <!--        <ul>-->
+                        <!--            <li><img src="asserts/images/how_we_do_it/diamond.svg" class="" alt=""> <p>You will get a world class product</p></li>-->
+                        <!--            <li><img src="asserts/images/how_we_do_it/star.svg" class="" alt=""> <p>You will have a delightful experience</p></li>-->
+                        <!--            <li><img src="asserts/images/how_we_do_it/rocket.svg" class="" alt=""> <p>We will surpass your expectation</p></li>-->
+                        <!--        </ul>-->
+                        <!--    </div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="promises_section section0">
+            <div class="container">
+                <div class="row">
+                    <div class="promises_box">
+                        <div class="promises_header_section">
+                            <h2>Our 3 promises to you</h2>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_zero">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding_zero">
+                                <div class="promises_desc_section promises_desc_right_border1">
+                                    <img src="asserts/images/how_we_do_it/diamond.svg" class="" alt=""> 
+                                    <p><span>You will get a world</span> <span>class product</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding_zero">
+                                <div class="promises_desc_section promises_desc_right_border2">
+                                    <img src="asserts/images/how_we_do_it/star.svg" class="" alt=""> 
+                                    <p><span>You will have a</span> <span>delightful experience</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding_zero">
+                                <div class="promises_desc_section">
+                                    <img src="asserts/images/how_we_do_it/rocket.svg" class="" alt=""> 
+                                    <p><span>We will surpass your</span> <span>expectation</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>    
+        <section class="macapp_cote_section section1">
+            <div class="container">
+                <div class="row">
+                    <div class="macapp_cote_box">
+                        <h3>MacAppStudio is not a company.</h3>
+                        <h2>MacAppStudio is not built on bricks or using computers or with money.</h2>
+                        <h1>MacAppStudio is one big family.</h1>
+                    </div>
+                </div>
+            </div>    
+        </section>  
+        <section class="our_offices_around_world_section section2" id="our_offices_around_world_section">
+            <div class="container">
+                <div class="row">
+                     <div class="our_offices_around_world_header_box text-center">
+                        <h2>How we can help you?</h2>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_zero">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 padding_zero list_box1">
+                            <div class="our_offices_around_world_list_box right_border list_1">
+                                <img src="asserts/images/how_we_do_it/start.svg" class="" alt="">
+                                <h2>Start</h2>
+                                <p>If you have an idea, we can help you get started and launch to the market in days.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 padding_zero list_box2">
+                            <div class="our_offices_around_world_list_box right_border list_2">
+                                <img src="asserts/images/how_we_do_it/scale.svg" class="" alt="">
+                                <h2>Scale</h2>
+                                <p>If you have an existing small business, we can help you scale it across the globe.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 padding_zero list_box3">
+                            <div class="our_offices_around_world_list_box list_3">
+                                <img src="asserts/images/how_we_do_it/streamilne.svg" class="" alt="">
+                                <h2>Streamline</h2>
+                                <p>If you are a big company, we can help you streamline the processes and growth in the long term.</p>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>       
+        <section>
+            <div class="row">
+                <div class="underline_box">
+                    <div class="underline"></div>
+                </div>
+            </div>
+        </section>
+        <section class="what_is_macappstudio_section section3">
+            <div class="container">
+                <div class="row">
+                     <div class="what_is_macappstudio_header">
+                        <h2>Get to know us better</h2>
+                        <p>
+                           <span>Trusting a company and investing your hard-earned money is a quite challenging and an overwhelming process. </span>
+                           <span>In order to guide you in the process and make a better decision, we have explained each and every steps right from </span>
+                           <span>How MacAppStudio is created to our process.  We look forward to work together and create wonderful products together.</span>
+                        </p>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_zero">
+                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero float_right">
+                             <div class="what_is_macappstudio_right_box">
+                                <video class="video_tag" width="100%" height="100%" controls>
+                                    <source src="asserts/video/video1.mp4" type="video/mp4">
+                                    <source src="movie.ogg" type="video/ogg">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <img src="asserts/images/how_we_do_it/storiesposter01.jpg" class="video_poster1 storiesposter_img playpause vpop" alt="" data-type="youtube" data-id="qXwzj6k2UWU" data-autoplay='true'>
+                                <!--<img src="asserts/images/how_we_do_it/play_icon.svg" class="banner_play_icon playpause vpop" alt="" data-type="youtube" data-id="qXwzj6k2UWU" data-autoplay='true'>-->
+                             </div>
+                         </div>
+                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero">
+                             <div class="what_is_macappstudio_left_box">
+                                 <h2>Story of MacAppStudio</h2>
+                                 <p>The foundation of MacAppStudio is the friendship between George and Suresh. MacAppStudio is founded based on trust and that is the core of our company culture till today. Our intention is to create end to
+                                    end applications which are simple to use and which would transform
+                                    lives of millions.</p>
+                                 <p>In the last 10 years, MacAppStudio has grown immensly in numbers, revenue and brand.We will continue to grow the same way as a family based on trust and relationship.</p>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>     
+        </section>
+        <section>
+            <div class="row">
+                <div class="underline_box">
+                    <div class="underline"></div>
+                </div>
+            </div>
+        </section>
+        <section class="what_is_macappstudio_section section4">
+            <div class="container">
+                <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_zero">
+                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero float_right">
+                             <div class="what_is_macappstudio_right_box">
+                                 <video class="video_tag" width="100%" height="100%" controls>
+                                  <source src="asserts/video/video1.mp4" type="video/mp4">
+                                  <source src="movie.ogg" type="video/ogg">
+                                  Your browser does not support the video tag.
+                                </video>
+                                <img src="asserts/images/how_we_do_it/storiesposter02.jpg" class="video_poster1 storiesposter_img playpause vpop" alt="" data-type="youtube" data-id="829Bx42zaQU" data-autoplay='true'>
+                                <!--<img src="asserts/images/how_we_do_it/play_icon.svg" class="banner_play_icon playpause vpop" data-type="youtube" data-id="829Bx42zaQU" data-autoplay='true' alt="">-->
+                             </div>
+                         </div>
+                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero">
+                             <div class="what_is_macappstudio_left_box">
+                                 <h2>What is our development process?   </h2>
+                                 <p>Our development process is made up of a sequence of upto 12 stages.
+                                    We have created the first ever factory model for software development with focus on improving development velocity, software quality and process reliability. Using our factory model, customers can shrink Software development process from months and years to just weeks.
+                                    This gives a complete transparent process enabling better planning and 
+                                    inter-team coordination.</p>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>     
+        </section>
+        <section class="delevery_point_section section5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_zero section_bg">
+                        <div class="delevery_point_list_box1">
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_subbox_setwidth1">
+                                <div class="delevery_point_list_subbox1 right_arrow1">
+                                    <img src="asserts/images/how_we_do_it/small_icon1.svg" class="delevery_point_list1" alt="">
+                                    <p>Customer Enquiry</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_subbox_setwidth2">
+                                <div class="delevery_point_list_subbox1 right_arrow1">
+                                    <img src="asserts/images/how_we_do_it/small_icon2.svg" class="delevery_point_list1" alt="">
+                                    <p>Proposal</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_subbox_setwidth3">
+                                <div class="delevery_point_list_subbox1 right_arrow1">
+                                    <img src="asserts/images/how_we_do_it/small_icon3.svg" class="delevery_point_list1" alt="">
+                                    <p>Project Kickoff</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_subbox_setwidth4">
+                                <div class="delevery_point_list_subbox1 right_arrow1">
+                                    <img src="asserts/images/how_we_do_it/small_icon4.svg" class="delevery_point_list1" alt="">
+                                    <p>Requirement Analysis</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_subbox_setwidth5">
+                                <div class="delevery_point_list_subbox1 right_arrow01">
+                                    <img src="asserts/images/how_we_do_it/small_icon5.svg" class="delevery_point_list1" alt="">
+                                    <p>Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delevery_point_list_box2 delevery_point_list_border_box">
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero birder_animation_line1 responsive_box1">
+                                <div class="delevery_point_list_subbox2 delevery_point_list_subbox001">
+                                    <img src="asserts/images/how_we_do_it/small_icon6.svg" class="delevery_point_list2" alt="">
+                                    <p>
+                                        <span>Database</span> 
+                                        <span>Development</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero responsive_box2">
+                                <div class="delevery_point_list_subbox2 delevery_point_list_subbox002">
+                                    <img src="asserts/images/how_we_do_it/small_icon7.svg" class="delevery_point_list2" alt="">
+                                    <p>
+                                        <span>Back end Web</span>
+                                        <span>Development</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero responsive_box3">
+                                <div class="delevery_point_list_subbox2 delevery_point_list_subbox003">
+                                    <img src="asserts/images/how_we_do_it/small_icon8.svg" class="delevery_point_list2" alt="">
+                                    <p>
+                                        <span>Front end Web</span>
+                                        <span>Development</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero responsive_box4">
+                                <div class="delevery_point_list_subbox2 delevery_point_list_subbox004">
+                                    <img src="asserts/images/how_we_do_it/small_icon9.svg" class="delevery_point_list2" alt="">
+                                    <p>
+                                        <span>Android App</span>  
+                                        <span>Development</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero birder_animation_line2 responsive_box5">
+                                <div class="delevery_point_list_subbox2 remove_border delevery_point_list_subbox005">
+                                    <img src="asserts/images/how_we_do_it/small_icon10.svg" class="delevery_point_list2" alt="">
+                                    <p>
+                                        <sapn>iOS App</sapn>
+                                        <sapn>Development</sapn>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delevery_point_list_box3">
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_subbox_setwidth1">
+                                <div class="delevery_point_list_subbox3 right_arrow2">
+                                    <img src="asserts/images/how_we_do_it/small_icon11.svg" class="delevery_point_list3" alt="">
+                                    <p>FR Testing</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_subbox_setwidth2">
+                                <div class="delevery_point_list_subbox3 right_arrow2">
+                                    <img src="asserts/images/how_we_do_it/small_icon12.svg" class="delevery_point_list3" alt="">
+                                    <p>NFR Testing</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_subbox_setwidth3">
+                                <div class="delevery_point_list_subbox3 right_arrow2">
+                                    <img src="asserts/images/how_we_do_it/small_icon13.svg" class="delevery_point_list3" alt="">
+                                    <p>Build & Release</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_subbox_setwidth4">
+                                <div class="delevery_point_list_subbox3 right_arrow2">
+                                    <img src="asserts/images/how_we_do_it/small_icon14.svg" class="delevery_point_list3" alt="">
+                                    <p>
+                                        <span>Development</span> 
+                                        <span>Closure</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_subbox_setwidth5">
+                                <div class="delevery_point_list_subbox3 right_arrow02">
+                                    <img src="asserts/images/how_we_do_it/small_icon15.svg" class="delevery_point_list3" alt="">
+                                    <p>Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        <section>
+            <div class="row">
+                <div class="underline_box">
+                    <div class="underline"></div>
+                </div>
+            </div>
+        </section>
+        <section class="what_is_macappstudio_section section7">
+            <div class="container">
+                <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_zero">
+                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero float_right">
+                             <div class="what_is_macappstudio_right_box">
+                                 <video class="video_tag" width="100%" height="100%" controls>
+                                  <source src="asserts/video/video1.mp4" type="video/mp4">
+                                  <source src="movie.ogg" type="video/ogg">
+                                  Your browser does not support the video tag.
+                                </video>
+                                <img src="asserts/images/how_we_do_it/storiesposter03.jpg" class="video_poster1 storiesposter_img playpause vpop" alt="" data-type="youtube" data-id="pBdEkzHqTd8" data-autoplay='true' >
+                                <!--<img src="asserts/images/how_we_do_it/play_icon.svg" class="banner_play_icon playpause vpop" data-type="youtube" data-id="pBdEkzHqTd8" data-autoplay='true' alt="">-->
+                             </div>
+                         </div>
+                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero">
+                             <div class="what_is_macappstudio_left_box">
+                                 <h2>Why our pricing is 10 times more costlier than other quotes? </h2>
+                                 <p>There are several development companies in the market who charge 
+                                    very minimum amount whereas our minimum project quotation is 
+                                    100,000 USD. We would like to humbly acknowledge that, this amount is not to secure MacAppStudio but to secure you. 
+                                    When you are developing an application in any domain, this means you are competing with the top players in that field who had already been there for years and had invested billions to support that infrastructure. 
+                                    In order to enter the market, sustain and compete with them we need the resource, technology, security, scalability and a minimum budget to support these. 
+                                    We are committed to provide great value to you and hence don’t compromise in quality, great user experience, security.</p>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>     
+        </section> 
+        <section class="pro_section section8" id="pro_section">
+            <div class="container">
+                <div class="row">
+                    <div class="pro_box pro_section_bg">
+                        <div class="pro_desc_box">
+                            <!--<img src="images/pro_desc_logo_img.png" class="pro_desc_logo_img" alt="">-->
+                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 padding_zero pro_desc_img_for_desktop">
+                                <img src="asserts/images/how_we_do_it/pro_desc_img.png" class="pro_desc_img" alt="">
+                            </div>
+                            <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 padding_zero">
+                                <div class="pro_desc_right_box">
+                                    <h2>Building world-class applications with par to…</h2>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 padding_zero pro_desc_logo_img_responsive_box1">
+                                        <div class="pro_desc_logo_img_box">
+                                            <img src="asserts/images/how_we_do_it/pro_desc_img1.svg" class="pro_desc_logo_img pro_desc_logo_img1" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 padding_zero pro_desc_logo_img_responsive_box2">
+                                        <div class="pro_desc_logo_img_box">
+                                            <img src="asserts/images/how_we_do_it/pro_desc_img2.svg" class="pro_desc_logo_img pro_desc_logo_img2" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 padding_zero pro_desc_logo_img_responsive_box3">
+                                        <div class="pro_desc_logo_img_box">
+                                            <img src="asserts/images/how_we_do_it/pro_desc_img3.svg" class="pro_desc_logo_img pro_desc_logo_img3" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 padding_zero pro_desc_logo_img_responsive_box4">
+                                        <div class="pro_desc_logo_img_box">
+                                            <img src="asserts/images/how_we_do_it/pro_desc_img4.svg" class="pro_desc_logo_img pro_desc_logo_img4" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 padding_zero pro_desc_logo_img_responsive_box5">
+                                        <div class="pro_desc_logo_img_box">
+                                            <img src="asserts/images/how_we_do_it/pro_desc_img5.svg" class="pro_desc_logo_img pro_desc_logo_img5" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 padding_zero pro_desc_logo_img_responsive_box6">
+                                        <div class="pro_desc_logo_img_box">
+                                            <img src="asserts/images/how_we_do_it/pro_desc_img6.svg" class="pro_desc_logo_img pro_desc_logo_img6" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 padding_zero pro_desc_logo_img_responsive_box7">
+                                        <div class="pro_desc_logo_img_box">
+                                            <img src="asserts/images/how_we_do_it/pro_desc_img7.svg" class="pro_desc_logo_img pro_desc_logo_img7" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 padding_zero pro_desc_logo_img_responsive_box8">
+                                        <div class="pro_desc_logo_img_box">
+                                            <img src="asserts/images/how_we_do_it/pro_desc_img8.svg" class="pro_desc_logo_img pro_desc_logo_img8" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 padding_zero pro_desc_img_for_mobile">
+                                <img src="asserts/images/how_we_do_it/pro_desc_img.png" class="pro_desc_img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="underline_box">
+                    <div class="underline"></div>
+                </div>
+            </div>
+        </section>
+        <section class="what_is_macappstudio_section section9">
+            <div class="container">
+                <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_zero">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero float_right">
+                             <div class="what_is_macappstudio_right_box">
+                                 <video class="video_tag" width="100%" height="100%" controls>
+                                  <source src="asserts/video/video1.mp4" type="video/mp4">
+                                  <source src="movie.ogg" type="video/ogg">
+                                  Your browser does not support the video tag.
+                                </video>
+                                <img src="asserts/images/how_we_do_it/storiesposter04.jpg" class="video_poster1 storiesposter_img playpause vpop" alt="" data-type="youtube" data-id="hlmX6oikVyM" data-autoplay='true'>
+                                <!--<img src="asserts/images/how_we_do_it/play_icon.svg" class="banner_play_icon playpause vpop" alt="" data-type="youtube" data-id="hlmX6oikVyM" data-autoplay='true'>-->
+                             </div>
+                         </div>
+                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero">
+                             <div class="what_is_macappstudio_left_box">
+                                 <h2>What are the payment milestones in a project?</h2>
+                                 <p>We have designed the most flexible payment methods, so that you 
+                                    feel safe and secure while we ensure the value we provide during each
+                                    release meets your expectation. The payment is equally divided into five
+                                    milestones where you are requested to pay 20% during each milestone.
+                                    This ensures that you feel confident and pay as you go. Currently we don’t
+                                    accept revenue sharing or equity based payment since we might not
+                                    understand the industry insights. We ensure you get a great value and
+                                    a worl-class product which worth the amount you pay for.</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_zero">
+                        <!--<div class="delevery_point_list_box4">-->
+                        <!--    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_sub_box1">-->
+                        <!--        <div class="delevery_point_list_subbox4 right_arrow4 delevery_point_list_first_subbox">-->
+                        <!--            <img src="asserts/images/how_we_do_it/icon6.svg" class="delevery_point_list4" alt="">-->
+                        <!--            <div class="delevery_point_sub_list">-->
+                        <!--                <p><b>Project Kickoff</b></p>-->
+                        <!--                <p>20% payment</p>-->
+                        <!--            </div>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_sub_box2">-->
+                        <!--        <div class="delevery_point_list_subbox4 right_arrow4">-->
+                        <!--            <img src="asserts/images/how_we_do_it/icon2.svg" class="delevery_point_list4" alt="">-->
+                        <!--            <div class="delevery_point_sub_list">-->
+                        <!--                <p><b>PRD and Design Sign Off</b></p>-->
+                        <!--                <p>20% payment</p>-->
+                        <!--            </div>    -->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_sub_box3">-->
+                        <!--        <div class="delevery_point_list_subbox4 right_arrow4">-->
+                        <!--            <img src="asserts/images/how_we_do_it/icon3.svg" class="delevery_point_list4" alt="">-->
+                        <!--            <div class="delevery_point_sub_list">-->
+                        <!--                <p><b>Release 1</b></p>-->
+                        <!--                <p>20% payment</p>-->
+                        <!--            </div>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_sub_box4">-->
+                        <!--        <div class="delevery_point_list_subbox4 right_arrow4">'-->
+                        <!--            <img src="asserts/images/how_we_do_it/icon4.svg" class="delevery_point_list4" alt="">-->
+                        <!--            <div class="delevery_point_sub_list">-->
+                        <!--                <p><b>Release 2</b></p>-->
+                        <!--                <p>20% payment</p>-->
+                        <!--            </div>   -->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 padding_zero delevery_point_list_sub_box5">-->
+                        <!--        <div class="delevery_point_list_subbox4">-->
+                        <!--            <img src="asserts/images/how_we_do_it/icon5.svg" class="delevery_point_list4" alt="">-->
+                        <!--            <div class="delevery_point_sub_list">-->
+                        <!--                <p><b>Live</b></p>-->
+                        <!--                <p>20% payment</p>-->
+                        <!--            </div>-->
+                        <!--        </div>-->
+                        <!--    </div>-->
+                        <!--</div>-->
+                        <ul class="payment_milestones_main_box">
+                            <li>
+                                <div class="payment_milestones_sub_box payment_milestones_right_arrow payment_milestones_right_arrow_position1">
+                                    <img src="asserts/images/how_we_do_it/small_icon1.svg" class="delevery_point_list4" alt="">
+                                    <div class="delevery_point_sub_list">
+                                        <h2>Project Kickoff</h2>
+                                        <p>20% payment</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="payment_milestones_sub_box payment_milestones_right_arrow payment_milestones_right_arrow_position2">
+                                    <img src="asserts/images/how_we_do_it/small_icon5.svg" class="delevery_point_list4" alt="">
+                                    <div class="delevery_point_sub_list">
+                                        <h2>PRD and Design Sign Off</h2>
+                                        <p>20% payment</p>
+                                    </div>    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="payment_milestones_sub_box payment_milestones_right_arrow payment_milestones_right_arrow_position3">
+                                    <img src="asserts/images/how_we_do_it/small_icon13.svg" class="delevery_point_list4" alt="">
+                                    <div class="delevery_point_sub_list">
+                                        <h2>Release 1</h2>
+                                        <p>20% payment</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="payment_milestones_sub_box payment_milestones_right_arrow payment_milestones_right_arrow_position4">
+                                    <img src="asserts/images/how_we_do_it/small_icon13.svg" class="delevery_point_list4" alt="">
+                                    <div class="delevery_point_sub_list">
+                                        <h2>Release 2</h2>
+                                        <p>20% payment</p>
+                                    </div>   
+                                </div>
+                            </li>
+                            <li>
+                                <div class="payment_milestones_sub_box">
+                                    <img src="asserts/images/how_we_do_it/small_icon3.svg" class="delevery_point_list4" alt="">
+                                    <div class="delevery_point_sub_list">
+                                        <h2>Live</h2>
+                                        <p>20% payment</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                     </div>
+                </div>
+            </div>     
+        </section> 
+        <section>
+            <div class="row">
+                <div class="underline_box">
+                    <div class="underline"></div>
+                </div>
+            </div>
+        </section>
+        <section class="what_is_macappstudio_section section10">
+            <div class="container">
+                <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_zero">
+                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero float_right">
+                             <div class="what_is_macappstudio_right_box">
+                                 <video class="video_tag" width="100%" height="100%" controls>
+                                  <source src="asserts/video/video1.mp4" type="video/mp4">
+                                  <source src="movie.ogg" type="video/ogg">
+                                  Your browser does not support the video tag.
+                                </video>
+                                <img src="asserts/images/how_we_do_it/storiesposter05.jpg" class="video_poster1 storiesposter_img playpause vpop" alt="" data-type="youtube" data-id="dW15KCOnUC0" data-autoplay='true'>
+                                <!--<img src="asserts/images/how_we_do_it/play_icon.svg" class="banner_play_icon playpause vpop" alt="" data-type="youtube" data-id="dW15KCOnUC0" data-autoplay='true'>-->
+                             </div>
+                         </div>
+                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero">
+                             <div class="what_is_macappstudio_left_box">
+                                 <h2>What are the two models of software development? </h2>
+                                 <p>At MacAppStudio we follow two models of software developments depending on our clients needs. </p>
+                                 <h3>Fixed Bid Project</h3>
+                                 <p>This method is used when you have a clear scope of the project, needed requirement or the reference application to get inspired before the start of the project. This will help us define a fixed cost and fixed time estimate to complete the project.</p>
+                              </div>
+                         </div>
+                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_zero">
+                             <div class="what_is_macappstudio_left_box">
+                                <h3>Time and Material Project</h3>
+                                <p>This method is used when your project needs to evolve over a period of time or when the project requirement is huge or the requirement is based on a new evolving domain. Because of this evolving nature we will not be able to capture the cost and time needed. This will be billed monthly based on the effort from various members on a standard rate. </p>
+                             </div>
+                        </div>
+                     </div>
+                </div>
+            </div>     
+        </section> 
+        <section class="stories_section section11" id="stories_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 padding_zero">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero">
+                                    <div class="stories_left_box">
+                                        <h2>Still have questions ?</h2>
+                                        <p>As a new customer it’s quite normal to be confused and overwhelmed. Hear from our clients directly about the experience and their journey with MacAppStudio. </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero">
+                                    <div class="owl-carousel owl-theme" id="stories_list_slid">
+                                        <div class="item active">
+                                            <div class="what_is_macappstudio_right_box stories_right_box">
+                                                <video class="video_tag" width="100%" height="100%" controls>
+                                                  <source src="asserts/video/video1.mp4" type="video/mp4">
+                                                  <source src="movie.ogg" type="video/ogg">
+                                                  Your browser does not support the video tag.
+                                                </video>
+                                                <img src="asserts/images/how_we_do_it/storiesposter6.jpg" class="storiesposter_img" alt="img">
+                                                <img src="asserts/images/how_we_do_it/play_icon.svg" class="banner_play_icon playpause vpop" alt="" data-type="youtube" data-id="I2Owf0RvSKk" data-autoplay='true'>
+                                            </div>
+                                        </div>
+                                        <div class="item active">
+                                            <div class="what_is_macappstudio_right_box stories_right_box">
+                                                <video class="video_tag" width="100%" height="100%" controls>
+                                                  <source src="asserts/video/video1.mp4" type="video/mp4">
+                                                  <source src="movie.ogg" type="video/ogg">
+                                                  Your browser does not support the video tag.
+                                                </video>
+                                                <img src="asserts/images/how_we_do_it/storiesposter7.jpg" class="storiesposter_img" alt="img">
+                                                <img src="asserts/images/how_we_do_it/play_icon.svg" class="banner_play_icon playpause vpop" alt="" data-type="youtube" data-id="I2Owf0RvSKk" data-autoplay='true'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!--<div class="item">-->
+                            <!--    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero">-->
+                            <!--        <div class="stories_left_box">-->
+                            <!--            <h2>Still have questions ?</h2>-->
+                            <!--            <p>As a new customer it’s quite normal to be confused and overwhelmed. Hear from our clients directly about the experience and their journey with MacAppStudio. </p>-->
+                            <!--        </div>-->
+                            <!--    </div>-->
+                            <!--    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding_zero">-->
+                            <!--        <div class="what_is_macappstudio_right_box stories_right_box">-->
+                            <!--            <video class="video_tag" width="100%" height="100%" controls>-->
+                            <!--              <source src="asserts/video/video1.mp4" type="video/mp4">-->
+                            <!--              <source src="movie.ogg" type="video/ogg">-->
+                            <!--              Your browser does not support the video tag.-->
+                            <!--            </video>-->
+                            <!--            <img src="asserts/images/how_we_do_it/storiesposter7.jpg" class="storiesposter_img" alt="img">-->
+                            <!--            <img src="asserts/images/how_we_do_it/play_icon.svg" class="banner_play_icon playpause vpop" alt="" data-type="youtube" data-id="TgWVwJRzIyc" data-autoplay='true'>-->
+                            <!--        </div>-->
+                            <!--    </div>-->
+                            <!--</div>-->
+                    </div>
+                </div>
+            </div>    
+        </section>       
+        <section class="trns_business_consulting_section section12" id="trns_business_consulting_section">
+            <div class="container">
+                <div class="row">
+                    <div class="trns_business_consulting_box">
+                        <h2>Let’s Transform your business for a change that matters</h2>
+                        <div class="consulted_btn_btx text-center">
+                            <button class="consulted_btn proposal_model typeform-share" href="https://tally.so/r/xXyRrd" data-mode="popup">Get a Proposal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="Contact">
+       
+        </footer>
+        <!--Common Get Proposal-->
+        <div class="append_getproposal_modal" style="width:100%;height:100%;overflow: unset;">
+            
+        </div>
+        <!--video popup-->
+        <!-- copy this stuff and down -->
+        <div id="video-popup-overlay"></div>
+        
+        <div id="video-popup-container">
+          <div id="video-popup-close" class="fade">&#10006;</div>
+          <div id="video-popup-iframe-container">
+            <iframe id="video-popup-iframe" src="" width="100%" height="100%" frameborder="0"></iframe>
+          </div>
+        </div>
+        <script src="asserts/js/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src='asserts/js/intlTelInput.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.3.15/slick.js'></script>
+        <script src="asserts/js/bootstrap.min.js"></script>
+        <script src="asserts/js/owl.carousel.js"></script>
+        <script src="asserts/js/header_footer.js"></script>
+        <script src="asserts/js/getProposal.js"></script> <!--Proposa popup-->
+        <script src="asserts/js/nav.js"></script>
+        <script>
+            /************************/ 
+            $(document).ready(function() {
+                $('.NewtoMacAppStudio').addClass("active");
+            });
+            /***************************/ 
+             $(".tab_right_arrow").click(function () { 
+              var leftPos = $('#rinvt_acc_dtj_tab').scrollLeft();
+              $("#rinvt_acc_dtj_tab").animate({scrollLeft: leftPos + 200}, 800);
+            });
+            $(".banner_play_icon1").parent().click(function () {
+                if ($(this).children(".video_tag").get(0).paused) {
+                    $(this).children(".video_tag").get(0).play();
+                    $(this).children(".playpause").fadeOut();
+                    $(this).children(".storiesposter_img").fadeOut();
+                } else {
+                    $(this).children(".video_tag").get(0).pause();
+                    $(this).children(".playpause").fadeIn();
+                    $(this).children(".storiesposter_img").fadeIn();
+                }
+            });
+            /**********************************/ 
+            $(document).ready(function() {
+                 $('#stories_list_slid').owlCarousel({
+                        loop: true,
+                        dots: true,
+                        autoplay: true,
+                        autoplayTimeout: 6000,
+                        autoplayHoverPause: false,
+                        responsive: {
+                                0: {
+                                  items: 1
+                                },
+
+                                500: {
+                                  items: 1
+                                },
+
+                                736: {
+                                  items: 1
+                                },
+
+                                1200: {
+                                  items: 1
+                                },
+
+                                1366: {
+                                  items: 1
+                                }
+                              }
+                    });
+                });
+             /**********************************/
+             
+             $(".vpop").on('click', function(e) {
+              e.preventDefault();
+              $("#video-popup-overlay,#video-popup-iframe-container,#video-popup-container,#video-popup-close").show();
+              
+              var srchref='',autoplay='',id=$(this).data('id');
+              if($(this).data('type') == 'vimeo') var srchref="//player.vimeo.com/video/";
+              else if($(this).data('type') == 'youtube') var srchref="https://www.youtube.com/embed/";
+              
+              if($(this).data('autoplay') == true) autoplay = '?autoplay=1';
+              
+              $("#video-popup-iframe").attr('src', srchref+id+autoplay);
+              
+              $("#video-popup-iframe").on('load', function() {
+                $("#video-popup-container").show();
+              });
+            });
+            
+            $("#video-popup-close, #video-popup-overlay").on('click', function(e) {
+              $("#video-popup-iframe-container,#video-popup-container,#video-popup-close,#video-popup-overlay").hide();
+              $("#video-popup-iframe").attr('src', '');
+            });
+        </script>
+    </body>
+</html>

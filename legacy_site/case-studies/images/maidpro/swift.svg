@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>swift</title>
+    <defs>
+        <linearGradient x1="66.7413014%" y1="11.4349442%" x2="44.6751713%" y2="89.372339%" id="linearGradient-1">
+            <stop stop-color="#FAAE42" offset="0%"></stop>
+            <stop stop-color="#EF3E31" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="swift" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iconfinder_Swift_1174968" transform="translate(12.000000, 14.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M40.0630823,0 C68.639453,19.4447775 59.3725251,40.8153101 59.3725251,40.8153101 C59.3725251,40.8153101 67.4894446,49.9760203 64.2266302,58 C64.2266302,58 60.8568382,52.3965875 55.2672627,52.3965875 C49.8648978,52.3965875 46.6689443,58 35.757237,58 C11.5000837,58 0,37.7260779 0,37.7260779 C21.8635312,52.1424948 36.8002678,41.925294 36.8002678,41.925294 C26.9315913,36.2148951 5.99074127,8.87987088 5.99074127,8.87987088 C24.2437811,24.4196449 32.1200012,28.4985013 32.1200012,28.4985013 C27.3862458,24.6202444 14.1878939,5.6167858 14.1878939,5.6167858 C24.7519243,16.3020521 45.7462631,31.1999078 45.7462631,31.1999078 C51.7637488,14.7373761 40.0630823,0 40.0630823,0 Z" id="Path"></path>
+        </g>
+        <rect id="Rectangle" x="0" y="0" width="90" height="90"></rect>
+    </g>
+</svg>

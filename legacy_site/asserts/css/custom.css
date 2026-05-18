@@ -1,0 +1,226 @@
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu{
+    margin-top: 8px;
+    width: 100%;
+    min-width: 250px;
+    left: auto;
+    right: 0px;
+    padding: 8px 0;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0 6px 12px rgb(0 0 0 / 7%);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 7%);
+}
+.submenu_box a{
+    width: 100%;
+    font-family:'AvenirNext-Medium';
+    padding: 10px 24px;
+    display: block;
+    margin: 0px;
+    color:#2B2B2B;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+.consulted_btn:hover,.consulted_btn:focus{
+    background:343434 !important;
+    color:#fff;
+}
+button:focus {
+    outline: none;
+    background-color: #343434 !important;
+}
+@media only screen and (max-width: 1024px){
+    .navigation a {
+        margin: 0px 0px;
+    }
+}
+@media only screen and (max-width: 992px){
+    .navigation {
+        /*display: block !important;*/
+    }
+}
+@media only screen and (max-width: 991px){
+    .navigation {
+        display: none;
+    }
+    .desktop_navigation{
+        display:none;
+    }
+    .mobile_navigation{
+        display:block;
+    }
+    .mobiletogglelist {
+        left: 0%;
+        top: 75px;
+        width: 100%;
+        padding:15px;
+        border-radius: 0px;
+        /*height: 400px;*/
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .dropdown-menu {
+        position: relative;
+        margin:0px;
+        padding:0px;
+        box-shadow:none;
+        border-radius:0px;
+    }
+    .submenu_box a{
+        padding: 15px 10px;
+        border-bottom: 1px solid #f2f2f2 !important;
+    }
+    .logoheader{
+        width: 100%;
+        text-align: center;
+    }
+    /*.navigation a {*/
+    /*    display: block;*/
+    /*    margin: 0px !important;*/
+    /*    border-bottom: 1px solid #ccc;*/
+    /*    display: grid !important;*/
+    /*}*/
+    /*.navigation a:hover{*/
+    /*    background: #f2f2f2;*/
+    /*}*/
+    /*.navigation a:nth-child(5) {*/
+    /*     border-bottom: 1px solid transparent; */
+    /*}*/
+    .navigation a{
+        display: block;
+        padding: 3px 10px;
+    }
+    .nav_header_service_box{
+        width:100%;
+        margin-bottom: 10px;
+    }
+    .nav_header_service_box a{
+        font: 14px/20px 'AvenirNext-Medium',sans-serif;
+    }
+    .nav_header_service_box a .header_bold{
+        font: 15px/20px 'AvenirNext-SemiBold',sans-serif;
+        letter-spacing:-0.375px;
+    }
+    .headermenu_socialmedia_box{
+        padding: 0px 10px;
+        margin-bottom: 30px;
+    }
+    .headermenu_socialmedia_box ul li a{
+        padding:0px !important;
+        padding-right:10px;
+    }
+    .header_menu_Get_Proposal_btn span{
+        margin-bottom: 20px;
+        width: 30%;
+        height: 50px;
+        text-align: center;
+        font: 20px/35px 'AvenirNext-SemiBold';
+    }
+    .nav_header_other_menu_option_box{
+        width:100%;
+        margin-bottom: 10px;
+    }
+    .nav_header_other_menu_option_box a{
+        font: 15px/20px 'AvenirNext-SemiBold',sans-serif;
+        letter-spacing:-0.375px;
+    }
+    .Get_Proposal{
+        padding: 3px 10px 25px;
+    }
+    .login {
+        display: block;
+    }
+    .togglebtn {
+        display: block;
+        width: 25px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 9999;
+        background-color: transparent;
+        border-radius: 50%;
+    }
+    .footer_inner_box {
+        padding: 15px 10px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .mobiletogglelist {
+        left: 0px;
+    }
+    .footer_portfolio_box {
+        margin-bottom: 20px;
+    }
+    #getproposal_modal{
+        overflow: scroll !important;
+    }
+}
+@media only screen and (max-width: 736px){
+    .mobiletogglelist {
+        left: 0px;
+        width: 100%;
+    }
+    .nav_header_service_box,.nav_header_other_menu_option_box,
+    .headermenu_socialmedia_box,.header_menu_Get_Proposal_btn{
+        width: 98%;
+        margin: 0px auto;
+        margin-bottom: 20px;
+    }
+    .headermenu_socialmedia_box{
+        margin-bottom:50px;
+    }
+}
+@media only screen and (max-width: 684px){
+    .mobiletogglelist {
+        /*left: 35px;*/
+    }
+    .footer_CR_dash {
+        margin: 0px 10px;
+    }
+}
+@media only screen and (max-width:667px){
+    .header_menu_Get_Proposal_btn span {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 550px){
+    .mobiletogglelist {
+        /*left: 28px;*/
+    }
+    .header_menu_Get_Proposal_btn span {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .mobiletogglelist {
+        /*left: 25px;*/
+    }
+}
+@media only screen and (max-width: 414px){
+    .header_menu_Get_Proposal_btn span {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 414px){
+    .mobiletogglelist {
+        /*left: 20px;*/
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

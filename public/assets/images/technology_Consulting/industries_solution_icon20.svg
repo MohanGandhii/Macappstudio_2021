@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logistics</title>
+    <g id="logistics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0" x="0.5" y="0.5" width="49" height="49"></rect>
+        <g id="iconfinder_forklift_logistics_shipping_2851562" transform="translate(1.000000, 9.000000)" stroke="#000000" stroke-opacity="0.85" stroke-width="1.8">
+            <g id="Group">
+                <polygon id="Rectangle" transform="translate(34.489633, 16.909129) rotate(170.224018) translate(-34.489633, -16.909129) " points="28.8388759 11.3632945 40.1032328 11.4004545 40.1403909 22.4549641 28.876034 22.4178041"></polygon>
+                <line x1="26.0236951" y1="23.4200619" x2="21.9049978" y2="-1.02458839e-15" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="40.4561991" y1="25.0131613" x2="29.5940174" y2="26.7781448" id="Path" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="33.3102592" y1="11.4729694" x2="33.9380663" y2="15.3951549" id="Path"></line>
+                <path d="M2.09036464e-15,24.9329873 L2.09036464e-15,18.9666509 C0.0570733778,14.4267212 4.06986138,14.5911069 4.06986138,14.5911069 L9.81485583,14.5911069 C9.81485583,14.5911069 11.0445812,15.1211788 13.1245234,17.8470977 C14.9738185,20.2690472 15.3921604,22.0265324 15.3921604,22.0265324 L22.0697457,22.0265324 L16.6424793,3.32405223 C11.3687815,0.341460857 5.54906213,1.84804153 5.54906213,1.84804153 L5.54906213,12.0001573" id="Path" stroke-linejoin="round"></path>
+                <line x1="8.1303086" y1="30.0485554" x2="19.4114207" y2="30.0485554" id="Path" stroke-linejoin="round"></line>
+                <ellipse id="Oval" stroke-linecap="round" stroke-linejoin="round" cx="23.2400441" cy="29.3950501" rx="3.67740836" ry="3.60494992"></ellipse>
+                <ellipse id="Oval" stroke-linecap="round" stroke-linejoin="round" cx="4.2940362" cy="29.3950501" rx="3.67740836" ry="3.60494992"></ellipse>
+            </g>
+            <line x1="9.013475" y1="12.0001573" x2="9.013475" y2="6.02632269" id="Path" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

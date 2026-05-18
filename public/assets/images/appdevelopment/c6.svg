@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>c6</title>
+    <g id="c6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iconfinder_wallet_172631" transform="translate(3.000000, 3.000000)">
+            <rect id="Rectangle" x="0" y="0" width="25" height="25"></rect>
+            <path d="M20,7 C20,7 7.3015,7 5,7 C3.462,7 2.5,8.5 2.5,9.5 L2.5,20.192 C2.5,21.467 3.533,22.5 4.808,22.5 L20.192,22.5 C21.4665,22.5 22.5,21.467 22.5,20.192 L22.5,9.423 C22.5,8.1495 21.2745,7 20,7 Z" id="Path" stroke-opacity="0.85" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M18.5,5.5 L18.5,3.829 C18.5,2.1635 18.1405,1.683 16.074,2.228 C14.556,2.6285 5.6735,5.091 5.6735,5.091 C2.938,6.122 2.5205,6.9995 2.5205,8.999 L2.5,10.2265" id="Path" stroke-opacity="0.85" stroke="#000000" stroke-width="1.2" stroke-linejoin="round"></path>
+            <path d="M19.251,16 C18.5605,16 18,15.441 18,14.7505 C18,14.06 18.5605,13.5 19.251,13.5 C19.9395,13.5 20.5,14.06 20.5,14.7505 C20.5,15.441 19.9395,16 19.251,16 Z" id="Path" fill-opacity="0.85" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

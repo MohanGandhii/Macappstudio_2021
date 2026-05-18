@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2</title>
+    <g id="2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.85">
+        <g id="iconfinder_user_symbol_person_4_1906176" transform="translate(3.000000, 3.000000)" stroke="#000000" stroke-width="1.8">
+            <ellipse id="_Path_" cx="12.5" cy="6.54761905" rx="6.54761837" ry="6.54761905"></ellipse>
+            <path d="M12.5,15.4761905 C9.04399143,15.5708652 5.65727885,16.4674679 2.60714388,18.0952381 C1.00661564,18.9073792 -0.00131869986,20.5504505 0,22.3452381 L0,23.2142857 C0,24.2005085 0.79949273,25 1.7857154,25 L23.2142846,25 C24.2005073,25 25,24.2005085 25,23.2142857 L25,22.3452381 C25.0013187,20.5504505 23.9933844,18.9073792 22.3928561,18.0952381 C19.3427211,16.4674679 15.9560086,15.5708652 12.5,15.4761905 L12.5,15.4761905 Z" id="_Path_2"></path>
+        </g>
+    </g>
+</svg>

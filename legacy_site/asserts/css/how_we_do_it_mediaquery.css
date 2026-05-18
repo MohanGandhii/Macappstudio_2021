@@ -1,0 +1,1236 @@
+@media only screen and (max-width:1200px){
+.banner_right_img {
+    width: 90%;
+}
+.banner_left_box h2 {
+    font: 60px/75px 'CircularStd-Black',sans-serif;
+    padding-top: 10px;
+}
+.storiesposter_img{
+    left: 27px !important;
+}
+}
+
+@media only screen and (max-width:1024px){
+.smarter_section_header_box h2{
+    width: 70%;
+}
+.market_sales_header_box{
+    width: 80%;
+}
+.it_consulting_header_box {
+    width: 85%;
+}
+.banner_left_box h2{
+    padding-top:0px;
+}
+/*.banner_left_box h2 {*/
+/*    font: 34px/45px 'CircularStd-Black',sans-serif;*/
+/*}*/
+.propel_business_header_box {
+    width: 65%;
+}
+.industries_solution_list_box {
+     padding: 6px 2px 2px 20px; 
+}
+.industries_solution_resposive_box4,.industries_solution_resposive_box8,.industries_solution_resposive_box16,.industries_solution_resposive_box20{
+    border-right: 1px solid transparent;
+}
+.industries_solution_resposive_box6,.industries_solution_resposive_box18{
+    border-right: 1px solid #bbb;
+}
+.industries_solution_resposive_box17,.industries_solution_resposive_box18{
+    border-bottom: 1px solid transparent;
+}
+.our_offices_around_world_list_box {
+    width: 90%;
+    margin-right: 0px !important;
+}
+.right_border:after{
+    top: 0px;
+    height: 100%;
+}
+.banner_left_box {
+    width: 100%;
+    min-height: 380px;
+}
+.promises_desc_section {
+    width: 60%;
+}
+.banner_right_box {
+    width: 95%;
+    margin-right:0px;
+    min-height: 380px;
+}
+.macapp_cote_box h2 {
+    font: 32px/40px 'AvenirNext-SemiBold',sans-serif;
+}
+.macapp_cote_box h1 {
+    font: 65px/75px 'CircularStd-Bold',sans-serif;
+}
+.delevery_point_list_box1:after{
+    left: 170px;
+}
+.birder_animation_line2:before{
+    right: -45px;
+}
+.birder_animation_line1:after{
+    left: -45px;
+}
+.delevery_point_list_box2:after{
+    top: -118px;
+}
+.pro_desc_logo_img_box {
+    min-height: 60px;
+}
+.delevery_point_list_box4{
+    margin-top:20px;
+}
+.delevery_point_list_box4:after{
+    top: 35px;
+    left: 120px;
+}
+.pro_desc_logo_img1 {
+    width: 130px;
+    margin-bottom:0px;
+}
+.pro_desc_logo_img2 {
+    width: 120px;
+    margin-bottom:0px;
+}
+.pro_desc_logo_img3 {
+    width: 130px;
+    margin-bottom:0px;
+}
+.pro_desc_logo_img4 {
+    width: 160px;
+    margin-bottom:0px;
+}
+.pro_desc_logo_img5 {
+    width: 90px;
+}
+.pro_desc_logo_img6 {
+    width: 130px;
+}
+.pro_desc_logo_img7 {
+    width: 150px;
+}
+.pro_desc_logo_img8 {
+    width: 150px;
+}
+.pro_desc_box h2 {
+    font: 46px/60px 'CircularStd-Black',sans-serif;
+    padding-bottom: 30px;
+}
+.pro_desc_img {
+    top: 40px;
+}
+.payment_milestones_main_box:after{
+    width: 75%;
+}
+.storiesposter_img{
+    left: 25px !important;
+}
+.stories_right_box video {
+    width: 92% !important;
+}
+.stories_left_box h2 {
+    font: 46px/50px 'CircularStd-Black',sans-serif;
+}
+.stories_left_box p {
+    width:100%;
+    font: 26px/35px 'AvenirNext-Medium',sans-serif;
+}
+.stories_left_box {
+    min-height: 270px;
+}
+}
+@media only screen and (min-width:992px){
+.container_body {
+    width: 95%;
+}
+.navigation {
+    display: block !important;
+}
+.industries_solution_list_box{
+    /*padding: 6px 2px 2px 5px;*/
+}
+#rinvt_acc_dtj_tab li a {
+    padding: 10px 8px;
+}
+.footer_mail_box{
+    padding-left: 5px;
+}
+}
+@media only screen and (max-width:991px){
+.smarter_service_list_box{
+    margin-bottom: 20px;
+}
+.industries_solution_resposive_box3,.industries_solution_resposive_box9,.industries_solution_resposive_box15{
+    border-right: 1px solid transparent;
+}
+#rinvt_acc_dtj_tab{
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    overflow-x: scroll;
+}
+#rinvt_acc_dtj_tab li{
+    margin-bottom: 20px;
+}
+.degitize_box{
+    padding-left: 20px;
+}
+.cus_insight_header_box{
+    width: 100%;
+}
+.about_speed_learning_app_box{
+    display: inline-block;
+}
+.about_speed_learning_app_desc_box {
+    width: 100%;
+}
+.speedlearning_logo{
+    margin-bottom: 20px;
+}
+.market_sales_header_box,.it_consulting_header_box{
+    margin-bottom: 20px;
+}
+.cus_insight_leftbox,.market_sales_leftbox,.it_consulting_leftbox{
+    min-height: auto;
+}
+#rinvt_acc_dtj_tab li p {
+    font: 16px/25px 'AvenirNext-SemiBold',sans-serif;
+    padding-top: 10px;
+}
+.craftedapp_list_header_box{
+    padding: 30px 0px 0px;
+}
+.craftedapp_list_box{
+    height: auto;
+}
+.craftedapp_list_box{
+    margin-bottom: 40px;
+}
+.banner_left_box{
+    width: 100%;
+    margin: 30px auto;
+    min-height: auto;
+}
+.promises_desc_right_border2:after{
+    border-right:0px solid transparent;
+}
+.banner_left_box p {
+    padding-bottom: 0px;
+}
+.list_1,.list_2{
+    margin-bottom:20px;
+}
+.what_is_macappstudio_header{
+    margin-bottom: 20px;
+}
+.delevery_point_list_box1:after {
+    left: 140px;
+}
+.delevery_point_list_box2:after {
+    top: -119px;
+    height: 120%;
+}
+.birder_animation_line1:after {
+    left: -42px;
+}
+.delevery_point_list_subbox2 {
+    padding: 0px 2px;
+}
+.delevery_point_list_subbox2 p {
+    font: 16px/22px 'AvenirNext-Medium',sans-serif;
+}
+.pro_desc_img {
+    width: 50%;
+    left: 0px;
+    top:0px;
+}
+.pro_desc_right_box{
+    margin-top:20px;
+}
+.what_is_macappstudio_right_box {
+    margin: 15px auto;
+}
+.stories_left_box {
+    min-height: auto;
+    margin-bottom: 30px;
+}
+#stories_section .owl-nav {
+    position: relative;
+    top: 0px;
+    left: 25%;
+    bottom: 0px;
+    width: 50%;
+    margin-top: 20px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+#stories_section .owl-dots {
+    position: relative;
+    top: 20px;
+    left: -25%;
+    bottom: 0px;
+    width: 50%;
+    margin-top: 0px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner_right_box{
+    margin: 0px auto 50px;
+}
+.our_offices_around_world_list_box h2{
+    padding-bottom:0px;
+}
+.what_is_macappstudio_right_box video {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+}
+.what_is_macappstudio_right_box img {
+    width: 100%;
+    height: 100%;
+}
+.storiesposter_img {
+    width: 100% !important;
+    left: 0px !important;
+}
+.our_offices_around_world_section,.what_is_macappstudio_section {
+    padding: 30px 0px;
+}
+.payment_milestones_main_box li {
+    margin-right: 25px;
+}
+.payment_milestones_main_box{
+    justify-content: space-around;
+}
+.payment_milestones_main_box:after {
+    width: 80%;
+}
+.payment_milestones_main_box{
+    margin: 20px auto;
+}
+.payment_milestones_right_arrow_position3:after {
+    content: '';
+    right: -20px;
+}
+.payment_milestones_right_arrow_position4:after {
+    content: '';
+    right: -20px;
+}
+.trns_business_consulting_box {
+    padding: 50px 20px;
+}
+.trns_business_consulting_box h2 {
+    font: 34px/45px 'CircularStd-Black',sans-serif;
+}
+.trns_business_consulting_section {
+    padding: 30px 0px;
+}
+.promises_desc_right_border1,.promises_desc_right_border2 {
+    margin-bottom: 50px;
+}
+.promises_desc_right_border1:after {
+    height: 70%;
+}
+}
+
+@media only screen and (max-width:768px){
+    .banner_left_box p{
+        padding-bottom: 20px;
+    }
+    .list_2:after{
+        border-right: 0px solid transparent;
+    }
+    .list_1,.list_2{
+        margin-bottom: 30px;
+    }
+    .market_sales_header_box,.it_consulting_header_box {
+        width: 100%;
+    }
+    .trns_business_consulting_box h2{
+        line-height: 45px;
+    }
+    .trns_business_consulting_box{
+        padding: 50px 10px;
+    }
+    .banner_left_box, .banner_right_box {
+        margin: 50px auto 0px;
+    }
+    .banner_left_box{
+        margin: 30px auto 0px;
+    }
+    .banner_right_box{
+        margin-bottom: 40px;
+    }
+    .pro_desc_right_box{
+        margin-bottom: 20px;
+    }
+    .banner_left_sub_desktop_view_box{
+        display:none;
+    }
+    .banner_left_sub_movile_view_box{
+        display:block;
+        margin-bottom:40px;
+    }
+    .pro_desc_box {
+        padding: 20px 0px 20px;
+    }
+    .stories_section {
+        padding: 30px 0px 50px;
+    }
+    .banner_left_box h2 {
+        font: 60px/65px 'CircularStd-Black',sans-serif;
+    }
+}
+@media only screen and (max-width:736px){
+    .tab_result_inner_box{
+        width: 95%;
+        margin: 0px auto;
+        padding: 0px 0px 30px;
+    }
+    .degitize_side_border:after{
+        border-right: 0px solid transparent;
+    }
+    .degitize_box {
+        width: 95%;
+        margin: 0px auto;
+        padding-bottom: 30px;
+    }
+    .cus_insight_leftbox, .market_sales_leftbox, .it_consulting_leftbox{
+        width: 95%;
+        margin:0px auto;
+    }
+    .about_speed_learning_app_box{
+        display: block;
+        width: 95%;
+        margin:0px auto;
+    }
+    .banner_left_box {
+        width: 95%;
+        margin: 50px auto 20px;
+        transform: none;
+    }
+    .banner_right_img {
+        width: 100%;
+    }
+    .right_border:after {
+        top: 0px;
+        height: 85%;
+    }
+    .list_1, .list_2 {
+        margin-bottom: 20px !important;
+    }
+    .our_offices_around_world_list_box {
+        width: 95%;
+        margin: 0px auto;
+    }
+    .window_view{
+        display:none;
+    }
+    .mobile_view{
+        width:100%;
+        margin:20px auto 40px;
+        display:block;
+    }
+    .banner_right_box {
+        margin-top: 10px;
+    }
+    .delevery_point_list_box2 {
+        width: 85%;
+    }
+    .birder_animation_line2:before {
+        right: -32px;
+        width: 30px;
+    }
+    .delevery_point_list_box1:after {
+        left: 145px;
+    }
+    .delevery_point_list_box2:after {
+        top: -120px;
+        height: 120%;
+        right: -34px;
+    }
+    .birder_animation_line1:after {
+        left: -32px;
+        width: 30px;
+    }
+    .delevery_point_list_box2:before{
+        top: 68px;
+        left: -35px;
+    }
+    .delevery_point_list_box3:after {
+        width: 100%;
+        left: -48px;
+    }
+    .delevery_point_list_box4:after {
+        left: 90px;
+    }
+    .what_is_macappstudio_left_box {
+        width: 96%;
+        margin: 0px auto;
+    }
+    .what_is_macappstudio_header {
+        margin-bottom: 40px;
+    }
+    .what_is_macappstudio_right_box {
+        margin-bottom: 30px;
+    }
+    .pro_desc_logo_img_box {
+        min-height: 70px;
+    }
+}
+@media only screen and (max-width:684px){
+    #rinvt_acc_dtj_tab {
+        /*display: -webkit-inline-box;*/
+        margin-top: 10px;
+    }
+    .right_arrow_box{
+        display:block;
+    }
+    .propel_business_header_box {
+        width: 100%;
+    }
+    .tab_result_inner_rightbox{
+        padding-bottom:0px !important;
+    }
+    .tab_result_inner_box p {
+        font: 22px/30px 'AvenirNext-Medium',sans-serif;
+    }
+    .tab_result_inner_box {
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 0px 30px 10px;
+    }
+    #rinvt_acc_dtj_tab li a {
+        padding: 0px 10px;
+    }
+    .degitize_section_header_box h2{
+        padding-bottom: 50px;
+    }
+    .our_offices_around_world_list_box h2{
+        padding-bottom: 0px;
+    }
+    .delevery_point_list_box2 {
+        width: 90%;
+    }
+    .delevery_point_list_box1,.delevery_point_list_box3 {
+        width: 85%;
+    }
+    .delevery_point_list_subbox3 p {
+        font: 18px/25px 'AvenirNext-Medium',sans-serif;
+    }
+    .delevery_point_list_box1:after {
+        left: 115px;
+        width: 80%;
+    }
+    .birder_animation_line2:before {
+        right: -22px;
+        width: 20px;
+    }
+    .delevery_point_list_box2:after {
+        top: -120px;
+        height: 119%;
+        right: -23px;
+    }
+    .birder_animation_line1:after {
+        left: -22px;
+        width: 20px;
+    }
+    .delevery_point_list_box3:after {
+        left: -39px;
+    }
+    .delevery_point_list_box2:before {
+        top: 68px;
+        left: -25px;
+    }
+    .banner_left_box h2 {
+        font: 55px/65px 'CircularStd-Black',sans-serif;
+    }
+    .banner_left_box {
+        margin: 30px auto 20px;
+    }
+    .delevery_point_sub_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: auto;  
+    }
+    .delevery_point_list_subbox4 p {
+        font: 17px/20px 'AvenirNext-Medium',sans-serif;
+    }
+    .payment_milestones_main_box li {
+        margin-right: 40px;
+    }
+    .payment_milestones_main_box li {
+        margin-right: 10px;
+    }
+    .payment_milestones_right_arrow_position3:after {
+        content: '';
+        right: -10px;
+    }
+    .payment_milestones_right_arrow_position4:after {
+        content: '';
+        right: -10px;
+    }
+    #video-popup-container{
+        width: 98% !important;
+        left: 1% !important;
+        margin-left: 0% !important;
+    }
+    .promises_desc_section p span {
+        display: initial;
+    }
+    .promises_desc_right_border1, .promises_desc_right_border2 {
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 667px) {
+.propel_track_list_mainbox{
+    display: inline-block;
+}
+.propel_track_list_mainbox:after {
+    content: '';
+    width: 50%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    border-left: 2px dashed #686868;
+    border-bottom: 0px dashed transparent;
+}
+.right_arrow:after {
+    content: '';
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 110px;
+    left: 49.6%;
+    box-sizing: border-box;
+    height: 7px;
+    width: 7px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    margin-bottom: 5px;
+}
+.propel_track_list_box p{
+    background-color: #ffff;
+    z-index: 12;
+    padding: 0px;
+    position: relative;
+    top: 5px;
+}
+.propel_track_list_box{
+    padding: 0px 0px;
+    padding-bottom: 40px;
+}
+.delevery_point_list_subbox4 p {
+    font: 17px/20px 'AvenirNext-Medium',sans-serif;
+}
+}
+@media only screen and (max-width: 600px) {
+    .delevery_point_list_box1:after {
+        left: 105px;
+    }
+    .delevery_point_list_box2:after {
+        top: -101px;
+        height: 110%;
+        right: -21px;
+    }
+    .delevery_point_list_box2:before {
+        top: 67px;
+        left: -22px;
+    }
+    .delevery_point_list_box3:after {
+        left: -34px;
+    }
+    .delevery_point_list_subbox2 p {
+        font: 14px/20px 'AvenirNext-Medium',sans-serif;
+    }
+    .delevery_point_list_subbox3 p {
+        font: 14px/20px 'AvenirNext-Medium',sans-serif;
+    }
+    .delevery_point_list_subbox1 p {
+        font: 14px/20px 'AvenirNext-Medium',sans-serif;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .mobile_responsive_view{
+        width: 50%;
+    }
+    .industries_solution_resposive_box2,.industries_solution_resposive_box4,.industries_solution_resposive_box8,
+    .industries_solution_resposive_box10,.industries_solution_resposive_box14,.industries_solution_resposive_box16,.industries_solution_resposive_box20{
+        border-right: 1px solid transparent;
+    }
+    .industries_solution_resposive_box3, .industries_solution_resposive_box9, .industries_solution_resposive_box15 {
+        border-right: 1px solid #bbb;
+    }
+    .industries_solution_list_box{
+        display: flex;
+        text-align: center;
+        padding: 20px 0px;
+        height: 145px;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #rinvt_acc_dtj_tab li a {
+        padding: 10px 5px;
+        width: 180px;
+    }
+    .rinvt_acc_dtj_tab_box{
+        position: relative;
+        overflow: hidden;
+        width: 520px;
+    }
+    .degitize_section_header_box h2{
+        padding-bottom: 50px;
+    }
+    .right_arrow:after{
+        top: 115px;
+    }
+    .banner_left_box {
+        width: 100%;
+    }
+    .banner_right_box {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .list_box1,.list_box2,.list_box3{
+        width: 100%;
+    }
+    .list_1:after,.list_2:after,.list_3:after{
+        content: '';
+        border-right: 0px solid transparent;
+        border-bottom: 2px solid #E6E6E6;
+        bottom: 0px;
+        width: 100%;
+        height: 90%;
+    }
+    .trns_business_consulting_box {
+        padding: 50px 20px;
+    }
+    .list_1, .list_2 {
+        margin-bottom: 30px !important;
+    }
+    .delevery_point_list1,.delevery_point_list3 {
+        width: 50px;
+        height: 50px;
+    }
+    .delevery_point_list_box1, .delevery_point_list_box3 {
+        width: 95%;
+    }
+    .delevery_point_list_box2 {
+        width: 96%;
+    }
+    .delevery_point_list_box1:after {
+        left: 73px;
+        width: 85%;
+    }
+    .delevery_point_list_box2:after {
+        top: -81px;
+        height: 98%;
+        right: -7px;
+    }
+    .birder_animation_line2:before {
+        right: -7px;
+        width: 5px;
+    }
+    .birder_animation_line1:after {
+        left: -7px;
+        width: 5px;
+    }
+    .delevery_point_list_box2:before {
+        top: 67px;
+        left: -7px;
+    }
+    .delevery_point_list_box3:after {
+        left: -8px;
+        width: 90%;
+    }
+    .pro_desc_logo_img_box {
+        min-height: 70px;
+        width: 75%;
+    }
+    .delevery_point_list_box4:after {
+        left: 70px;
+    }
+    .delevery_point_list_subbox4 p {
+        font: 14px/20px 'AvenirNext-Medium',sans-serif;
+    }
+    .stories_section {
+        padding: 30px 0px 30px;
+    }
+    .pro_desc_img_for_desktop{
+        display:none;
+    }
+    .pro_desc_img_for_mobile{
+        display:block;
+    }
+    .pro_desc_img {
+        width: 70%;
+        transform: translate(20%,0%);
+    }
+    .pro_desc_box {
+        padding: 0px 0px 0px;
+    }
+    .payment_milestones_main_box{
+        display: block;
+        width: 60%;
+        float: left;   
+    }
+    .payment_milestones_sub_box{
+        display: flex;
+    }
+    .payment_milestones_main_box li{
+        margin-bottom:60px;
+    }
+    .payment_milestones_main_box li:last-child{
+        margin-bottom:0px;
+    }
+    .payment_milestones_main_box:after{
+        border-bottom:none;
+        border-right: 2px dashed #343434;
+        height: 100%;
+        left: 30px;
+        width: 2%;
+    }
+    .delevery_point_sub_list{
+        text-align:left;
+        padding-left: 20px;
+        justify-content: space-evenly;
+    }
+    .payment_milestones_right_arrow:after{
+        left: 26px;
+        top: 80px;
+        width: 20px;
+        height: 20px;
+        transform: rotate(90deg);
+        background-size: 100% 100%;
+    }
+    .payment_milestones_main_box:after{
+        height:90%;
+    }
+    #stories_section .owl-dots {
+        top: 10px;
+    }
+    #stories_section .owl-nav{
+        margin-top: 15px !important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .rinvt_acc_dtj_tab_box{
+        width: 470px;
+    }
+    .trns_business_consulting_box{
+        padding: 30px 15px;
+    }
+    .trns_business_consulting_box h2 {
+        line-height: 40px;
+    }
+    .banner_right_img {
+        width: 100%;
+    }
+    .craftedapp_list_header_box {
+        padding: 20px 0px 0px;
+    }
+    .banner_left_box {
+        margin: 20px auto 20px;
+    }
+    .delevery_point_list_box1:after {
+        left: 55px;
+    }
+    .delevery_point_list_box2:after {
+        height: 80%;
+        right: -12px;
+        top: -83px;
+    }
+    .birder_animation_line2:before {
+        right: -12px;
+        width: 10px;
+        top: -5px;
+    }
+    .delevery_point_list_box2:before {
+        top: 120px;
+        left: -15px;
+        height: 80%;
+    }
+    .birder_animation_line1:after {
+        left: -15px;
+        width: 14px;
+        top: 100px;
+    }
+    .delevery_point_list_box3:after {
+        left: -1px;
+        width: 90%;
+    }
+    .birder_animation_line2:before {
+        right: -12px;
+        width: 10px;
+    }
+    .macapp_cote_box h1 {
+        font: 60px/70px 'CircularStd-Bold',sans-serif;
+    }
+    .delevery_point_list_box2{
+        display: flow-root;
+        width: 90%;
+    }
+    .responsive_box1,.responsive_box2,.responsive_box3{
+        width:33.333%;
+    }
+    .responsive_box4,.responsive_box5{
+        width:50%;
+    }
+    .what_is_macappstudio_header h2 {
+        font: 46px/50px 'CircularStd-Black',sans-serif;
+    }
+    .delevery_point_list_subbox001,.delevery_point_list_subbox002,.delevery_point_list_subbox003{
+        margin-bottom:15px;
+    }
+    .delevery_point_list_subbox003:after{
+        border-right:none;
+    }
+    .delevery_point_list_subbox2:after{
+        top: 10px;
+        height: 80%;
+    }
+    .pro_desc_logo_img_box {
+        width: 70%;
+    }
+    .delevery_point_list_box4{
+        display: inline-block;
+        padding-left: 20px;
+    }
+    .delevery_point_list_sub_box1,.delevery_point_list_sub_box2,.delevery_point_list_sub_box3,
+    .delevery_point_list_sub_box4,.delevery_point_list_sub_box5{
+        width:100%;
+    }
+    .delevery_point_list_sub_box2, .delevery_point_list_sub_box3, 
+    .delevery_point_list_sub_box4, .delevery_point_list_sub_box5{
+        margin-top:45px;
+    }
+    .delevery_point_list_subbox4 {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    .delevery_point_sub_list{
+        display:block;
+        padding-left:15px;
+        min-height: auto;
+    }
+    .delevery_point_list_box4:after {
+        left: 47px;
+        border-right: 2px dashed #686868;
+        border-bottom: none;
+        width: 2px;
+        height: 85%;
+    }
+    .right_arrow4:after{
+        width: 16px;
+        height: 16px;
+        background-size: 100% 100%;
+        top: 70px;
+        left: 20px;
+        transform: rotate(90deg);
+    }
+    .delevery_point_list_subbox4 p{
+        padding-top: 0px;
+        font: 17px/30px 'AvenirNext-Medium',sans-serif;
+    }
+    .stories_left_box h2 {
+        font: 50px/60px 'AvenirNext-SemiBold',sans-serif;
+    }
+    .stories_left_box p {
+        width:100%;
+        font: 26px/35px 'AvenirNext-Medium',sans-serif;
+        padding-bottom: 0px;
+    }
+    #stories_section .owl-dots {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+    #stories_section .owl-nav {
+        margin-top: 5px !important;
+        left: 5%;
+        width: 90%;
+    }
+    .pro_desc_right_box {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .degitize_box {
+        padding-left: 0px;
+    }
+    .propel_track_list_mainbox{
+        padding: 30px 0px 0px;
+    }
+    .banner_left_box, .banner_right_box {
+        width: 100%;
+        min-height:auto;
+    }
+    .banner_left_box p {
+        font: 20px/30px 'AvenirNext-Medium',sans-serif;
+    }
+    .banner_left_box h2 {
+        font: 50px/60px 'CircularStd-Black',sans-serif;
+    }
+    .consulted_btn {
+        width: 100%;
+        font: 20px/44px 'AvenirNext-SemiBold';
+        padding: 4px 25px;
+        letter-spacing: -0.571429px;
+    }
+    .trns_business_consulting_box {
+        margin: 0px 0px 0px;
+    }
+    .trns_business_consulting_box h2 {
+        font: 30px/35px 'CircularStd-Black',sans-serif;
+    }
+    .banner_left_sub_box ul li p {
+        font: 20px/25px 'AvenirNext-Medium',sans-serif;
+    }
+    .macapp_cote_box h3 {
+        font: 28px/35px 'AvenirNext-SemiBold',sans-serif;
+    }
+    .macapp_cote_box h2 {
+        font: 28px/35px 'AvenirNext-SemiBold',sans-serif;
+    }
+    .macapp_cote_box h1 {
+        font: 46px/60px 'CircularStd-Bold',sans-serif;
+    }
+    .delevery_point_list_box1, .delevery_point_list_box3{
+        display:block;
+    }
+    .delevery_point_list_box1, .delevery_point_list_box3{
+        display:block;
+    }
+    .delevery_point_list_subbox_setwidth1,.delevery_point_list_subbox_setwidth2,.delevery_point_list_subbox_setwidth3,
+    .delevery_point_list_subbox_setwidth4,.delevery_point_list_subbox_setwidth5{
+        width:100%;
+    }
+    .delevery_point_list_subbox1,.delevery_point_list_subbox3{
+        text-align:left;
+        display: flex;
+        align-items: center;
+        margin-bottom:40px;
+    }
+    .delevery_point_list_subbox1 p,.delevery_point_list_subbox3 p{
+        padding-left:15px;
+    }
+    .delevery_point_list_subbox_setwidth5 .delevery_point_list_subbox3{
+        margin-bottom: 10px;
+    }
+    .delevery_point_list_box1:after {
+        left: 43px;
+        top: 43px;
+        border-right: 2px dashed #686868;
+        border-bottom: 0px dashed transparent;
+        width: 2px;
+        height: 32%;
+    }
+    .delevery_point_list_box3:after {
+        left: 24px;
+        top: -35px;
+        border-right: 2px dashed #686868;
+        border-bottom: 0px dashed transparent;
+        width: 2px;
+        height: 410px;
+    }
+    .right_arrow1:after,.right_arrow2:after {
+        width: 5%;
+        height: 16px;
+        background-size: 100% 100%;
+        top: 62px;
+        left: 17px;
+        transform: rotate(90deg);
+    }
+    .delevery_point_list_subbox3 p{
+        padding-top:0px;
+    }
+    .delevery_point_list_box2:before,.delevery_point_list_box2:after{
+        border-right: 0px dashed transparent;
+    }
+    .birder_animation_line1:after,.birder_animation_line2:before{
+        border-bottom:none;
+    }
+    .delevery_point_list_box2 {
+        width: 98%;
+    }
+    .right_arrow01:after,
+    .right_arrow02:after{
+        background-image: url(../images/arrow.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+    }
+    .our_offices_around_world_list_box img {
+        margin-bottom: 5px;
+    }
+    .pro_desc_box h2 {
+        font: 44px/55px 'CircularStd-Black',sans-serif;
+    }
+    .pro_desc_logo_img_responsive_box1,.pro_desc_logo_img_responsive_box2,.pro_desc_logo_img_responsive_box3,.pro_desc_logo_img_responsive_box4,
+    .pro_desc_logo_img_responsive_box5,.pro_desc_logo_img_responsive_box6,.pro_desc_logo_img_responsive_box7,.pro_desc_logo_img_responsive_box8{
+        width: 50%;
+    }
+    .pro_desc_logo_img_box {
+        width: 100%;
+        min-height: 70px;
+    }
+    .delevery_point_list4 {
+        width: 50px;
+        height: 50px;
+        padding:0px;
+    }
+    .video_tag{
+        height:100%;
+    }
+    #stories_section .owl-dots{
+        width:100%;
+    }
+    #stories_section .owl-nav{
+        width: 95%;
+        left: 10px;
+    }
+    .responsive_box1, .responsive_box2, .responsive_box3,
+    .responsive_box4,.responsive_box5{
+        width:100%;
+    }
+    .delevery_point_list_subbox2:after{
+        border-right: 1px solid transparent;
+    }
+    .delevery_point_list_subbox001, .delevery_point_list_subbox002,
+    .delevery_point_list_subbox003,.delevery_point_list_subbox004,.delevery_point_list_subbox005{
+        display:flex;
+        align-items:center;
+    }
+    .delevery_point_list_subbox2 p span {
+        display: contents;
+    }
+    .delevery_point_list_subbox2 p {
+        font: 15px/20px 'AvenirNext-Medium',sans-serif;
+        letter-spacing: -0.416667px;
+        padding-left:10px;
+    }
+    .section_bg {
+        padding: 20px 10px;
+    }
+    .pro_desc_logo_img1{
+        width: 120px;
+    }
+    .pro_desc_logo_img2{
+        width: 120px;
+    }
+    .pro_desc_logo_img3{
+        width: 120px;
+    }
+    .pro_desc_logo_img4{
+        width: 150px;
+    }
+    .pro_desc_logo_img5{
+        width: 80px;
+    }
+    .pro_desc_logo_img6{
+        width: 130px;
+    }
+    .pro_desc_logo_img7{
+        width: 120px;
+    }
+    .pro_desc_logo_img8{
+        width: 140px;
+    }
+    .pro_desc_img {
+        width: 80%;
+        transform: translate(13%,0%);
+    }
+    .payment_milestones_main_box li {
+        margin-bottom: 50px;
+        margin-right: 0px;
+        margin-left: 11px;
+        width: 100%;
+    }
+    .payment_milestones_right_arrow:after {
+        left: 16px;
+        top: 70px;
+    }
+    .delevery_point_sub_list{
+        margin-top:5px;
+    }
+    .stories_left_box h2 {
+        font: 40px/50px 'CircularStd-Black',sans-serif;
+    }
+    .banner_play_icon{
+        left: 45% !important;
+    }
+    .macapp_cote_section {
+        padding: 30px 0px;
+    }
+    .payment_milestones_main_box{
+        width: 100%;
+    }
+    .promises_desc_section{
+        width:80%;
+    }
+    .promises_desc_right_border1:after{
+        border-right:0px solid transparent;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .pro_desc_logo_img_box {
+        width: 60%;
+        min-height: 70px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .rinvt_acc_dtj_tab_box {
+        width: 350px;
+    }
+    .smarter_service_list_box p{
+        font: 16px/28px 'AvenirNext-Medium',sans-serif;
+    }
+    .industries_solution_list_box{
+        padding: 20px 3px;
+    }
+    .about_speed_learning_app_desc_box h2 {
+        font: 28px/40px 'AvenirNext-Medium',sans-serif;
+    }
+    .right_arrow1:after, .right_arrow2:after{
+        left: 19px;
+    }
+    .pro_desc_box h2 {
+        font: 40px/50px 'CircularStd-Black',sans-serif;
+    }
+    .stories_left_box h2 {
+        font: 44px/50px 'CircularStd-Black',sans-serif;
+    }
+    .macapp_cote_box h2{
+        width: 96%;
+        margin: 0px auto
+    }
+    .banner_left_box p {
+        padding-bottom: 0px;
+    }
+    .banner_right_box {
+        margin-bottom: 20px;
+    }
+    .what_is_macappstudio_left_box h2 {
+        font: 32px/38px 'CircularStd-Black',sans-serif;
+    }
+    .promises_desc_section {
+        width: 85%;
+    }
+}
+
+

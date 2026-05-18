@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>rocket</title>
+    <g id="rocket" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-opacity="0.85">
+        <g id="iconfinder_release-promote-startup-rocket-marketing-launch_4573410" transform="translate(5.000000, 1.000000)" stroke="#000000" stroke-width="1.42406072">
+            <path d="M17.2993752,13.8672711 C17.2993752,13.8672711 17.2993752,5.77915637 12.1295844,0.473581097 C11.83121,0.17054225 11.4244331,0 11,0 C10.5755669,0 10.16879,0.17054225 9.87041565,0.473581097 C4.70062483,5.77915637 4.70062483,13.8672711 4.70062483,13.8672711 L4.70062483,20.0293585 C4.70062483,20.9025331 5.40570641,21.610381 6.27546862,21.610381 L15.7245314,21.610381 C16.5942936,21.610381 17.2993752,20.9025331 17.2993752,20.0293585 L17.2993752,13.8672711 Z" id="Path"></path>
+            <path d="M4.72453138,12.9147576 C2.5409763,13.736124 0.818156445,15.465703 0,17.6578249 L0,20.0293585 L2.27112198,20.0293585" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M17.2754686,12.9147576 C19.4590237,13.736124 21.1818436,15.465703 22,17.6578249 L22,20.0293585 L19.728878,20.0293585" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M9.1801141,23.9819146 C9.1801141,23.9819146 9.66422168,30 1.30589514,30" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12.8198859,23.9819146 C12.8198859,23.9819146 12.3357783,30 20.6941049,30" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M8.63773431,9.83371389 C8.63773431,9.15270423 9.69559902,8.60219642 11,8.60219642 C12.304401,8.60219642 13.3622657,9.15270423 13.3622657,9.83371389" id="Path" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

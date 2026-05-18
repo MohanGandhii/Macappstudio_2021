@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>phone</title>
+    <g id="phone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.85">
+        <g id="iconfinder_mobile-smartphone-phone_13_2947793" transform="translate(8.000000, 2.000000)" stroke="#000000" stroke-width="1.6">
+            <g id="Group">
+                <path d="M16,26.7667425 C16,28.0001512 14.9911178,29 13.7465654,29 L2.25343455,29 C1.0088822,29 0,28.0001512 0,26.7667425 L0,2.2332575 C0,0.999848755 1.0088822,0 2.25343455,0 L13.746504,0 C14.9910563,0 16,0.999848755 16,2.2332575 L16,26.7667425 L16,26.7667425 Z" id="Path"></path>
+                <line x1="0" y1="3.15770996" x2="16" y2="3.15770996" id="Path"></line>
+                <line x1="0" y1="24.3565991" x2="16" y2="24.3565991" id="Path"></line>
+                <line x1="6.88766635" y1="26.5612861" x2="9.11227218" y2="26.5612861" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>

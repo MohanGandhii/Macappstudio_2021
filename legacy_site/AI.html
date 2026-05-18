@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MacAppStudio AI — Build, Deploy &amp; Scale Real AI Systems</title>
+  <meta name="description" content="MacAppStudio builds, deploys and scales real AI systems for businesses."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <style>
+    body{font-family:'Inter',sans-serif;}
+    .text-gradient-brand{background:linear-gradient(135deg,#f97316,#8b5cf6 50%,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .text-gradient-primary{background:linear-gradient(135deg,#1e2a3a,#2d3f55);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .bg-gradient-primary{background:linear-gradient(135deg,#1e2a3a,#2d3f55);}
+    .bg-gradient-hero{background:linear-gradient(180deg,#fff 0%,#fbf9f7 100%);}
+    .shadow-glow{box-shadow:0 8px 32px rgba(30,42,58,0.18);}
+    .shadow-premium{box-shadow:0 20px 60px rgba(30,42,58,0.12);}
+    .card-hover{transition:transform .2s,box-shadow .2s;}
+    .card-hover:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(30,42,58,0.12);}
+    .top-nav{position:sticky;top:0;z-index:50;border-bottom:1px solid #e8e6e1;background:rgba(255,255,255,0.85);backdrop-filter:blur(20px);}
+    .section{padding:72px 0;}
+    .section-muted{background:#f8f6f3;}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px;}
+    @media(min-width:768px){.container{padding:0 48px;}}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+    .animate-fade-in-up{animation:fadeInUp .7s ease both;}
+    @keyframes scaleIn{from{opacity:0;transform:scale(.96);}to{opacity:1;transform:scale(1);}}
+    .animate-scale-in{animation:scaleIn .8s ease .2s both;}
+    :root{
+      --c-orange:#f97316;--c-orange-soft:#fff2e8;
+      --c-violet:#8b5cf6;--c-violet-soft:#f3effe;
+      --c-teal:#0d9488;--c-teal-soft:#e6f7f5;
+      --c-rose:#f43f5e;--c-rose-soft:#ffeef2;
+      --c-amber:#f59e0b;--c-amber-soft:#fef3c7;
+      --c-blue:#3b82f6;--c-blue-soft:#eff6ff;
+      --c-success:#16a34a;--c-success-soft:#f0fdf4;
+    }
+    .blob{position:absolute;border-radius:50%;filter:blur(120px);pointer-events:none;}
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+<!-- NAVBAR -->
+<header class="top-nav">
+  <div class="container flex h-16 items-center justify-between">
+    <a href="#" class="flex items-center gap-2">
+      <img src="assets/logo-CB05y9nZ.png" alt="MacAppStudio" class="w-[200px]" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+      <span style="display:none" class="text-lg font-bold text-gradient-brand">MacAppStudio</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="#services" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Services</a>
+      <a href="#pizza" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">How it works</a>
+      <a href="#use-cases" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Use cases</a>
+      <a href="#why" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Why us</a>
+    </nav>
+    <a href="#cta" class="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-5 py-2 text-sm font-semibold text-white shadow-glow hover:opacity-90 transition-opacity">Get Proposal</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden bg-gradient-hero">
+  <div class="blob w-[500px] h-[400px] top-0 left-0" style="background:rgba(249,115,22,0.06)"></div>
+  <div class="blob w-[500px] h-[400px] top-0 right-0" style="background:rgba(139,92,246,0.06)"></div>
+  <div class="container relative py-16 md:py-24">
+    <div class="mx-auto max-w-4xl text-center animate-fade-in-up">
+      <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-slate-500 shadow-sm">
+        <i data-lucide="sparkles" class="w-3 h-3 text-orange-400"></i>AI Transformation for Businesses
+      </span>
+      <h1 class="mt-6 text-5xl sm:text-6xl lg:text-7xl font-semibold leading-[1.02] tracking-tight text-slate-900">
+        Is Your Company<br/><span class="text-gradient-brand">AI-Ready?</span>
+      </h1>
+      <p class="mx-auto mt-6 max-w-2xl text-lg sm:text-xl leading-relaxed text-slate-500">
+        We don't just talk AI — we build, deploy, and scale real AI systems that solve business problems.
+        <span class="font-semibold text-slate-800"> Human + AI = Powerful.</span>
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="#cta" class="inline-flex items-center gap-2 h-12 rounded-full bg-gradient-primary px-7 text-base font-semibold text-white shadow-glow hover:opacity-90 transition-opacity">
+          Get Proposal in 48 Hrs <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="#cta" class="inline-flex items-center gap-2 h-12 rounded-full border-2 border-slate-200 bg-white px-7 text-base font-semibold text-slate-700 hover:border-slate-400 transition-colors">
+          <i data-lucide="message-square" class="w-4 h-4"></i>Talk to AI Team
+        </a>
+      </div>
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-500">
+        <span class="inline-flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-500"></i>Engineering-first</span>
+        <span class="inline-flex items-center gap-1.5"><i data-lucide="zap" class="w-3.5 h-3.5 text-amber-500"></i>48-hour proposal</span>
+        <span class="inline-flex items-center gap-1.5"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-violet-500"></i>Built since 2011</span>
+      </div>
+    </div>
+    <div class="relative mx-auto mt-12 max-w-6xl animate-scale-in">
+      <div class="absolute -inset-6 rounded-[2rem] opacity-10 blur-3xl bg-gradient-primary"></div>
+      <div class="relative overflow-hidden rounded-[1.75rem] bg-white shadow-premium ring-1 ring-slate-200">
+        <img src="assets/hero-team-DocmObeG.jpg" alt="Team collaborating with AI" class="w-full h-full object-cover"/>
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent p-6 md:p-8">
+          <div class="grid grid-cols-3 gap-4 text-white">
+            <div><p class="text-2xl sm:text-3xl font-semibold">13+</p><p class="text-xs sm:text-sm opacity-80">Years building</p></div>
+            <div><p class="text-2xl sm:text-3xl font-semibold">200+</p><p class="text-xs sm:text-sm opacity-80">AI systems deployed</p></div>
+            <div><p class="text-2xl sm:text-3xl font-semibold">48hr</p><p class="text-xs sm:text-sm opacity-80">Proposal delivery</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey" class="section">
+  <div class="container">
+    <div class="mx-auto max-w-5xl">
+      <div class="text-center">
+        <span class="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-600" style="background:var(--c-amber-soft)">
+          <i data-lucide="sparkles" class="w-3 h-3"></i>Since 2011
+        </span>
+        <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">Our Journey</h2>
+        <p class="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-500">
+          From writing our first lines of code in 2011 to building intelligent systems today — <span class="font-semibold text-slate-800">great engineering execution builds great companies.</span>
+        </p>
+      </div>
+      <div class="relative mt-12">
+        <div class="absolute left-0 right-0 top-5 hidden h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent md:block"></div>
+        <div class="grid grid-cols-2 gap-6 md:grid-cols-4">
+          <div class="relative text-center"><div class="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-gradient-primary text-xs font-bold text-white shadow-glow">1</div><p class="mt-3 text-2xl font-bold text-slate-900">2011</p><p class="mt-1 text-sm text-slate-500">First lines of code</p></div>
+          <div class="relative text-center"><div class="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-gradient-primary text-xs font-bold text-white shadow-glow">2</div><p class="mt-3 text-2xl font-bold text-slate-900">2015</p><p class="mt-1 text-sm text-slate-500">Intel recognition</p></div>
+          <div class="relative text-center"><div class="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-gradient-primary text-xs font-bold text-white shadow-glow">3</div><p class="mt-3 text-2xl font-bold text-slate-900">2019</p><p class="mt-1 text-sm text-slate-500">Enterprise scale</p></div>
+          <div class="relative text-center"><div class="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-gradient-primary text-xs font-bold text-white shadow-glow">4</div><p class="mt-3 text-2xl font-bold text-slate-900">2024</p><p class="mt-1 text-sm text-slate-500">AI-first systems</p></div>
+        </div>
+      </div>
+      <div class="mt-12 grid gap-4 sm:grid-cols-2">
+        <div class="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm card-hover">
+          <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl text-amber-500" style="background:var(--c-amber-soft)"><i data-lucide="trophy" class="w-5 h-5"></i></div>
+          <div><p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Intel (USA)</p><p class="mt-0.5 text-sm font-semibold text-slate-800">World's Most Valuable Developers</p></div>
+        </div>
+        <div class="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm card-hover">
+          <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl text-violet-500" style="background:var(--c-violet-soft)"><i data-lucide="award" class="w-5 h-5"></i></div>
+          <div><p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Intel</p><p class="mt-0.5 text-sm font-semibold text-slate-800">Black Belt Program</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION -->
+<section id="vision" class="section section-muted">
+  <div class="container">
+    <div class="mx-auto max-w-3xl text-center">
+      <div class="mx-auto mb-8 flex items-center justify-center gap-3">
+        <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-100"><i data-lucide="user" class="w-6 h-6 text-slate-600"></i></div>
+        <div class="h-px w-8 bg-gradient-primary"></div>
+        <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-primary shadow-glow"><i data-lucide="brain" class="w-6 h-6 text-white"></i></div>
+      </div>
+      <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Our Vision</span>
+      <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-slate-900">
+        "AI doesn't replace humans.<br>It <span class="text-gradient-primary">amplifies</span> them."
+      </h2>
+      <p class="mt-6 text-lg leading-relaxed text-slate-500">The real power lies in Human + AI collaboration — where intelligence meets experience and automation meets decision-making.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="text-center mb-12">
+      <span class="inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-600 bg-slate-100 mb-3">What we deliver</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">AI Transformation Services</h2>
+      <p class="mt-4 text-slate-500">We help companies move from manual → automated → intelligent</p>
+    </div>
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="rounded-2xl border border-slate-100 bg-white p-8 shadow-sm card-hover">
+        <div class="flex items-start gap-5">
+          <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl text-orange-500" style="background:var(--c-orange-soft)"><i data-lucide="compass" class="w-6 h-6"></i></div>
+          <div><h3 class="text-xl font-semibold text-slate-900">AI Strategy &amp; Readiness</h3><ul class="mt-3 space-y-2"><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-orange-400 flex-shrink-0"></span>AI maturity audit</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-orange-400 flex-shrink-0"></span>Use case discovery</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-orange-400 flex-shrink-0"></span>Roadmap &amp; ROI modeling</li></ul></div>
+        </div>
+      </div>
+      <div class="rounded-2xl border border-slate-100 bg-white p-8 shadow-sm card-hover">
+        <div class="flex items-start gap-5">
+          <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl text-violet-500" style="background:var(--c-violet-soft)"><i data-lucide="code-2" class="w-6 h-6"></i></div>
+          <div><h3 class="text-xl font-semibold text-slate-900">AI Development</h3><ul class="mt-3 space-y-2"><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-violet-400 flex-shrink-0"></span>Custom LLM applications</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-violet-400 flex-shrink-0"></span>Vision &amp; NLP systems</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-violet-400 flex-shrink-0"></span>Production-grade ML models</li></ul></div>
+        </div>
+      </div>
+      <div class="rounded-2xl border border-slate-100 bg-white p-8 shadow-sm card-hover">
+        <div class="flex items-start gap-5">
+          <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl text-teal-600" style="background:var(--c-teal-soft)"><i data-lucide="workflow" class="w-6 h-6"></i></div>
+          <div><h3 class="text-xl font-semibold text-slate-900">Automation Systems</h3><ul class="mt-3 space-y-2"><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-teal-500 flex-shrink-0"></span>End-to-end workflow automation</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-teal-500 flex-shrink-0"></span>Document &amp; email automation</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-teal-500 flex-shrink-0"></span>RPA + AI hybrids</li></ul></div>
+        </div>
+      </div>
+      <div class="rounded-2xl border border-slate-100 bg-white p-8 shadow-sm card-hover">
+        <div class="flex items-start gap-5">
+          <div class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl text-rose-500" style="background:var(--c-rose-soft)"><i data-lucide="git-merge" class="w-6 h-6"></i></div>
+          <div><h3 class="text-xl font-semibold text-slate-900">AI Integration</h3><ul class="mt-3 space-y-2"><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-rose-400 flex-shrink-0"></span>CRM, ERP, WhatsApp &amp; APIs</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-rose-400 flex-shrink-0"></span>Existing stack augmentation</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-rose-400 flex-shrink-0"></span>Secure data pipelines</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PIZZA -->
+<section id="pizza" class="section section-muted">
+  <div class="container">
+    <div class="text-center mb-12">
+      <span class="inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-600 bg-slate-200 mb-3">The MacAppStudio Way</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">Build AI Like Ordering a Pizza</h2>
+      <p class="mt-4 text-slate-500">Simple. Fast. Customizable.</p>
+    </div>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="group relative overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm card-hover">
+        <div class="relative aspect-[4/3] overflow-hidden" style="background:var(--c-rose-soft)"><img src="assets/pizza-base-BN9dE2YP.jpg" alt="Base" loading="lazy" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/><span class="absolute right-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-bold text-rose-500">01</span></div>
+        <div class="p-6"><h3 class="text-lg font-semibold text-slate-900">Choose Your Base</h3><ul class="mt-4 space-y-2"><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-rose-400 flex-shrink-0"></span>AI Chatbot</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-rose-400 flex-shrink-0"></span>Automation System</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-rose-400 flex-shrink-0"></span>Internal AI Tool</li></ul></div>
+      </div>
+      <div class="group relative overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm card-hover">
+        <div class="relative aspect-[4/3] overflow-hidden" style="background:var(--c-orange-soft)"><img src="assets/pizza-toppings-DL_EQj5g.jpg" alt="Toppings" loading="lazy" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/><span class="absolute right-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-bold text-orange-500">02</span></div>
+        <div class="p-6"><h3 class="text-lg font-semibold text-slate-900">Add Toppings</h3><ul class="mt-4 space-y-2"><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-orange-400 flex-shrink-0"></span>WhatsApp Integration</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-orange-400 flex-shrink-0"></span>CRM Sync</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-orange-400 flex-shrink-0"></span>AI Agents</li></ul></div>
+      </div>
+      <div class="group relative overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm card-hover">
+        <div class="relative aspect-[4/3] overflow-hidden" style="background:var(--c-teal-soft)"><img src="assets/pizza-customize-D33BpZ-F.jpg" alt="Customize" loading="lazy" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/><span class="absolute right-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-bold text-teal-600">03</span></div>
+        <div class="p-6"><h3 class="text-lg font-semibold text-slate-900">Customize</h3><ul class="mt-4 space-y-2"><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-teal-500 flex-shrink-0"></span>Your workflows</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-teal-500 flex-shrink-0"></span>Your data</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-teal-500 flex-shrink-0"></span>Industry-specific logic</li></ul></div>
+      </div>
+      <div class="group relative overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm card-hover">
+        <div class="relative aspect-[4/3] overflow-hidden" style="background:var(--c-violet-soft)"><img src="assets/pizza-launch-Dp9djwc5.jpg" alt="Launch" loading="lazy" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/><span class="absolute right-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-bold text-violet-500">04</span></div>
+        <div class="p-6"><h3 class="text-lg font-semibold text-slate-900">Launch</h3><ul class="mt-4 space-y-2"><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-violet-400 flex-shrink-0"></span>Build</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-violet-400 flex-shrink-0"></span>Test &amp; Deploy</li><li class="flex items-start gap-2 text-sm text-slate-500"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-violet-400 flex-shrink-0"></span>Ready for real users</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" class="section">
+  <div class="container">
+    <div class="text-center mb-12">
+      <span class="inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-600 bg-slate-100 mb-3">Why MacAppStudio</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">Built different. By engineers.</h2>
+    </div>
+    <div class="grid gap-6 lg:grid-cols-2">
+      <div class="rounded-2xl border border-red-100 bg-white p-8 shadow-sm">
+        <div class="mb-6 flex items-center gap-3"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-red-50 text-red-500"><i data-lucide="x" class="w-5 h-5"></i></div><h3 class="text-xl font-semibold text-slate-900">What Failed Elsewhere</h3></div>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-3 rounded-xl bg-red-50 px-4 py-3 text-sm"><i data-lucide="x" class="w-4 h-4 flex-shrink-0 text-red-400"></i><span class="text-slate-600">Over-promised automation</span></li>
+          <li class="flex items-center gap-3 rounded-xl bg-red-50 px-4 py-3 text-sm"><i data-lucide="x" class="w-4 h-4 flex-shrink-0 text-red-400"></i><span class="text-slate-600">Lack of deep engineering</span></li>
+          <li class="flex items-center gap-3 rounded-xl bg-red-50 px-4 py-3 text-sm"><i data-lucide="x" class="w-4 h-4 flex-shrink-0 text-red-400"></i><span class="text-slate-600">Black-box delivery</span></li>
+          <li class="flex items-center gap-3 rounded-xl bg-red-50 px-4 py-3 text-sm"><i data-lucide="x" class="w-4 h-4 flex-shrink-0 text-red-400"></i><span class="text-slate-600">Limited customization</span></li>
+        </ul>
+      </div>
+      <div class="rounded-2xl border border-emerald-100 bg-white p-8 shadow-sm">
+        <div class="mb-6 flex items-center gap-3"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 text-white"><i data-lucide="check" class="w-5 h-5"></i></div><h3 class="text-xl font-semibold text-slate-900">MacAppStudio Approach</h3></div>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm" style="background:var(--c-success-soft)"><i data-lucide="check" class="w-4 h-4 flex-shrink-0 text-emerald-500"></i><span class="font-medium text-slate-700">Engineering-first mindset</span></li>
+          <li class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm" style="background:var(--c-success-soft)"><i data-lucide="check" class="w-4 h-4 flex-shrink-0 text-emerald-500"></i><span class="font-medium text-slate-700">Transparent development</span></li>
+          <li class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm" style="background:var(--c-success-soft)"><i data-lucide="check" class="w-4 h-4 flex-shrink-0 text-emerald-500"></i><span class="font-medium text-slate-700">Custom-built solutions</span></li>
+          <li class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm" style="background:var(--c-success-soft)"><i data-lucide="check" class="w-4 h-4 flex-shrink-0 text-emerald-500"></i><span class="font-medium text-slate-700">Scalable architecture</span></li>
+          <li class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm" style="background:var(--c-success-soft)"><i data-lucide="check" class="w-4 h-4 flex-shrink-0 text-emerald-500"></i><span class="font-medium text-slate-700">Real AI, not just wrappers</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="mx-auto mt-12 max-w-2xl text-center text-xl font-semibold leading-relaxed text-slate-800">
+      We don't sell AI as a shortcut.<br/><span class="text-gradient-brand">We build AI as a business advantage.</span>
+    </p>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section id="what-we-do" class="section">
+  <div class="container">
+    <div class="text-center mb-12">
+      <span class="inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-600 bg-slate-100 mb-3">Capabilities</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">What We Do</h2>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm card-hover"><div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl text-violet-500" style="background:var(--c-violet-soft)"><i data-lucide="bot" class="w-5 h-5"></i></div><h3 class="text-base font-semibold text-slate-900">AI Agents &amp; Automation</h3></div>
+      <div class="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm card-hover"><div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl text-orange-500" style="background:var(--c-orange-soft)"><i data-lucide="trending-up" class="w-5 h-5"></i></div><h3 class="text-base font-semibold text-slate-900">Predictive Analytics</h3></div>
+      <div class="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm card-hover"><div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl text-teal-600" style="background:var(--c-teal-soft)"><i data-lucide="message-circle" class="w-5 h-5"></i></div><h3 class="text-base font-semibold text-slate-900">Chatbots &amp; Assistants</h3></div>
+      <div class="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm card-hover"><div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl text-rose-500" style="background:var(--c-rose-soft)"><i data-lucide="cpu" class="w-5 h-5"></i></div><h3 class="text-base font-semibold text-slate-900">Machine Learning Models</h3></div>
+      <div class="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm card-hover"><div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl text-amber-500" style="background:var(--c-amber-soft)"><i data-lucide="git-branch" class="w-5 h-5"></i></div><h3 class="text-base font-semibold text-slate-900">Workflow Automation</h3></div>
+      <div class="flex items-center gap-4 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm card-hover"><div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl text-blue-500" style="background:var(--c-blue-soft)"><i data-lucide="bar-chart-3" class="w-5 h-5"></i></div><h3 class="text-base font-semibold text-slate-900">BI Dashboards</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section id="use-cases" class="section section-muted">
+  <div class="container">
+    <div class="text-center mb-12">
+      <span class="inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-600 bg-slate-200 mb-3">In production</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">Real Business Use Cases</h2>
+    </div>
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div class="rounded-2xl border border-slate-100 bg-white p-7 shadow-sm card-hover"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl text-orange-500" style="background:var(--c-orange-soft)"><i data-lucide="headphones" class="w-5 h-5"></i></div><h3 class="text-lg font-semibold text-slate-900">AI Customer Support</h3><p class="mt-2 text-sm leading-relaxed text-slate-500">24/7 WhatsApp bots that resolve 80% of queries</p></div>
+      <div class="rounded-2xl border border-slate-100 bg-white p-7 shadow-sm card-hover"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl text-rose-500" style="background:var(--c-rose-soft)"><i data-lucide="target" class="w-5 h-5"></i></div><h3 class="text-lg font-semibold text-slate-900">Sales Intelligence</h3><p class="mt-2 text-sm leading-relaxed text-slate-500">Smart lead scoring &amp; pipeline insights</p></div>
+      <div class="rounded-2xl border border-slate-100 bg-white p-7 shadow-sm card-hover"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl text-teal-600" style="background:var(--c-teal-soft)"><i data-lucide="cog" class="w-5 h-5"></i></div><h3 class="text-lg font-semibold text-slate-900">Internal Task Automation</h3><p class="mt-2 text-sm leading-relaxed text-slate-500">Reclaim hours of repetitive ops every day</p></div>
+      <div class="rounded-2xl border border-slate-100 bg-white p-7 shadow-sm card-hover"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl text-violet-500" style="background:var(--c-violet-soft)"><i data-lucide="layout-dashboard" class="w-5 h-5"></i></div><h3 class="text-lg font-semibold text-slate-900">CXO Dashboards</h3><p class="mt-2 text-sm leading-relaxed text-slate-500">Real-time KPIs from every system in one view</p></div>
+      <div class="rounded-2xl border border-slate-100 bg-white p-7 shadow-sm card-hover"><div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl text-amber-500" style="background:var(--c-amber-soft)"><i data-lucide="clipboard-list" class="w-5 h-5"></i></div><h3 class="text-lg font-semibold text-slate-900">Operations Management</h3><p class="mt-2 text-sm leading-relaxed text-slate-500">End-to-end workflow visibility &amp; control</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- JOURNEY STEPS -->
+<section id="journey-steps" class="section section-muted">
+  <div class="container">
+    <div class="text-center mb-12">
+      <span class="inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-600 bg-slate-200 mb-3">The path forward</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">AI Transformation Journey</h2>
+    </div>
+    <div class="mx-auto flex max-w-5xl flex-col items-stretch gap-3 md:flex-row md:items-center">
+      <div class="flex flex-1 items-center gap-3"><div class="flex flex-1 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6 py-6 text-center shadow-sm"><div><p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Step 1</p><p class="mt-1 text-base font-bold text-slate-800">Manual</p></div></div><i data-lucide="arrow-right" class="hidden md:block h-5 w-5 flex-shrink-0 text-slate-400"></i></div>
+      <div class="flex flex-1 items-center gap-3"><div class="flex flex-1 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6 py-6 text-center shadow-sm"><div><p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Step 2</p><p class="mt-1 text-base font-bold text-slate-800">Digitization</p></div></div><i data-lucide="arrow-right" class="hidden md:block h-5 w-5 flex-shrink-0 text-slate-400"></i></div>
+      <div class="flex flex-1 items-center gap-3"><div class="flex flex-1 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6 py-6 text-center shadow-sm"><div><p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Step 3</p><p class="mt-1 text-base font-bold text-slate-800">Automation</p></div></div><i data-lucide="arrow-right" class="hidden md:block h-5 w-5 flex-shrink-0 text-slate-400"></i></div>
+      <div class="flex flex-1 items-center gap-3"><div class="flex flex-1 items-center justify-center rounded-2xl bg-gradient-primary px-6 py-6 text-center shadow-glow"><div><p class="text-xs font-semibold uppercase tracking-wider text-white/70">Step 4</p><p class="mt-1 text-base font-bold text-white">AI-Driven Intelligence</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section id="how" class="section">
+  <div class="container">
+    <div class="text-center mb-12">
+      <span class="inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-600 bg-slate-100 mb-3">Our process</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">How We Work</h2>
+    </div>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="relative rounded-2xl border border-slate-100 bg-white p-7 shadow-sm card-hover"><div class="absolute -top-4 left-7 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-primary text-xs font-bold text-white shadow-glow">1</div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl text-orange-500" style="background:var(--c-orange-soft)"><i data-lucide="search" class="w-5 h-5"></i></div><h3 class="text-base font-semibold text-slate-900">Understand Business Problem</h3><p class="mt-2 text-sm leading-relaxed text-slate-500">Deep discovery sessions to map real pain points.</p></div>
+      <div class="relative rounded-2xl border border-slate-100 bg-white p-7 shadow-sm card-hover"><div class="absolute -top-4 left-7 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-primary text-xs font-bold text-white shadow-glow">2</div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl text-violet-500" style="background:var(--c-violet-soft)"><i data-lucide="pen-tool" class="w-5 h-5"></i></div><h3 class="text-base font-semibold text-slate-900">Design AI Architecture</h3><p class="mt-2 text-sm leading-relaxed text-slate-500">Right-fit models, data flows, and integration blueprint.</p></div>
+      <div class="relative rounded-2xl border border-slate-100 bg-white p-7 shadow-sm card-hover"><div class="absolute -top-4 left-7 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-primary text-xs font-bold text-white shadow-glow">3</div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl text-teal-600" style="background:var(--c-teal-soft)"><i data-lucide="hammer" class="w-5 h-5"></i></div><h3 class="text-base font-semibold text-slate-900">Build &amp; Train Systems</h3><p class="mt-2 text-sm leading-relaxed text-slate-500">Production-grade engineering &amp; custom training.</p></div>
+      <div class="relative rounded-2xl border border-slate-100 bg-white p-7 shadow-sm card-hover"><div class="absolute -top-4 left-7 flex h-8 w-8 items-center justify-center rounded-full bg-gradient-primary text-xs font-bold text-white shadow-glow">4</div><div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl text-amber-500" style="background:var(--c-amber-soft)"><i data-lucide="zap" class="w-5 h-5"></i></div><h3 class="text-base font-semibold text-slate-900">Deploy &amp; Optimize</h3><p class="mt-2 text-sm leading-relaxed text-slate-500">Ship safely, monitor continuously, improve weekly.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE BELIEF -->
+<section id="belief" class="section section-muted">
+  <div class="container">
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Core Belief</span>
+      <h2 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] text-slate-900">Human + AI is <span class="text-gradient-primary">Powerful</span></h2>
+      <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-500">We combine human decision-making, AI intelligence, and strong engineering execution.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EDGE -->
+<section id="edge" class="section">
+  <div class="container">
+    <div class="text-center mb-12">
+      <span class="inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-600 bg-slate-100 mb-3">Our edge</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900">The MacAppStudio Edge</h2>
+    </div>
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="rounded-2xl border border-slate-100 bg-white p-8 shadow-sm card-hover">
+        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl text-orange-500" style="background:var(--c-orange-soft)"><i data-lucide="gauge" class="w-6 h-6"></i></div>
+        <h3 class="text-xl font-semibold text-slate-900">Faster Development</h3>
+        <p class="mt-3 text-sm leading-relaxed text-slate-500">Battle-tested frameworks ship AI products in weeks, not quarters.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-100 bg-white p-8 shadow-sm card-hover">
+        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl text-violet-500" style="background:var(--c-violet-soft)"><i data-lucide="brain" class="w-6 h-6"></i></div>
+        <h3 class="text-xl font-semibold text-slate-900">Smarter Automation</h3>
+        <p class="mt-3 text-sm leading-relaxed text-slate-500">AI agents that learn, adapt and integrate with your existing stack.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-100 bg-white p-8 shadow-sm card-hover">
+        <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl text-teal-600" style="background:var(--c-teal-soft)"><i data-lucide="bar-chart-4" class="w-6 h-6"></i></div>
+        <h3 class="text-xl font-semibold text-slate-900">Better Decision Systems</h3>
+        <p class="mt-3 text-sm leading-relaxed text-slate-500">Real-time intelligence pipelines built for executives, not dashboards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="cta" class="section">
+  <div class="container">
+    <div class="relative mx-auto max-w-5xl overflow-hidden rounded-3xl border border-slate-100 bg-slate-50 p-10 text-center shadow-premium md:p-16">
+      <div class="absolute -top-24 left-1/2 h-64 w-[600px] -translate-x-1/2 rounded-full opacity-30 blur-3xl bg-gradient-primary"></div>
+      <div class="relative">
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Let's talk</span>
+        <h2 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-slate-900">Let's Make Your Business <span class="text-gradient-primary">AI-Ready</span></h2>
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href="mailto:hello@macappstudio.com" class="inline-flex items-center gap-2 h-12 rounded-full bg-gradient-primary px-7 text-base font-semibold text-white shadow-glow hover:opacity-90 transition-opacity">Get Proposal in 48 Hrs <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          <a href="mailto:hello@macappstudio.com" class="inline-flex items-center gap-2 h-12 rounded-full border-2 border-slate-200 bg-white px-7 text-base font-semibold text-slate-700 hover:border-slate-400 transition-colors"><i data-lucide="message-square" class="w-4 h-4"></i>Talk to AI Team</a>
+        </div>
+        <p class="mt-6 text-xs text-slate-400">No commitment • Built by real engineers</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="border-t border-slate-100 bg-white">
+  <div class="container py-14">
+    <p class="mx-auto max-w-2xl text-center text-2xl sm:text-3xl font-semibold leading-tight tracking-tight text-slate-900">AI is not a trend. <span class="text-gradient-brand">It's a shift.</span></p>
+    <div class="mt-12 flex flex-col md:flex-row items-center justify-between gap-6 border-t border-slate-100 pt-8">
+      <img src="assets/logo-CB05y9nZ.png" alt="MacAppStudio" class="w-[200px]" onerror="this.style.display='none'"/>
+      <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-400">
+        <a href="#services" class="hover:text-slate-700 transition-colors">Services</a>
+        <a href="#use-cases" class="hover:text-slate-700 transition-colors">Use cases</a>
+        <a href="#why" class="hover:text-slate-700 transition-colors">Why us</a>
+        <a href="#cta" class="hover:text-slate-700 transition-colors">Contact</a>
+      </nav>
+      <p class="text-xs text-slate-400">© 2026 MacAppStudio. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>document.addEventListener('DOMContentLoaded',()=>lucide.createIcons());</script>
+</body>
+</html>
