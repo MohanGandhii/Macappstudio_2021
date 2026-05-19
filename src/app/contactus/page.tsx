@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FiMail } from "react-icons/fi";
-import GetProposalButton from "@/components/ui/GetProposalButton";
+import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
 
 const OFFICES = [
   {

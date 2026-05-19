@@ -3,9 +3,9 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
-import GetProposalButton from "@/components/ui/GetProposalButton";
-import CaseStudiesCarousel from "./_components/CaseStudiesCarousel";
-import RapidFrameworkSection from "./_components/RapidFrameworkSection";
+import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
+import CaseStudiesCarousel from "./_components/01_CaseStudiesCarousel";
+import RapidFrameworkSection from "./_components/02_RapidFrameworkSection";
 
 const DIGITAL_SERVICES = [
   { name: "iOS App Development", icon: "/assets/images/appdevelopment/ios.svg" },

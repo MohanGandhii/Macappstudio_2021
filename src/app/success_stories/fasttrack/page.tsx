@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import GetProposalButton from "@/components/ui/GetProposalButton";
-import SuccessStoriesCTA from "../_components/SuccessStoriesCTA";
+import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
+import SuccessStoriesCTA from "../_components/04_SuccessStoriesCTA";
 
 const technologies = [
   { icon: "/assets/images/fasttrack/sketch.svg", name: "Sketch" },

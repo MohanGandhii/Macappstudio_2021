@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import GetProposalButton from "@/components/ui/GetProposalButton";
+import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
 import { motion } from "framer-motion";
 
 export default function SuccessStoriesCTA() {

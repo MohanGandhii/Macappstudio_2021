@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import GetProposalButton from "@/components/ui/GetProposalButton";
+import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
 
 const SCROLL_TEXTS = [
   "digitally transform",

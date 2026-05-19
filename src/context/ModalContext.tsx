@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, ReactNode } from "react";
-import ProposalModal from "@/components/ui/ProposalModal";
+import ProposalModal from "@/components/03_ProposalModal/ProposalModal";
 
 interface ModalContextType {
   openProposalModal: () => void;

@@ -6,7 +6,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import clsx from "clsx";
-import GetProposalButton from "@/components/ui/GetProposalButton";
+import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
 
 const SMARTER_SERVICES = [
   { title: "Digital Transformation", icon: "/assets/images/technology_Consulting/service_icon1.svg" },

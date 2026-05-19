@@ -2,7 +2,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import './packages.css';
-import GetProposalButton from '@/components/ui/GetProposalButton';
+import GetProposalButton from '@/components/04_GetProposalButton/GetProposalButton';
 
 export default function PackagesPage() {
   const [activeTab, setActiveTab] = useState('ios_packages');

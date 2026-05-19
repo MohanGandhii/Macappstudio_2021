@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiArrowRight, FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import GetProposalButton from "@/components/ui/GetProposalButton";
+import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
 
 const SOLUTIONS = [
   {

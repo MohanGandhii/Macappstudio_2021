@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import GetProposalButton from "@/components/ui/GetProposalButton";
+import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
 
 const BANNER_IMAGES = [
   "/assets/images/success_stories/banner_rigth_image1.png",

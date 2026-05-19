@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
-import OdysseyTimeline from "./_components/OdysseyTimeline";
-import InitiativesSection from "./_components/InitiativesSection";
-import RecentWorksSection from "@/components/shared/RecentWorksSection";
+import OdysseyTimeline from "./_components/01_OdysseyTimeline";
+import InitiativesSection from "./_components/02_InitiativesSection";
+import RecentWorksSection from "@/components/05_Shared/RecentWorksSection";
 
 const BANNER_IMAGES = [
   "/assets/images/who_we_are/banner_rigth_image1.png",
