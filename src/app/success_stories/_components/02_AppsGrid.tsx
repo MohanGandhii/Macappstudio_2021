@@ -4,20 +4,20 @@ import { FiArrowRight } from "react-icons/fi";
 
 const CASE_STUDIES = [
   { title: "Fasttrack", desc: "Cloud based end to end Uber like Cab Aggregation Platform", img: "/assets/images/success_stories/track.png", link: "/success_stories/fasttrack" },
-  { title: "Howdy", desc: "Hire eco friendly electric scooters for rent", img: "/assets/images/success_stories/howdy.png", link: "/success_stories/howdy" },
-  { title: "Sarva", desc: "End to end wellness ecosystem built on the authentic foundations of Yoga.", img: "/assets/images/success_stories/sarva.png", link: "/success_stories/sarva" },
+  { title: "Howdy", desc: "Hire eco friendly electric scooters for rent", img: "/assets/images/success_stories/Howdy.png", link: "/success_stories/howdy" },
+  { title: "Sarva", desc: "End to end wellness ecosystem built on the authentic foundations of Yoga.", img: "/assets/images/success_stories/Sarva.png", link: "/success_stories/sarva" },
   { title: "SPEED Learning App", desc: "India’s #1 NEET Training app", img: "/assets/images/success_stories/speed.png", link: "/success_stories/speed" },
-  { title: "Propcierge", desc: "End to end Digital Platform for real estate and home services.", img: "/assets/images/success_stories/propcierge.png", link: "/success_stories/propcierge" },
+  { title: "Propcierge", desc: "End to end Digital Platform for real estate and home services.", img: "/assets/images/success_stories/Propcierge.png", link: "/success_stories/propcierge" },
   { title: "AGS Cinemas", desc: "World class end to end cinema ticketing apps and website.", img: "/assets/images/success_stories/ags.png", link: "/success_stories/ags" },
   { title: "DABB", desc: "End to end Digital Platform for real estate and home services.", img: "/assets/images/success_stories/dabb.png", link: "/success_stories/dabb" },
   { title: "Daydoc", desc: "Home Healthcare now a click away!", img: "/assets/images/success_stories/daydoc.png", link: "/success_stories/daydoc" },
-  { title: "Znap", desc: "#1 cashback app in UAE", img: "/assets/images/success_stories/znap.png", link: "/success_stories/znap" },
-  { title: "Maidpro", desc: "Maid Service App in Boston", img: "/assets/images/success_stories/maidpro.png", link: "/success_stories/maidpro" },
-  { title: "Mediyoga", desc: "#1 Digital Prescription platform for Doctors", img: "/assets/images/success_stories/mediyoga.png", link: "/success_stories/mediyoga" },
-  { title: "Spony", desc: "Event Sponsorship connection building App", img: "/assets/images/success_stories/spony.png", link: "/success_stories/spony" },
-  { title: "NIR", desc: "Platform specially made for Roof Care", img: "/assets/images/success_stories/nir.png", link: "/success_stories/nir" },
-  { title: "Godmusic", desc: "Music app to enjoy Christian Devotional Songs.", img: "/assets/images/success_stories/godmusic.png", link: "/success_stories/godmusic" },
-  { title: "ATG", desc: "A devotional journal app to enjoy your walk with God", img: "/assets/images/success_stories/atg.png", link: "/success_stories/atg" },
+  { title: "Znap", desc: "#1 cashback app in UAE", img: "/assets/images/success_stories/Znap.png", link: "/success_stories/znap" },
+  { title: "Maidpro", desc: "Maid Service App in Boston", img: "/assets/images/success_stories/Maidpro.png", link: "/success_stories/maidpro" },
+  { title: "Mediyoga", desc: "#1 Digital Prescription platform for Doctors", img: "/assets/images/success_stories/Mediyoga.png", link: "/success_stories/mediyoga" },
+  { title: "Spony", desc: "Event Sponsorship connection building App", img: "/assets/images/success_stories/Spony.png", link: "/success_stories/spony" },
+  { title: "NIR", desc: "Platform specially made for Roof Care", img: "/assets/images/success_stories/NIR.png", link: "/success_stories/nir" },
+  { title: "Godmusic", desc: "Music app to enjoy Christian Devotional Songs.", img: "/assets/images/success_stories/GodMusic.png", link: "/success_stories/godmusic" },
+  { title: "ATG", desc: "A devotional journal app to enjoy your walk with God", img: "/assets/images/success_stories/ATG.png", link: "/success_stories/atg" },
 ];
 
 export default function CraftedAppsGrid() {
