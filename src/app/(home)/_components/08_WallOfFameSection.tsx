@@ -24,13 +24,13 @@ export default function WallOfFameSection() {
             Here is a list of <span className="font-bold text-gray-900">15+ projects</span> which inspired us and touched million lives
           </p>
         </div>
-      
+
         {/* Logos Area */}
         <div className="relative w-full overflow-hidden bg-[#eef7ec] py-16">
           <div className="flex flex-col gap-6">
             {/* Row 1 */}
             <div className="flex animate-marquee whitespace-nowrap gap-6 pl-6">
-              {[...ROW1_LOGOS, ...ROW1_LOGOS].map((num, idx) => (
+              {ROW1_LOGOS.map((num, idx) => (
                 <div key={`r1-${idx}`} className="flex-shrink-0 bg-white border-[4px] border-[#222] shadow-lg flex items-center justify-center w-[224px] h-[128px]">
                   <Image
                     src={`/assets/images/index/wall_fame_logo${num}.png`}
@@ -60,7 +60,7 @@ export default function WallOfFameSection() {
           </div>
         </div>
       </div>
-      
+
       <style jsx>{`
         .animate-marquee {
           display: flex;

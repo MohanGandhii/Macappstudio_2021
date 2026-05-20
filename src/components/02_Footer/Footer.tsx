@@ -1,22 +1,28 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { FaLinkedin, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const pathname = usePathname();
 
   return (
     <footer className="bg-white border-t border-b border-gray-200 shadow-sm py-10 lg:py-12">
       <div className="container mx-auto px-4 lg:px-8">
-        {/* CTA Section */}
-        <div className="bg-[#FAFAFA] py-20 md:py-28 px-4 flex flex-col items-center justify-center mb-16 max-w-5xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
-            Let’s Transform your business for a change that matters
-          </h2>
-          <Link href="/contactus" className="bg-black text-white px-8 py-3 text-sm md:text-base font-medium hover:bg-gray-800 transition-colors">
-            Get a Proposal
-          </Link>
-        </div>
+        {/* CTA Section - Hidden on who_we_are page */}
+        {pathname !== "/who_we_are" && (
+          <div className="bg-[#FAFAFA] py-20 md:py-28 px-4 flex flex-col items-center justify-center mb-16 max-w-5xl mx-auto">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
+              Let’s Transform your business for a change that matters
+            </h2>
+            <Link href="/contactus" className="bg-black text-white px-8 py-3 text-sm md:text-base font-medium hover:bg-gray-800 transition-colors">
+              Get a Proposal
+            </Link>
+          </div>
+        )}
 
         {/* Logo Section */}
         <div className="flex flex-col items-start mb-8">

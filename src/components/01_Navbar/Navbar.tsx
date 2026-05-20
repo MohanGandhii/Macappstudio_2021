@@ -30,12 +30,12 @@ export default function Navbar() {
   const whatWeDoLinks = [
     { name: "App Development", href: "/appdevelopment" },
     { name: "Technology Consulting", href: "/technology_consulting" },
-    { name: "Research and Development", href: "/R_D" },
+    { name: "Research and Development", href: "/research-and-development" },
   ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
         <div className="flex items-center justify-between h-20 relative">
           
           {/* Mobile Menu Hamburger Button - Left-aligned on mobile */}
@@ -56,21 +56,21 @@ export default function Navbar() {
             <Image
               src="/assets/images/logo.png"
               alt="MacAppStudio"
-              width={160}
-              height={45}
+              width={200}
+              height={55}
               className="object-contain"
               priority
             />
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             <div
               className="relative group"
               onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
-              <button className="flex items-center gap-1 font-medium text-gray-700 hover:text-blue-600 transition-colors py-2">
+              <button className="flex items-center gap-1 font-semibold text-[14px] text-gray-800 hover:text-blue-600 transition-colors py-2">
                 What we do? <FiChevronDown className={clsx("transition-transform", isDropdownOpen && "rotate-180")} />
               </button>
               
@@ -106,7 +106,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={clsx(
-                  "font-medium text-gray-700 hover:text-blue-600 transition-colors",
+                  "font-semibold text-[14px] text-gray-800 hover:text-blue-600 transition-colors",
                   pathname === link.href && "text-blue-600"
                 )}
               >
@@ -116,7 +116,7 @@ export default function Navbar() {
 
             <button 
               onClick={openProposalModal}
-              className="bg-black text-white px-6 py-2.5 font-bold hover:bg-gray-800 transition-colors shadow-md active:scale-95"
+              className="bg-black text-white px-6 py-2 font-bold text-[14px] hover:bg-gray-800 transition-colors shadow-md active:scale-95"
             >
               Get a Proposal
             </button>
@@ -185,7 +185,7 @@ export default function Navbar() {
                     Technology Consulting
                   </Link>
                   <Link 
-                    href="/R_D" 
+                    href="/research-and-development" 
                     onClick={closeMenu}
                     className="text-[17px] text-[#444] font-medium hover:text-black transition-colors"
                   >

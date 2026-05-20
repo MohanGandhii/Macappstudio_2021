@@ -14,7 +14,7 @@ const COMPONENTS_1 = [
   { icon: "/assets/images/appdevelopment/c13.svg", name: "Notes" },
   { icon: "/assets/images/appdevelopment/c15.svg", name: "Maps" },
   { icon: "/assets/images/appdevelopment/c2.svg", name: "Social Login" },
-  { icon: "/assets/images/appdevelopment/c4.svg", name: "Custom UI" },
+  { icon: "/assets/images/appdevelopment/c4.svg", name: "Custom User Interface" },
   { icon: "/assets/images/appdevelopment/c6.svg", name: "Expenses" },
   { icon: "/assets/images/appdevelopment/c8.svg", name: "Calendar" },
   { icon: "/assets/images/appdevelopment/c10.svg", name: "Activity Feed" },
@@ -55,32 +55,30 @@ export default function RapidFrameworkSection() {
   const currentComponents = slide === 0 ? COMPONENTS_1 : COMPONENTS_2;
 
   return (
-    <section className="py-24 bg-gray-50 overflow-hidden" id="Rapid_app_section">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight">
+    <section className="py-20 lg:py-32 bg-white overflow-hidden" id="Rapid_app_section">
+      <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
+        <div className="text-center max-w-5xl mx-auto mb-16 lg:mb-24">
+          <h2 className="text-3xl md:text-5xl lg:text-[42px] font-bold text-[#2B2B2B] mb-6 tracking-tight">
             Rapid Application Development Framework
           </h2>
-          <p className="text-xl text-gray-600 leading-relaxed">
-            We follow a rapid application development framework for our app development in which we use the prebuilt component to build an app instead of starting everything from scratch, which helps us to deliver apps in just <span className="text-blue-600 font-bold">10% of the normal development time.</span>
+          <p className="text-[16px] lg:text-[18px] text-gray-700 leading-relaxed font-normal">
+            We follow a rapid application development framework for our app development in which we use the prebuilt component to build an app instead of starting everything from scratch, which helps us to deliver apps in just 10% of the normal development time.
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center gap-16">
-          <div className="w-full lg:w-1/2">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-white p-4">
-              <Image
-                src="/assets/images/appdevelopment/component.png"
-                alt="Rapid Components"
-                width={700}
-                height={500}
-                className="w-full h-auto object-contain"
-              />
-            </div>
+        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24">
+          <div className="w-full lg:w-1/2 flex justify-center">
+            <Image
+              src="/assets/images/appdevelopment/component.png"
+              alt="Rapid Components"
+              width={700}
+              height={500}
+              className="w-full max-w-[500px] h-auto object-contain"
+            />
           </div>
           
           <div className="w-full lg:w-1/2">
-            <div className="relative h-[500px] md:h-[400px]">
+            <div className="relative min-h-[480px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={slide}
@@ -88,28 +86,28 @@ export default function RapidFrameworkSection() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.5 }}
-                  className="grid grid-cols-1 md:grid-cols-2 gap-4"
+                  className="grid grid-flow-col grid-rows-8 gap-x-4 gap-y-8"
                 >
                   {currentComponents.map((comp, i) => (
-                    <div key={i} className="flex items-center gap-4 bg-white p-4 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
-                      <div className="w-12 h-12 flex-shrink-0 bg-blue-50 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                    <div key={i} className="flex items-center gap-4">
+                      <div className="w-6 h-6 flex-shrink-0 flex items-center justify-center">
                         <Image
                           src={comp.icon}
                           alt={comp.name}
                           width={24}
                           height={24}
-                          className="group-hover:brightness-0 group-hover:invert transition-all"
+                          className="object-contain"
                         />
                       </div>
-                      <span className="font-bold text-gray-800">{comp.name}</span>
+                      <span className="font-medium text-[15px] text-[#444]">{comp.name}</span>
                     </div>
                   ))}
                 </motion.div>
               </AnimatePresence>
             </div>
             
-            <div className="mt-12 bg-blue-600 p-8 rounded-3xl text-center shadow-xl shadow-blue-200">
-              <h3 className="text-3xl md:text-5xl font-black text-white">+ 1600 Frameworks</h3>
+            <div className="mt-8 pt-8 border-t border-gray-100">
+              <h3 className="text-2xl md:text-[28px] font-bold text-[#2B2B2B] text-left">+ 1600 Frameworks</h3>
             </div>
           </div>
         </div>
