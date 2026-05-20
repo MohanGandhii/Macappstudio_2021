@@ -67,7 +67,7 @@ export default function HeroSection() {
                 </span>
               </div>
             </div>
-            
+
             {/* Desktop Button */}
             <GetProposalButton className="hidden lg:inline-block bg-black text-white px-12 py-5 text-2xl font-bold hover:bg-gray-800 transition-all shadow-2xl active:scale-95" />
           </div>
@@ -92,7 +92,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      
+
       {/* Product Rating Section */}
       <div className="container mx-auto px-4 lg:px-8 mt-24 border-t border-gray-100 pt-20">
         <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">

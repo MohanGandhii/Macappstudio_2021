@@ -87,8 +87,8 @@ export default function RecentWorksSection() {
               </div>
             </div>
 
-            {/* STATIC ARROWS */}
-            <div className="flex items-center gap-5 mt-4 lg:mt-8">
+            {/* STATIC ARROWS (Desktop only) */}
+            <div className="hidden lg:flex items-center gap-5 mt-4 lg:mt-8">
               <button 
                 onClick={prevSlide} 
                 className="w-[38px] h-[38px] rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-200 transition-colors text-[#1a1e2e]"
@@ -114,27 +114,55 @@ export default function RecentWorksSection() {
             </div>
           </div>
           
-          {/* RIGHT SIDE - Animating Image */}
-          <div className="w-full lg:w-7/12 relative flex justify-end min-h-[250px] lg:min-h-[450px]">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={currentIndex}
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -30 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="absolute right-0 top-0 w-full flex justify-end"
+          {/* RIGHT SIDE - Animating Image & Mobile Arrows */}
+          <div className="w-full lg:w-7/12 flex flex-col items-start">
+            <div className="w-full relative flex justify-end aspect-[1340/956] lg:aspect-auto lg:min-h-[450px]">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentIndex}
+                  initial={{ opacity: 0, x: 30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -30 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  className="absolute right-0 top-0 w-full flex justify-end"
+                >
+                  <Image
+                    src={WORKS[currentIndex].image}
+                    alt="Project Preview"
+                    width={1000}
+                    height={800}
+                    className="w-full max-w-[800px] h-auto object-contain drop-shadow-2xl"
+                    priority
+                  />
+                </motion.div>
+              </AnimatePresence>
+            </div>
+
+            {/* MOBILE ARROWS */}
+            <div className="flex lg:hidden items-center gap-5 mt-6 w-full z-10 justify-start">
+              <button 
+                onClick={prevSlide} 
+                className="w-[38px] h-[38px] rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-200 transition-colors text-[#1a1e2e]"
               >
-                <Image
-                  src={WORKS[currentIndex].image}
-                  alt="Project Preview"
-                  width={1000}
-                  height={800}
-                  className="w-full max-w-[800px] h-auto object-contain drop-shadow-2xl"
-                  priority
-                />
-              </motion.div>
-            </AnimatePresence>
+                <FiChevronLeft size={18} />
+              </button>
+              
+              <div className="w-28 h-[2px] flex bg-gray-200 relative rounded-full overflow-hidden">
+                {WORKS.map((_, i) => (
+                  <div 
+                    key={i} 
+                    className={`h-full w-1/2 transition-colors duration-500 ease-in-out ${currentIndex === i ? 'bg-[#1a1e2e]' : 'bg-transparent'}`} 
+                  />
+                ))}
+              </div>
+
+              <button 
+                onClick={nextSlide} 
+                className="w-[38px] h-[38px] rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-200 transition-colors text-[#1a1e2e]"
+              >
+                <FiChevronRight size={18} />
+              </button>
+            </div>
           </div>
 
         </div>

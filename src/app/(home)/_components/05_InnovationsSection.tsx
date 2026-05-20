@@ -71,16 +71,16 @@ export default function InnovationsSection() {
     <section className="py-16 md:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
         {/* Tabs Selector matching the static layout */}
-        <div className="flex flex-wrap justify-center gap-3 lg:gap-4 mb-16">
+        <div className="flex flex-nowrap md:flex-wrap justify-start md:justify-center gap-3 lg:gap-4 mb-16 overflow-x-auto hide-scrollbar pb-3 md:pb-0">
           {TABS.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={clsx(
-                "p-4 md:p-6 text-center transition-all duration-300 flex flex-col items-center justify-center min-h-[90px] md:min-h-[110px]",
+                "p-4 md:p-6 text-center transition-all duration-300 flex flex-col items-center justify-center min-h-[90px] md:min-h-[110px] flex-shrink-0",
                 tab.id === "SPEED" 
-                  ? "w-full md:w-auto md:flex-1 max-w-[280px] md:max-w-none" 
-                  : "w-[calc(33.333%-8px)] md:flex-1",
+                  ? "w-[185px] sm:w-[200px] md:w-auto md:flex-1 md:max-w-none" 
+                  : "w-[130px] sm:w-[145px] md:w-auto md:flex-1",
                 activeTab === tab.id 
                   ? "bg-white border-t border-l border-r border-transparent border-b-[4px] border-b-black shadow-[0_8px_16px_rgba(0,0,0,0.04)]" 
                   : "bg-white border border-gray-100 border-b-[4px] border-b-transparent hover:border-gray-200"

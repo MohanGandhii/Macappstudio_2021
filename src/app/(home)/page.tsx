@@ -17,13 +17,13 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      
+
       {/* Platform Banner - Light Blue */}
       <PlatformSection />
-      
+
       {/* Quotes Section */}
       <QuotesSection />
-      
+
       {/* Expertise Section */}
       <ExpertiseSection />
 
@@ -32,10 +32,10 @@ export default function Home() {
 
       {/* Powering Innovations (Tabs) */}
       <InnovationsSection />
-      
+
       {/* 15 Years Achievements */}
       <AchievementsSection />
-      
+
       {/* Footer-like content sequence */}
       <AwardsSection />
       <PartnersSection />
