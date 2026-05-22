@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 
-const CASE_STUDIES = [
+export const CASE_STUDIES = [
   { title: "Fasttrack", desc: "Cloud based end to end Uber like Cab Aggregation Platform", img: "/assets/images/success_stories/track.png", link: "/success_stories/fasttrack" },
   { title: "Howdy", desc: "Hire eco friendly electric scooters for rent", img: "/assets/images/success_stories/Howdy.png", link: "/success_stories/howdy" },
   { title: "Sarva", desc: "End to end wellness ecosystem built on the authentic foundations of Yoga.", img: "/assets/images/success_stories/Sarva.png", link: "/success_stories/sarva" },

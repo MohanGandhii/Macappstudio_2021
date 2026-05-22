@@ -2,9 +2,6 @@
 
 import Image from "next/image";
 
-const ROW1_LOGOS = [1, 2, 3, 4, 5, 6, 7];
-const ROW2_LOGOS = [4, 5, 6, 7, 1, 2, 3];
-
 export default function WallOfFameSection() {
   return (
     <section className="py-20 bg-white overflow-hidden" id="done_project_section">
@@ -26,59 +23,42 @@ export default function WallOfFameSection() {
         </div>
 
         {/* Logos Area */}
-        <div className="relative w-full overflow-hidden bg-[#eef7ec] py-16">
-          <div className="flex flex-col gap-6">
-            {/* Row 1 */}
-            <div className="flex animate-marquee whitespace-nowrap gap-6 pl-6">
-              {ROW1_LOGOS.map((num, idx) => (
-                <div key={`r1-${idx}`} className="flex-shrink-0 bg-white border-[4px] border-[#222] shadow-lg flex items-center justify-center w-[224px] h-[128px]">
-                  <Image
-                    src={`/assets/images/index/wall_fame_logo${num}.png`}
-                    alt={`Project ${num}`}
-                    width={144}
-                    height={64}
-                    className="max-h-full w-auto object-contain px-4 brightness-0"
-                  />
-                </div>
-              ))}
-            </div>
-
-            {/* Row 2 */}
-            <div className="flex animate-marquee-reverse whitespace-nowrap gap-6 pl-20">
-              {[...ROW2_LOGOS, ...ROW2_LOGOS].map((num, idx) => (
-                <div key={`r2-${idx}`} className="flex-shrink-0 bg-white border-[4px] border-[#222] shadow-lg flex items-center justify-center w-[224px] h-[128px]">
-                  <Image
-                    src={`/assets/images/index/wall_fame_logo${num}.png`}
-                    alt={`Project ${num}`}
-                    width={144}
-                    height={64}
-                    className="max-h-full w-auto object-contain px-4 brightness-0"
-                  />
-                </div>
-              ))}
-            </div>
+        <div className="relative w-full overflow-hidden bg-[#eef7ec] py-16 done_project_list_box">
+          <div className="slider">
+            <div className="slider-row"></div>
           </div>
         </div>
       </div>
 
       <style jsx>{`
-        .animate-marquee {
-          display: flex;
-          animation: marquee 35s linear infinite;
+        .slider {
+          width: 100%;
+          overflow: hidden;
         }
-        .animate-marquee-reverse {
-          display: flex;
-          animation: marquee-reverse 40s linear infinite;
+        .slider-row {
+          width: 100%;
+          height: 468px;
+          background-image: url('/assets/images/index/wall_fame_logo.png');
+          background-size: 2400px 468px;
+          background-repeat: repeat-x;
+          animation: slide 40s linear infinite;
         }
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+        @keyframes slide {
+          from {
+            background-position-x: 0;
+          }
+          to {
+            background-position-x: -2400px;
+          }
         }
-        @keyframes marquee-reverse {
-          0% { transform: translateX(-50%); }
-          100% { transform: translateX(0); }
+        @media (max-width: 420px) {
+          .slider-row {
+            height: 400px;
+            background-size: 2400px 400px;
+          }
         }
       `}</style>
     </section>
   );
 }
+

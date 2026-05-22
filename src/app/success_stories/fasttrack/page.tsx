@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
-import SuccessStoriesCTA from "../_components/04_SuccessStoriesCTA";
+import WhatToKnowMore from "../_components/WhatToKnowMore";
 
 const technologies = [
   { icon: "/assets/images/fasttrack/sketch.svg", name: "Sketch" },
@@ -183,8 +183,8 @@ export default function FasttrackPage() {
         </div>
       </section>
 
-      {/* 7. Bottom CTA */}
-      <SuccessStoriesCTA />
+      {/* What to Know more slider */}
+      <WhatToKnowMore currentSlug="fasttrack" />
     </main>
   );
 }

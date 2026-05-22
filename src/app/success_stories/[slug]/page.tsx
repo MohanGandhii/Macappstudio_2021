@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { caseStudies } from "../_data/caseStudies";
 import { bannerBgColors, DEFAULT_BANNER_BG, slugOverrides } from "../_data/caseStudiesConfig";
 import { PlatformItem, SplitSection, AppScreenCarousel } from "../_components/03_CaseStudyDetailComponents";
-import SuccessStoriesCTA from "../_components/04_SuccessStoriesCTA";
+import WhatToKnowMore from "../_components/WhatToKnowMore";
 
 const getCaseStudyData = (slug: string) => {
   const normalized = slug.toLowerCase();
@@ -206,8 +206,8 @@ export default function CaseStudyPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* 7. Bottom CTA */}
-      <SuccessStoriesCTA />
+      {/* What to Know more slider */}
+      <WhatToKnowMore currentSlug={slug} />
     </main>
   );
 }

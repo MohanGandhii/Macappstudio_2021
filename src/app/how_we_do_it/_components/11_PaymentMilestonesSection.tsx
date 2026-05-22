@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 
 const PAYMENT_MILESTONES = [
@@ -8,47 +9,85 @@ const PAYMENT_MILESTONES = [
   { title: "Live",                   icon: "/assets/images/how_we_do_it/small_icon3.svg" },
 ];
 
-
 // Payment amounts (20% each)
 const AMOUNTS = ["20% payment", "20% payment", "20% payment", "20% payment", "20% payment"];
 
 export default function PaymentMilestonesSection() {
   return (
-    <section className="w-full bg-[#f9f9f9] py-12 lg:py-16 border-y border-gray-100">
-      <div className="container mx-auto px-4 lg:px-8 max-w-[1200px] overflow-x-auto">
-        <div className="flex items-start justify-center gap-0 min-w-[540px]">
-          {PAYMENT_MILESTONES.map((milestone, i) => (
-            <div key={i} className="flex items-start">
-              {/* Milestone item */}
-              <div className="flex flex-col items-center text-center min-w-[90px] max-w-[120px]">
-                <div className="w-[64px] h-[64px] lg:w-[72px] lg:h-[72px] bg-white border border-[#ddd] rounded-full flex items-center justify-center mb-3 shadow-sm">
-                  <Image src={milestone.icon} alt={milestone.title} width={28} height={28} className="opacity-75" />
-                </div>
-                <span
-                  className="text-[13px] lg:text-[14px] font-semibold text-[#222] leading-tight mb-1"
-                  style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
-                >
-                  {milestone.title}
-                </span>
-                <span
-                  className="text-[11px] lg:text-[12px] text-[#888]"
-                  style={{ fontFamily: "AvenirNext-Regular, sans-serif" }}
-                >
-                  {AMOUNTS[i]}
-                </span>
-              </div>
+    <section className="w-full bg-white py-16 lg:py-20 border-b border-gray-100 flex flex-col items-center">
+      {/* Heading Text */}
+      <div className="w-full max-w-[1200px] px-4 lg:px-8 mb-10 text-center">
+        <p 
+          className="text-[15px] lg:text-[17px] text-[#333] leading-relaxed max-w-[700px] mx-auto"
+          style={{ fontFamily: "AvenirNext-Regular, sans-serif" }}
+        >
+          get a great value and a world-class product which worth the amount you pay for.
+        </p>
+      </div>
 
-              {/* Arrow between items */}
-              {i < PAYMENT_MILESTONES.length - 1 && (
-                <div className="flex items-center self-start mt-[28px] px-1 text-[#aaa]">
-                  <svg width="28" height="12" viewBox="0 0 28 12" fill="none">
-                    <line x1="0" y1="6" x2="22" y2="6" stroke="#aaa" strokeWidth="1.5" strokeDasharray="4 2" />
-                    <polyline points="18,2 24,6 18,10" fill="none" stroke="#aaa" strokeWidth="1.5" />
-                  </svg>
+      {/* Container with horizontal scroll on smaller screens */}
+      <div className="w-full max-w-[1200px] overflow-x-auto px-4 lg:px-8 hide-scrollbar">
+        <div className="min-w-[1040px] flex justify-center py-2">
+          <div className="w-[1000px] h-[160px] relative">
+            
+            {/* Connector Paths (Dashed lines with arrows touching circle boundaries) */}
+            <svg 
+              className="absolute top-0 left-0 pointer-events-none" 
+              width="1000" 
+              height="76" 
+              viewBox="0 0 1000 76" 
+              fill="none"
+            >
+              {/* Arrow 1: Col 0 -> Col 1 */}
+              <path d="M 138 38 L 254 38" stroke="#333333" strokeWidth="1.3" strokeDasharray="3 3" />
+              <path d="M 254 33 L 262 38 L 254 43" stroke="#333333" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+
+              {/* Arrow 2: Col 1 -> Col 2 */}
+              <path d="M 338 38 L 454 38" stroke="#333333" strokeWidth="1.3" strokeDasharray="3 3" />
+              <path d="M 454 33 L 462 38 L 454 43" stroke="#333333" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+
+              {/* Arrow 3: Col 2 -> Col 3 */}
+              <path d="M 538 38 L 654 38" stroke="#333333" strokeWidth="1.3" strokeDasharray="3 3" />
+              <path d="M 654 33 L 662 38 L 654 43" stroke="#333333" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+
+              {/* Arrow 4: Col 3 -> Col 4 */}
+              <path d="M 738 38 L 854 38" stroke="#333333" strokeWidth="1.3" strokeDasharray="3 3" />
+              <path d="M 854 33 L 862 38 L 854 43" stroke="#333333" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+
+            {/* Milestone Items */}
+            <div className="absolute top-0 left-0 w-[1000px] flex justify-between">
+              {PAYMENT_MILESTONES.map((milestone, idx) => (
+                <div key={idx} className="w-[200px] flex flex-col items-center text-center select-none">
+                  {/* Circle - thin dark border */}
+                  <div className="w-[76px] h-[76px] bg-white border border-[#333333] rounded-full flex items-center justify-center mb-3">
+                    <Image 
+                      src={milestone.icon} 
+                      alt={milestone.title} 
+                      width={36} 
+                      height={36} 
+                      className="object-contain" 
+                    />
+                  </div>
+                  {/* Milestone title */}
+                  <span 
+                    className="text-[15px] lg:text-[16px] font-bold text-[#222] leading-snug mb-1 max-w-[180px]"
+                    style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                  >
+                    {milestone.title}
+                  </span>
+                  {/* Payment text */}
+                  <span 
+                    className="text-[13px] text-[#666]"
+                    style={{ fontFamily: "AvenirNext-Regular, sans-serif" }}
+                  >
+                    {AMOUNTS[idx]}
+                  </span>
                 </div>
-              )}
+              ))}
             </div>
-          ))}
+
+          </div>
         </div>
       </div>
     </section>
