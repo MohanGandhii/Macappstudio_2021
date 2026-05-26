@@ -25,6 +25,7 @@ export default function Navbar() {
     { name: "How we do it?", href: "/how_we_do_it" },
     { name: "Success Stories", href: "/success_stories" },
     { name: "Who we are?", href: "/who_we_are" },
+    { name: "Packages", href: "/packages" },
   ];
 
   const whatWeDoLinks = [
@@ -216,6 +217,13 @@ export default function Navbar() {
                   className="font-bold text-[18px] text-[#2B2B2B] hover:text-black transition-colors"
                 >
                   Who we are?
+                </Link>
+                <Link 
+                  href="/packages" 
+                  onClick={closeMenu}
+                  className="font-bold text-[18px] text-[#2B2B2B] hover:text-black transition-colors"
+                >
+                  Packages
                 </Link>
                 <Link 
                   href="/contactus" 
