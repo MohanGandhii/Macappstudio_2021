@@ -95,13 +95,13 @@ export default function ComparisonSection() {
                   {/* Content */}
                   <div className="flex flex-col justify-center min-w-0">
                     <h3 
-                      className="text-[#1E2229] font-bold text-[17px] sm:text-[18px] tracking-tight mb-1 whitespace-nowrap"
+                      className="text-[#1E2229] font-bold text-[17px] sm:text-[18px] tracking-tight mb-1"
                       style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
                     >
                       {item.title}
                     </h3>
                     <p 
-                      className="text-[#5E6675] text-[13px] sm:text-[14px] leading-relaxed font-normal opacity-90 whitespace-nowrap"
+                      className="text-[#5E6675] text-[13px] sm:text-[14px] leading-relaxed font-normal opacity-90"
                       style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
                     >
                       {item.description}
@@ -150,13 +150,13 @@ export default function ComparisonSection() {
                   {/* Content */}
                   <div className="flex flex-col justify-center min-w-0">
                     <h3 
-                      className="text-[#1E2229] font-bold text-[17px] sm:text-[18px] tracking-tight mb-1 whitespace-nowrap"
+                      className="text-[#1E2229] font-bold text-[17px] sm:text-[18px] tracking-tight mb-1"
                       style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
                     >
                       {item.title}
                     </h3>
                     <p 
-                      className="text-[#5E6675] text-[13px] sm:text-[14px] leading-relaxed font-normal opacity-90 whitespace-nowrap"
+                      className="text-[#5E6675] text-[13px] sm:text-[14px] leading-relaxed font-normal opacity-90"
                       style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
                     >
                       {item.description}

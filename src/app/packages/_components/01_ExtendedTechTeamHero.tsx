@@ -170,7 +170,7 @@ export default function ExtendedTechTeamHero() {
           </div>
 
           {/* Center Section: Core Metrics */}
-          <div className="flex flex-row items-center justify-center gap-12 sm:gap-20 md:gap-24 w-full lg:w-auto select-none">
+          <div className="flex flex-row flex-wrap sm:flex-nowrap items-center justify-center gap-6 sm:gap-20 md:gap-24 w-full lg:w-auto select-none">
             
             {/* Stat 1 */}
             <div className="flex flex-col items-center text-center">
