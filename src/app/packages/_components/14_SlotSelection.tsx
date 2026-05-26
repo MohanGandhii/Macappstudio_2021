@@ -74,14 +74,14 @@ export default function SlotSelection() {
         <motion.div 
           whileHover={{ scale: 1.025 }}
           whileTap={{ scale: 0.985 }}
-          className="mb-5"
+          className="mb-5 w-full sm:w-auto px-4 sm:px-0 flex justify-center"
         >
           <button 
-            className="bg-[#4CD964] hover:bg-[#43c45a] active:scale-[0.985] text-white font-bold py-4 px-8 rounded-full transition-all text-[15px] sm:text-[16px] tracking-wide shadow-md flex items-center gap-2.5 cursor-pointer"
+            className="bg-[#4CD964] hover:bg-[#43c45a] active:scale-[0.985] text-white font-bold py-3.5 px-6 sm:py-4 sm:px-8 rounded-full transition-all text-[13px] sm:text-[15px] md:text-[16px] tracking-wide shadow-md flex items-center justify-center gap-2 sm:gap-2.5 cursor-pointer w-full sm:w-auto text-center"
             style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
           >
             <span>Secure My Dream Team Slot Now</span>
-            <ArrowRight size={18} className="stroke-[2.5px]" />
+            <ArrowRight size={18} className="stroke-[2.5px] shrink-0" />
           </button>
         </motion.div>
 

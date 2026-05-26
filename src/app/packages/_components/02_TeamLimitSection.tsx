@@ -33,13 +33,13 @@ export default function TeamLimitSection() {
         </p>
 
         {/* Logo Container Grid */}
-        <div className="flex flex-nowrap items-center justify-between sm:justify-center gap-4 sm:gap-10 md:gap-16 lg:gap-20 mt-4 max-w-5xl mx-auto overflow-x-auto md:overflow-x-visible pb-4 md:pb-0 scrollbar-none">
+        <div className="flex flex-nowrap items-center justify-start sm:justify-center gap-6 sm:gap-10 md:gap-16 lg:gap-20 mt-4 max-w-5xl mx-auto overflow-x-auto md:overflow-x-visible pb-6 md:pb-0 scrollbar-none snap-x snap-mandatory scroll-smooth w-full px-6">
           {logos.map((logo, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="relative w-[90px] h-[40px] sm:w-[130px] sm:h-[50px] md:w-[160px] md:h-[60px] flex-shrink-0 flex items-center justify-center transition-all duration-300 cursor-pointer"
+              className="relative w-[90px] h-[40px] sm:w-[130px] sm:h-[50px] md:w-[160px] md:h-[60px] flex-shrink-0 flex items-center justify-center transition-all duration-300 cursor-pointer snap-center"
             >
               <Image
                 src={logo.src}

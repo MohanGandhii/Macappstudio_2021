@@ -42,7 +42,7 @@ export default function AwardsSection() {
         </div>
 
         {/* Awards Clean Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 lg:gap-12 max-w-6xl mx-auto">
+        <div className="flex flex-wrap items-start justify-center gap-x-8 gap-y-12 max-w-6xl mx-auto">
           {awards.map((item, i) => (
             <div key={i} className="flex flex-col items-center text-center group">
               

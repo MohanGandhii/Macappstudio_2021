@@ -87,7 +87,7 @@ function CardComponent({ card }: { card: any }) {
     <motion.div
       whileHover={{ y: -8, scale: 1.01 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="bg-white border border-[#E5E7EB] rounded-[32px] p-8 sm:p-10 flex flex-col items-center text-center shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.06)] transition-all h-full"
+      className="bg-white border border-[#E5E7EB] rounded-[32px] p-5 sm:p-8 md:p-10 flex flex-col items-center text-center shadow-[0_8px_30px_rgb(0,0,0,0.02)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.06)] transition-all h-full"
     >
       {/* Icon Container */}
       <div className={`w-16 h-16 rounded-[20px] bg-gradient-to-tr ${card.gradient} flex items-center justify-center mb-6 shadow-md relative overflow-hidden shrink-0`}>
@@ -116,7 +116,7 @@ function CardComponent({ card }: { card: any }) {
           {card.pills.map((pill: string, idx: number) => (
             <div
               key={idx}
-              className="bg-[#F3F4F6] text-[#1E2229] text-[12px] sm:text-[13px] md:text-[14px] py-2.5 px-2 rounded-[12px] font-semibold text-center transition-colors hover:bg-[#E5E7EB] whitespace-nowrap overflow-hidden text-ellipsis"
+              className="bg-[#F3F4F6] text-[#1E2229] text-[11px] sm:text-[13px] md:text-[14px] py-2 px-1 sm:px-2 rounded-[12px] font-semibold text-center transition-colors hover:bg-[#E5E7EB] flex items-center justify-center min-h-[38px] sm:min-h-[44px] leading-tight"
               style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
             >
               {pill}

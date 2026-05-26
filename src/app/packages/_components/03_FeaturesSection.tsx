@@ -45,7 +45,7 @@ export default function FeaturesSection() {
             className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[44px] tracking-tight leading-tight mb-6"
             style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
           >
-            Unlock Your Potential with Our <br />
+            Unlock Your Potential with Our <br className="hidden md:inline" />
             <span className="text-[#0052FF]">Extended Tech Team</span>
           </h2>
           

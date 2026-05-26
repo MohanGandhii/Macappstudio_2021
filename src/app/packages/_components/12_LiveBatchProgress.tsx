@@ -82,7 +82,7 @@ export default function LiveBatchProgress() {
                     
                     {/* Left Column: Progress details & sleek Progress Bar */}
                     <div className="flex-grow">
-                      <div className="flex justify-between items-center mb-2.5">
+                      <div className="flex flex-wrap sm:flex-nowrap justify-between gap-1 items-center mb-2.5">
                         <span 
                           className="text-[#1E2229] font-bold text-[15px] sm:text-[16px]"
                           style={{ fontFamily: "CircularStd-Bold, sans-serif" }}

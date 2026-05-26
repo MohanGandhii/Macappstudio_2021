@@ -108,7 +108,7 @@ export default function PricingSection() {
       <div className="max-w-[1360px] mx-auto px-6">
         
         {/* Toggle Switch */}
-        <div className="max-w-6xl w-full mx-auto mb-12 sm:mb-16">
+        <div className="max-w-md w-full mx-auto mb-12 sm:mb-16">
           <div className="bg-[#EEF0F3] p-1.5 rounded-2xl flex items-center w-full border border-gray-200">
             <button
               onClick={() => setBillingType("onsite")}

@@ -17,7 +17,7 @@ export default function DreamTeamCallBanner() {
         
         {/* Banner Container with rounded corners and glassmorphism borders */}
         <div 
-          className="bg-white/30 backdrop-blur-md border border-gray-200/60 rounded-[36px] md:rounded-[48px] p-12 sm:p-16 md:py-20 md:px-20 relative overflow-hidden flex flex-col items-center justify-center text-center shadow-[0_20px_50px_rgba(0,0,0,0.015)] w-full"
+          className="bg-white/30 backdrop-blur-md border border-gray-200/60 rounded-[36px] md:rounded-[48px] p-6 sm:p-16 md:py-20 md:px-20 relative overflow-hidden flex flex-col items-center justify-center text-center shadow-[0_20px_50px_rgba(0,0,0,0.015)] w-full"
         >
           {/* ========================================================================= */}
           {/* HIGH-FIDELITY CSS GLOW MESH BACKGROUND CIRCLES (Vibrant & Saturated)      */}

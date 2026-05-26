@@ -85,23 +85,23 @@ export default function ComparisonSection() {
                   key={index}
                   whileHover={{ y: -3, scale: 1.01 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className="w-full bg-[#FFF9F9] border border-[#FFE5E5] rounded-[24px] py-6 px-6 md:px-8 flex items-center gap-4 hover:shadow-sm transition-all text-left min-h-[90px] sm:min-h-[95px] md:min-h-[100px]"
+                  className="w-full bg-[#FFF9F9] border border-[#FFE5E5] rounded-[24px] py-5 px-4 sm:p-6 md:py-6 md:px-8 flex items-start sm:items-center gap-3.5 sm:gap-4 hover:shadow-sm transition-all text-left min-h-[90px]"
                 >
                   {/* Icon container */}
-                  <div className="w-12 h-12 rounded-[16px] bg-[#FFE4E4] flex items-center justify-center shrink-0">
-                    <item.icon className="w-5 h-5 text-[#EF4444] stroke-[2px]" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-[14px] sm:rounded-[16px] bg-[#FFE4E4] flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+                    <item.icon className="w-[18px] h-[18px] sm:w-5 sm:h-5 text-[#EF4444] stroke-[2px]" />
                   </div>
 
                   {/* Content */}
                   <div className="flex flex-col justify-center min-w-0">
                     <h3 
-                      className="text-[#1E2229] font-bold text-[17px] sm:text-[18px] tracking-tight mb-1"
+                      className="text-[#1E2229] font-bold text-[16px] sm:text-[17px] md:text-[18px] tracking-tight mb-1"
                       style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
                     >
                       {item.title}
                     </h3>
                     <p 
-                      className="text-[#5E6675] text-[13px] sm:text-[14px] leading-relaxed font-normal opacity-90"
+                      className="text-[#5E6675] text-[12.5px] sm:text-[13px] md:text-[14px] leading-relaxed font-normal opacity-90"
                       style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
                     >
                       {item.description}
@@ -140,23 +140,23 @@ export default function ComparisonSection() {
                   key={index}
                   whileHover={{ y: -3, scale: 1.01 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className="w-full bg-[#F3FAF5] border border-[#D1FAE5] rounded-[24px] py-6 px-6 md:px-8 flex items-center gap-4 hover:shadow-sm transition-all text-left min-h-[90px] sm:min-h-[95px] md:min-h-[100px]"
+                  className="w-full bg-[#F3FAF5] border border-[#D1FAE5] rounded-[24px] py-5 px-4 sm:p-6 md:py-6 md:px-8 flex items-start sm:items-center gap-3.5 sm:gap-4 hover:shadow-sm transition-all text-left min-h-[90px]"
                 >
                   {/* Icon container */}
-                  <div className="w-12 h-12 rounded-[16px] bg-[#D1FAE5] flex items-center justify-center shrink-0">
-                    <item.icon className="w-5 h-5 text-[#10B981] stroke-[2px]" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-[14px] sm:rounded-[16px] bg-[#D1FAE5] flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+                    <item.icon className="w-[18px] h-[18px] sm:w-5 sm:h-5 text-[#10B981] stroke-[2px]" />
                   </div>
 
                   {/* Content */}
                   <div className="flex flex-col justify-center min-w-0">
                     <h3 
-                      className="text-[#1E2229] font-bold text-[17px] sm:text-[18px] tracking-tight mb-1"
+                      className="text-[#1E2229] font-bold text-[16px] sm:text-[17px] md:text-[18px] tracking-tight mb-1"
                       style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
                     >
                       {item.title}
                     </h3>
                     <p 
-                      className="text-[#5E6675] text-[13px] sm:text-[14px] leading-relaxed font-normal opacity-90"
+                      className="text-[#5E6675] text-[12.5px] sm:text-[13px] md:text-[14px] leading-relaxed font-normal opacity-90"
                       style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
                     >
                       {item.description}
