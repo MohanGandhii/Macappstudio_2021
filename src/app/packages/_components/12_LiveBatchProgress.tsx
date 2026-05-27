@@ -124,7 +124,7 @@ export default function LiveBatchProgress() {
                       ) : (
                         <button 
                           disabled
-                          className="w-full bg-[#8E8E93] text-white font-bold py-3 px-4 rounded-xl cursor-not-allowed select-none text-[13.5px] text-center"
+                          className="w-full bg-gray-100 text-gray-400 font-bold py-3 px-4 rounded-xl cursor-not-allowed select-none text-[13.5px] text-center border border-gray-200/50"
                           style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
                         >
                           Slot not Available

@@ -29,15 +29,15 @@ export default function QuotesSection() {
       <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
 
       <div className="container mx-auto px-4 lg:px-8 text-center max-w-5xl relative z-10">
-        <div className="min-h-[140px] md:min-h-[160px] relative flex items-center justify-center">
+        <div className="min-h-[120px] md:min-h-[150px] relative flex items-center justify-center py-4">
           <AnimatePresence mode="wait">
             <motion.p
               key={index}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.8, ease: "easeInOut" }}
-              className="text-2xl sm:text-3xl md:text-[40px] lg:text-[44px] font-medium text-gray-600 leading-tight absolute w-full tracking-tight"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="text-[20px] sm:text-3xl md:text-[40px] lg:text-[44px] font-medium text-gray-600 leading-tight w-full tracking-tight relative z-10"
             >
               {QUOTES[index]}
             </motion.p>

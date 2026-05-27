@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/01_Navbar/Navbar";
 import Footer from "@/components/02_Footer/Footer";
 import { ModalProvider } from "@/context/ModalContext";
 
-const inter = Inter({
-  variable: "--font-inter",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} h-full antialiased scroll-smooth`}
+      className={`${outfit.variable} ${plusJakartaSans.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col pt-20 font-sans">
         <ModalProvider>

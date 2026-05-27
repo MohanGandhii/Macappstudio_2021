@@ -68,11 +68,11 @@ export default function OdysseyTimeline({ timelineData, tabs }: OdysseyTimelineP
         <div className="max-w-[1000px] mx-auto">
           {filteredTimeline.map((data, idx) => (
             <div key={idx} className="flex w-full">
-              <div className="w-[70px] md:w-[100px] flex-shrink-0 flex justify-end pr-6 md:pr-10 pt-[22px]">
-                <span className="text-[18px] md:text-[20px] font-bold text-[#2B2B2B] leading-none">{data.year}</span>
+              <div className="w-[55px] md:w-[100px] flex-shrink-0 flex justify-end pr-3 md:pr-10 pt-[20px]">
+                <span className="text-[16px] md:text-[20px] font-bold text-[#2B2B2B] leading-none">{data.year}</span>
               </div>
               
-              <div className="flex-grow pl-6 md:pl-10 pb-12 md:pb-16 border-l border-[#DCDCDC] relative">
+              <div className="flex-grow pl-4 md:pl-10 pb-12 md:pb-16 border-l border-[#DCDCDC] relative">
                 {/* Timeline dot */}
                 <div className="absolute left-[-4.5px] top-[24px] w-[8px] h-[8px] bg-[#2B2B2B] rounded-full z-10 shadow-[0_0_0_6px_white]" />
                 
@@ -87,11 +87,11 @@ export default function OdysseyTimeline({ timelineData, tabs }: OdysseyTimelineP
                     >
                       {item.type === "ceo" ? (
                         <div 
-                          className="w-full flex items-center min-h-[140px] px-8 py-8 md:py-6"
+                          className="w-full flex items-center min-h-[140px] px-5 md:px-8 py-6"
                           style={{ backgroundColor: item.bgColor || "#FAFAFA" }}
                         >
                           {item.customLayout ? (
-                            <div className="w-full flex flex-col md:flex-row items-center md:items-center justify-center md:justify-start gap-8">
+                            <div className="w-full flex flex-col md:flex-row items-center md:items-center justify-center md:justify-start gap-4 md:gap-8">
                               {item.img && (
                                 <Image src={item.img} alt="" width={200} height={100} className="w-auto h-[60px] md:h-[80px] object-contain flex-shrink-0" />
                               )}
@@ -100,7 +100,7 @@ export default function OdysseyTimeline({ timelineData, tabs }: OdysseyTimelineP
                               </div>
                             </div>
                           ) : (
-                            <div className="flex flex-col md:flex-row items-center gap-8 w-full">
+                            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 w-full">
                               {item.img && (
                                 <div className="w-full md:w-[35%] flex justify-center">
                                   <Image src={item.img} alt="" width={300} height={200} className="w-full max-w-[280px] h-auto object-contain" />
@@ -118,7 +118,7 @@ export default function OdysseyTimeline({ timelineData, tabs }: OdysseyTimelineP
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                           {item.leftText && (
                             <div 
-                              className="flex flex-col justify-center items-start px-8 py-10 min-h-[160px] w-full"
+                              className="flex flex-col justify-center items-start px-5 md:px-8 py-6 md:py-10 min-h-[160px] w-full"
                               style={{ backgroundColor: item.leftBgColor || "#FAFAFA" }}
                             >
                               {item.leftIcon && (
@@ -131,7 +131,7 @@ export default function OdysseyTimeline({ timelineData, tabs }: OdysseyTimelineP
                           )}
                           {item.rightText && (
                             <div 
-                              className="flex flex-col justify-center items-start px-8 py-10 min-h-[160px] w-full"
+                              className="flex flex-col justify-center items-start px-5 md:px-8 py-6 md:py-10 min-h-[160px] w-full"
                               style={{ backgroundColor: item.rightBgColor || "#FAFAFA" }}
                             >
                               {item.rightIcon && !item.rightImgCustom && (

@@ -1,122 +1,3 @@
-@font-face {
-  font-family: 'NHaasGroteskTXPro-Bold';
-  src: url("/fonts/NHaasGroteskTXPro-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NHaasGroteskTXPro-Medium';
-  src: url("/fonts/NHaasGroteskTXPro-Medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NHaasGroteskTXPro-Regular';
-  src: url("/fonts/NHaasGroteskTXPro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NHaasGroteskTXPro-Light';
-  src: url("/fonts/NHaasGroteskTXPro-Light.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'AvenirNextLTPro-Regular';
-  src: url("/fonts/AvenirNext-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'AvenirNext-Medium';
-  src: url("/fonts/AvenirNext-Medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'AvenirNext-SemiBold';
-  src: url("/fonts/AvenirNext-SemiBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'AvenirNext-Bold';
-  src: url("/fonts/AvenirNext-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'AvenirNextLTPro-It';
-  src: url("/fonts/AvenirNextLTPro-It.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'AvenirNextLTPro-MediumCn';
-  src: url("/fonts/AvenirNextLTPro-MediumCn.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Circular-Std-Font';
-  src: url("/fonts/Circular-Std-Font.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Circular-Regular';
-  src: url("/fonts/Circular-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CircularStd-Medium';
-  src: url("/fonts/CircularStd-Medium.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CircularStd-MediumItalic';
-  src: url("/fonts/CircularStd-MediumItalic.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CircularStd-Bold';
-  src: url("/fonts/CircularStd-Bold.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CircularStd-Book';
-  src: url("/fonts/CircularStd-Book.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CircularStd-Black';
-  src: url("/fonts/CircularStd-Black.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 @import "tailwindcss";
 
 :root {
@@ -124,9 +5,22 @@
   --foreground: #111827;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@theme {
+  --font-sans: var(--font-plus-jakarta), sans-serif;
+  --font-heading: var(--font-outfit), sans-serif;
+  
+  /* Slightly more vibrant brand colors while retaining original palette */
+  --color-blue-500: #0052FF;
+  --color-blue-600: #0045e6;
+  --color-blue-700: #003ac8;
+  
+  --color-indigo-500: #4f73f6;
+  --color-purple-500: #8c4be0;
+  --color-teal-500: #0ebbbb;
+  
+  /* Premium drop shadows */
+  --shadow-premium: 0 20px 40px -15px rgba(0, 82, 255, 0.08);
+  --shadow-premium-hover: 0 30px 60px -15px rgba(0, 82, 255, 0.15);
 }
 
 * {
@@ -140,22 +34,82 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Global Typography Default Settings */
+body, button, input, select, textarea {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* ========================================================================= */
+/* INLINE STYLE FONT-FAMILY OVERRIDES (MAPS LEGACY FONTS TO GOOGLE FONTS)     */
+/* ========================================================================= */
+
+/* 1. Bold / Black / Medium-Bold variations mapping to Outfit */
+*[style*="CircularStd-Bold" i],
+*[style*="CircularStd-Black" i],
+*[style*="CircularStd-Medium" i],
+*[style*="NHaasGroteskTXPro-Bold" i],
+*[style*="NHaasGroteskTXPro-Medium" i],
+*[style*="AvenirNext-Bold" i],
+*[style*="AvenirNext-SemiBold" i],
+*[style*="AvenirNext-Medium" i],
+*[style*="AvenirNextLTPro-Medium" i] {
+  font-family: var(--font-heading) !important;
+}
+
+/* 2. Regular / Light variations mapping to Plus Jakarta Sans */
+*[style*="AvenirNext-Regular" i],
+*[style*="AvenirNextLTPro-Regular" i],
+*[style*="NHaasGroteskTXPro-Regular" i],
+*[style*="NHaasGroteskTXPro-Light" i],
+*[style*="CircularStd-Book" i],
+*[style*="Circular-Regular" i],
+*[style*="Circular-Std-Font" i] {
+  font-family: var(--font-sans) !important;
+}
+
+/* Override SVG fonts to prevent broken layout */
+svg text {
+  font-family: var(--font-heading) !important;
+}
+
+/* ========================================================================= */
+/* PREMIUM INTERACTION EFFECTS & POLISH                                      */
+/* ========================================================================= */
+
+/* Glassmorphism style */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Smooth active scale down micro-animation */
+.btn-micro-active:active {
+  transform: scale(0.97);
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 5px;
+  background: #e2e8f0;
+  border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #cbd5e1;
 }
 
 .hide-scrollbar::-webkit-scrollbar {

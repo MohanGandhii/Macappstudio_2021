@@ -61,7 +61,7 @@ export default function RecentWorksSection() {
                 Our Recent Great Works
               </h2>
               
-              <div className="relative h-[140px] w-full">
+              <div className="relative w-full min-h-[160px] md:min-h-[180px] lg:min-h-[200px] py-2">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentIndex}
@@ -69,14 +69,15 @@ export default function RecentWorksSection() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
                     transition={{ duration: 0.4, ease: "easeOut" }}
-                    className="absolute inset-0"
+                    className="relative w-full"
                   >
                     <Image
                       src={WORKS[currentIndex].logo}
                       alt="Logo"
                       width={180}
                       height={80}
-                      className="h-14 md:h-[60px] w-auto object-contain mb-4"
+                      className="h-12 md:h-[50px] w-auto object-contain mb-4"
+                      priority
                     />
                     
                     <div className="mt-2">

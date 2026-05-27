@@ -53,7 +53,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/R_D" className="text-gray-600 font-medium hover:text-blue-600 transition-colors">
+                <Link href="/research-and-development" className="text-gray-600 font-medium hover:text-blue-600 transition-colors">
                   Research and Development
                 </Link>
               </li>

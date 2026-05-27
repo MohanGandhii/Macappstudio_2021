@@ -18,12 +18,12 @@ export default function WallOfFameSection() {
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">Wall of Fame</h2>
           <p className="text-lg md:text-xl text-gray-700">
-            Here is a list of <span className="font-bold text-gray-900">15+ projects</span> which inspired us and touched million lives
+            Here is a list of <span className="font-bold text-gray-900">15+ projects</span> which inspired us and touched millions of lives
           </p>
         </div>
 
         {/* Logos Area */}
-        <div className="relative w-full overflow-hidden bg-[#eef7ec] py-16 done_project_list_box">
+        <div className="relative w-full overflow-hidden bg-[#EEF7EC] py-16 done_project_list_box rounded-[28px] md:rounded-[40px] border border-[#d4ebd2] shadow-sm">
           <div className="slider">
             <div className="slider-row"></div>
           </div>

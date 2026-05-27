@@ -27,7 +27,7 @@ export default function CraftedAppsGrid() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {CASE_STUDIES.map((study, index) => (
-            <div key={index} className="relative bg-[#f4f6f9] rounded-xl overflow-hidden flex flex-col pt-8 px-8 h-[440px] group border border-gray-100 shadow-sm transition-all">
+            <div key={index} className="relative bg-[#f4f6f9] hover:bg-[#eceef2] rounded-xl overflow-hidden flex flex-col pt-8 px-8 h-[440px] group border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200/80 transition-all duration-300">
               
               {/* Header Info */}
               <div className="mb-4">
@@ -53,7 +53,7 @@ export default function CraftedAppsGrid() {
                     alt={study.title} 
                     width={400}
                     height={300}
-                    className="w-full h-auto object-contain object-bottom drop-shadow-lg"
+                    className="w-full h-auto object-contain object-bottom drop-shadow-lg group-hover:scale-[1.03] group-hover:-translate-y-2 transition-transform duration-500"
                     priority
                   />
                 </div>
@@ -62,10 +62,10 @@ export default function CraftedAppsGrid() {
               {/* Read Case Study Button (Exact Bottom Right Tab) */}
               <Link 
                 href={study.link}
-                className="absolute bottom-0 right-0 bg-[#545d7a] text-white flex items-center justify-center gap-3 px-6 py-4 rounded-tl-[24px] hover:bg-[#444c68] transition-all z-30 shadow-md"
+                className="absolute bottom-0 right-0 bg-[#545d7a] group-hover:bg-[#0052FF] text-white flex items-center justify-center gap-3 px-6 py-4 rounded-tl-[24px] hover:!bg-[#0041cc] transition-all z-30 shadow-md"
               >
                 <span className="text-[16px] font-bold">Read Case Study</span>
-                <FiArrowRight size={18} />
+                <FiArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           ))}

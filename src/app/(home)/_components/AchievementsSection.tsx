@@ -3,7 +3,7 @@ import Image from "next/image";
 const STATS = [
   { value: "10+", label: "Multi-Million Dollar Startups" },
   { value: "200+", label: "Project Completed" },
-  { value: "275", label: "Enterpreneurs Consulted Worldwide" }, // Correcting typo if it was present, actually the screenshot says "Enterpreneurs" with a typo, so I'll match it or fix it. Let's fix to Entrepreneurs. Wait, screenshot says "Enterpreneurs". Let's match it.
+  { value: "275", label: "Entrepreneurs Consulted Worldwide" },
   { value: "250+", label: "App and growing" },
   { value: "5 Million+", label: "Daily Users across Globe" },
   { value: "7 Million+", label: "Daily Transactions" },
@@ -40,8 +40,8 @@ export default function AchievementsSection() {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
               {STATS.map((stat, index) => (
-                <div key={index} className="flex flex-col justify-center border border-gray-100 p-6 md:p-8 min-h-[140px] bg-white transition-all hover:border-gray-200 hover:shadow-[0_4px_12px_rgba(0,0,0,0.03)]">
-                  <p className="text-[28px] lg:text-[32px] font-black text-[#111] mb-2 leading-none">
+                <div key={index} className="flex flex-col justify-center border border-gray-100 p-6 md:p-8 min-h-[140px] bg-white rounded-2xl transition-all duration-300 hover:border-blue-100 hover:shadow-premium hover:-translate-y-1">
+                  <p className="text-[28px] lg:text-[32px] font-black text-[#0052FF] mb-2 leading-none">
                     {stat.value}
                   </p>
                   <p className="text-[13px] lg:text-[14px] text-gray-600 font-semibold leading-[1.4]">

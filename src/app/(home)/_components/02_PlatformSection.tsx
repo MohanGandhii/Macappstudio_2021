@@ -9,8 +9,8 @@ export default function PlatformSection() {
             Your dream to reality, In any platform !
           </h2>
           <p className="text-xl md:text-2xl text-gray-500 leading-relaxed font-medium text-left">
-            Having built over <span className="text-[#1a1e2e] font-black">250+ apps</span> in almost every single platform and devices, we can bring <br />
-            your dream ro reality
+            Having built over <span className="text-[#1a1e2e] font-black">250+ apps</span> in almost every single platform and devices, we can bring <br className="hidden md:inline" />
+            your dream to reality
           </p>
         </div>
         

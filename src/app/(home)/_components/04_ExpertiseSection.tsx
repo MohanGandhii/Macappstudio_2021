@@ -34,33 +34,33 @@ export default function ExpertiseSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {EXPERTISE_DATA.map((item, index) => (
             <Link
               href={item.link}
               key={index}
-              className="group flex flex-col items-start text-left p-5 md:p-6 bg-[#f9f9f9] transition-colors hover:bg-gray-100"
+              className="group flex flex-col items-start text-left p-6 md:p-8 bg-[#f9f9f9] rounded-2xl border border-gray-100 transition-all duration-300 hover:bg-white hover:border-blue-100 hover:shadow-premium"
             >
-              <div className="mb-6">
+              <div className="mb-6 p-3 bg-white rounded-xl border border-gray-50 shadow-sm transition-transform duration-300 group-hover:scale-110">
                 <Image
                   src={item.icon}
                   alt={item.title}
-                  width={48}
-                  height={48}
-                  className="w-12 h-12 object-contain"
+                  width={44}
+                  height={44}
+                  className="w-11 h-11 object-contain"
                 />
               </div>
               
-              <h3 className="text-lg md:text-[19px] font-bold text-[#111827] mb-3 tracking-tight">
+              <h3 className="text-lg md:text-[20px] font-bold text-[#111827] mb-3 tracking-tight">
                 {item.title}
               </h3>
               <p className="text-[14px] md:text-[15px] text-gray-600 mb-8 leading-relaxed">
                 {item.description}
               </p>
               
-              <div className="flex items-center gap-1.5 text-[#111827] font-bold text-[13px] mt-auto">
+              <div className="flex items-center gap-1.5 text-blue-600 font-bold text-[13px] mt-auto">
                 <span>Read more</span>
-                <FiArrowRight size={13} />
+                <FiArrowRight size={13} className="transition-transform duration-300 group-hover:translate-x-1" />
               </div>
             </Link>
           ))}

@@ -26,15 +26,15 @@ const COMPONENTS_1 = [
 const COMPONENTS_2 = [
   { icon: "/assets/images/appdevelopment/D1.svg", name: "3rd party API" },
   { icon: "/assets/images/appdevelopment/D2.svg", name: "Admin System" },
-  { icon: "/assets/images/appdevelopment/D3.svg", name: "Charts" },
+  { icon: "/assets/images/appdevelopment/d3.svg", name: "Charts" },
   { icon: "/assets/images/appdevelopment/D4.svg", name: "CMS" },
   { icon: "/assets/images/appdevelopment/D5.svg", name: "Export" },
   { icon: "/assets/images/appdevelopment/D6.svg", name: "Geolocation" },
-  { icon: "/assets/images/appdevelopment/D7.svg", name: "Payment" },
+  { icon: "/assets/images/appdevelopment/d7.svg", name: "Payment" },
   { icon: "/assets/images/appdevelopment/D8.svg", name: "Push notifications" },
-  { icon: "/assets/images/appdevelopment/D9.svg", name: "Rating" },
+  { icon: "/assets/images/appdevelopment/d9.svg", name: "Rating" },
   { icon: "/assets/images/appdevelopment/D10.svg", name: "Reporting" },
-  { icon: "/assets/images/appdevelopment/D11.svg", name: "Search" },
+  { icon: "/assets/images/appdevelopment/d11.svg", name: "Search" },
   { icon: "/assets/images/appdevelopment/D12.svg", name: "Shopping Cart" },
   { icon: "/assets/images/appdevelopment/D13.svg", name: "SMS" },
   { icon: "/assets/images/appdevelopment/D14.svg", name: "Sync" },
@@ -86,11 +86,11 @@ export default function RapidFrameworkSection() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.5 }}
-                  className="grid grid-flow-col grid-rows-8 gap-x-4 gap-y-8"
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-flow-col lg:grid-rows-8 gap-x-4 gap-y-6 lg:gap-y-8"
                 >
                   {currentComponents.map((comp, i) => (
-                    <div key={i} className="flex items-center gap-4">
-                      <div className="w-6 h-6 flex-shrink-0 flex items-center justify-center">
+                    <div key={i} className="flex items-center gap-4 group cursor-pointer">
+                      <div className="w-6 h-6 flex-shrink-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                         <Image
                           src={comp.icon}
                           alt={comp.name}
@@ -99,7 +99,7 @@ export default function RapidFrameworkSection() {
                           className="object-contain"
                         />
                       </div>
-                      <span className="font-medium text-[15px] text-[#444]">{comp.name}</span>
+                      <span className="font-medium text-[15px] text-[#444] transition-colors duration-300 group-hover:text-black">{comp.name}</span>
                     </div>
                   ))}
                 </motion.div>

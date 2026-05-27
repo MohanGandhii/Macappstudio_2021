@@ -3,8 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
+import Link from "next/link";
+import { useModal } from "@/context/ModalContext";
 
 export default function DreamTeamCallBanner() {
+  const { openProposalModal } = useModal();
   const highlights = [
     "2-week deployment",
     "30-day flexibility",
@@ -85,6 +88,7 @@ export default function DreamTeamCallBanner() {
             className="flex flex-col sm:flex-row gap-4 items-center justify-center z-10 w-full max-w-md"
           >
             <motion.button
+              onClick={openProposalModal}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="bg-[#0052FF] text-white hover:bg-[#1e60eb] py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 w-full sm:w-auto z-10"
@@ -94,14 +98,16 @@ export default function DreamTeamCallBanner() {
               <ArrowRight size={18} className="stroke-[2.5px]" />
             </motion.button>
 
-            <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              className="bg-white hover:bg-gray-50 text-[#1E2229] border border-[#1E2229] py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-sm flex items-center justify-center cursor-pointer transition-all duration-300 w-full sm:w-auto z-10"
-              style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
-            >
-              Schedule a Call
-            </motion.button>
+            <Link href="/contactus" className="w-full sm:w-auto z-10">
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                className="bg-white hover:bg-gray-50 text-[#1E2229] border border-[#1E2229] py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-sm flex items-center justify-center cursor-pointer transition-all duration-300 w-full sm:w-auto"
+                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+              >
+                Schedule a Call
+              </motion.button>
+            </Link>
           </motion.div>
 
         </div>

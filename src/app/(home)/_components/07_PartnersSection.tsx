@@ -30,25 +30,25 @@ export default function PartnersSection() {
               We work with great minds like you
             </h2>
             <p className="text-base md:text-[17px] text-gray-500 leading-relaxed mb-12 max-w-2xl font-medium">
-              We are very selective about who we work or partner with. We have worked with small start ups and huge corporation but we only do work that excites us and with people who are as passionate as we are.
+              We are very selective about who we work or partner with. We have worked with small startups and huge corporations but we only do work that excites us and with people who are as passionate as we are.
             </p>
             
-            <div className="relative w-full max-w-[568px] h-[140px] md:h-[184px]">
+            <div className="relative w-full max-w-[568px] min-h-[100px] md:min-h-[140px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentSet}
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 0.85 }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 0.8, ease: "easeInOut" }}
-                  className="absolute inset-0 flex items-center justify-start"
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  className="relative w-full flex items-center justify-start"
                 >
                   <Image
                     src={SETS[currentSet].src}
                     alt={`Partner set ${SETS[currentSet].id}`}
                     width={568}
                     height={184}
-                    className="w-full h-auto object-contain brightness-0"
+                    className="w-full h-auto object-contain brightness-0 opacity-80"
                     priority
                   />
                 </motion.div>

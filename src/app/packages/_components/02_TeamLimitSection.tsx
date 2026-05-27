@@ -21,7 +21,7 @@ export default function TeamLimitSection() {
           className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[44px] tracking-tight leading-tight mb-3"
           style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
         >
-          When have team of 100 People
+          Our Team is Limited to 100 People
         </h2>
 
         {/* Subtitle */}
@@ -29,7 +29,7 @@ export default function TeamLimitSection() {
           className="text-[#5E6675] text-sm sm:text-base md:text-[17px] font-medium tracking-wide mb-14 opacity-90"
           style={{ fontFamily: "AvenirNext-Medium, sans-serif" }}
         >
-          We have limited team, Kindly book your slot
+          We have a limited team, kindly book your slot.
         </p>
 
         {/* Logo Container Grid */}

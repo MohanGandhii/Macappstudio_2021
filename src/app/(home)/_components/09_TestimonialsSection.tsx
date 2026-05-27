@@ -13,10 +13,10 @@ const TESTIMONIALS = [
     text: "MacAppStudio has built a world class platform that has enabled us to scale our business to the next level. They delivered it ahead of time, the design and quality of the app was top notch. A lot of end users have come back to us complimenting the app and its ease of usage.",
   },
   {
-    name: "Client Name 2",
-    role: "CEO, Company 2",
+    name: "Rohini Manian",
+    role: "CEO, Global Adjustments (Propcierge)",
     image: "/assets/images/index/clients_img2.png",
-    text: "We believe in trust and long term relationships and engage with customers like partners and not as vendors. We succeed only if our customers and their businesses succeed.",
+    text: "MacAppStudio understood our vision for Propcierge perfectly and turned it into an outstanding digital platform. Their technical expertise, deep project ownership, and commitment to transparent collaboration made them the ideal partner for our growth.",
   },
 ];
 

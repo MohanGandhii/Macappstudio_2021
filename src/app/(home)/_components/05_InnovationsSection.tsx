@@ -153,9 +153,9 @@ export default function InnovationsSection() {
                   </div>
                 </div>
 
-                <div className="bg-[#fafafa] p-6 md:p-8 w-full border border-gray-50/50">
-                   <p className="text-[15px] font-bold text-[#111] mb-3">What we achieved?</p>
-                   <p className="text-[20px] md:text-[24px] font-bold text-[#333] leading-tight">
+                <div className="bg-[#FAFAFA] p-6 md:p-8 w-full border border-gray-100 rounded-2xl border-l-[6px] border-l-[#0052FF] shadow-sm text-left">
+                   <p className="text-[13px] font-bold uppercase tracking-wider text-[#0052FF] mb-3">What we achieved?</p>
+                   <p className="text-[20px] md:text-[23px] font-bold text-gray-900 leading-snug">
                      {TAB_CONTENT[activeTab].achieved}
                    </p>
                 </div>

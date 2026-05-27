@@ -3,18 +3,18 @@ import Image from "next/image";
 const AWARDS = [
   { img: "/assets/images/index/award01.png", label: "Intel Worldwide Top Innovator 2017" },
   { img: "/assets/images/index/award04.png", label: "Winner of Intel Best App to Stay in Sync Contest" },
-  { img: "/assets/images/index/award05.png", label: "Winner of the Intel Best App to Stay Informed Content" },
+  { img: "/assets/images/index/award05.png", label: "Winner of the Intel Best App to Stay Informed Contest" },
   { img: "/assets/images/index/award06.png", label: "Winner of Intel Dixons Home Innovation Challenge" },
 ];
 
 export default function AwardsSection() {
   return (
-    <section className="py-16 md:py-24 bg-[#fafafa]" id="our_awards_section">
+    <section className="py-16 md:py-24 bg-[#FAFAFA]" id="our_awards_section">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
         <div className="text-left mb-16 md:mb-20">
-          <h2 className="text-3xl md:text-[44px] font-black text-[#222] mb-2 tracking-tight">Our Awards</h2>
-          <p className="text-base md:text-xl text-gray-600 font-medium">
-            MacAppStudio has been recognize by Intel
+          <h2 className="text-3xl md:text-[44px] font-black text-gray-900 mb-2 tracking-tight">Our Awards</h2>
+          <p className="text-base md:text-xl text-gray-600 font-semibold">
+            MacAppStudio has been recognized by Intel
           </p>
         </div>
 
