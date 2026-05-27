@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const SMARTER_SERVICES = [
-  { title: "Digital Transformation", icon: "/assets/images/technology_Consulting/service_icon1.svg" },
-  { title: "Customer Insight", icon: "/assets/images/technology_Consulting/service_icon2.svg" },
-  { title: "Marketing and Sales", icon: "/assets/images/technology_Consulting/service_icon3.svg" },
-  { title: "IT Consulting", icon: "/assets/images/technology_Consulting/service_icon4.svg" },
+  { title: "Digital Transformation", icon: "/assets/images/technology_Consulting/02_smarter_services/service_icon1.svg" },
+  { title: "Customer Insight", icon: "/assets/images/technology_Consulting/02_smarter_services/service_icon2.svg" },
+  { title: "Marketing and Sales", icon: "/assets/images/technology_Consulting/02_smarter_services/service_icon3.svg" },
+  { title: "IT Consulting", icon: "/assets/images/technology_Consulting/02_smarter_services/service_icon4.svg" },
 ];
 
 export default function SmarterServicesSection() {

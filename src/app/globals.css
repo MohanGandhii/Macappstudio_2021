@@ -119,3 +119,76 @@ svg text {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* ========================================================================= */
+/* AI PAGE — CUSTOM UTILITIES (migrated from ai.css)                         */
+/* ========================================================================= */
+
+@layer utilities {
+  .text-gradient-brand {
+    background: linear-gradient(135deg, #f97316, #8b5cf6 50%, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-primary {
+    background: linear-gradient(135deg, #1e2a3a, #2d3f55);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #1e2a3a, #2d3f55);
+  }
+  .bg-gradient-hero {
+    background: linear-gradient(180deg, #fff 0%, #fbf9f7 100%);
+  }
+  .shadow-glow {
+    box-shadow: 0 8px 32px rgba(30, 42, 58, 0.18);
+  }
+  .card-hover {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(30, 42, 58, 0.12);
+  }
+  .section {
+    padding: 72px 0;
+  }
+  .section-muted {
+    background: #f8f6f3;
+  }
+  .ai-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  @media (min-width: 768px) {
+    .ai-container {
+      padding: 0 48px;
+    }
+  }
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    pointer-events: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease both;
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.animate-scale-in {
+  animation: scaleIn 0.8s ease 0.2s both;
+}

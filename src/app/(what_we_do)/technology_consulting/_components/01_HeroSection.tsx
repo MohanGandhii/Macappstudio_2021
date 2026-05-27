@@ -12,7 +12,7 @@ export default function HeroSection() {
         {/* Gradient to blend the image into the background on the left */}
         <div className="absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-[#F6F6F2] to-transparent z-10"></div>
         <Image
-          src="/assets/images/technology_Consulting/banner_rigth_image.jpg"
+          src="/assets/images/technology_Consulting/01_hero/banner_rigth_image.jpg"
           alt="Tech Consulting Hero"
           fill
           className="object-cover object-center"
@@ -29,13 +29,13 @@ export default function HeroSection() {
               <span className="block">by providing thoughtful solutions</span>
               <span className="block">through technology</span>
             </h1>
-            <GetProposalButton className="btn consulted_btn bg-black text-white px-10 py-3.5 text-[17px] font-semibold hover:bg-gray-900 transition-colors rounded-none w-[300px] h-[60px] flex items-center justify-center" />
+            <GetProposalButton className="bg-black text-white px-10 py-3.5 text-[17px] font-semibold hover:bg-gray-900 transition-colors rounded-none w-[300px] h-[60px] flex items-center justify-center" />
           </div>
 
           {/* Mobile-only image display (fallback since absolute is hidden on mobile) */}
           <div className="w-full md:hidden mt-10 relative h-[300px] rounded-xl overflow-hidden">
             <Image
-              src="/assets/images/technology_Consulting/banner_rigth_image.jpg"
+              src="/assets/images/technology_Consulting/01_hero/banner_rigth_image.jpg"
               alt="Tech Consulting Hero"
               fill
               className="object-cover object-center"

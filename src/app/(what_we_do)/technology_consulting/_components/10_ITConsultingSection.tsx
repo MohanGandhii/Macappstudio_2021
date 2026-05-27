@@ -3,10 +3,10 @@ import clsx from "clsx";
 import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
 
 const BULLETS = [
-  { text: "Achieve higher and faster Capital Excellence", icon: "/assets/images/technology_Consulting/it_consulting_left_icon1.svg" },
-  { text: "Unlock the full potential through Operations Transformation", icon: "/assets/images/technology_Consulting/it_consulting_left_icon2.svg" },
-  { text: "Invest in right technology to scale seamlessly", icon: "/assets/images/technology_Consulting/it_consulting_left_icon3.svg" },
-  { text: "Find the right people with passion driven towards a better future", icon: "/assets/images/technology_Consulting/it_consulting_left_icon4.svg" },
+  { text: "Achieve higher and faster Capital Excellence", icon: "/assets/images/technology_Consulting/10_it_consulting/it_consulting_left_icon1.svg" },
+  { text: "Unlock the full potential through Operations Transformation", icon: "/assets/images/technology_Consulting/10_it_consulting/it_consulting_left_icon2.svg" },
+  { text: "Invest in right technology to scale seamlessly", icon: "/assets/images/technology_Consulting/10_it_consulting/it_consulting_left_icon3.svg" },
+  { text: "Find the right people with passion driven towards a better future", icon: "/assets/images/technology_Consulting/10_it_consulting/it_consulting_left_icon4.svg" },
 ];
 
 export default function ITConsultingSection() {
@@ -32,7 +32,7 @@ export default function ITConsultingSection() {
           {/* Image Column */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <Image
-              src="/assets/images/technology_Consulting/itconsulting_image.jpg"
+              src="/assets/images/technology_Consulting/10_it_consulting/itconsulting_image.jpg"
               alt="IT Consulting"
               width={600}
               height={500}
@@ -63,7 +63,7 @@ export default function ITConsultingSection() {
               ))}
             </ul>
 
-            <GetProposalButton className="btn consulted_btn bg-black text-white px-10 py-3.5 text-[17px] font-semibold hover:bg-gray-900 transition-colors rounded-none w-[300px] h-[60px] flex items-center justify-center mt-8" />
+            <GetProposalButton className="bg-black text-white px-10 py-3.5 text-[17px] font-semibold hover:bg-gray-900 transition-colors rounded-none w-[300px] h-[60px] flex items-center justify-center mt-8" />
           </div>
         </div>
 

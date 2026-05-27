@@ -9,7 +9,7 @@ export default function SpeedLearningBanner() {
           {/* Logo on the left */}
           <div className="flex-shrink-0">
             <Image
-              src="/assets/images/technology_Consulting/speedlearning_logo.png"
+              src="/assets/images/technology_Consulting/09_speed_learning/speedlearning_logo.png"
               alt="Speed Learning"
               width={110}
               height={110}

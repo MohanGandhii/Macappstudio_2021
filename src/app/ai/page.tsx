@@ -8,7 +8,6 @@ import {
   TrendingUp, MessageCircle, Cpu, GitBranch, BarChart3, Headphones, 
   Target, Cog, LayoutDashboard, ClipboardList, Gauge, BarChart4 
 } from "lucide-react";
-import "./ai.css";
 
 export default function AIPage() {
   return (

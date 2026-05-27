@@ -6,12 +6,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
 
 const TABS = [
-  { id: "blockchain", title: "Blockchain Technology", icon: "/assets/images/technology_Consulting/blockchain.svg", desc: "Make businesses more secure and transparent by leveraging the distributed ledger technology" },
-  { id: "ar", title: "Augmented Reality", icon: "/assets/images/technology_Consulting/ar.svg", desc: "Experience a jaw dropping seamless interaction of the digital objects blended in the real-world environment." },
-  { id: "ai", title: "Artificial Intelligence", icon: "/assets/images/technology_Consulting/ai.svg", desc: "Automate your business, maximize efficiency and minimize errors with the advanced state of art technology." },
-  { id: "cyber", title: "Cyber Security", icon: "/assets/images/technology_Consulting/cyber.svg", desc: "Secure your business, protect your data from prying eyes and enhance your customers privacy with the help of our experts" },
-  { id: "iot", title: "Internet of Things", icon: "/assets/images/technology_Consulting/iot.svg", desc: "Make people's life easy and delightful by interconnecting and communicating with everyday technologies, thus providing a holistic experience." },
-  { id: "cloud", title: "Cloud Computing", icon: "/assets/images/technology_Consulting/cloud.svg", desc: "Move your business to cloud and seamlessly operate across the globe with minimum maintenance and maximum flexibility." },
+  { id: "blockchain", title: "Blockchain Technology", icon: "/assets/images/technology_Consulting/05_digital_transformation/blockchain.svg", desc: "Make businesses more secure and transparent by leveraging the distributed ledger technology" },
+  { id: "ar", title: "Augmented Reality", icon: "/assets/images/technology_Consulting/05_digital_transformation/ar.svg", desc: "Experience a jaw dropping seamless interaction of the digital objects blended in the real-world environment." },
+  { id: "ai", title: "Artificial Intelligence", icon: "/assets/images/technology_Consulting/05_digital_transformation/ai.svg", desc: "Automate your business, maximize efficiency and minimize errors with the advanced state of art technology." },
+  { id: "cyber", title: "Cyber Security", icon: "/assets/images/technology_Consulting/05_digital_transformation/cyber.svg", desc: "Secure your business, protect your data from prying eyes and enhance your customers privacy with the help of our experts" },
+  { id: "iot", title: "Internet of Things", icon: "/assets/images/technology_Consulting/05_digital_transformation/iot.svg", desc: "Make people's life easy and delightful by interconnecting and communicating with everyday technologies, thus providing a holistic experience." },
+  { id: "cloud", title: "Cloud Computing", icon: "/assets/images/technology_Consulting/05_digital_transformation/cloud.svg", desc: "Move your business to cloud and seamlessly operate across the globe with minimum maintenance and maximum flexibility." },
 ];
 
 export default function DigitalTransformationTabsSection() {
@@ -94,7 +94,7 @@ export default function DigitalTransformationTabsSection() {
 
         {/* Proposal Button */}
         <div className="text-center mt-6">
-          <GetProposalButton className="btn consulted_btn bg-black text-white px-10 py-3.5 text-[17px] font-semibold hover:bg-gray-900 transition-colors rounded-none w-[300px] h-[60px] flex items-center justify-center mx-auto" />
+          <GetProposalButton className="bg-black text-white px-10 py-3.5 text-[17px] font-semibold hover:bg-gray-900 transition-colors rounded-none w-[300px] h-[60px] flex items-center justify-center mx-auto" />
         </div>
 
       </div>

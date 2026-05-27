@@ -3,12 +3,12 @@ import clsx from "clsx";
 import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
 
 const BULLETS = [
-  { text: "Know your customers demand and their Real-Time Behavior", icon: "/assets/images/technology_Consulting/cus_insight_left_icon1.svg" },
-  { text: "Identify the different categories of your Customers", icon: "/assets/images/technology_Consulting/cus_insight_left_icon2.svg" },
-  { text: "Invest on Social Media Customer Engagement", icon: "/assets/images/technology_Consulting/cus_insight_left_icon3.svg" },
-  { text: "Leverage Customer Service Interactions", icon: "/assets/images/technology_Consulting/cus_insight_left_icon4.svg" },
-  { text: "Focus on Customers' Personal Tastes and Preferences", icon: "/assets/images/technology_Consulting/cus_insight_left_icon5.svg" },
-  { text: "Build Comprehensive Contact Information", icon: "/assets/images/technology_Consulting/cus_insight_left_icon6.svg" },
+  { text: "Know your customers demand and their Real-Time Behavior", icon: "/assets/images/technology_Consulting/07_customer_insight/cus_insight_left_icon1.svg" },
+  { text: "Identify the different categories of your Customers", icon: "/assets/images/technology_Consulting/07_customer_insight/cus_insight_left_icon2.svg" },
+  { text: "Invest on Social Media Customer Engagement", icon: "/assets/images/technology_Consulting/07_customer_insight/cus_insight_left_icon3.svg" },
+  { text: "Leverage Customer Service Interactions", icon: "/assets/images/technology_Consulting/07_customer_insight/cus_insight_left_icon4.svg" },
+  { text: "Focus on Customers' Personal Tastes and Preferences", icon: "/assets/images/technology_Consulting/07_customer_insight/cus_insight_left_icon5.svg" },
+  { text: "Build Comprehensive Contact Information", icon: "/assets/images/technology_Consulting/07_customer_insight/cus_insight_left_icon6.svg" },
 ];
 
 export default function CustomerInsightSection() {
@@ -34,7 +34,7 @@ export default function CustomerInsightSection() {
           {/* Image Column */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <Image
-              src="/assets/images/technology_Consulting/cus_insight_image.jpg"
+              src="/assets/images/technology_Consulting/07_customer_insight/cus_insight_image.jpg"
               alt="Customer Insight"
               width={600}
               height={500}
@@ -65,7 +65,7 @@ export default function CustomerInsightSection() {
               ))}
             </ul>
 
-            <GetProposalButton className="btn consulted_btn bg-black text-white px-10 py-3.5 text-[17px] font-semibold hover:bg-gray-900 transition-colors rounded-none w-[300px] h-[60px] flex items-center justify-center mt-8" />
+            <GetProposalButton className="bg-black text-white px-10 py-3.5 text-[17px] font-semibold hover:bg-gray-900 transition-colors rounded-none w-[300px] h-[60px] flex items-center justify-center mt-8" />
           </div>
         </div>
 

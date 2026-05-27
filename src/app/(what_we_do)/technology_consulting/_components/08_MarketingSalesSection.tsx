@@ -4,10 +4,10 @@ import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButt
 import SpeedLearningBanner from "./09_SpeedLearningBanner";
 
 const BULLETS = [
-  { text: "Monitoring Continuous data improvement to yield better performance", icon: "/assets/images/technology_Consulting/market_sales_left_icon1.svg" },
-  { text: "Analyzing changing patterns in competitor and consumer behavior", icon: "/assets/images/technology_Consulting/market_sales_left_icon2.svg" },
-  { text: "Suggesting capability building or process changes in your organization", icon: "/assets/images/technology_Consulting/market_sales_left_icon3.svg" },
-  { text: "Prioritizing KPI and assessing new benchmarks to stay ahead in the market", icon: "/assets/images/technology_Consulting/market_sales_left_icon4.svg" },
+  { text: "Monitoring Continuous data improvement to yield better performance", icon: "/assets/images/technology_Consulting/08_marketing_sales/market_sales_left_icon1.svg" },
+  { text: "Analyzing changing patterns in competitor and consumer behavior", icon: "/assets/images/technology_Consulting/08_marketing_sales/market_sales_left_icon2.svg" },
+  { text: "Suggesting capability building or process changes in your organization", icon: "/assets/images/technology_Consulting/08_marketing_sales/market_sales_left_icon3.svg" },
+  { text: "Prioritizing KPI and assessing new benchmarks to stay ahead in the market", icon: "/assets/images/technology_Consulting/08_marketing_sales/market_sales_left_icon4.svg" },
 ];
 
 export default function MarketingSalesSection() {
@@ -34,7 +34,7 @@ export default function MarketingSalesSection() {
             {/* Image Column */}
             <div className="w-full lg:w-1/2 flex justify-center">
               <Image
-                src="/assets/images/technology_Consulting/market_sales_image.jpg"
+                src="/assets/images/technology_Consulting/08_marketing_sales/market_sales_image.jpg"
                 alt="Marketing & Sales"
                 width={600}
                 height={500}
@@ -65,7 +65,7 @@ export default function MarketingSalesSection() {
                 ))}
               </ul>
 
-              <GetProposalButton className="btn consulted_btn bg-black text-white px-10 py-3.5 text-[17px] font-semibold hover:bg-gray-900 transition-colors rounded-none w-[300px] h-[60px] flex items-center justify-center mt-8" />
+              <GetProposalButton className="bg-black text-white px-10 py-3.5 text-[17px] font-semibold hover:bg-gray-900 transition-colors rounded-none w-[300px] h-[60px] flex items-center justify-center mt-8" />
             </div>
           </div>
 

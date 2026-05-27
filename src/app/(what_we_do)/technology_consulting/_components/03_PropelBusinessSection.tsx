@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const PROPEL_STAGES = [
-  { title: "Deep Analysis", icon: "/assets/images/technology_Consulting/propel_stage_icon1.svg" },
-  { title: "Conceptualize Strategy", icon: "/assets/images/technology_Consulting/propel_stage_icon2.svg" },
-  { title: "Identify Execution Plan", icon: "/assets/images/technology_Consulting/propel_stage_icon3.svg" },
-  { title: "Setting Operation Constraints", icon: "/assets/images/technology_Consulting/propel_stage_icon4.svg" },
-  { title: "Implementation", icon: "/assets/images/technology_Consulting/propel_stage_icon5.svg" },
-  { title: "Feedback", icon: "/assets/images/technology_Consulting/propel_stage_icon6.svg" },
+  { title: "Deep Analysis", icon: "/assets/images/technology_Consulting/03_propel_business/propel_stage_icon1.svg" },
+  { title: "Conceptualize Strategy", icon: "/assets/images/technology_Consulting/03_propel_business/propel_stage_icon2.svg" },
+  { title: "Identify Execution Plan", icon: "/assets/images/technology_Consulting/03_propel_business/propel_stage_icon3.svg" },
+  { title: "Setting Operation Constraints", icon: "/assets/images/technology_Consulting/03_propel_business/propel_stage_icon4.svg" },
+  { title: "Implementation", icon: "/assets/images/technology_Consulting/03_propel_business/propel_stage_icon5.svg" },
+  { title: "Feedback", icon: "/assets/images/technology_Consulting/03_propel_business/propel_stage_icon6.svg" },
 ];
 
 export default function PropelBusinessSection() {
