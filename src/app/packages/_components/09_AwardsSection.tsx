@@ -34,8 +34,7 @@ export default function AwardsSection() {
         {/* Centered Main Title */}
         <div className="text-center mb-16">
           <h2 
-            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight font-heading"
           >
             Awards & Recognition
           </h2>
@@ -59,8 +58,7 @@ export default function AwardsSection() {
 
               {/* Award Description Text */}
               <p 
-                className="text-[#5E6675] text-[13px] sm:text-[14px] leading-relaxed max-w-[160px] font-normal"
-                style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                className="text-[#5E6675] text-[13px] sm:text-[14px] leading-relaxed max-w-[160px] font-normal font-sans"
               >
                 {item.text}
               </p>

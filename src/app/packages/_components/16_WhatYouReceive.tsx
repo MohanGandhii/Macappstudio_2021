@@ -47,8 +47,7 @@ export default function WhatYouReceive() {
           
           {/* Component Title */}
           <h2 
-            className="text-[#1E2229] font-bold text-2xl sm:text-3xl md:text-[34px] tracking-tight text-center mb-14 md:mb-20"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="text-[#1E2229] font-bold text-2xl sm:text-3xl md:text-[34px] tracking-tight text-center mb-14 md:mb-20 font-heading"
           >
             What You'll Receive
           </h2>
@@ -73,16 +72,14 @@ export default function WhatYouReceive() {
 
                   {/* Title */}
                   <h3
-                    className="text-[#1E2229] font-bold text-[18px] sm:text-[20px] tracking-tight mb-2.5 transition-colors duration-300 group-hover:text-[#0052FF]"
-                    style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                    className="text-[#1E2229] font-bold text-[18px] sm:text-[20px] tracking-tight mb-2.5 transition-colors duration-300 group-hover:text-[#0052FF] font-heading"
                   >
                     {item.title}
                   </h3>
 
                   {/* Description */}
                   <p
-                    className="text-[#5E6675] text-[13.5px] sm:text-[14.5px] leading-relaxed font-normal max-w-[240px] mx-auto"
-                    style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                    className="text-[#5E6675] text-[13.5px] sm:text-[14.5px] leading-relaxed font-normal max-w-[240px] mx-auto font-sans"
                   >
                     {item.description}
                   </p>

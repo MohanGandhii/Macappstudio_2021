@@ -50,8 +50,7 @@ export default function DreamTeamCallBanner() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[44px] tracking-tight leading-tight mb-8 z-10 max-w-4xl mx-auto"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[44px] tracking-tight leading-tight mb-8 z-10 max-w-4xl mx-auto font-heading"
           >
             Your Dream Team Is <br className="sm:hidden" /> One Call Away.
           </motion.h2>
@@ -70,8 +69,7 @@ export default function DreamTeamCallBanner() {
                 <Check className="w-[18px] h-[18px] text-[#22C55E] stroke-[3.5px] shrink-0" />
                 {/* Feature Text */}
                 <span 
-                  className="text-[#1E2229] font-bold text-[14.5px] sm:text-[15.5px] tracking-wide"
-                  style={{ fontFamily: "'AvenirNextLTPro-Medium', 'AvenirNext-Medium', sans-serif" }}
+                  className="text-[#1E2229] font-bold text-[14.5px] sm:text-[15.5px] tracking-wide font-heading"
                 >
                   {text}
                 </span>
@@ -91,8 +89,7 @@ export default function DreamTeamCallBanner() {
               onClick={openProposalModal}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="bg-[#0052FF] text-white hover:bg-[#1e60eb] py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 w-full sm:w-auto z-10"
-              style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+              className="bg-[#0052FF] text-white hover:bg-[#1e60eb] py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 w-full sm:w-auto z-10 font-heading"
             >
               <span>Book Your Slot Today</span>
               <ArrowRight size={18} className="stroke-[2.5px]" />
@@ -102,8 +99,7 @@ export default function DreamTeamCallBanner() {
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="bg-white hover:bg-gray-50 text-[#1E2229] border border-[#1E2229] py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-sm flex items-center justify-center cursor-pointer transition-all duration-300 w-full sm:w-auto"
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className="bg-white hover:bg-gray-50 text-[#1E2229] border border-[#1E2229] py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-sm flex items-center justify-center cursor-pointer transition-all duration-300 w-full sm:w-auto font-heading"
               >
                 Schedule a Call
               </motion.button>

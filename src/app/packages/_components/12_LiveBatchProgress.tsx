@@ -45,14 +45,12 @@ export default function LiveBatchProgress() {
           {/* Header Section */}
           <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
             <h2 
-              className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight mb-3"
-              style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+              className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight mb-3 font-heading"
             >
               Live Batch Progress
             </h2>
             <p 
-              className="text-[#5E6675] text-[14px] sm:text-[15px] font-bold opacity-90 tracking-wide"
-              style={{ fontFamily: "'AvenirNextLTPro-Medium', 'AvenirNext-Medium', sans-serif" }}
+              className="text-[#5E6675] text-[14px] sm:text-[15px] font-bold opacity-90 tracking-wide font-heading"
             >
               Real-time updates • Last updated: Just now
             </p>
@@ -84,14 +82,12 @@ export default function LiveBatchProgress() {
                     <div className="flex-grow">
                       <div className="flex flex-wrap sm:flex-nowrap justify-between gap-1 items-center mb-2.5">
                         <span 
-                          className="text-[#1E2229] font-bold text-[15px] sm:text-[16px]"
-                          style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                          className="text-[#1E2229] font-bold text-[15px] sm:text-[16px] font-heading"
                         >
                           {slot.title}
                         </span>
                         <span 
-                          className="text-[#4CD964] font-bold text-[13px] sm:text-[14px]"
-                          style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                          className="text-[#4CD964] font-bold text-[13px] sm:text-[14px] font-heading"
                         >
                           {slot.filled}/{slot.total} filled
                         </span>
@@ -116,16 +112,14 @@ export default function LiveBatchProgress() {
                     <div className="shrink-0 min-w-[140px] sm:min-w-[160px] flex items-center justify-center">
                       {slot.isAvailable ? (
                         <button 
-                          className="w-full bg-[#4CD964] hover:bg-[#43c45a] active:scale-[0.985] text-white font-bold py-3 px-4 rounded-xl transition-all tracking-wide text-[13.5px] shadow-sm hover:shadow cursor-pointer text-center"
-                          style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                          className="w-full bg-[#4CD964] hover:bg-[#43c45a] active:scale-[0.985] text-white font-bold py-3 px-4 rounded-xl transition-all tracking-wide text-[13.5px] shadow-sm hover:shadow cursor-pointer text-center font-heading"
                         >
                           Book Your Slot
                         </button>
                       ) : (
                         <button 
                           disabled
-                          className="w-full bg-gray-100 text-gray-400 font-bold py-3 px-4 rounded-xl cursor-not-allowed select-none text-[13.5px] text-center border border-gray-200/50"
-                          style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                          className="w-full bg-gray-100 text-gray-400 font-bold py-3 px-4 rounded-xl cursor-not-allowed select-none text-[13.5px] text-center border border-gray-200/50 font-heading"
                         >
                           Slot not Available
                         </button>

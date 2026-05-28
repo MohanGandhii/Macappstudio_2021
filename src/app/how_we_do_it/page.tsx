@@ -23,7 +23,10 @@ export default function HowWeDoItPage() {
   const [videoModal, setVideoModal] = useState<string | null>(null);
 
   return (
-    <div className="bg-white min-h-screen">
+    <div
+      className="bg-white min-h-screen"
+      style={{ fontFamily: "'AvenirNext-Medium', sans-serif", fontSize: "18px", lineHeight: "30px" }}
+    >
       {/* 01 */ } <HeroSection />
       {/* 02 */ } <PromisesSection />
       {/* 03 */ } <QuoteSection />

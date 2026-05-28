@@ -19,7 +19,7 @@ const EXPERTISE_DATA = [
     title: "Research and Development",
     description: "Analyze, solve complex challenges and develop solutions which creates a revolution",
     icon: "/assets/images/index/expertise_icon3.svg",
-    link: "/R_D",
+    link: "/research-and-development",
   },
 ];
 

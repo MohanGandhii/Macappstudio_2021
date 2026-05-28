@@ -22,8 +22,7 @@ export default function SlotSelection() {
         
         {/* Centered Top Availability Legend */}
         <div 
-          className="flex items-center justify-center gap-8 mb-10 text-[14.5px] sm:text-[15.5px] font-bold text-[#5E6675]"
-          style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+          className="flex items-center justify-center gap-8 mb-10 text-[14.5px] sm:text-[15.5px] font-bold text-[#5E6675] font-heading"
         >
           <div className="flex items-center gap-2">
             <span className="w-3 h-3 rounded-full bg-[#4CD964]" />
@@ -50,18 +49,15 @@ export default function SlotSelection() {
               
               {/* Team Label */}
               <span 
-                className="text-[#1E2229] font-bold text-[15px] sm:text-[16px] mb-1"
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className="text-[#1E2229] font-bold text-[15px] sm:text-[16px] mb-1 font-heading"
               >
                 Team - {slot.number}
               </span>
 
-              {/* Status Booking Label */}
               <span 
                 className={`text-[12.5px] sm:text-[13.5px] font-bold ${
                   slot.isBooked ? "text-[#8E8E93]" : "text-[#4CD964]"
-                }`}
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                } font-heading`}
               >
                 {slot.isBooked ? "Book" : "Book"}
               </span>
@@ -77,8 +73,7 @@ export default function SlotSelection() {
           className="mb-5 w-full sm:w-auto px-4 sm:px-0 flex justify-center"
         >
           <button 
-            className="bg-[#4CD964] hover:bg-[#43c45a] active:scale-[0.985] text-white font-bold py-3.5 px-6 sm:py-4 sm:px-8 rounded-full transition-all text-[13px] sm:text-[15px] md:text-[16px] tracking-wide shadow-md flex items-center justify-center gap-2 sm:gap-2.5 cursor-pointer w-full sm:w-auto text-center"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="bg-[#4CD964] hover:bg-[#43c45a] active:scale-[0.985] text-white font-bold py-3.5 px-6 sm:py-4 sm:px-8 rounded-full transition-all text-[13px] sm:text-[15px] md:text-[16px] tracking-wide shadow-md flex items-center justify-center gap-2 sm:gap-2.5 cursor-pointer w-full sm:w-auto text-center font-heading"
           >
             <span>Secure My Dream Team Slot Now</span>
             <ArrowRight size={18} className="stroke-[2.5px] shrink-0" />
@@ -87,8 +82,7 @@ export default function SlotSelection() {
 
         {/* Bottom Alert Text */}
         <p 
-          className="text-[#5E6675] text-[13px] sm:text-[14px] font-semibold opacity-90 tracking-wide text-center"
-          style={{ fontFamily: "'AvenirNextLTPro-Medium', 'AvenirNext-Medium', sans-serif" }}
+          className="text-[#5E6675] text-[13px] sm:text-[14px] font-semibold opacity-90 tracking-wide text-center font-heading"
         >
           Limited slots available • First-come, first-served
         </p>

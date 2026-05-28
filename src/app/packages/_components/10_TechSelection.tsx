@@ -27,14 +27,12 @@ export default function TechSelection() {
         {/* Header Title & Subtitle */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 
-            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight mb-3"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight mb-3 font-heading"
           >
             Tools & Technologies We Use
           </h2>
           <p 
-            className="text-[#5E6675] text-[15px] sm:text-[16px] font-normal leading-relaxed opacity-95"
-            style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+            className="text-[#5E6675] text-[15px] sm:text-[16px] font-normal leading-relaxed opacity-95 font-sans"
           >
             Modern, scalable, and battle-tested technologies
           </p>
@@ -62,8 +60,7 @@ export default function TechSelection() {
 
               {/* Technology Name */}
               <span 
-                className="text-[#1E2229] font-bold text-[14px] sm:text-[15px] tracking-tight block mt-1"
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className="text-[#1E2229] font-bold text-[14px] sm:text-[15px] tracking-tight block mt-1 font-heading"
               >
                 {tech.name}
               </span>

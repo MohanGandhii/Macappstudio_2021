@@ -34,8 +34,7 @@ export default function EngagementTerms() {
         {/* Main Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 
-            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight font-heading"
           >
             Flexible Engagement Terms
           </h2>
@@ -64,16 +63,14 @@ export default function EngagementTerms() {
 
               {/* Card Title */}
               <h3 
-                className="text-[#1E2229] font-bold text-[18px] sm:text-[20px] tracking-tight mb-2.5"
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className="text-[#1E2229] font-bold text-[18px] sm:text-[20px] tracking-tight mb-2.5 font-heading"
               >
                 {card.title}
               </h3>
 
               {/* Card Description */}
               <p 
-                className="text-[#5E6675] text-[14px] sm:text-[15px] leading-relaxed max-w-[240px]"
-                style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                className="text-[#5E6675] text-[14px] sm:text-[15px] leading-relaxed max-w-[240px] font-sans"
               >
                 {card.description}
               </p>
@@ -89,8 +86,7 @@ export default function EngagementTerms() {
           className="mt-4"
         >
           <button 
-            className="bg-[#0052FF] text-white font-bold py-4 px-8 rounded-full hover:bg-[#1e60eb] transition-all text-[15px] sm:text-[16px] tracking-wide shadow-md flex items-center gap-2.5 cursor-pointer"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="bg-[#0052FF] text-white font-bold py-4 px-8 rounded-full hover:bg-[#1e60eb] transition-all text-[15px] sm:text-[16px] tracking-wide shadow-md flex items-center gap-2.5 cursor-pointer font-heading"
           >
             <span>Start Building Today</span>
             <ArrowRight size={18} className="stroke-[2.5px]" />

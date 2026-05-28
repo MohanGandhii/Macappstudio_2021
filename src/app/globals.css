@@ -43,38 +43,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
 }
 
-/* ========================================================================= */
-/* INLINE STYLE FONT-FAMILY OVERRIDES (MAPS LEGACY FONTS TO GOOGLE FONTS)     */
-/* ========================================================================= */
-
-/* 1. Bold / Black / Medium-Bold variations mapping to Outfit */
-*[style*="CircularStd-Bold" i],
-*[style*="CircularStd-Black" i],
-*[style*="CircularStd-Medium" i],
-*[style*="NHaasGroteskTXPro-Bold" i],
-*[style*="NHaasGroteskTXPro-Medium" i],
-*[style*="AvenirNext-Bold" i],
-*[style*="AvenirNext-SemiBold" i],
-*[style*="AvenirNext-Medium" i],
-*[style*="AvenirNextLTPro-Medium" i] {
-  font-family: var(--font-heading) !important;
-}
-
-/* 2. Regular / Light variations mapping to Plus Jakarta Sans */
-*[style*="AvenirNext-Regular" i],
-*[style*="AvenirNextLTPro-Regular" i],
-*[style*="NHaasGroteskTXPro-Regular" i],
-*[style*="NHaasGroteskTXPro-Light" i],
-*[style*="CircularStd-Book" i],
-*[style*="Circular-Regular" i],
-*[style*="Circular-Std-Font" i] {
-  font-family: var(--font-sans) !important;
-}
-
-/* Override SVG fonts to prevent broken layout */
-svg text {
-  font-family: var(--font-heading) !important;
-}
 
 /* ========================================================================= */
 /* PREMIUM INTERACTION EFFECTS & POLISH                                      */

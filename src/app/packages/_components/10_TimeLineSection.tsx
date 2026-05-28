@@ -40,14 +40,12 @@ export default function TimeLineSection() {
         {/* Title & Subtitle */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
           <h2 
-            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight mb-4"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight mb-4 font-heading"
           >
             Milestones Timeline
           </h2>
           <p 
-            className="text-[#5E6675] text-[15px] sm:text-[16px] max-w-xl mx-auto font-normal leading-relaxed"
-            style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+            className="text-[#5E6675] text-[15px] sm:text-[16px] max-w-xl mx-auto font-normal leading-relaxed font-sans"
           >
             Get a great value and a world-class product with fully transparent, milestone-based releases.
           </p>
@@ -78,16 +76,14 @@ export default function TimeLineSection() {
 
               {/* Milestone Title */}
               <h4 
-                className="text-[#1E2229] font-bold text-[15px] sm:text-[16px] leading-snug mb-1.5 transition-colors group-hover:text-[#0052FF]"
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className="text-[#1E2229] font-bold text-[15px] sm:text-[16px] leading-snug mb-1.5 transition-colors group-hover:text-[#0052FF] font-heading"
               >
                 {item.title}
               </h4>
 
               {/* Payment Allocation Label */}
               <span 
-                className="text-[#0052FF] font-bold text-[12px] bg-[#EBF2FE] px-3.5 py-1 rounded-full uppercase tracking-wider"
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className="text-[#0052FF] font-bold text-[12px] bg-[#EBF2FE] px-3.5 py-1 rounded-full uppercase tracking-wider font-heading"
               >
                 {item.amount}
               </span>
@@ -121,14 +117,12 @@ export default function TimeLineSection() {
               {/* Details Column */}
               <div>
                 <h4 
-                  className="text-[#1E2229] font-bold text-[15px] leading-snug mb-1"
-                  style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                  className="text-[#1E2229] font-bold text-[15px] leading-snug mb-1 font-heading"
                 >
                   {item.title}
                 </h4>
                 <span 
-                  className="text-[#0052FF] font-bold text-[11px] bg-[#EBF2FE] px-2.5 py-0.5 rounded-full inline-block uppercase tracking-wider"
-                  style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                  className="text-[#0052FF] font-bold text-[11px] bg-[#EBF2FE] px-2.5 py-0.5 rounded-full inline-block uppercase tracking-wider font-heading"
                 >
                   {item.amount}
                 </span>

@@ -53,15 +53,13 @@ export default function RolesSection() {
         {/* Header Title Section */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2
-            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[44px] tracking-tight leading-tight mb-6"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[44px] tracking-tight leading-tight mb-6 font-heading"
           >
             Complete <span className="text-[#0052FF]">Team Structure</span>
           </h2>
           
           <p
-            className="text-[#5E6675] text-sm sm:text-base md:text-[17px] leading-relaxed font-normal opacity-90"
-            style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+            className="text-[#5E6675] text-sm sm:text-base md:text-[17px] leading-relaxed font-normal opacity-90 font-sans"
           >
             From core development to specialized expertise, we provide complete teams
             tailored to your project requirements.
@@ -96,16 +94,14 @@ function CardComponent({ card }: { card: any }) {
 
       {/* Title */}
       <h3 
-        className="text-[#1E2229] font-bold text-[22px] tracking-tight mb-3"
-        style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+        className="text-[#1E2229] font-bold text-[22px] tracking-tight mb-3 font-heading"
       >
         {card.title}
       </h3>
 
       {/* Description */}
       <p 
-        className="text-[#5E6675] text-[15px] leading-relaxed font-normal opacity-90 max-w-[280px] mb-8"
-        style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+        className="text-[#5E6675] text-[15px] leading-relaxed font-normal opacity-90 max-w-[280px] mb-8 font-sans"
       >
         {card.description}
       </p>
@@ -116,8 +112,7 @@ function CardComponent({ card }: { card: any }) {
           {card.pills.map((pill: string, idx: number) => (
             <div
               key={idx}
-              className="bg-[#F3F4F6] text-[#1E2229] text-[11px] sm:text-[13px] md:text-[14px] py-2 px-1 sm:px-2 rounded-[12px] font-semibold text-center transition-colors hover:bg-[#E5E7EB] flex items-center justify-center min-h-[38px] sm:min-h-[44px] leading-tight"
-              style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+              className="bg-[#F3F4F6] text-[#1E2229] text-[11px] sm:text-[13px] md:text-[14px] py-2 px-1 sm:px-2 rounded-[12px] font-semibold text-center transition-colors hover:bg-[#E5E7EB] flex items-center justify-center min-h-[38px] sm:min-h-[44px] leading-tight font-sans"
             >
               {pill}
             </div>

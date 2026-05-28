@@ -12,8 +12,7 @@ export default function HiringComparisonSection() {
         {/* Main Centered Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
           <h2 
-            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[44px] tracking-tight leading-tight"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[44px] tracking-tight leading-tight font-heading"
           >
             Hiring Yourself vs Hiring with Us
           </h2>
@@ -71,8 +70,7 @@ export default function HiringComparisonSection() {
                   </defs>
                 </svg>
                 <span 
-                  className="text-[#1E2229] font-bold text-xl sm:text-[22px] tracking-tight"
-                  style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                  className="text-[#1E2229] font-bold text-xl sm:text-[22px] tracking-tight font-heading"
                 >
                   MacAppStudio
                 </span>
@@ -95,8 +93,7 @@ export default function HiringComparisonSection() {
                         <Check size={12} className="text-[#10B981] stroke-[3px]" />
                       </div>
                       <span 
-                        className="text-[#1E2229] font-medium text-[15px] sm:text-[16px] tracking-tight"
-                        style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                        className="text-[#1E2229] font-medium text-[15px] sm:text-[16px] tracking-tight font-sans"
                       >
                         1-2 week team setup
                       </span>
@@ -107,8 +104,7 @@ export default function HiringComparisonSection() {
                         <Check size={12} className="text-[#10B981] stroke-[3px]" />
                       </div>
                       <span 
-                        className="text-[#1E2229] font-medium text-[15px] sm:text-[16px] tracking-tight"
-                        style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                        className="text-[#1E2229] font-medium text-[15px] sm:text-[16px] tracking-tight font-sans"
                       >
                         Flexible & scalable
                       </span>
@@ -119,8 +115,7 @@ export default function HiringComparisonSection() {
                         <Check size={12} className="text-[#10B981] stroke-[3px]" />
                       </div>
                       <span 
-                        className="text-[#1E2229] font-medium text-[15px] sm:text-[16px] tracking-tight"
-                        style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                        className="text-[#1E2229] font-medium text-[15px] sm:text-[16px] tracking-tight font-sans"
                       >
                         Experienced & accountable developers
                       </span>
@@ -147,8 +142,7 @@ export default function HiringComparisonSection() {
               {/* Right Header: OTHER WAY */}
               <div className="flex items-center justify-start h-10 px-2 lg:pl-4">
                 <span 
-                  className="text-[#1E2229] font-bold text-lg sm:text-xl tracking-[0.08em] uppercase"
-                  style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                  className="text-[#1E2229] font-bold text-lg sm:text-xl tracking-[0.08em] uppercase font-heading"
                 >
                   OTHER WAY
                 </span>
@@ -170,8 +164,7 @@ export default function HiringComparisonSection() {
                       <X size={12} className="text-[#EF4444] stroke-[3px]" />
                     </div>
                     <span 
-                      className="text-[#1E2229] font-medium text-[15px] sm:text-[16px] tracking-tight"
-                      style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                      className="text-[#1E2229] font-medium text-[15px] sm:text-[16px] tracking-tight font-sans"
                     >
                       Time-consuming hiring
                     </span>
@@ -182,8 +175,7 @@ export default function HiringComparisonSection() {
                       <X size={12} className="text-[#EF4444] stroke-[3px]" />
                     </div>
                     <span 
-                      className="text-[#1E2229] font-medium text-[15px] sm:text-[16px] tracking-tight"
-                      style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                      className="text-[#1E2229] font-medium text-[15px] sm:text-[16px] tracking-tight font-sans"
                     >
                       Expensive payroll & overheads
                     </span>
@@ -194,8 +186,7 @@ export default function HiringComparisonSection() {
                       <X size={12} className="text-[#EF4444] stroke-[3px]" />
                     </div>
                     <span 
-                      className="text-[#1E2229] font-medium text-[15px] sm:text-[16px] tracking-tight"
-                      style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                      className="text-[#1E2229] font-medium text-[15px] sm:text-[16px] tracking-tight font-sans"
                     >
                       Skill gaps & hiring risks
                     </span>

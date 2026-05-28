@@ -169,14 +169,12 @@ export default function PricingSection() {
                 {/* Price Display */}
                 <div className="mb-1.5">
                   <span 
-                    className="text-[#1E2229] font-bold text-[30px] sm:text-[34px] tracking-tight"
-                    style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                    className="text-[#1E2229] font-bold text-[30px] sm:text-[34px] tracking-tight font-heading"
                   >
                     {card.price}
                   </span>
                   <span 
-                    className="text-[#5E6675] text-[13px] sm:text-[14px] font-normal leading-none ml-0.5"
-                    style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                    className="text-[#5E6675] text-[13px] sm:text-[14px] font-normal leading-none ml-0.5 font-sans"
                   >
                     /month
                   </span>
@@ -185,14 +183,12 @@ export default function PricingSection() {
                 {/* Discount Badge Row */}
                 <div className="flex items-center gap-2 mb-4">
                   <span 
-                    className="text-[#10B981] font-semibold text-[13px]"
-                    style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                    className="text-[#10B981] font-semibold text-[13px] font-sans"
                   >
                     {card.save}
                   </span>
                   <span 
-                    className="bg-[#ECFDF5] text-[#10B981] font-bold text-[11px] px-2.5 py-0.5 rounded-md"
-                    style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                    className="bg-[#ECFDF5] text-[#10B981] font-bold text-[11px] px-2.5 py-0.5 rounded-md font-heading"
                   >
                     {card.discount}
                   </span>
@@ -201,14 +197,12 @@ export default function PricingSection() {
                 {/* Ideal for Row */}
                 <div className="text-center w-full mb-4">
                   <span 
-                    className="text-[#5E6675] text-[12px] uppercase font-semibold tracking-wider block mb-1"
-                    style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                    className="text-[#5E6675] text-[12px] uppercase font-semibold tracking-wider block mb-1 font-heading"
                   >
                     Ideal for:
                   </span>
                   <span 
-                    className="text-[#1E2229] font-bold text-[15px] sm:text-[16px] tracking-tight block max-w-[240px] mx-auto leading-snug"
-                    style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                    className="text-[#1E2229] font-bold text-[15px] sm:text-[16px] tracking-tight block max-w-[240px] mx-auto leading-snug font-heading"
                   >
                     {card.experience}
                   </span>
@@ -222,8 +216,7 @@ export default function PricingSection() {
                         <Check size={12} className="text-[#10B981] stroke-[3.5px]" />
                       </div>
                       <span 
-                        className="text-[#1E2229] font-medium text-[14px]"
-                        style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                        className="text-[#1E2229] font-medium text-[14px] font-sans"
                       >
                         {item}
                       </span>
@@ -234,8 +227,7 @@ export default function PricingSection() {
                 {/* Booking Button */}
                 <div className="mt-auto w-full">
                   <button 
-                    className="w-full bg-[#0052FF] text-white font-bold py-3.5 px-6 rounded-xl hover:bg-[#1e60eb] transition-all tracking-wide text-[15px]"
-                    style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                    className="w-full bg-[#0052FF] text-white font-bold py-3.5 px-6 rounded-xl hover:bg-[#1e60eb] transition-all tracking-wide text-[15px] font-heading"
                   >
                     Book team
                   </button>

@@ -42,16 +42,14 @@ export default function FeaturesSection() {
         {/* Header Title Section */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2
-            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[44px] tracking-tight leading-tight mb-6"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[44px] tracking-tight leading-tight mb-6 font-heading"
           >
             Unlock Your Potential with Our <br className="hidden md:inline" />
             <span className="text-[#0052FF]">Extended Tech Team</span>
           </h2>
           
           <p
-            className="text-[#5E6675] text-sm sm:text-base md:text-[17px] leading-relaxed font-normal"
-            style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+            className="text-[#5E6675] text-sm sm:text-base md:text-[17px] leading-relaxed font-normal font-sans"
           >
             Our extended tech team brings a wealth of benefits designed to streamline your
             operations and accelerate your success. Having built over 120+ apps, we know
@@ -82,26 +80,22 @@ export default function FeaturesSection() {
 
                 {/* Title */}
                 <h3
-                  className="text-[#1E2229] font-bold text-xl md:text-[22px] tracking-tight mb-4"
-                  style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                  className="text-[#1E2229] font-bold text-xl md:text-[22px] tracking-tight mb-4 font-heading"
                 >
                   {feature.title}
                 </h3>
 
                 {/* Description */}
                 <p
-                  className="text-[#5E6675] text-sm sm:text-base leading-relaxed font-normal opacity-90"
-                  style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                  className="text-[#5E6675] text-sm sm:text-base leading-relaxed font-normal opacity-90 font-sans"
                 >
                   {feature.description}
                 </p>
               </div>
 
-              {/* Bottom Badge */}
               <div className="mt-8 flex">
                 <span
-                  className={`${feature.badgeBg} text-white text-[11px] sm:text-[12px] font-bold px-4 py-2 rounded-full tracking-wide shadow-sm`}
-                  style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                  className={`${feature.badgeBg} text-white text-[11px] sm:text-[12px] font-bold px-4 py-2 rounded-full tracking-wide shadow-sm font-heading`}
                 >
                   {feature.badge}
                 </span>

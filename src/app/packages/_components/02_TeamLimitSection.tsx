@@ -18,16 +18,14 @@ export default function TeamLimitSection() {
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Title */}
         <h2
-          className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[44px] tracking-tight leading-tight mb-3"
-          style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+          className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[44px] tracking-tight leading-tight mb-3 font-heading"
         >
           Our Team is Limited to 100 People
         </h2>
 
         {/* Subtitle */}
         <p
-          className="text-[#5E6675] text-sm sm:text-base md:text-[17px] font-medium tracking-wide mb-14 opacity-90"
-          style={{ fontFamily: "AvenirNext-Medium, sans-serif" }}
+          className="text-[#5E6675] text-sm sm:text-base md:text-[17px] font-medium tracking-wide mb-14 opacity-90 font-heading"
         >
           We have a limited team, kindly book your slot.
         </p>

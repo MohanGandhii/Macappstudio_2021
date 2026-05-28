@@ -105,22 +105,19 @@ export default function ExtendedTechTeamHero() {
         <div className="max-w-4xl mx-auto px-4 relative z-20 flex flex-col items-center mb-3 md:mb-4">
           {/* Header Title */}
           <h1 
-            className="text-[#1E2229] font-medium text-2xl sm:text-3xl md:text-[40px] tracking-tight mb-3 select-none leading-tight"
-            style={{ fontFamily: "CircularStd-Medium, sans-serif" }}
+            className="text-[#1E2229] font-medium text-2xl sm:text-3xl md:text-[40px] tracking-tight mb-3 select-none leading-tight font-heading"
           >
             Build Your Dream with Our
           </h1>
           <h2 
-            className="text-[#1E2229] font-bold text-5xl sm:text-6xl md:text-[76px] tracking-tight leading-none mb-8 select-none"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="text-[#1E2229] font-bold text-5xl sm:text-6xl md:text-[76px] tracking-tight leading-none mb-8 select-none font-heading"
           >
             <span className="text-[#0052FF]">Extended</span>{" "}Tech Team
           </h2>
 
           {/* Subtext */}
           <p 
-            className="text-[#5E6675] text-sm sm:text-base md:text-lg max-w-[700px] mt-2 mb-10 leading-relaxed font-normal"
-            style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+            className="text-[#5E6675] text-sm sm:text-base md:text-lg max-w-[700px] mt-2 mb-10 leading-relaxed font-normal font-sans"
           >
             Get ready-to-go extended teams in just 1-2 weeks. Having built over 120+ apps on almost 
             every platform, we bring scalable support and transparent collaboration.
@@ -129,8 +126,7 @@ export default function ExtendedTechTeamHero() {
           {/* Start Building Button */}
           <Link
             href="/contactus"
-            className="group bg-[#0052FF] hover:bg-[#0041cc] text-[#ffffff] px-9 py-4 rounded-full font-bold shadow-lg shadow-blue-500/15 hover:shadow-blue-500/25 active:scale-[0.98] transition-all text-[15px] inline-flex items-center gap-2.5"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="group bg-[#0052FF] hover:bg-[#0041cc] text-[#ffffff] px-9 py-4 rounded-full font-bold shadow-lg shadow-blue-500/15 hover:shadow-blue-500/25 active:scale-[0.98] transition-all text-[15px] inline-flex items-center gap-2.5 font-heading"
           >
             Start Building Today
             <FiArrowRight size={16} className="group-hover:translate-x-1.5 transition-transform duration-300" />
@@ -154,14 +150,12 @@ export default function ExtendedTechTeamHero() {
             >
               <div className="flex flex-col text-left">
                 <span 
-                  className="text-[30px] font-bold leading-none tracking-tight"
-                  style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                  className="text-[30px] font-bold leading-none tracking-tight font-heading"
                 >
                   200+
                 </span>
                 <span 
-                  className="text-[12px] font-medium opacity-90 mt-2 tracking-wide"
-                  style={{ fontFamily: "CircularStd-Book, sans-serif" }}
+                  className="text-[12px] font-medium opacity-90 mt-2 tracking-wide font-sans"
                 >
                   Project completed
                 </span>
@@ -175,14 +169,12 @@ export default function ExtendedTechTeamHero() {
             {/* Stat 1 */}
             <div className="flex flex-col items-center text-center">
               <span 
-                className="text-3xl md:text-[38px] font-bold text-[#1E2229] tracking-tight leading-none"
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className="text-3xl md:text-[38px] font-bold text-[#1E2229] tracking-tight leading-none font-heading"
               >
                 1-2
               </span>
               <span 
-                className="text-[11px] md:text-[13px] text-gray-400 mt-2 font-medium"
-                style={{ fontFamily: "AvenirNext-Medium, sans-serif" }}
+                className="text-[11px] md:text-[13px] text-gray-400 mt-2 font-medium font-heading"
               >
                 Weeks to Start
               </span>
@@ -191,14 +183,12 @@ export default function ExtendedTechTeamHero() {
             {/* Stat 2 */}
             <div className="flex flex-col items-center text-center">
               <span 
-                className="text-3xl md:text-[38px] font-bold text-[#1E2229] tracking-tight leading-none"
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className="text-3xl md:text-[38px] font-bold text-[#1E2229] tracking-tight leading-none font-heading"
               >
                 100%
               </span>
               <span 
-                className="text-[11px] md:text-[13px] text-gray-400 mt-2 font-medium"
-                style={{ fontFamily: "AvenirNext-Medium, sans-serif" }}
+                className="text-[11px] md:text-[13px] text-gray-400 mt-2 font-medium font-heading"
               >
                 Managed
               </span>
@@ -207,14 +197,12 @@ export default function ExtendedTechTeamHero() {
             {/* Stat 3 */}
             <div className="flex flex-col items-center text-center">
               <span 
-                className="text-3xl md:text-[38px] font-bold text-[#1E2229] tracking-tight leading-none"
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className="text-3xl md:text-[38px] font-bold text-[#1E2229] tracking-tight leading-none font-heading"
               >
                 30
               </span>
               <span 
-                className="text-[11px] md:text-[13px] text-gray-400 mt-2 font-medium"
-                style={{ fontFamily: "AvenirNext-Medium, sans-serif" }}
+                className="text-[11px] md:text-[13px] text-gray-400 mt-2 font-medium font-heading"
               >
                 Days Flexibility
               </span>
@@ -238,15 +226,13 @@ export default function ExtendedTechTeamHero() {
               <div className="flex items-center justify-between mb-3 text-left">
                 <div className="flex flex-col">
                   <span 
-                    className="text-gray-400 text-[9px] font-bold uppercase tracking-wider"
-                    style={{ fontFamily: "AvenirNext-Bold, sans-serif" }}
+                    className="text-gray-400 text-[9px] font-bold uppercase tracking-wider font-heading"
                   >
                     Monthly Project Views
                   </span>
                   <div className="flex items-center gap-1.5 mt-0.5">
                     <span 
-                      className="text-gray-800 text-sm font-bold"
-                      style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                      className="text-gray-800 text-sm font-bold font-heading"
                     >
                       17221
                     </span>
@@ -296,8 +282,7 @@ export default function ExtendedTechTeamHero() {
               
               {/* Chart Month Labels */}
               <div 
-                className="flex justify-between text-[8px] text-gray-400 font-medium px-1 mt-1.5"
-                style={{ fontFamily: "AvenirNext-Medium, sans-serif" }}
+                className="flex justify-between text-[8px] text-gray-400 font-medium px-1 mt-1.5 font-heading"
               >
                 <span>Jan</span>
                 <span>Feb</span>

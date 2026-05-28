@@ -71,8 +71,7 @@ export default function ComparisonSection() {
 
               {/* Title */}
               <h2 
-                className="text-[#1E2229] font-bold text-[22px] sm:text-[26px] md:text-[30px] tracking-tight leading-tight text-center"
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className="text-[#1E2229] font-bold text-[22px] sm:text-[26px] md:text-[30px] tracking-tight leading-tight text-center font-heading"
               >
                 The Problem with In-House Hiring
               </h2>
@@ -95,14 +94,12 @@ export default function ComparisonSection() {
                   {/* Content */}
                   <div className="flex flex-col justify-center min-w-0">
                     <h3 
-                      className="text-[#1E2229] font-bold text-[16px] sm:text-[17px] md:text-[18px] tracking-tight mb-1"
-                      style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                      className="text-[#1E2229] font-bold text-[16px] sm:text-[17px] md:text-[18px] tracking-tight mb-1 font-heading"
                     >
                       {item.title}
                     </h3>
                     <p 
-                      className="text-[#5E6675] text-[12.5px] sm:text-[13px] md:text-[14px] leading-relaxed font-normal opacity-90"
-                      style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                      className="text-[#5E6675] text-[12.5px] sm:text-[13px] md:text-[14px] leading-relaxed font-normal opacity-90 font-sans"
                     >
                       {item.description}
                     </p>
@@ -126,8 +123,7 @@ export default function ComparisonSection() {
 
               {/* Title */}
               <h2 
-                className="text-[#1E2229] font-bold text-[22px] sm:text-[26px] md:text-[30px] tracking-tight leading-tight text-center"
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className="text-[#1E2229] font-bold text-[22px] sm:text-[26px] md:text-[30px] tracking-tight leading-tight text-center font-heading"
               >
                 Ready-to-Go <span className="text-[#0052FF]">Extended Teams</span>
               </h2>
@@ -150,14 +146,12 @@ export default function ComparisonSection() {
                   {/* Content */}
                   <div className="flex flex-col justify-center min-w-0">
                     <h3 
-                      className="text-[#1E2229] font-bold text-[16px] sm:text-[17px] md:text-[18px] tracking-tight mb-1"
-                      style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                      className="text-[#1E2229] font-bold text-[16px] sm:text-[17px] md:text-[18px] tracking-tight mb-1 font-heading"
                     >
                       {item.title}
                     </h3>
                     <p 
-                      className="text-[#5E6675] text-[12.5px] sm:text-[13px] md:text-[14px] leading-relaxed font-normal opacity-90"
-                      style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                      className="text-[#5E6675] text-[12.5px] sm:text-[13px] md:text-[14px] leading-relaxed font-normal opacity-90 font-sans"
                     >
                       {item.description}
                     </p>

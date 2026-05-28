@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiPlay, FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const STORIES_VIDEOS = [
   { poster: "/assets/images/how_we_do_it/storiesposter6.jpg", videoId: "I2Owf0RvSKk" },
@@ -21,25 +21,28 @@ export default function ClientStoriesCarousel({ setVideoModal }: { setVideoModal
   }, []);
 
   return (
-    <section className="py-8 lg:py-16 bg-[#f1f5e8]">
-      <div className="container mx-auto px-4 lg:px-8 max-w-[1200px]">
-        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-24">
-          
+    <section className="py-8 sm:py-12 lg:py-16 bg-[#f1f5e8]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
+        <div className="flex flex-col lg:flex-row items-start gap-8 sm:gap-12 lg:gap-24">
+
           <div className="w-full lg:w-[45%] lg:pt-2">
-            <h2 
-              className="text-[34px] md:text-[44px] lg:text-[48px] font-bold text-[#111] mb-5 tracking-[-0.01em] leading-[1.1] lg:whitespace-nowrap"
+            <h2
+              className="text-[28px] sm:text-[36px] lg:text-[48px] font-bold text-[#111] mb-4 sm:mb-5 tracking-[-0.01em] leading-[1.1]"
               style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
             >
-              Still have questions ?
+              Still have questions?
             </h2>
-            <p className="text-[14px] lg:text-[15.5px] text-[#555] leading-[1.65] font-normal max-w-[540px]" style={{ fontFamily: "AvenirNext-Regular, sans-serif" }}>
-              As a new customer it’s quite normal to be confused and overwhelmed. Hear from our clients directly about the experience and their journey with MacAppStudio.
+            <p
+              className="text-[#555] max-w-[540px]"
+              style={{ fontFamily: "AvenirNext-Medium, sans-serif", fontSize: "18px", lineHeight: "30px" }}
+            >
+              As a new customer it's quite normal to be confused and overwhelmed. Hear from our clients directly about the experience and their journey with MacAppStudio.
             </p>
           </div>
 
           <div className="w-full lg:w-[55%]">
             <div className="flex flex-col items-center">
-              <div 
+              <div
                 className="relative rounded-[8px] overflow-hidden group cursor-pointer aspect-video w-full shadow-sm"
                 onClick={() => setVideoModal(STORIES_VIDEOS[activeStoryIdx].videoId)}
               >
@@ -52,20 +55,20 @@ export default function ClientStoriesCarousel({ setVideoModal }: { setVideoModal
                     transition={{ duration: 0.4 }}
                     className="absolute inset-0"
                   >
-                    <Image 
-                      src={STORIES_VIDEOS[activeStoryIdx].poster} 
-                      alt="Client Story" 
+                    <Image
+                      src={STORIES_VIDEOS[activeStoryIdx].poster}
+                      alt="Client Story"
                       fill
-                      className="object-cover" 
+                      className="object-cover"
                       priority
                     />
                   </motion.div>
                 </AnimatePresence>
-                
+
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <motion.div 
+                  <motion.div
                     whileHover={{ scale: 1.1 }}
-                    className="w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center z-10"
+                    className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 flex items-center justify-center z-10"
                   >
                     <svg viewBox="0 0 24 24" className="w-full h-full fill-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.15)]">
                       <path d="M8 5v14l11-7z" />
@@ -75,16 +78,16 @@ export default function ClientStoriesCarousel({ setVideoModal }: { setVideoModal
               </div>
 
               {/* Navigation Controls */}
-              <div className="mt-6 flex items-center justify-center gap-4">
-                <button 
-                  onClick={prevStory} 
+              <div className="mt-5 sm:mt-6 flex items-center justify-center gap-4">
+                <button
+                  onClick={prevStory}
                   className="w-8 h-8 rounded-full border border-black/5 flex items-center justify-center hover:bg-white transition-all text-black/60"
                 >
                   <FiChevronLeft size={18} />
                 </button>
-                
+
                 <div className="w-16 lg:w-20 h-[2px] bg-[#dce4cb] relative overflow-hidden rounded-full">
-                  <motion.div 
+                  <motion.div
                     className="absolute inset-0 bg-[#333] origin-left"
                     initial={false}
                     animate={{ scaleX: (activeStoryIdx + 1) / STORIES_VIDEOS.length }}
@@ -92,8 +95,8 @@ export default function ClientStoriesCarousel({ setVideoModal }: { setVideoModal
                   />
                 </div>
 
-                <button 
-                  onClick={nextStory} 
+                <button
+                  onClick={nextStory}
                   className="w-8 h-8 rounded-full border border-black/5 flex items-center justify-center hover:bg-white transition-all text-black/60"
                 >
                   <FiChevronRight size={18} />

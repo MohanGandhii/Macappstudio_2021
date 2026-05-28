@@ -18,13 +18,13 @@ export default function HeroSection() {
               transition={{ duration: 0.7 }}
               className="
                 text-[36px]
-                xs:text-[44px]
-                sm:text-[52px]
-                md:text-[60px]
-                lg:text-[72px]
-                xl:text-[80px]
+                xs:text-[42px]
+                sm:text-[48px]
+                md:text-[56px]
+                lg:text-[64px]
+                xl:text-[70px]
                 leading-[1.1]
-                lg:leading-[0.95]
+                lg:leading-[1.05]
                 tracking-[-1px]
                 md:tracking-[-2px]
                 lg:tracking-[-3px]
@@ -33,9 +33,9 @@ export default function HeroSection() {
                 mb-8
               "
             >
-              Great! You are in
+              <span className="md:whitespace-nowrap">Great! You are in</span>
               <br />
-              the right place
+              <span className="md:whitespace-nowrap">the right place</span>
             </motion.h1>
 
             <motion.p
@@ -51,7 +51,9 @@ export default function HeroSection() {
               "
             >
               Welcome to the MacAppStudio family! We believe
+              <br className="hidden md:inline" />{" "}
               in making people’s life better by providing world
+              <br className="hidden md:inline" />{" "}
               class products.
             </motion.p>
           </div>

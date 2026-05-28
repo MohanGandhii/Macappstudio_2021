@@ -62,8 +62,7 @@ export default function TeamsSection() {
 
         {/* TITLE */}
         <h2 
-          className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16"
-          style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+          className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 font-heading"
         >
           Total 20 Teams
         </h2>
@@ -78,17 +77,14 @@ export default function TeamsSection() {
               className={`rounded-[24px] p-8 md:p-10 border ${team.border} ${team.bg} transition-all duration-300 flex flex-col`}
             >
 
-              {/* HEADER */}
               <h3 
-                className={`text-2xl font-bold ${team.text}`}
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className={`text-2xl font-bold ${team.text} font-heading`}
               >
                 {team.title}
               </h3>
 
               <p 
-                className="text-base text-gray-600 mt-2 mb-8"
-                style={{ fontFamily: "'AvenirNextLTPro-Medium', 'AvenirNext-Medium', sans-serif" }}
+                className="text-base text-gray-600 mt-2 mb-8 font-heading"
               >
                 {team.company}
               </p>
@@ -111,8 +107,7 @@ export default function TeamsSection() {
 
                     {/* TEXT */}
                     <p 
-                      className="text-base text-gray-800 font-semibold"
-                      style={{ fontFamily: "'AvenirNextLTPro-Medium', 'AvenirNext-Medium', sans-serif" }}
+                      className="text-base text-gray-800 font-semibold font-heading"
                     >
                       {item.name}
                     </p>

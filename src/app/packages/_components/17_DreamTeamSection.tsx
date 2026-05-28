@@ -114,14 +114,12 @@ export default function DreamTeamSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 flex flex-col items-center">
           <h2 
-            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight mb-3"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight mb-3 font-heading"
           >
             Your Dream Deserves the Right Team
           </h2>
           <p 
-            className="text-[#5E6675] text-[15.5px] sm:text-[16.5px] font-normal mb-8 leading-relaxed text-center"
-            style={{ fontFamily: "'AvenirNextLTPro-Medium', 'AvenirNext-Medium', sans-serif" }}
+            className="text-[#5E6675] text-[15.5px] sm:text-[16.5px] font-normal mb-8 leading-relaxed text-center font-heading"
           >
             Book your slot today & start building in 2 weeks
           </p>
@@ -131,8 +129,7 @@ export default function DreamTeamSection() {
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="bg-[#0052FF] text-white hover:bg-[#1e60eb] py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 w-full sm:w-auto"
-              style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+              className="bg-[#0052FF] text-white hover:bg-[#1e60eb] py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 w-full sm:w-auto font-heading"
             >
               <span>Book Your Slot Today</span>
               <ArrowRight size={18} className="stroke-[2.5px]" />
@@ -141,8 +138,7 @@ export default function DreamTeamSection() {
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="bg-white text-[#1E2229] border border-gray-200 hover:bg-gray-50 py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-sm flex items-center justify-center cursor-pointer transition-all duration-300 w-full sm:w-auto"
-              style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+              className="bg-white text-[#1E2229] border border-gray-200 hover:bg-gray-50 py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-sm flex items-center justify-center cursor-pointer transition-all duration-300 w-full sm:w-auto font-heading"
             >
               Schedule a Call
             </motion.button>
@@ -168,16 +164,14 @@ export default function DreamTeamSection() {
 
               {/* Title */}
               <h3
-                className="text-[#1E2229] font-bold text-[20px] sm:text-[22px] tracking-tight mb-2.5"
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className="text-[#1E2229] font-bold text-[20px] sm:text-[22px] tracking-tight mb-2.5 font-heading"
               >
                 {card.title}
               </h3>
 
               {/* Description */}
               <p
-                className="text-[#5E6675] text-[14px] sm:text-[15px] leading-relaxed font-normal max-w-[320px] mx-auto"
-                style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                className="text-[#5E6675] text-[14px] sm:text-[15px] leading-relaxed font-normal max-w-[320px] mx-auto font-sans"
               >
                 {card.description}
               </p>

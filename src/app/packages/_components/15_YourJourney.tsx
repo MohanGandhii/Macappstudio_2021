@@ -58,14 +58,12 @@ export default function YourJourney() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
           <h2 
-            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight mb-4"
-            style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+            className="text-[#1E2229] font-bold text-3xl sm:text-4xl md:text-[38px] tracking-tight mb-4 font-heading"
           >
             Your Journey with Us
           </h2>
           <p 
-            className="text-[#5E6675] text-[15px] sm:text-[16px] max-w-xl mx-auto font-normal leading-relaxed"
-            style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+            className="text-[#5E6675] text-[15px] sm:text-[16px] max-w-xl mx-auto font-normal leading-relaxed font-sans"
           >
             From securing your team to celebrating milestones, here's how we work together to bring your vision to life.
           </p>
@@ -103,24 +101,21 @@ export default function YourJourney() {
 
                     {/* Card Title */}
                     <h3
-                      className="text-[#1E2229] font-bold text-[20px] tracking-tight mb-1"
-                      style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                      className="text-[#1E2229] font-bold text-[20px] tracking-tight mb-1 font-heading"
                     >
                       {step.title}
                     </h3>
 
                     {/* Step Highlight Text */}
                     <span
-                      className="text-[#0052FF] font-semibold text-[13.5px] mb-3 inline-block"
-                      style={{ fontFamily: "'AvenirNext-SemiBold', sans-serif" }}
+                      className="text-[#0052FF] font-semibold text-[13.5px] mb-3 inline-block font-heading"
                     >
                       {step.highlight}
                     </span>
 
                     {/* Description */}
                     <p
-                      className="text-[#5E6675] text-[13.5px] leading-relaxed font-normal"
-                      style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                      className="text-[#5E6675] text-[13.5px] leading-relaxed font-normal font-sans"
                     >
                       {step.description}
                     </p>
@@ -164,24 +159,21 @@ export default function YourJourney() {
                     >
                       {/* Card Title */}
                       <h3
-                        className="text-[#1E2229] font-bold text-[18px] sm:text-[20px] mb-0.5"
-                        style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                        className="text-[#1E2229] font-bold text-[18px] sm:text-[20px] mb-0.5 font-heading"
                       >
                         {step.title}
                       </h3>
 
                       {/* Step Highlight Text */}
                       <span
-                        className="text-[#0052FF] font-semibold text-[13px] sm:text-[14px] mb-2.5 inline-block"
-                        style={{ fontFamily: "'AvenirNext-SemiBold', sans-serif" }}
+                        className="text-[#0052FF] font-semibold text-[13px] sm:text-[14px] mb-2.5 inline-block font-heading"
                       >
                         {step.highlight}
                       </span>
 
                       {/* Description */}
                       <p
-                        className="text-[#5E6675] text-[13px] sm:text-[14px] leading-relaxed font-normal"
-                        style={{ fontFamily: "'AvenirNextLTPro-Regular', 'AvenirNext-Regular', sans-serif" }}
+                        className="text-[#5E6675] text-[13px] sm:text-[14px] leading-relaxed font-normal font-sans"
                       >
                         {step.description}
                       </p>
