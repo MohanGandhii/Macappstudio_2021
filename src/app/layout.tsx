@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   title: "MacAppStudio | World’s #1 App Development Company",
   description: "MacAppStudio is a million-dollar mobile app Development Company in Chennai, creating multi-million dollar apps for our customers.",
   keywords: "IOS development, iOS app development, iOS developer, app developer, app development, mobile app developer, mac app developers, web developers, android developers, mac OS X app development, ui/ux design",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

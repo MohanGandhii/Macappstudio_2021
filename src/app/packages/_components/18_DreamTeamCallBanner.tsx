@@ -83,23 +83,23 @@ export default function DreamTeamCallBanner() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="flex flex-col sm:flex-row gap-4 items-center justify-center z-10 w-full max-w-md"
+            className="flex flex-col sm:flex-row gap-4 items-center justify-center z-10 w-full max-w-2xl"
           >
             <motion.button
               onClick={openProposalModal}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="bg-[#0052FF] text-white hover:bg-[#1e60eb] py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 w-full sm:w-auto z-10 font-heading"
+              className="bg-[#0052FF] text-white hover:bg-[#1e60eb] py-4 px-8 rounded-[16px] font-bold text-[15px] sm:text-[16px] tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 w-full sm:w-[270px] z-10 font-heading whitespace-nowrap shrink-0"
             >
               <span>Book Your Slot Today</span>
               <ArrowRight size={18} className="stroke-[2.5px]" />
             </motion.button>
 
-            <Link href="/contactus" className="w-full sm:w-auto z-10">
+            <Link href="/contactus" className="w-full sm:w-[270px] z-10 shrink-0">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="bg-white hover:bg-gray-50 text-[#1E2229] border border-[#1E2229] py-4 px-8 rounded-full font-bold text-[15px] sm:text-[16px] tracking-wide shadow-sm flex items-center justify-center cursor-pointer transition-all duration-300 w-full sm:w-auto font-heading"
+                className="bg-white hover:bg-gray-50 text-[#1E2229] border border-[#1E2229] py-4 px-8 rounded-[16px] font-bold text-[15px] sm:text-[16px] tracking-wide shadow-sm flex items-center justify-center cursor-pointer transition-all duration-300 w-full font-heading whitespace-nowrap"
               >
                 Schedule a Call
               </motion.button>

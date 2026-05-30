@@ -10,19 +10,19 @@ export default function EngagementTerms() {
     {
       title: "Advance Payment",
       description: "Secures your dedicated team slot immediately",
-      icon: "/packaged_assets/EngagementTerms/1.svg",
+      icon: "/packaged_assets/FlexibleEngagementTerms/Icon.svg",
       iconBg: "bg-[#EBF2FE]", // Soft blue tint
     },
     {
       title: "30 Days Notice",
       description: "Complete flexibility to scale or adjust as needed",
-      icon: "/packaged_assets/EngagementTerms/2.svg",
+      icon: "/packaged_assets/FlexibleEngagementTerms/Icon (1).svg",
       iconBg: "bg-[#F5EBFC]", // Soft purple tint
     },
     {
       title: "Milestone",
       description: "Celebrate project wins and achievements together",
-      icon: "/packaged_assets/EngagementTerms/3.svg",
+      icon: "/packaged_assets/FlexibleEngagementTerms/Icon (2).svg",
       iconBg: "bg-[#EBFCEF]", // Soft green tint
     },
   ];
