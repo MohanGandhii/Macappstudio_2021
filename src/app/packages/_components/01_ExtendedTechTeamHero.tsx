@@ -12,48 +12,48 @@ export default function ExtendedTechTeamHero() {
   const avatars = [
     {
       src: "/packaged_assets/avatar1.png",
-      color: "border-[#0052FF]",
-      sizeClass: "w-[44px] h-[44px] md:w-[50px] md:h-[50px]",
-      positionClass: "top-[-12%] left-1/2 -translate-x-1/2 md:top-[-16%] lg:top-[-20%]",
+      color: "border-[#0052FF] border-2 md:border-[3px]",
+      sizeClass: "w-[36px] h-[36px] md:w-[50px] md:h-[50px]",
+      positionClass: "top-[-10%] left-1/2 -translate-x-1/2 md:top-[-16%] lg:top-[-20%]",
       floatDuration: 5,
       delay: 0,
     },
     {
       src: "/packaged_assets/avatar2.png",
-      color: "border-[#FFA500]",
-      sizeClass: "w-[38px] h-[38px] md:w-[44px] md:h-[44px]",
-      positionClass: "top-[4%] right-[10%] md:right-auto md:left-1/2 md:translate-x-[240px] lg:translate-x-[320px] xl:translate-x-[360px] md:top-[8%] lg:top-[10%]",
+      color: "border-[#FFA500] border-2 md:border-[3px]",
+      sizeClass: "w-[32px] h-[32px] md:w-[44px] md:h-[44px]",
+      positionClass: "top-[2%] right-[4%] md:right-auto md:left-1/2 md:translate-x-[240px] lg:translate-x-[320px] xl:translate-x-[360px] md:top-[8%] lg:top-[10%]",
       floatDuration: 5.8,
       delay: 0.4,
     },
     {
       src: "/packaged_assets/avatar3.png",
-      color: "border-[#A855F7]",
-      sizeClass: "w-[38px] h-[38px] md:w-[44px] md:h-[44px]",
-      positionClass: "top-[12%] left-[6%] md:left-auto md:left-1/2 md:-translate-x-[260px] lg:-translate-x-[340px] xl:-translate-x-[380px] md:top-[16%] lg:top-[20%]",
+      color: "border-[#A855F7] border-2 md:border-[3px]",
+      sizeClass: "w-[32px] h-[32px] md:w-[44px] md:h-[44px]",
+      positionClass: "top-[6%] left-[4%] md:left-auto md:left-1/2 md:-translate-x-[260px] lg:-translate-x-[340px] xl:-translate-x-[380px] md:top-[16%] lg:top-[20%]",
       floatDuration: 4.5,
       delay: 0.8,
     },
     {
       src: "/packaged_assets/avatar4.png",
-      color: "border-[#EC4899]",
-      sizeClass: "w-[38px] h-[38px] md:w-[44px] md:h-[44px]",
-      positionClass: "top-[24%] right-[6%] md:right-auto md:left-1/2 md:translate-x-[240px] lg:translate-x-[320px] xl:translate-x-[360px] md:top-[28%] lg:top-[32%]",
+      color: "border-[#EC4899] border-2 md:border-[3px]",
+      sizeClass: "w-[32px] h-[32px] md:w-[44px] md:h-[44px]",
+      positionClass: "top-[18%] right-[2%] md:right-auto md:left-1/2 md:translate-x-[240px] lg:translate-x-[320px] xl:translate-x-[360px] md:top-[28%] lg:top-[32%]",
       floatDuration: 5.2,
       delay: 0.2,
     },
     {
       src: "/packaged_assets/avatar5.png",
-      color: "border-white shadow-[0_20px_50px_rgba(0,0,0,0.1)]",
-      sizeClass: "w-[68px] h-[68px] md:w-[86px] md:h-[86px]",
-      positionClass: "top-[52%] left-[2%] md:left-auto md:left-1/2 md:-translate-x-[320px] lg:-translate-x-[440px] xl:-translate-x-[500px] md:top-[56%] lg:top-[60%]",
+      color: "border-white border-2 md:border-[4px] shadow-[0_20px_50px_rgba(0,0,0,0.1)]",
+      sizeClass: "w-[56px] h-[56px] md:w-[86px] md:h-[86px]",
+      positionClass: "top-[50%] left-[2%] md:left-auto md:left-1/2 md:-translate-x-[320px] lg:-translate-x-[440px] xl:-translate-x-[500px] md:top-[56%] lg:top-[60%]",
       floatDuration: 6.2,
       delay: 1.2,
     },
     {
       src: "/packaged_assets/avatar6.png",
-      color: "border-white shadow-[0_20px_50px_rgba(0,0,0,0.1)]",
-      sizeClass: "w-[68px] h-[68px] md:w-[86px] md:h-[86px]",
+      color: "border-white border-2 md:border-[4px] shadow-[0_20px_50px_rgba(0,0,0,0.1)]",
+      sizeClass: "w-[56px] h-[56px] md:w-[86px] md:h-[86px]",
       positionClass: "top-[40%] right-[2%] md:right-auto md:left-1/2 md:translate-x-[280px] lg:translate-x-[380px] xl:translate-x-[440px] md:top-[44%] lg:top-[48%]",
       floatDuration: 4.8,
       delay: 0.6,
@@ -62,15 +62,14 @@ export default function ExtendedTechTeamHero() {
 
   return (
     <section 
-      className="relative w-full pt-24 pb-16 md:pt-32 md:pb-24 px-4 overflow-hidden"
+      className="relative w-full pt-16 pb-8 md:pt-32 md:pb-24 px-4 overflow-hidden"
       style={{
         background: "radial-gradient(circle at 0% 35%, rgba(204, 251, 241, 0.7) 0%, transparent 60%), radial-gradient(circle at 100% 25%, rgba(253, 238, 244, 0.8) 0%, transparent 60%), radial-gradient(circle at 50% -5%, rgba(224, 242, 254, 0.6) 0%, transparent 45%), #ffffff"
       }}
     >
-
       {/* Hero Body Content */}
-      <div className="relative max-w-7xl mx-auto w-full flex flex-col items-center text-center mt-12 md:mt-16">
-
+      <div className="relative max-w-7xl mx-auto w-full flex flex-col items-center text-center mt-6 md:mt-16">
+        
         {/* Scattered Avatars with Floating Animations */}
         {avatars.map((avatar, idx) => (
           <div
@@ -79,7 +78,7 @@ export default function ExtendedTechTeamHero() {
           >
             <motion.div
               animate={{ y: [0, -10, 0] }}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               transition={{
                 duration: avatar.floatDuration,
                 repeat: Infinity,
@@ -87,7 +86,7 @@ export default function ExtendedTechTeamHero() {
                 delay: avatar.delay,
               }}
             >
-              <div className={`relative rounded-full border-[3px] md:border-[4px] overflow-hidden ${avatar.sizeClass} ${avatar.color} bg-white cursor-pointer`}>
+              <div className={`relative rounded-full overflow-hidden ${avatar.sizeClass} ${avatar.color} bg-white cursor-pointer`}>
                 <Image
                   src={avatar.src}
                   alt={`Team Member ${idx + 1}`}
@@ -102,24 +101,24 @@ export default function ExtendedTechTeamHero() {
         ))}
 
         {/* Text and Call to Action */}
-        <div className="max-w-4xl mx-auto px-4 relative z-20 flex flex-col items-center mb-3 md:mb-4">
+        <div className="max-w-4xl mx-auto px-4 relative z-20 flex flex-col items-center mb-2 md:mb-4">
           {/* Header Title */}
-          <h1
-            className="text-[#1E2229] font-medium text-2xl sm:text-3xl md:text-[40px] tracking-tight mb-3 select-none leading-tight font-heading"
+          <h1 
+            className="text-[#1E2229] font-medium text-xl sm:text-3xl md:text-[40px] tracking-tight mb-2 md:mb-3 select-none leading-tight font-heading"
           >
             Build Your Dream with Our
           </h1>
-          <h2
-            className="text-[#1E2229] font-bold text-5xl sm:text-6xl md:text-[76px] tracking-tight leading-none mb-8 select-none font-heading"
+          <h2 
+            className="text-[#1E2229] font-bold text-3xl sm:text-6xl md:text-[76px] tracking-tight leading-none mb-6 md:mb-8 select-none font-heading"
           >
             <span className="text-[#0052FF]">Extended</span>{" "}Tech Team
           </h2>
 
           {/* Subtext */}
-          <p
-            className="text-[#5E6675] text-sm sm:text-base md:text-lg max-w-[700px] mt-2 mb-10 leading-relaxed font-normal font-sans"
+          <p 
+            className="text-[#5E6675] text-xs sm:text-base md:text-lg max-w-[700px] mt-1 md:mt-2 mb-8 md:mb-10 leading-relaxed font-normal font-sans"
           >
-            Get ready-to-go extended teams in just 1-2 weeks. Having built over 120+ apps on almost
+            Get ready-to-go extended teams in just 1-2 weeks. Having built over 120+ apps on almost 
             every platform, we bring scalable support and transparent collaboration.
           </p>
 
@@ -134,10 +133,10 @@ export default function ExtendedTechTeamHero() {
         </div>
 
         {/* Metrics, Completed Projects Badge & Chart Card */}
-        <div className="relative z-20 w-full px-6 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-6 mt-3 md:mt-4">
-
+        <div className="relative z-20 w-full px-4 flex flex-row flex-nowrap items-center justify-between gap-6 overflow-x-auto scrollbar-none pb-4 mt-8 md:mt-16 select-none max-w-7xl mx-auto">
+          
           {/* Left Side: Tilted Projects Completed Badge */}
-          <div className="w-full lg:w-auto flex justify-center lg:justify-start">
+          <div className="flex-shrink-0">
             <motion.div
               animate={{ y: [0, -6, 0], rotate: [-6, -5, -6] }}
               whileHover={{ scale: 1.05 }}
@@ -146,16 +145,16 @@ export default function ExtendedTechTeamHero() {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="bg-[#7c3aed] text-white py-4.5 px-6 rounded-2xl shadow-2xl shadow-purple-500/20 border border-white/10 select-none cursor-pointer w-[205px]"
+              className="bg-[#7c3aed] text-white py-3.5 px-5 rounded-2xl shadow-2xl shadow-purple-500/20 border border-white/10 select-none cursor-pointer w-[160px] md:w-[205px] flex-shrink-0"
             >
               <div className="flex flex-col text-left">
-                <span
-                  className="text-[30px] font-bold leading-none tracking-tight font-heading"
+                <span 
+                  className="text-[24px] md:text-[30px] font-bold leading-none tracking-tight font-heading"
                 >
                   200+
                 </span>
-                <span
-                  className="text-[12px] font-medium opacity-90 mt-2 tracking-wide font-sans"
+                <span 
+                  className="text-[10px] md:text-[12px] font-medium opacity-90 mt-1.5 md:mt-2 tracking-wide font-sans"
                 >
                   Project completed
                 </span>
@@ -164,17 +163,17 @@ export default function ExtendedTechTeamHero() {
           </div>
 
           {/* Center Section: Core Metrics */}
-          <div className="flex flex-row flex-wrap sm:flex-nowrap items-center justify-center gap-6 sm:gap-20 md:gap-24 w-full lg:w-auto select-none">
-
+          <div className="flex flex-row flex-nowrap items-center justify-center gap-6 sm:gap-20 md:gap-24 flex-shrink-0 select-none px-4">
+            
             {/* Stat 1 */}
             <div className="flex flex-col items-center text-center">
-              <span
-                className="text-3xl md:text-[38px] font-bold text-[#1E2229] tracking-tight leading-none font-heading"
+              <span 
+                className="text-2xl md:text-[38px] font-bold text-[#1E2229] tracking-tight leading-none font-heading"
               >
                 1-2
               </span>
-              <span
-                className="text-[11px] md:text-[13px] text-gray-400 mt-2 font-medium font-heading"
+              <span 
+                className="text-[10px] md:text-[13px] text-gray-400 mt-1.5 md:mt-2 font-medium font-heading"
               >
                 Weeks to Start
               </span>
@@ -182,13 +181,13 @@ export default function ExtendedTechTeamHero() {
 
             {/* Stat 2 */}
             <div className="flex flex-col items-center text-center">
-              <span
-                className="text-3xl md:text-[38px] font-bold text-[#1E2229] tracking-tight leading-none font-heading"
+              <span 
+                className="text-2xl md:text-[38px] font-bold text-[#1E2229] tracking-tight leading-none font-heading"
               >
                 100%
               </span>
-              <span
-                className="text-[11px] md:text-[13px] text-gray-400 mt-2 font-medium font-heading"
+              <span 
+                className="text-[10px] md:text-[13px] text-gray-400 mt-1.5 md:mt-2 font-medium font-heading"
               >
                 Managed
               </span>
@@ -196,13 +195,13 @@ export default function ExtendedTechTeamHero() {
 
             {/* Stat 3 */}
             <div className="flex flex-col items-center text-center">
-              <span
-                className="text-3xl md:text-[38px] font-bold text-[#1E2229] tracking-tight leading-none font-heading"
+              <span 
+                className="text-2xl md:text-[38px] font-bold text-[#1E2229] tracking-tight leading-none font-heading"
               >
                 30
               </span>
-              <span
-                className="text-[11px] md:text-[13px] text-gray-400 mt-2 font-medium font-heading"
+              <span 
+                className="text-[10px] md:text-[13px] text-gray-400 mt-1.5 md:mt-2 font-medium font-heading"
               >
                 Days Flexibility
               </span>
@@ -211,7 +210,7 @@ export default function ExtendedTechTeamHero() {
           </div>
 
           {/* Right Side: Floating SVG Chart Card */}
-          <div className="w-full lg:w-auto flex justify-center lg:justify-end">
+          <div className="flex-shrink-0">
             <motion.div
               animate={{ y: [0, 6, 0], rotate: [2, 3, 2] }}
               whileHover={{ scale: 1.05 }}
@@ -221,23 +220,23 @@ export default function ExtendedTechTeamHero() {
                 ease: "easeInOut",
                 delay: 0.3,
               }}
-              className="bg-white border border-gray-100/80 shadow-2xl rounded-2xl p-4.5 w-[240px] md:w-[260px] select-none cursor-pointer"
+              className="bg-white border border-gray-100/80 shadow-2xl rounded-2xl p-3.5 md:p-4.5 w-[200px] md:w-[260px] select-none cursor-pointer flex-shrink-0"
             >
               <div className="flex items-center justify-between mb-3 text-left">
                 <div className="flex flex-col">
-                  <span
-                    className="text-gray-400 text-[9px] font-bold uppercase tracking-wider font-heading"
+                  <span 
+                    className="text-gray-400 text-[8px] md:text-[9px] font-bold uppercase tracking-wider font-heading"
                   >
                     Monthly Project Views
                   </span>
                   <div className="flex items-center gap-1.5 mt-0.5">
-                    <span
-                      className="text-gray-800 text-sm font-bold font-heading"
+                    <span 
+                      className="text-gray-800 text-xs md:text-sm font-bold font-heading"
                     >
                       17221
                     </span>
-                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                    <span className="text-[10px] text-emerald-500 font-bold">&#9650;</span>
+                    <div className="w-1 md:w-1.5 h-1 md:h-1.5 rounded-full bg-emerald-500" />
+                    <span className="text-[8px] md:text-[10px] text-emerald-500 font-bold">&#9650;</span>
                   </div>
                 </div>
               </div>
@@ -253,11 +252,11 @@ export default function ExtendedTechTeamHero() {
 
                   <defs>
                     <linearGradient id="chartLineGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#0052FF" stopOpacity="0.2" />
-                      <stop offset="100%" stopColor="#0052FF" stopOpacity="0.00" />
+                      <stop offset="0%" stopColor="#0052FF" stopOpacity="0.2"/>
+                      <stop offset="100%" stopColor="#0052FF" stopOpacity="0.00"/>
                     </linearGradient>
                   </defs>
-
+                  
                   {/* Smooth growing line path with slight dip matching mockup */}
                   <path
                     d="M 0 70 C 30 60, 50 40, 80 48 C 110 56, 130 50, 160 38 C 190 26, 210 12, 240 8"
@@ -266,7 +265,7 @@ export default function ExtendedTechTeamHero() {
                     strokeWidth="2.5"
                     strokeLinecap="round"
                   />
-
+                  
                   {/* Area under line */}
                   <path
                     d="M 0 70 C 30 60, 50 40, 80 48 C 110 56, 130 50, 160 38 C 190 26, 210 12, 240 8 L 240 80 L 0 80 Z"
@@ -279,10 +278,10 @@ export default function ExtendedTechTeamHero() {
                   <circle cx="240" cy="8" r="4.5" fill="#0052FF" stroke="#fff" strokeWidth="2" />
                 </svg>
               </div>
-
+              
               {/* Chart Month Labels */}
-              <div
-                className="flex justify-between text-[8px] text-gray-400 font-medium px-1 mt-1.5 font-heading"
+              <div 
+                className="flex justify-between text-[7px] md:text-[8px] text-gray-400 font-medium px-1 mt-1.5 font-heading"
               >
                 <span>Jan</span>
                 <span>Feb</span>
