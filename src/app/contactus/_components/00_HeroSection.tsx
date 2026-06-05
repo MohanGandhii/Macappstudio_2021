@@ -14,8 +14,11 @@ export default function HeroSection() {
             <p className="text-[16px] md:text-[18px] text-[#444] leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
               For general queries, sales and partnership please drop a mail anytime and we will reach you.
             </p>
+            {/* Standard fallback: href="mailto:support@macappstudio.com" */}
             <a 
-              href="mailto:contact@macappstudio.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=support@macappstudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-black text-white px-12 py-4 text-[15px] font-bold hover:bg-gray-800 transition-colors text-center w-full max-w-[200px]"
             >
               Mail Us

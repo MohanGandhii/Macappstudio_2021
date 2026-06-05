@@ -49,7 +49,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
         <div className="flex items-center justify-between h-20 relative">
-          
+
           {/* Mobile Menu Hamburger Button - Left-aligned on mobile */}
           <button
             className="lg:hidden p-2 text-gray-900 hover:text-black transition-colors z-20"
@@ -60,9 +60,9 @@ export default function Navbar() {
           </button>
 
           {/* Logo - Centered on mobile, Left-aligned on desktop */}
-          <Link 
-            href="/" 
-            className="flex-shrink-0 absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 z-10" 
+          <Link
+            href="/"
+            className="flex-shrink-0 absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 z-10"
             onClick={closeMenu}
           >
             <Image
@@ -85,7 +85,7 @@ export default function Navbar() {
               <button className="flex items-center gap-1 font-semibold text-[14px] text-gray-800 hover:text-blue-600 transition-colors py-2">
                 What we do? <FiChevronDown className={clsx("transition-transform", isDropdownOpen && "rotate-180")} />
               </button>
-              
+
               <AnimatePresence>
                 {isDropdownOpen && (
                   <motion.div
@@ -152,7 +152,7 @@ export default function Navbar() {
             {/* Header section (X Button on left, Logo in center) */}
             <div className="flex items-center justify-between px-6 h-20 border-b border-gray-100 flex-shrink-0 relative">
               {/* Close Button ("X") */}
-              <button 
+              <button
                 onClick={closeMenu}
                 className="text-[#2B2B2B] hover:scale-105 active:scale-95 transition-all p-2 z-10"
                 aria-label="Close menu"
@@ -177,27 +177,27 @@ export default function Navbar() {
 
             {/* Scrollable Mobile Menu Links Container */}
             <div className="flex-1 px-8 py-8 flex flex-col gap-6 font-sans">
-              
+
               {/* Category 1: What we do? heading and sublinks */}
               <div className="flex flex-col gap-3">
                 <span className="font-bold text-[18px] text-[#2B2B2B]">What we do?</span>
                 <div className="flex flex-col gap-3 pl-0">
-                  <Link 
-                    href="/appdevelopment" 
+                  <Link
+                    href="/appdevelopment"
                     onClick={closeMenu}
                     className="text-[17px] text-[#444] font-medium hover:text-black transition-colors"
                   >
                     App Development
                   </Link>
-                  <Link 
-                    href="/technology_consulting" 
+                  <Link
+                    href="/technology_consulting"
                     onClick={closeMenu}
                     className="text-[17px] text-[#444] font-medium hover:text-black transition-colors"
                   >
                     Technology Consulting
                   </Link>
-                  <Link 
-                    href="/research-and-development" 
+                  <Link
+                    href="/research-and-development"
                     onClick={closeMenu}
                     className="text-[17px] text-[#444] font-medium hover:text-black transition-colors"
                   >
@@ -208,43 +208,43 @@ export default function Navbar() {
 
               {/* Category 2: General bold root links */}
               <div className="flex flex-col gap-4 mt-2">
-                <Link 
-                  href="/how_we_do_it" 
+                <Link
+                  href="/how_we_do_it"
                   onClick={closeMenu}
                   className="font-bold text-[18px] text-[#2B2B2B] hover:text-black transition-colors"
                 >
                   How we do it?
                 </Link>
-                <Link 
-                  href="/success_stories" 
+                <Link
+                  href="/success_stories"
                   onClick={closeMenu}
                   className="font-bold text-[18px] text-[#2B2B2B] hover:text-black transition-colors"
                 >
                   Success Stories
                 </Link>
-                <Link 
-                  href="/who_we_are" 
+                <Link
+                  href="/who_we_are"
                   onClick={closeMenu}
                   className="font-bold text-[18px] text-[#2B2B2B] hover:text-black transition-colors"
                 >
                   Who we are?
                 </Link>
-                <Link 
-                  href="/packages" 
+                <Link
+                  href="/packages"
                   onClick={closeMenu}
                   className="font-bold text-[18px] text-[#2B2B2B] hover:text-black transition-colors"
                 >
                   Packages
                 </Link>
-                <Link 
-                  href="/contactus" 
+                <Link
+                  href="/contactus"
                   onClick={closeMenu}
                   className="font-bold text-[18px] text-[#2B2B2B] hover:text-black transition-colors"
                 >
                   Contact Us
                 </Link>
-                <Link 
-                  href="/careers" 
+                <Link
+                  href="/careers"
                   onClick={closeMenu}
                   className="font-bold text-[18px] text-[#2B2B2B] hover:text-black transition-colors"
                 >
@@ -256,9 +256,9 @@ export default function Navbar() {
               <div className="flex flex-col gap-3 mt-4">
                 <span className="font-bold text-[14px] uppercase tracking-wider text-[#2B2B2B]">FOLLOW US</span>
                 <div className="flex items-center gap-5">
-                  <a 
-                    href="https://linkedin.com" 
-                    target="_blank" 
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
                     rel="noreferrer"
                     className="text-[#2B2B2B] hover:scale-110 active:scale-95 transition-all"
                   >
@@ -266,9 +266,9 @@ export default function Navbar() {
                       <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
                     </svg>
                   </a>
-                  <a 
-                    href="https://youtube.com" 
-                    target="_blank" 
+                  <a
+                    href="https://youtube.com"
+                    target="_blank"
                     rel="noreferrer"
                     className="text-[#2B2B2B] hover:scale-110 active:scale-95 transition-all"
                   >
@@ -279,7 +279,6 @@ export default function Navbar() {
                 </div>
               </div>
 
-              {/* Get a Proposal button at the bottom-left area */}
               <div className="mt-auto pt-8">
                 <button 
                   onClick={() => { closeMenu(); openProposalModal(); }}

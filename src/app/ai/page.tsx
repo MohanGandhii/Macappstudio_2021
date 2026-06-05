@@ -9,7 +9,10 @@ import {
   Target, Cog, LayoutDashboard, ClipboardList, Gauge, BarChart4 
 } from "lucide-react";
 
+import { useModal } from "@/context/ModalContext";
+
 export default function AIPage() {
+  const { openProposalModal } = useModal();
   return (
     <div className="bg-white text-slate-800 antialiased font-sans">
       {/* HERO */}
@@ -29,9 +32,9 @@ export default function AIPage() {
               <span className="font-semibold text-slate-800"> Human + AI = Powerful.</span>
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-              <a href="mailto:hello@macappstudio.com" className="inline-flex items-center gap-2 h-12 rounded-full bg-gradient-primary px-7 text-base font-semibold text-white shadow-glow hover:opacity-90 transition-opacity">
+              <button onClick={openProposalModal} className="inline-flex items-center gap-2 h-12 rounded-full bg-gradient-primary px-7 text-base font-semibold text-white shadow-glow hover:opacity-90 transition-opacity">
                 Get Proposal in 48 Hrs <ArrowRight className="w-4 h-4" />
-              </a>
+              </button>
               <a href="mailto:hello@macappstudio.com" className="inline-flex items-center gap-2 h-12 rounded-full border-2 border-slate-200 bg-white px-7 text-base font-semibold text-slate-700 hover:border-slate-400 transition-colors">
                 <MessageSquare className="w-4 h-4" /> Talk to AI Team
               </a>
@@ -270,7 +273,7 @@ export default function AIPage() {
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">Let's talk</span>
               <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-slate-900">Let's Make Your Business <span className="text-gradient-primary">AI-Ready</span></h2>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-                <a href="mailto:hello@macappstudio.com" className="inline-flex items-center gap-2 h-12 rounded-full bg-gradient-primary px-7 text-base font-semibold text-white shadow-glow hover:opacity-90 transition-opacity">Get Proposal in 48 Hrs <ArrowRight className="w-4 h-4" /></a>
+                <button onClick={openProposalModal} className="inline-flex items-center gap-2 h-12 rounded-full bg-gradient-primary px-7 text-base font-semibold text-white shadow-glow hover:opacity-90 transition-opacity">Get Proposal in 48 Hrs <ArrowRight className="w-4 h-4" /></button>
                 <a href="mailto:hello@macappstudio.com" className="inline-flex items-center gap-2 h-12 rounded-full border-2 border-slate-200 bg-white px-7 text-base font-semibold text-slate-700 hover:border-slate-400 transition-colors"><MessageSquare className="w-4 h-4" />Talk to AI Team</a>
               </div>
               <p className="mt-6 text-xs text-slate-400">No commitment • Built by real engineers</p>

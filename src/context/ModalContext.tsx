@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, ReactNode } from "react";
-import ProposalModal from "@/components/03_ProposalModal/ProposalModal";
+import { FiX } from "react-icons/fi";
 
 interface ModalContextType {
   openProposalModal: () => void;
@@ -11,15 +11,48 @@ interface ModalContextType {
 const ModalContext = createContext<ModalContextType | undefined>(undefined);
 
 export function ModalProvider({ children }: { children: ReactNode }) {
-  const [isProposalModalOpen, setIsProposalModalOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const openProposalModal = () => setIsProposalModalOpen(true);
-  const closeProposalModal = () => setIsProposalModalOpen(false);
+  const openProposalModal = () => setIsOpen(true);
+  const closeProposalModal = () => setIsOpen(false);
+
+  React.useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   return (
     <ModalContext.Provider value={{ openProposalModal, closeProposalModal }}>
       {children}
-      <ProposalModal isOpen={isProposalModalOpen} onClose={closeProposalModal} />
+
+      {/* Tally Modal Popup Overlay */}
+      {isOpen && (
+        <div className="fixed inset-0 z-[9999] flex items-start justify-center pt-0 pb-0 px-0 sm:pt-[4vh] sm:pb-[4vh] sm:px-4 lg:pt-[6vh] lg:pb-[6vh] lg:px-6 bg-black/85 backdrop-blur-sm">
+          {/* White Modal Container */}
+          <div className="relative w-full max-w-[1360px] h-screen sm:h-[92vh] lg:h-[88vh] bg-white rounded-none sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl animate-scale-in flex flex-col pt-14 sm:pt-16 lg:pt-24 pb-0">
+            {/* X close button — inside modal, top-right corner */}
+            <button
+              onClick={closeProposalModal}
+              className="absolute top-3 right-3 sm:top-4 sm:right-4 lg:top-5 lg:right-5 z-[10000] p-2 sm:p-2.5 bg-gray-900 hover:bg-black rounded-full text-white transition-all duration-200 active:scale-95 hover:scale-105"
+              aria-label="Close modal"
+            >
+              <FiX className="w-4 h-4 sm:w-5 sm:h-5" />
+            </button>
+
+            <iframe
+              src="https://tally.so/r/xXyRrd"
+              className="w-full flex-grow border-0"
+              title="Get a Proposal"
+            />
+          </div>
+        </div>
+      )}
     </ModalContext.Provider>
   );
 }
