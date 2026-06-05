@@ -31,24 +31,26 @@ export function ModalProvider({ children }: { children: ReactNode }) {
     <ModalContext.Provider value={{ openProposalModal, closeProposalModal }}>
       {children}
 
-      {/* Tally Modal Popup Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-[9999] flex items-start justify-center pt-0 pb-0 px-0 sm:pt-[4vh] sm:pb-[4vh] sm:px-4 lg:pt-[6vh] lg:pb-[6vh] lg:px-6 bg-black/85 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[9999] overflow-hidden flex items-center justify-center bg-black/85 backdrop-blur-sm">
           {/* White Modal Container */}
-          <div className="relative w-full max-w-[1360px] h-screen sm:h-[92vh] lg:h-[88vh] bg-white rounded-none sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl animate-scale-in flex flex-col pt-14 sm:pt-16 lg:pt-24 pb-0">
-            {/* X close button — inside modal, top-right corner */}
+          <div className="relative w-full max-w-[1360px] mx-auto h-[100dvh] sm:h-[92vh] lg:h-[88vh] bg-white rounded-none sm:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl animate-scale-in flex flex-col pt-0 pb-0">
+
+            {/* X close button */}
             <button
               onClick={closeProposalModal}
-              className="absolute top-3 right-3 sm:top-4 sm:right-4 lg:top-5 lg:right-5 z-[10000] p-2 sm:p-2.5 bg-gray-900 hover:bg-black rounded-full text-white transition-all duration-200 active:scale-95 hover:scale-105"
+              className="absolute top-3 right-3 sm:top-4 sm:right-4 lg:top-5 lg:right-5 z-[10000] p-2 sm:p-2.5 bg-gray-900 hover:bg-black rounded-full text-white transition-all duration-200 active:scale-95 hover:scale-105 flex-shrink-0"
               aria-label="Close modal"
             >
               <FiX className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
 
+            {/* Iframe: set to h-full and scrolling="yes" to scroll natively inside the modal */}
             <iframe
               src="https://tally.so/r/xXyRrd"
-              className="w-full flex-grow border-0"
+              className="w-full h-full border-0"
               title="Get a Proposal"
+              scrolling="yes"
             />
           </div>
         </div>
