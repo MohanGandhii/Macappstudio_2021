@@ -9,6 +9,7 @@ import InnovationsSection from "./_components/05_InnovationsSection";
 import AchievementsSection from "./_components/AchievementsSection";
 import AwardsSection from "./_components/06_AwardsSection";
 import PartnersSection from "./_components/07_PartnersSection";
+import VisionSection from "./_components/VisionSection";
 import WallOfFameSection from "./_components/08_WallOfFameSection";
 import TestimonialsSection from "./_components/09_TestimonialsSection";
 import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
@@ -39,6 +40,7 @@ export default function Home() {
       {/* Footer-like content sequence */}
       <AwardsSection />
       <PartnersSection />
+      <VisionSection />
       <WallOfFameSection />
       <TestimonialsSection />
     </>

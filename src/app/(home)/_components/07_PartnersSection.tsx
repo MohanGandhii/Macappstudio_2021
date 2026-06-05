@@ -20,7 +20,7 @@ export default function PartnersSection() {
   }, []);
 
   return (
-    <section className="py-20 md:py-32 bg-white overflow-hidden" id="mind_partner_section">
+    <section className="pt-10 pb-4 md:pt-16 md:pb-6 bg-white overflow-hidden" id="mind_partner_section">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           

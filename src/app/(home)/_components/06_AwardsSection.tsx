@@ -9,7 +9,7 @@ const AWARDS = [
 
 export default function AwardsSection() {
   return (
-    <section className="py-16 md:py-24 bg-[#FAFAFA]" id="our_awards_section">
+    <section className="py-10 md:py-14 bg-[#FAFAFA]" id="our_awards_section">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
         <div className="text-left mb-16 md:mb-20">
           <h2 className="text-3xl md:text-[44px] font-black text-gray-900 mb-2 tracking-tight">Our Awards</h2>

@@ -16,33 +16,57 @@ const technologies = [
   { icon: "/assets/images/fasttrack/amazon_rds.svg", name: "Amazon RDS" },
 ];
 
+import React from "react";
+import { AppScreenCarousel } from "../_components/03_CaseStudyDetailComponents";
+
+const screens = [
+  "/assets/images/fasttrack/fasttrack_screen_img1.png",
+  "/assets/images/fasttrack/fasttrack_screen_img2.png",
+  "/assets/images/fasttrack/fasttrack_screen_img3.png",
+  "/assets/images/fasttrack/fasttrack_screen_img4.png",
+  "/assets/images/fasttrack/fasttrack_screen_img5.png",
+];
+
 export default function FasttrackPage() {
   return (
     <main className="bg-white min-h-screen font-sans">
       
-      {/* 1. Hero Section - BOLD & SPACIOUS */}
-      <section className="relative pt-12 lg:pt-16 bg-[#fcfbe8] overflow-visible">
-        <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
-          <div className="flex flex-col lg:flex-row items-start min-h-[620px]">
+      {/* 1. Hero Section - EXACT MATCH to original layout */}
+      <section className="relative bg-[#f6f6de] overflow-visible mb-0 z-10" id="bannersection">
+
+        {/* Left content inside the 1170px container */}
+        <div className="w-full max-w-[1170px] mx-auto px-10 relative">
+          <div className="flex flex-col lg:flex-row items-stretch justify-between min-h-[600px]">
             
             {/* Left Content */}
-            <div className="w-full lg:w-[50%] z-10 py-10">
-              <div className="mb-14">
+            <div className="w-full lg:w-[55%] z-10 py-12 flex flex-col justify-center">
+              <Image 
+                src="/assets/images/fasttrack/FT_logo.png" 
+                alt="Fasttrack Logo" 
+                width={218} 
+                height={68} 
+                className="object-contain mb-[20px] w-[218px] h-auto"
+                priority
+              />
+              
+              <h2 className="text-[26px] md:text-[34px] md:leading-[40px] font-black text-[#2B2B2B] m-0 pb-[38px] tracking-[-1.6px] max-w-[95%]">
+                Cloud based end to end Uber Like Cab Aggregation Platform
+              </h2>
+
+              {/* Mobile Image */}
+              <div className="w-full lg:hidden mt-6 mb-8 flex justify-center">
                 <Image 
-                  src="/assets/images/fasttrack/FT_logo.png" 
-                  alt="Fasttrack Logo" 
-                  width={320} 
-                  height={100} 
-                  className="object-contain"
+                  src="/assets/images/fasttrack/banner_rigth_image.png" 
+                  alt="Fasttrack Apps" 
+                  width={530} 
+                  height={680} 
+                  className="w-[70%] sm:w-[50%] md:w-[45%] max-w-[450px] h-auto object-contain"
+                  priority
                 />
               </div>
               
-              <h1 className="text-[38px] md:text-[52px] lg:text-[62px] font-black text-[#1a1a1a] leading-[1.1] mb-14 tracking-tighter max-w-[95%]">
-                Cloud based end to end Uber Like Cab <br className="hidden md:block" /> Aggregation Platform
-              </h1>
-              
               {/* Stats List */}
-              <ul className="space-y-8 mb-16">
+              <ul className="list-none w-full m-0 p-0 mb-[30px]">
                 <StatItem icon="/assets/images/fasttrack/FT_desc_icon1.svg" text="10,000" sub="Drivers Managed Daily" />
                 <StatItem icon="/assets/images/fasttrack/FT_desc_icon2.svg" text="1.5 Million" sub="Customers" />
                 <StatItem icon="/assets/images/fasttrack/FT_desc_icon3.svg" text="10,000" sub="Bookings Daily" />
@@ -50,37 +74,47 @@ export default function FasttrackPage() {
               </ul>
 
               {/* Platforms Box */}
-              <div className="space-y-5 pt-4">
-                <span className="text-[16px] font-bold text-[#222]">Platforms developed :</span>
-                <div className="flex items-center bg-white rounded-[4px] shadow-[0_6px_30px_rgba(0,0,0,0.06)] border border-gray-100 py-4 px-8 gap-8 w-fit">
-                  <PlatformItem icon="/assets/images/fasttrack/apple.svg" label="iOS" />
-                  <div className="w-[1px] h-8 bg-gray-200" />
-                  <PlatformItem icon="/assets/images/fasttrack/android.svg" label="Android" />
-                  <div className="w-[1px] h-8 bg-gray-200" />
-                  <PlatformItem icon="/assets/images/fasttrack/html.svg" label="Web" />
-                </div>
+              <div className="dev_platform_box w-full">
+                <p className="text-[15px] font-semibold text-[#2B2B2B] m-0 pb-[10px]">Platforms developed :</p>
+                <ul className="inline-flex items-center list-none m-0 p-0 bg-white rounded-[4px] shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-100">
+                  <li className="inline-flex items-center py-[5px] pl-[10px] pr-[22px] relative">
+                    <Image src="/assets/images/fasttrack/apple.svg" alt="iOS" width={25} height={25} className="w-[25px] h-auto object-contain" />
+                    <span className="text-[15px] text-[#2B2B2B] font-medium pl-2">iOS</span>
+                    <div className="absolute right-0 top-[10%] h-[80%] w-[1px] bg-[#bbb]" />
+                  </li>
+                  <li className="inline-flex items-center py-[5px] pl-[10px] pr-[22px] relative">
+                    <Image src="/assets/images/fasttrack/android.svg" alt="Android" width={25} height={25} className="w-[25px] h-auto object-contain" />
+                    <span className="text-[15px] text-[#2B2B2B] font-medium pl-2">Android</span>
+                    <div className="absolute right-0 top-[10%] h-[80%] w-[1px] bg-[#bbb]" />
+                  </li>
+                  <li className="inline-flex items-center py-[5px] px-[10px]">
+                    <Image src="/assets/images/fasttrack/html.svg" alt="Web" width={25} height={25} className="w-[25px] h-auto object-contain" />
+                    <span className="text-[15px] text-[#2B2B2B] font-medium pl-2">Web</span>
+                  </li>
+                </ul>
               </div>
             </div>
 
-            {/* Right Mockup - MASSIVE FLOATING PHONES */}
-            <div className="w-full lg:w-[50%] relative min-h-[500px] lg:min-h-0 self-stretch">
-              <div className="lg:absolute lg:-top-10 lg:-right-20 lg:w-[850px] z-30 mt-16 lg:mt-0 transform lg:translate-y-24 translate-y-12">
-                <Image 
-                  src="/assets/images/fasttrack/banner_rigth_image.png" 
-                  alt="Fasttrack Apps" 
-                  width={850} 
-                  height={1100} 
-                  className="w-full h-auto object-contain drop-shadow-[0_50px_70px_rgba(0,0,0,0.22)]"
-                  priority
-                />
-              </div>
-            </div>
+            {/* Desktop spacer */}
+            <div className="hidden lg:block lg:w-[45%]" />
+          </div>
+
+          {/* Desktop Image – positioned relative to container */}
+          <div className="hidden lg:block absolute right-10 top-[20px] w-[45%] z-20">
+            <Image 
+              src="/assets/images/fasttrack/banner_rigth_image.png" 
+              alt="Fasttrack Apps" 
+              width={600} 
+              height={750} 
+              className="w-full h-auto object-contain"
+              priority
+            />
           </div>
         </div>
       </section>
 
-      {/* Overlap Spacer */}
-      <div className="h-32 lg:h-[320px] bg-white" />
+      {/* Spacer to clear the absolute phone mockup from Overview section text */}
+      <div className="h-0 lg:h-[150px] bg-white" />
 
       {/* 2. Overview Section */}
       <SplitSection 
@@ -90,15 +124,17 @@ export default function FasttrackPage() {
       />
 
       {/* 3. Project Apps Mosaic */}
-      <section className="bg-[#f4f6f9] py-20">
-        <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
-          <Image 
-            src="/assets/images/fasttrack/phoneimg.png" 
-            alt="Project Apps" 
-            width={1240} 
-            height={600} 
-            className="w-full h-auto object-contain"
-          />
+      <section className="bg-[#f4f6f9] py-[50px]" id="project_apps_section">
+        <div className="w-full max-w-[1170px] mx-auto px-10">
+          <div className="w-full text-center">
+            <Image 
+              src="/assets/images/fasttrack/phoneimg.png" 
+              alt="Project Apps" 
+              width={1170} 
+              height={550} 
+              className="w-full h-auto object-contain"
+            />
+          </div>
         </div>
       </section>
 
@@ -115,68 +151,56 @@ export default function FasttrackPage() {
       />
 
       {/* 5. Solution Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 mb-20">
-            <div className="lg:w-1/3">
-              <h2 className="text-[24px] font-black uppercase tracking-tight text-[#111]">Solution</h2>
+      <section className="py-[50px] bg-[#fbfbfb]">
+        <div className="w-full max-w-[1170px] mx-auto px-10">
+          <div className="flex flex-col lg:flex-row mb-12">
+            <div className="w-full lg:w-1/3">
+              <h2 className="text-[24px] md:text-[32px] md:leading-[35px] font-medium text-[#2B2B2B] text-left capitalize">Solution</h2>
             </div>
-            <div className="lg:w-2/3">
-              <p className="text-[18px] lg:text-[20px] text-[#444] leading-relaxed font-medium">
+            <div className="w-full lg:w-2/3 mt-4 lg:mt-0">
+              <p className="text-[16px] md:text-[18px] md:leading-[34px] text-[#333333]">
                 MacAppStudio designed and developed an end to end app cloud based cab management platform for FastTrack. The project was started in June 2018 and the development was completed and beta testing was started in Dec 2018. The platform went live in Jan 2019 and MacAppStudio operated the platform for 6 months till June 2019. The platform was handed over to the internal technical team of FastTrack by July 2019. MacAppStudio created a reliable, scalable and module cab management platform with apps for users, drivers, owners and board of directors. The admin system was developed to control the end to end operations and get timely information and reports with modules like bookings, driver dashboard, price cards, finance dashboard, live tracking dashboard, notification systems etc. The system was made so exhaustive that the only other software that Fasttrack needs other than this platform is Tally for finance compliance and tax filing purposes.
               </p>
             </div>
           </div>
           
           {/* App Screen Carousel */}
-          <div className="flex gap-6 overflow-x-auto pb-10 no-scrollbar scroll-smooth">
-            {[1, 2, 3, 4, 5].map((i) => (
-              <div key={i} className="min-w-[280px] lg:min-w-[320px]">
-                <Image 
-                  src={`/assets/images/fasttrack/fasttrack_screen_img${i}.png`} 
-                  alt={`App Screen ${i}`} 
-                  width={320} 
-                  height={640} 
-                  className="rounded-3xl shadow-xl border border-gray-100"
-                />
-              </div>
-            ))}
-          </div>
+          <AppScreenCarousel screens={screens} />
         </div>
       </section>
 
       {/* 6. Technology & Status Section */}
-      <section className="py-24 bg-[#f7f8fa]">
-        <div className="max-w-[1240px] mx-auto px-6 lg:px-8">
+      <section className="py-[50px] bg-[#fbfbfb] border-t border-gray-100">
+        <div className="w-full max-w-[1170px] mx-auto px-10">
           {/* Technology Row */}
-          <div className="grid lg:grid-cols-[260px_1fr] gap-14 pb-20 border-b border-gray-200">
-            <div>
-              <h2 className="text-[24px] font-black uppercase tracking-tight text-[#111]">Technology</h2>
+          <div className="flex flex-col lg:flex-row pb-12 border-b border-gray-200">
+            <div className="w-full lg:w-1/3">
+              <h2 className="text-[24px] md:text-[32px] md:leading-[35px] font-medium text-[#2B2B2B] text-left capitalize">Technology</h2>
             </div>
-            <div className="flex flex-wrap items-start gap-x-12 gap-y-8">
+            <div className="w-full lg:w-2/3 mt-6 lg:mt-0 flex flex-wrap items-start gap-x-8 gap-y-6">
               {technologies.map((tech, index) => (
-                <div key={index} className="flex flex-col items-center gap-4 min-w-[100px]">
-                  <div className="w-20 h-20 bg-white rounded-2xl shadow-sm flex items-center justify-center p-4 border border-gray-50">
-                    <Image src={tech.icon} alt={tech.name} width={50} height={50} className="object-contain h-[50px] w-auto" />
+                <div key={index} className="flex flex-col items-center gap-2 min-w-[80px]">
+                  <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center p-3 border border-gray-100">
+                    <Image src={tech.icon} alt={tech.name} width={40} height={40} className="object-contain h-[40px] w-auto" />
                   </div>
-                  <span className="text-[14px] font-bold text-[#666] text-center">{tech.name}</span>
+                  <span className="text-[13px] font-bold text-gray-500 text-center">{tech.name}</span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Current Status Row */}
-          <div className="grid lg:grid-cols-[260px_1fr] gap-14 pt-20">
-            <div>
-              <h2 className="text-[24px] font-black uppercase tracking-tight text-[#111]">Current Status</h2>
+          <div className="flex flex-col lg:flex-row pt-12">
+            <div className="w-full lg:w-1/3">
+              <h2 className="text-[24px] md:text-[32px] md:leading-[35px] font-medium text-[#2B2B2B] text-left capitalize">Current Status</h2>
             </div>
-            <div>
-              <p className="text-[18px] leading-[2] text-[#3f3f3f] font-medium">
+            <div className="w-full lg:w-2/3 mt-4 lg:mt-0">
+              <p className="text-[16px] md:text-[18px] md:leading-[34px] text-[#333333]">
                 The platform was launched in Nov 2017 and has been seamlessly managing{" "}
-                <span className="font-black text-[#111]">4 locations, 16 screens</span> and{" "}
-                <span className="font-black text-[#111]">3800 seats.</span> The platform has booked over{" "}
-                <span className="font-black text-[#111]">6 million tickets</span> as of July 2019 and has{" "}
-                <span className="font-black text-[#111]">100% replaced the legacy system</span> that AGS Cinemas was using earlier. Apart from ticketing process, the platform provides a lot of value added features, reports and insights to help the top management of the platform to take realtime business decisions.
+                <span className="font-extrabold text-[#2B2B2B]">4 locations, 16 screens</span> and{" "}
+                <span className="font-extrabold text-[#2B2B2B]">3800 seats.</span> The platform has booked over{" "}
+                <span className="font-extrabold text-[#2B2B2B]">6 million tickets</span> as of July 2019 and has{" "}
+                <span className="font-extrabold text-[#2B2B2B]">100% replaced the legacy system</span> that AGS Cinemas was using earlier. Apart from ticketing process, the platform provides a lot of value added features, reports and insights to help the top management of the platform to take realtime business decisions.
               </p>
             </div>
           </div>
@@ -191,37 +215,36 @@ export default function FasttrackPage() {
 
 function StatItem({ icon, text, sub }: { icon: string, text: string, sub: string }) {
   return (
-    <li className="flex items-center gap-6">
-      <div className="w-10 h-10 flex items-center justify-center">
-        <Image src={icon} alt="" width={40} height={40} className="object-contain" />
+    <li className="flex items-center pb-[15px]">
+      <div className="w-8 h-8 flex items-center justify-center flex-shrink-0">
+        <Image src={icon} alt="" width={32} height={32} className="object-contain" />
       </div>
-      <div className="flex items-baseline gap-3">
-        <span className="text-[24px] lg:text-[28px] font-black text-[#1a1a1a] leading-none tracking-tight">{text}</span>
-        <span className="text-[20px] lg:text-[22px] text-[#444] font-medium leading-none tracking-tight">{sub}</span>
-      </div>
+      <p className="text-[17px] md:text-[22px] md:leading-[25px] text-[#2B2B2B] font-medium tracking-tight pl-[15px]">
+        <span className="font-bold mr-1.5">{text}</span> {sub}
+      </p>
     </li>
   );
 }
 
 function PlatformItem({ icon, label }: { icon: string, label: string }) {
   return (
-    <div className="flex items-center gap-3">
-      <Image src={icon} alt={label} width={28} height={28} className="object-contain" />
-      <span className="text-[18px] font-bold text-[#111]">{label}</span>
+    <div className="flex items-center gap-2">
+      <Image src={icon} alt={label} width={25} height={25} className="object-contain" />
+      <span className="text-[15px] font-medium text-[#2B2B2B]">{label}</span>
     </div>
   );
 }
 
 function SplitSection({ title, content, bgColor }: { title: string, content: string, bgColor: string }) {
   return (
-    <section className={`py-24 border-b border-gray-100 ${bgColor}`}>
-      <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-          <div className="lg:w-1/3">
-            <h2 className="text-[24px] font-black uppercase tracking-tight text-[#111]">{title}</h2>
+    <section className={`py-[40px] border-b border-gray-100 ${bgColor}`}>
+      <div className="w-full max-w-[1170px] mx-auto px-10 relative">
+        <div className="flex flex-col lg:flex-row">
+          <div className="w-full lg:w-1/3">
+            <h2 className="text-[24px] md:text-[32px] md:leading-[35px] font-medium text-[#2B2B2B] text-left capitalize">{title}</h2>
           </div>
-          <div className="lg:w-2/3">
-            <p className="text-[18px] lg:text-[20px] text-[#444] leading-relaxed font-medium">
+          <div className="w-full lg:w-2/3 mt-4 lg:mt-0">
+            <p className="text-[16px] md:text-[18px] md:leading-[34px] text-[#333333]">
               {content}
             </p>
           </div>

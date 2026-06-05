@@ -35,8 +35,9 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${outfit.variable} ${plusJakartaSans.variable} h-full antialiased scroll-smooth`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col pt-20 font-sans">
+      <body className="min-h-full flex flex-col pt-20 font-sans" suppressHydrationWarning>
         <ModalProvider>
           <Navbar />
           <main className="flex-grow">{children}</main>

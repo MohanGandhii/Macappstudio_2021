@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function WallOfFameSection() {
   return (
-    <section className="py-20 bg-white overflow-hidden" id="done_project_section">
+    <section className="pt-4 pb-10 md:pt-6 md:pb-14 bg-white overflow-hidden" id="done_project_section">
       <div className="container mx-auto px-4 lg:px-8 max-w-6xl">
         <div className="flex flex-col items-start text-left mb-10">
           <div className="mb-4">

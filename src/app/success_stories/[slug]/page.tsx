@@ -5,7 +5,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { caseStudies } from "../_data/caseStudies";
 import { bannerBgColors, DEFAULT_BANNER_BG, slugOverrides } from "../_data/caseStudiesConfig";
-import { PlatformItem, SplitSection, AppScreenCarousel } from "../_components/03_CaseStudyDetailComponents";
+import { AppScreenCarousel } from "../_components/03_CaseStudyDetailComponents";
 import WhatToKnowMore from "../_components/WhatToKnowMore";
 
 const getCaseStudyData = (slug: string) => {
@@ -31,133 +31,183 @@ export default function CaseStudyPage({ params }: PageProps) {
 
   return (
     <main className="bg-white min-h-screen font-sans">
-      
-      {/* 1. Hero Section - BOLD & SPACIOUS */}
-      <section className={`relative pt-12 lg:pt-16 ${heroBgColor} overflow-visible`}>
-        <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
-          <div className="flex flex-col lg:flex-row items-start min-h-[620px]">
-            
-            {/* Left Content */}
-            <div className="w-full lg:w-[50%] z-10 py-10">
-              <div className="mb-14">
-                <Image 
-                  src={data.logo} 
-                  alt={`${data.title || slug} Logo`} 
-                  width={320} 
-                  height={100} 
-                  className="object-contain max-h-[100px] w-auto"
+
+      {/* ── 1. HERO BANNER ── matches legacy exactly ── */}
+      {/*
+        LAYOUT NOTE:
+        The section is full-viewport-width (like legacy .bannersec).
+        The left content sits in a max-w-[1170px] centered container.
+        The phone mockup is absolutely positioned relative to the SECTION
+        (not the container) so right-10 / top-[20px] / w-[40%] are all
+        viewport-relative — exactly matching the legacy CSS:
+          #myGallery img { position:absolute; right:40px; top:20px; width:40% }
+      */}
+      <section className={`relative ${heroBgColor} overflow-visible mb-0`} id="bannersection">
+
+        {/* LEFT CONTENT ─ inside the 1170px centred container */}
+        <div className="w-full max-w-[1170px] mx-auto px-10 relative">
+          <div className="flex flex-col lg:flex-row items-stretch min-h-[600px]">
+
+            {/* Left Content – 55% on desktop keeps it clear of the right image */}
+            <div className="w-full lg:w-[55%] z-10 py-12 flex flex-col justify-center">
+
+              {/* Logo */}
+              {data.logo && (
+                <Image
+                  src={data.logo}
+                  alt={`${data.title || slug} Logo`}
+                  width={218}
+                  height={68}
+                  className="object-contain mb-[20px] w-[218px] h-auto"
+                  priority
+                />
+              )}
+
+              {/* Headline */}
+              <h2 className="text-[26px] md:text-[34px] md:leading-[40px] font-black text-[#2B2B2B] m-0 pb-[38px] tracking-[-1.6px] max-w-[95%]">
+                {data.title}
+              </h2>
+
+              {/* Mobile-only banner image */}
+              <div className="w-full lg:hidden mt-2 mb-8 flex justify-center">
+                <Image
+                  src={data.bannerImg}
+                  alt={`${data.title || slug} Apps`}
+                  width={530}
+                  height={680}
+                  className="w-[75%] sm:w-[55%] md:w-[50%] max-w-[450px] h-auto object-contain"
+                  priority
                 />
               </div>
-              
-              <h1 className="text-[38px] md:text-[52px] lg:text-[62px] font-black text-[#1a1a1a] leading-[1.1] mb-14 tracking-tighter max-w-[95%]">
-                {data.title}
-              </h1>
-              
-              {/* Stats List */}
-              <ul className="space-y-8 mb-16">
-                {data.stats && data.stats.map((stat: any, index: number) => (
-                  <li key={index} className="flex items-center gap-6">
-                    <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
-                      <Image src={stat.icon} alt="" width={40} height={40} className="object-contain" />
-                    </div>
-                    <p 
-                      className="text-[20px] lg:text-[22px] text-[#444] font-medium leading-none tracking-tight [&>b]:text-[24px] [&>b]:lg:text-[28px] [&>b]:font-black [&>b]:text-[#1a1a1a]" 
-                      dangerouslySetInnerHTML={{ __html: stat.html }} 
-                    />
-                  </li>
-                ))}
-              </ul>
 
-              {/* Platforms Box */}
+              {/* Stats list */}
+              {data.stats && data.stats.length > 0 && (
+                <ul className="list-none w-full m-0 p-0 mb-[30px]">
+                  {data.stats.map((stat: any, index: number) => (
+                    <li key={index} className="flex items-center pb-[15px]">
+                      <div className="w-8 h-8 flex items-center justify-center flex-shrink-0">
+                        <Image
+                          src={stat.icon}
+                          alt=""
+                          width={32}
+                          height={32}
+                          className="object-contain w-[32px] h-auto"
+                        />
+                      </div>
+                      <p
+                        className="text-[17px] md:text-[22px] md:leading-[25px] text-[#2B2B2B] font-medium tracking-tight pl-[15px] m-0 [&>b]:font-bold"
+                        dangerouslySetInnerHTML={{ __html: stat.html }}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {/* Platforms developed box */}
               {data.platforms && data.platforms.length > 0 && (
-                <div className="space-y-5 pt-4">
-                  <span className="text-[16px] font-bold text-[#222]">Platforms developed :</span>
-                  <div className="flex flex-wrap items-center bg-white rounded-[4px] shadow-[0_6px_30px_rgba(0,0,0,0.06)] border border-gray-100 py-4 px-8 gap-8 w-fit">
+                <div className="w-full">
+                  <p className="text-[15px] font-semibold text-[#2B2B2B] m-0 pb-[10px]">
+                    Platforms developed :
+                  </p>
+                  <ul className="inline-flex items-center list-none m-0 p-0 bg-white">
                     {data.platforms.map((platform: any, index: number) => (
-                      <React.Fragment key={index}>
-                        {index > 0 && <div className="hidden sm:block w-[1px] h-8 bg-gray-200" />}
-                        <PlatformItem icon={platform.icon} label={platform.name} />
-                      </React.Fragment>
+                      <li
+                        key={index}
+                        className={`inline-flex items-center py-[5px] px-[10px] relative ${
+                          index < data.platforms.length - 1
+                            ? "after:content-[''] after:absolute after:right-0 after:top-[10%] after:h-[80%] after:w-[1px] after:bg-[#bbb]"
+                            : ""
+                        }`}
+                      >
+                        <Image
+                          src={platform.icon}
+                          alt={platform.name}
+                          width={25}
+                          height={25}
+                          className="w-[25px] h-auto object-contain"
+                        />
+                        <span className="text-[15px] text-[#2B2B2B] font-medium pl-2">
+                          {platform.name}
+                        </span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
               )}
             </div>
 
-            {/* Right Mockup - MASSIVE FLOATING PHONES */}
-            <div className="w-full lg:w-[50%] relative min-h-[500px] lg:min-h-0 self-stretch">
-              <div className="lg:absolute lg:-top-10 lg:-right-20 lg:w-[850px] z-30 mt-16 lg:mt-0 transform lg:translate-y-24 translate-y-12">
-                <Image 
-                  src={data.bannerImg} 
-                  alt={`${data.title || slug} Apps`} 
-                  width={850} 
-                  height={1100} 
-                  className="w-full h-auto object-contain drop-shadow-[0_50px_70px_rgba(0,0,0,0.22)]"
-                  priority
-                />
-              </div>
-            </div>
+            {/* Invisible spacer column – stops left text from flowing under the image */}
+            <div className="hidden lg:block lg:w-[45%]" />
+          </div>
+
+          {/* ── DESKTOP MOCKUP IMAGE ──
+              Absolutely positioned relative to the container,
+              so right-10 = 40px from container right edge, w-[45%] = 45% of container.
+          */}
+          <div className="hidden lg:block absolute right-10 top-[20px] w-[45%] z-20">
+            <Image
+              src={data.bannerImg}
+              alt={`${data.title || slug} Apps`}
+              width={600}
+              height={750}
+              className="w-full h-auto object-contain"
+              priority
+            />
           </div>
         </div>
       </section>
 
-      {/* Overlap Spacer */}
-      <div className="h-32 lg:h-[320px] bg-white" />
+      {/* Spacer – lets the absolutely-positioned phone overflow into the white area */}
+      <div className="h-0 lg:h-[150px] bg-white" />
 
-      {/* 2. Overview Section */}
-      <SplitSection 
-        title="Overview" 
-        content={data.overview}
-        bgColor="bg-white"
-      />
+      {/* ── 2. OVERVIEW ── */}
+      {data.overview && (
+        <SplitSection title="Overview" content={data.overview} bgColor="bg-white" />
+      )}
 
-      {/* 3. Project Apps Mosaic */}
+      {/* ── 3. PROJECT APPS MOSAIC ── */}
       {data.projectAppsImg && (
-        <section className="bg-[#f4f6f9] py-20">
-          <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
-            <Image 
-              src={data.projectAppsImg} 
-              alt="Project Apps" 
-              width={1240} 
-              height={600} 
-              className="w-full h-auto object-contain"
-            />
+        <section className="bg-[#f4f6f9] py-[50px]" id="project_apps_section">
+          <div className="w-full max-w-[1170px] mx-auto px-10">
+            <div className="w-full text-center">
+              <Image
+                src={data.projectAppsImg}
+                alt="Project Apps"
+                width={1170}
+                height={550}
+                className="w-full h-auto object-contain"
+              />
+            </div>
           </div>
         </section>
       )}
 
-      {/* 4. Problem Faced & Goal */}
+      {/* ── 4. PROBLEM FACED & GOAL ── */}
       {data.problem && (
-        <SplitSection 
-          title="Problem Faced" 
-          content={data.problem}
-          bgColor="bg-white"
-        />
+        <SplitSection title="Problem Faced" content={data.problem} bgColor="bg-white" />
       )}
       {data.goal && (
-        <SplitSection 
-          title="Goal" 
-          content={data.goal}
-          bgColor="bg-white"
-        />
+        <SplitSection title="Goal" content={data.goal} bgColor="bg-white" />
       )}
 
-      {/* 5. Solution Section */}
+      {/* ── 5. SOLUTION ── */}
       {data.solutionHtml && (
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
-            <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 mb-20">
-              <div className="lg:w-1/3">
-                <h2 className="text-[24px] font-black uppercase tracking-tight text-[#111]">Solution</h2>
+        <section className="py-[50px] bg-[#fbfbfb]">
+          <div className="w-full max-w-[1170px] mx-auto px-10">
+            <div className="flex flex-col lg:flex-row mb-12">
+              <div className="w-full lg:w-1/3">
+                <h2 className="text-[24px] md:text-[32px] md:leading-[35px] font-medium text-[#2B2B2B] text-left capitalize">
+                  Solution
+                </h2>
               </div>
-              <div className="lg:w-2/3">
-                <div 
-                  className="text-[18px] lg:text-[20px] text-[#444] leading-relaxed font-medium [&>p]:mb-6 [&>p:last-child]:mb-0 [&>b]:text-[#111] [&>b]:font-black"
+              <div className="w-full lg:w-2/3 mt-4 lg:mt-0">
+                <div
+                  className="text-[16px] md:text-[18px] md:leading-[34px] text-[#333333] [&>p]:mb-4 [&>p:last-child]:mb-0 [&_b]:font-bold [&_b]:text-[#2B2B2B]"
                   dangerouslySetInnerHTML={{ __html: data.solutionHtml }}
                 />
               </div>
             </div>
-            
+
             {/* App Screen Carousel */}
             {data.appScreens && data.appScreens.length > 0 && (
               <AppScreenCarousel screens={data.appScreens} />
@@ -166,48 +216,94 @@ export default function CaseStudyPage({ params }: PageProps) {
         </section>
       )}
 
-      {/* 6. Technology & Status Section */}
-      <section className="py-24 bg-[#f7f8fa]">
-        <div className="max-w-[1240px] mx-auto px-6 lg:px-8">
-          
-          {/* Technology Row */}
-          {data.technology && data.technology.length > 0 && (
-            <div className="grid lg:grid-cols-[260px_1fr] gap-14 pb-20 border-b border-gray-200">
-              <div>
-                <h2 className="text-[24px] font-black uppercase tracking-tight text-[#111]">Technology</h2>
-              </div>
-              <div className="flex flex-wrap items-start gap-x-12 gap-y-8">
-                {data.technology.map((tech: any, index: number) => (
-                  <div key={index} className="flex flex-col items-center gap-4 min-w-[100px]">
-                    <div className="w-20 h-20 bg-white rounded-2xl shadow-sm flex items-center justify-center p-4 border border-gray-50">
-                      <Image src={tech.icon} alt={tech.name} width={50} height={50} className="object-contain h-[50px] w-auto" />
+      {/* ── 6. TECHNOLOGY & CURRENT STATUS ── */}
+      {(data.technology?.length > 0 || data.currentStatus) && (
+        <section className="py-[50px] bg-[#fbfbfb] border-t border-gray-100">
+          <div className="w-full max-w-[1170px] mx-auto px-10">
+
+            {/* Technology */}
+            {data.technology && data.technology.length > 0 && (
+              <div className="flex flex-col lg:flex-row pb-12 border-b border-gray-200">
+                <div className="w-full lg:w-1/3">
+                  <h2 className="text-[24px] md:text-[32px] md:leading-[35px] font-medium text-[#2B2B2B] text-left capitalize">
+                    Technology
+                  </h2>
+                </div>
+                <div className="w-full lg:w-2/3 mt-6 lg:mt-0 flex flex-wrap items-start gap-x-8 gap-y-6">
+                  {data.technology.map((tech: any, index: number) => (
+                    <div key={index} className="flex flex-col items-center gap-2 min-w-[80px]">
+                      <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center p-3 border border-gray-100">
+                        <Image
+                          src={tech.icon}
+                          alt={tech.name}
+                          width={40}
+                          height={40}
+                          className="object-contain h-[40px] w-auto"
+                        />
+                      </div>
+                      <span className="text-[13px] font-bold text-gray-500 text-center">
+                        {tech.name}
+                      </span>
                     </div>
-                    <span className="text-[14px] font-bold text-[#666] text-center">{tech.name}</span>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
-          {/* Current Status Row */}
-          {data.currentStatus && (
-            <div className="grid lg:grid-cols-[260px_1fr] gap-14 pt-20">
-              <div>
-                <h2 className="text-[24px] font-black uppercase tracking-tight text-[#111]">Current Status</h2>
+            {/* Current Status */}
+            {data.currentStatus && (
+              <div className={`flex flex-col lg:flex-row ${data.technology?.length > 0 ? "pt-12" : ""}`}>
+                <div className="w-full lg:w-1/3">
+                  <h2 className="text-[24px] md:text-[32px] md:leading-[35px] font-medium text-[#2B2B2B] text-left capitalize">
+                    Current Status
+                  </h2>
+                </div>
+                <div className="w-full lg:w-2/3 mt-4 lg:mt-0">
+                  <div
+                    className="text-[16px] md:text-[18px] md:leading-[34px] text-[#333333] [&>p]:mb-4 [&>p:last-child]:mb-0 [&_b]:font-bold [&_b]:text-[#2B2B2B]"
+                    dangerouslySetInnerHTML={{ __html: data.currentStatus }}
+                  />
+                </div>
               </div>
-              <div>
-                <div 
-                  className="text-[18px] leading-[2] text-[#3f3f3f] font-medium [&>p]:mb-6 [&>p:last-child]:mb-0 [&>b]:text-[#111] [&>b]:font-black [&_span]:font-black [&_span]:text-[#111]"
-                  dangerouslySetInnerHTML={{ __html: data.currentStatus }}
-                />
-              </div>
-            </div>
-          )}
-        </div>
-      </section>
+            )}
+          </div>
+        </section>
+      )}
 
-      {/* What to Know more slider */}
+      {/* ── What to Know More ── */}
       <WhatToKnowMore currentSlug={slug} />
     </main>
+  );
+}
+
+/* ─── LOCAL HELPERS ─────────────────────────────────────────────── */
+
+function SplitSection({
+  title,
+  content,
+  bgColor,
+}: {
+  title: string;
+  content: string;
+  bgColor: string;
+}) {
+  return (
+    <section className={`py-[40px] border-b border-gray-100 ${bgColor}`}>
+      <div className="w-full max-w-[1170px] mx-auto px-10">
+        <div className="flex flex-col lg:flex-row">
+          <div className="w-full lg:w-1/3">
+            <h2 className="text-[24px] md:text-[32px] md:leading-[35px] font-medium text-[#2B2B2B] text-left capitalize">
+              {title}
+            </h2>
+          </div>
+          <div className="w-full lg:w-2/3 mt-4 lg:mt-0">
+            <div
+              className="text-[16px] md:text-[18px] md:leading-[34px] text-[#333333] [&>p]:mb-4 [&>p:last-child]:mb-0 [&_b]:font-bold [&_b]:text-[#2B2B2B]"
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

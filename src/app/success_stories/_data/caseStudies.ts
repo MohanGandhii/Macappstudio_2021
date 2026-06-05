@@ -1197,5 +1197,63 @@ export const caseStudies: Record<string, any> = {
       }
     ],
     "currentStatus": "<p>The platform was launched in June 2015 and is currently managing millions of users and hundreds of stores in UAE poising to become the #1 Cash back app in the UAE. Users regularly use the app because it provides a lot of savings on their shoppings and also they don’t need to carry any physical coupons. Stores add a lot of products with cash back because they attract a lot of users to the stores. Overall Znap has revolutionised the cash back industry in UAE and is expanding across the world.</p>"
+  },
+  "daydoc": {
+    "slug": "daydoc",
+    "logo": "",
+    "bannerImg": "/assets/images/ags/daydoc.png",
+    "title": "Home Healthcare now a click away!",
+    "stats": [
+      {
+        "icon": "/assets/images/ATG/atg_desc_icon1.svg",
+        "html": "<b>Million+</b> App Users"
+      },
+      {
+        "icon": "/assets/images/ATG/atg_desc_icon2.svg",
+        "html": "<b>50+</b> Certified Healthcare Providers"
+      },
+      {
+        "icon": "/assets/images/ATG/atg_desc_icon3.svg",
+        "html": "<b>24/7</b> On-Demand Healthcare"
+      },
+      {
+        "icon": "/assets/images/ATG/atg_desc_icon4.svg",
+        "html": "<b>5 Star</b> Average Rating"
+      }
+    ],
+    "platforms": [
+      {
+        "icon": "/assets/images/ATG/apple.svg",
+        "name": "iOS"
+      },
+      {
+        "icon": "/assets/images/ATG/android.svg",
+        "name": "Android"
+      }
+    ],
+    "overview": "<p><b>Daydoc</b> is a home healthcare platform that connects patients with certified healthcare professionals for on-demand medical services at home. The platform enables patients to book appointments, track their health timeline, manage prescriptions and access world-class doctors — all from their smartphone. MacAppStudio designed and developed the complete end-to-end mobile platform from scratch, creating a seamless experience for both patients and healthcare providers.</p>",
+    "problem": "Traditional healthcare requires patients to physically visit clinics or hospitals, causing long wait times, travel inconvenience, and exposure to other illnesses. There was no reliable platform in the market that could <b>connect patients with certified doctors at home</b> in a seamless, secure and efficient manner.",
+    "goal": "To build a comprehensive home healthcare app that allows patients to <b>book verified doctors</b> for home visits, manage their health records and prescriptions digitally, track their health timeline, and receive the same quality of care as a hospital — all from the comfort of their home.",
+    "solutionHtml": "<p>MacAppStudio designed and developed the <b>Daydoc mobile app</b> for both iOS and Android from the ground up. The solution includes:</p><p>1) A patient-facing app to <b>book home visits</b> with verified doctors and healthcare professionals</p><p>2) A complete <b>health timeline</b> to track appointments, prescriptions and medical records</p><p>3) A <b>secure messaging</b> system between patients and doctors</p><p>4) Real-time GPS tracking to monitor the doctor's arrival</p><p>5) <b>Digital prescription management</b> with pharmacy integration</p><p>6) A doctor-facing app to manage schedules, patient records and visit notes</p>",
+    "appScreens": [],
+    "technology": [
+      {
+        "icon": "/assets/images/ATG/apple.svg",
+        "name": "iOS"
+      },
+      {
+        "icon": "/assets/images/ATG/android.svg",
+        "name": "Android"
+      },
+      {
+        "icon": "/assets/images/ags/js.svg",
+        "name": "Node.js"
+      },
+      {
+        "icon": "/assets/images/ags/mysql.svg",
+        "name": "MySQL"
+      }
+    ],
+    "currentStatus": "<p>Daydoc is live on the <b>App Store and Google Play</b> and has successfully served thousands of patients with home healthcare services. The platform continues to grow its network of certified healthcare providers and expand its service offerings to include specialized medical care, lab tests at home, and preventive health checkups.</p>"
   }
 };

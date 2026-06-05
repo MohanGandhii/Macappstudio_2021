@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 
@@ -68,8 +69,17 @@ export default function InnovationsSection() {
   }, [activeTab]);
 
   return (
-    <section className="py-16 md:py-24 bg-white overflow-hidden">
+    <section className="py-10 md:py-14 bg-white overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-[36px] font-bold text-gray-900 mb-3 tracking-tight">
+            Powering innovations worldwide
+          </h2>
+          <p className="text-[15px] sm:text-base md:text-[17px] text-gray-500 font-medium">
+            Bring your ideas to life through great expertise and consultations
+          </p>
+        </div>
+
         {/* Tabs Selector matching the static layout */}
         <div className="flex flex-nowrap md:flex-wrap justify-start md:justify-center gap-3 lg:gap-4 mb-16 overflow-x-auto hide-scrollbar pb-3 md:pb-0">
           {TABS.map((tab) => (
@@ -153,12 +163,21 @@ export default function InnovationsSection() {
                   </div>
                 </div>
 
-                <div className="bg-[#FAFAFA] p-6 md:p-8 w-full border border-gray-100 rounded-2xl border-l-[6px] border-l-[#0052FF] shadow-sm text-left">
-                   <p className="text-[13px] font-bold uppercase tracking-wider text-[#0052FF] mb-3">What we achieved?</p>
-                   <p className="text-[20px] md:text-[23px] font-bold text-gray-900 leading-snug">
-                     {TAB_CONTENT[activeTab].achieved}
-                   </p>
-                </div>
+                 <div className="bg-[#FAFAFA] p-6 md:p-8 w-full border border-gray-100 rounded-2xl border-l-[6px] border-l-[#0052FF] shadow-sm text-left">
+                    <p className="text-[13px] font-bold uppercase tracking-wider text-[#0052FF] mb-3">What we achieved?</p>
+                    <p className="text-[20px] md:text-[23px] font-bold text-gray-900 leading-snug mb-4">
+                      {TAB_CONTENT[activeTab].achieved}
+                    </p>
+                    {TAB_CONTENT[activeTab].link && (
+                      <Link
+                        href={TAB_CONTENT[activeTab].link}
+                        className="inline-flex items-center gap-1.5 text-sm md:text-base font-bold text-gray-900 hover:text-[#0052FF] transition-colors"
+                      >
+                        <span>Read more</span>
+                        <span className="text-[16px] md:text-[18px]">→</span>
+                      </Link>
+                    )}
+                 </div>
               </div>
 
               {/* Right Column: Static Banner */}

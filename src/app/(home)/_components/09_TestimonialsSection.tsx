@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
   }, []);
 
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-white overflow-hidden" id="clients_say_aboutus_section">
+    <section className="py-10 md:py-16 lg:py-20 bg-white overflow-hidden" id="clients_say_aboutus_section">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center max-w-4xl mx-auto mb-12 md:mb-20">
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-gray-900 mb-8 tracking-tight">What our Clients say?</h2>

@@ -21,7 +21,7 @@ export default function QuotesSection() {
   }, []);
 
   return (
-    <section className="py-16 md:py-24 bg-white overflow-hidden relative shadow-[inset_0_10px_30px_-15px_rgba(0,0,0,0.05),inset_0_-10px_30px_-15px_rgba(0,0,0,0.05)]">
+    <section className="py-8 md:py-12 bg-white overflow-hidden relative shadow-[inset_0_10px_30px_-15px_rgba(0,0,0,0.05),inset_0_-10px_30px_-15px_rgba(0,0,0,0.05)]">
       {/* Top fading line */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
       

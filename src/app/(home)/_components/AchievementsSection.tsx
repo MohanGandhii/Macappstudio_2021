@@ -11,9 +11,9 @@ const STATS = [
 
 export default function AchievementsSection() {
   return (
-    <section className="py-16 md:py-24 bg-white relative" id="achive_section">
+    <section className="py-10 md:py-14 bg-white relative" id="achive_section">
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
-        
+
         {/* Faint top border similar to screenshot */}
         <div className="w-full h-px bg-gray-100 mb-16 md:mb-20" />
 
@@ -31,13 +31,13 @@ export default function AchievementsSection() {
               />
             </div>
           </div>
-          
+
           {/* Right Column - Stats Grid */}
           <div className="w-full lg:w-[65%]">
             <h2 className="text-[24px] md:text-[28px] lg:text-[32px] text-gray-800 mb-10 tracking-tight font-medium">
               <strong className="font-black text-[#111]">15 years in,</strong> here is what we have achieved
             </h2>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
               {STATS.map((stat, index) => (
                 <div key={index} className="flex flex-col justify-center border border-gray-100 p-6 md:p-8 min-h-[140px] bg-white rounded-2xl transition-all duration-300 hover:border-blue-100 hover:shadow-premium hover:-translate-y-1">

@@ -115,7 +115,7 @@ export default function ProposalModal({ isOpen, onClose }: ProposalModalProps) {
                       {status.message}
                     </div>
                   )}
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-semibold text-gray-700">Full Name *</label>

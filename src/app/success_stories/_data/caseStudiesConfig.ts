@@ -26,6 +26,7 @@ export const bannerBgColors: Record<string, string> = {
   spony: "bg-[#edeafd]",
   tale: "bg-[#edeafd]",
   znap: "bg-[#edeafd]",
+  daydoc: "bg-[#e0f5f5]",    // light teal for healthcare theme
 };
 
 // Default fallback background color if an app doesn't have an explicit entry
