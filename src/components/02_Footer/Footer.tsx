@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FaLinkedin, FaYoutube } from "react-icons/fa";
+import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -18,9 +19,9 @@ export default function Footer() {
             <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
               Let’s Transform your business for a change that matters
             </h2>
-            <Link href="/contactus" className="bg-black text-white px-8 py-3 text-sm md:text-base font-medium hover:bg-gray-800 transition-colors">
+            <GetProposalButton className="bg-black text-white px-8 py-3 text-sm md:text-base font-medium hover:bg-gray-800 transition-colors">
               Get a Proposal
-            </Link>
+            </GetProposalButton>
           </div>
         )}
 

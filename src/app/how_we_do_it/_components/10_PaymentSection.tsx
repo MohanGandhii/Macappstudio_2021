@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function PaymentSection({ setVideoModal }: { setVideoModal: (id: string | null) => void }) {
   return (
-    <section className="w-full bg-white py-10 sm:py-14 lg:py-20">
+    <section className="w-full bg-white pt-10 sm:pt-14 lg:pt-20 pb-0">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
           <div className="w-full lg:w-[50%]">
@@ -18,7 +18,7 @@ export default function PaymentSection({ setVideoModal }: { setVideoModal: (id: 
               className="text-[#444]"
               style={{ fontFamily: "AvenirNext-Medium, sans-serif", fontSize: "18px", lineHeight: "30px" }}
             >
-              We have designed the most flexible payment methods, so that you feel safe and secure while we ensure the value we provide during each release meets your expectation. The payment is equally divided into five milestones where you are requested to pay 20% during each milestone. This ensures that you feel confident and pay as you go. Currently we don't accept revenue sharing or equity based payment since we might not understand the industry insights. We ensure you get a great value and a world-class product which worth the amount you pay for.
+              We have designed the most flexible payment methods, so that you feel safe and secure while we ensure the value we provide during each release meets your expectation. The payment is equally divided into five milestones where you are requested to pay 20% during each milestone. This ensures that you feel confident and pay as you go. Currently we don't accept revenue sharing or equity based payment since we might not understand the industry insights. We ensure you get a great value and a worl-class product which worth the amount you pay for.
             </p>
           </div>
 

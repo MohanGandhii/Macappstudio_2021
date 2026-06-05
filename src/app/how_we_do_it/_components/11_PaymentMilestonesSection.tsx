@@ -12,19 +12,9 @@ const PAYMENT_MILESTONES = [
 ];
 
 const AMOUNTS = ["20% payment", "20% payment", "20% payment", "20% payment", "20% payment"];
-
 export default function PaymentMilestonesSection() {
   return (
-    <section className="w-full bg-white py-12 sm:py-16 lg:py-20 border-b border-gray-100 flex flex-col items-center">
-      {/* Heading Text */}
-      <div className="w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 mb-10 text-center">
-        <p
-          className="text-[#333] max-w-[700px] mx-auto select-none"
-          style={{ fontFamily: "AvenirNext-Medium, sans-serif", fontSize: "18px", lineHeight: "30px" }}
-        >
-          get a great value and a world-class product which worth the amount you pay for.
-        </p>
-      </div>
+    <section className="w-full bg-white pt-8 sm:pt-12 lg:pt-16 pb-12 sm:pb-16 lg:pb-20 border-b border-gray-100 flex flex-col items-center">
 
       {/* Mobile/Tablet Flowchart Layout - visible below lg */}
       <div className="lg:hidden flex flex-col items-start w-[calc(100%-48px)] max-w-[420px] mx-auto py-4 relative select-none">
@@ -75,7 +65,7 @@ export default function PaymentMilestonesSection() {
 
       {/* Desktop Flowchart Layout - hidden below lg */}
       <div className="hidden lg:block w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
-        <div className="min-w-[1040px] flex justify-center py-2">
+        <div className="min-w-[1040px] flex justify-start py-2" style={{ marginLeft: "-45px" }}>
           <div className="w-[1000px] h-[160px] relative">
 
             {/* Connector Paths (Dashed lines with arrows in high contrast dark color) */}

@@ -24,7 +24,7 @@ export default function SpeedLearningBanner() {
               <br className="hidden md:inline" /> by partnering with us
             </h2>
             <Link
-              href="/case-studies/speedlearning"
+              href="/success_stories/speed"
               className="inline-flex items-center gap-2 text-[14px] md:text-[15px] font-bold text-[#2B2B2B] hover:text-blue-700 transition-colors mt-3"
             >
               Read more <span className="text-[17px] leading-none">&rarr;</span>

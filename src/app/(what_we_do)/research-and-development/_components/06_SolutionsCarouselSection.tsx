@@ -17,7 +17,7 @@ const SOLUTIONS = [
       { text: "Critical Information Alert", icon: "/assets/images/R-D/bell.svg" },
     ],
     videoId: "Rw2jhdm36jU",
-    link: "/case-studies/isurgeon",
+    link: "/success_stories/isurgeon",
     img: "/assets/images/R-D/isurgeon_poster1.jpg",
   },
   {
@@ -30,7 +30,7 @@ const SOLUTIONS = [
       { text: "Movie Information Summary", icon: "/assets/images/R-D/bell.svg" },
     ],
     videoId: null,
-    link: "/case-studies/hometheatre",
+    link: "/success_stories/hometheatre",
     img: "/assets/images/R-D/isurgeon_poster2.jpg",
   },
   {
@@ -43,7 +43,7 @@ const SOLUTIONS = [
       { text: "High-end security enables data sharing only when user allows access by unlocking their phone.", icon: "/assets/images/R-D/secureshield.svg" },
     ],
     videoId: null,
-    link: "/case-studies/dabb",
+    link: "/success_stories/dabb",
     img: "/assets/images/R-D/isurgeon_poster3.jpg",
   },
   {
@@ -57,7 +57,7 @@ const SOLUTIONS = [
       { text: "Track fuel and control speed using mobile app", icon: "/assets/images/R-D/track_fuel.svg" },
     ],
     videoId: null,
-    link: "/case-studies/howdy",
+    link: "/success_stories/howdy",
     img: "/assets/images/R-D/isurgeon_poster4.jpg",
   },
 ];
