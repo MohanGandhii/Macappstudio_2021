@@ -25,7 +25,7 @@ export default function WhatToKnowMore({ currentSlug }: { currentSlug?: string }
       container.addEventListener("scroll", updateScrollButtons);
       // Run once on load/mount
       updateScrollButtons();
-      
+
       // Also run when window resizes
       window.addEventListener("resize", updateScrollButtons);
     }
@@ -70,16 +70,16 @@ export default function WhatToKnowMore({ currentSlug }: { currentSlug?: string }
   return (
     <section className="py-24 bg-white border-t border-gray-100 overflow-visible">
       <div className="container mx-auto px-4 lg:px-8 max-w-[1240px] relative">
-        
+
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 
+          <h2
             className="text-[32px] md:text-[40px] font-black text-[#1a1a1a] mb-3 tracking-tight"
             style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
           >
             What to Know more?
           </h2>
-          <p 
+          <p
             className="text-[16px] md:text-[18px] text-[#555] font-medium max-w-[600px] mx-auto leading-relaxed"
             style={{ fontFamily: "AvenirNext-Regular, sans-serif" }}
           >
@@ -106,7 +106,10 @@ export default function WhatToKnowMore({ currentSlug }: { currentSlug?: string }
             className="flex gap-6 overflow-x-auto pb-10 no-scrollbar scroll-smooth snap-x snap-mandatory"
             onScroll={updateScrollButtons}
           >
-            {displayedStudies.map((study, index) => (
+            {displayedStudies.map((study, index) => {
+              const cardSlug = study.link.split("/").pop()?.toLowerCase() || "";
+              const isWideCard = ["atg", "nir", "godmusic"].includes(cardSlug);
+              return (
               <div
                 key={index}
                 className="w-[280px] md:w-[360px] flex-shrink-0 relative bg-[#f4f6f9] rounded-xl overflow-hidden flex flex-col pt-8 px-8 h-[440px] group border border-gray-100 shadow-sm transition-all snap-start"
@@ -128,18 +131,31 @@ export default function WhatToKnowMore({ currentSlug }: { currentSlug?: string }
                 </div>
 
                 {/* Mockup Container */}
-                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center pointer-events-none">
-                  <div className="relative w-full h-[300px] flex items-end justify-center">
+                {isWideCard ? (
+                  /* Wide card special layout: image positioned to right side, larger scale */
+                  <div className="absolute bottom-0 right-[-20px] pointer-events-none" style={{ width: "75%", height: "340px" }}>
                     <Image
                       src={study.img}
                       alt={study.title}
-                      width={400}
-                      height={300}
-                      className="w-full h-auto object-contain object-bottom drop-shadow-lg"
+                      fill
+                      className="object-contain object-right-bottom drop-shadow-lg"
                       priority={index < 3}
                     />
                   </div>
-                </div>
+                ) : (
+                  <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center pointer-events-none">
+                    <div className="relative w-full h-[300px] flex items-end justify-center">
+                      <Image
+                        src={study.img}
+                        alt={study.title}
+                        width={400}
+                        height={300}
+                        className="w-full h-auto object-contain object-bottom drop-shadow-lg"
+                        priority={index < 3}
+                      />
+                    </div>
+                  </div>
+                )}
 
                 {/* Read Case Study Button */}
                 <Link
@@ -150,7 +166,7 @@ export default function WhatToKnowMore({ currentSlug }: { currentSlug?: string }
                   <FiArrowRight size={18} />
                 </Link>
               </div>
-            ))}
+            )})}
           </div>
 
           {/* Right Arrow Button */}

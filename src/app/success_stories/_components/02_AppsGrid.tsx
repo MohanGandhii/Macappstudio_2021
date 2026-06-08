@@ -26,7 +26,10 @@ export default function CraftedAppsGrid() {
       <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {CASE_STUDIES.map((study, index) => (
+          {CASE_STUDIES.map((study, index) => {
+            const slug = study.link.split("/").pop()?.toLowerCase() || "";
+            const isWideCard = ["atg", "nir", "godmusic"].includes(slug);
+            return (
             <div key={index} className="relative bg-[#f4f6f9] hover:bg-[#eceef2] rounded-xl overflow-hidden flex flex-col pt-8 px-8 h-[440px] group border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200/80 transition-all duration-300">
               
               {/* Header Info */}
@@ -45,19 +48,32 @@ export default function CraftedAppsGrid() {
                 </p>
               </div>
               
-              {/* Mockup Container (Using the asset as-is since it contains both phones) */}
-              <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center pointer-events-none">
-                <div className="relative w-full h-[300px] flex items-end justify-center">
+              {/* Mockup Container */}
+              {isWideCard ? (
+                /* Wide card special layout: image positioned to right side, larger scale */
+                <div className="absolute bottom-0 right-[-20px] pointer-events-none" style={{ width: "75%", height: "340px" }}>
                   <Image 
                     src={study.img} 
                     alt={study.title} 
-                    width={400}
-                    height={300}
-                    className="w-full h-auto object-contain object-bottom drop-shadow-lg group-hover:scale-[1.03] group-hover:-translate-y-2 transition-transform duration-500"
+                    fill
+                    className="object-contain object-right-bottom drop-shadow-lg group-hover:scale-[1.03] group-hover:-translate-y-2 transition-transform duration-500"
                     priority
                   />
                 </div>
-              </div>
+              ) : (
+                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center pointer-events-none">
+                  <div className="relative w-full h-[300px] flex items-end justify-center">
+                    <Image 
+                      src={study.img} 
+                      alt={study.title} 
+                      width={400}
+                      height={300}
+                      className="w-full h-auto object-contain object-bottom drop-shadow-lg group-hover:scale-[1.03] group-hover:-translate-y-2 transition-transform duration-500"
+                      priority
+                    />
+                  </div>
+                </div>
+              )}
               
               {/* Read Case Study Button (Exact Bottom Right Tab) */}
               <Link 
@@ -68,7 +84,7 @@ export default function CraftedAppsGrid() {
                 <FiArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
-          ))}
+          )})}
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { caseStudies } from "../_data/caseStudies";
-import { bannerBgColors, DEFAULT_BANNER_BG, slugOverrides } from "../_data/caseStudiesConfig";
+import { bannerBgColors, DEFAULT_BANNER_BG, slugOverrides, bannerImageStyles } from "../_data/caseStudiesConfig";
 import { AppScreenCarousel } from "../_components/03_CaseStudyDetailComponents";
 import WhatToKnowMore from "../_components/WhatToKnowMore";
 
@@ -28,6 +28,7 @@ export default function CaseStudyPage({ params }: PageProps) {
   }
 
   const heroBgColor = bannerBgColors[slug.toLowerCase()] || DEFAULT_BANNER_BG;
+  const imgStyle = bannerImageStyles[slug.toLowerCase()] || { topClass: "md:top-[30px] lg:top-[40px]" };
 
   return (
     <main className="bg-white min-h-screen font-sans">
@@ -42,14 +43,18 @@ export default function CaseStudyPage({ params }: PageProps) {
         viewport-relative — exactly matching the legacy CSS:
           #myGallery img { position:absolute; right:40px; top:20px; width:40% }
       */}
-      <section className={`relative ${heroBgColor} overflow-visible mb-0`} id="bannersection">
+      <section 
+        className={`relative ${heroBgColor} mb-0`} 
+        id="bannersection"
+        style={{ overflow: "visible", zIndex: 30 }}
+      >
 
         {/* LEFT CONTENT ─ inside the 1170px centred container */}
         <div className="w-full max-w-[1170px] mx-auto px-10 relative">
-          <div className="flex flex-col lg:flex-row items-stretch min-h-[600px]">
+          <div className={`flex flex-col md:flex-row items-stretch ${imgStyle.containerMinHeight || "min-h-[500px]"}`}>
 
-            {/* Left Content – 55% on desktop keeps it clear of the right image */}
-            <div className="w-full lg:w-[55%] z-10 py-12 flex flex-col justify-center">
+            {/* Left Content – Keeps clear of the absolutely-positioned right image */}
+            <div className={`w-full md:w-[60%] lg:w-[58%] z-10 ${imgStyle.pyClass || "py-12"} flex flex-col justify-center`}>
 
               {/* Logo */}
               {data.logo && (
@@ -58,18 +63,24 @@ export default function CaseStudyPage({ params }: PageProps) {
                   alt={`${data.title || slug} Logo`}
                   width={218}
                   height={68}
-                  className="object-contain mb-[20px] w-[218px] h-auto"
+                  className={`object-contain ${imgStyle.logoMbClass || "mb-[20px]"} ${imgStyle.logoWidthClass || "w-[218px]"} h-auto`}
                   priority
                 />
               )}
 
               {/* Headline */}
-              <h2 className="text-[26px] md:text-[34px] md:leading-[40px] font-black text-[#2B2B2B] m-0 pb-[38px] tracking-[-1.6px] max-w-[95%]">
-                {data.title}
-              </h2>
+              <h2
+                className={`text-[28px] md:text-[32px] md:leading-[38px] lg:text-[38px] lg:leading-[44px] font-bold text-[#111] m-0 ${imgStyle.titlePbClass || "pb-[38px]"} tracking-tight max-w-[95%]`}
+                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                dangerouslySetInnerHTML={{
+                  __html: slug.toLowerCase() === "atg"
+                    ? data.title.replace(" to enjoy ", " to enjoy <br class='hidden md:inline' />")
+                    : data.title
+                }}
+              />
 
               {/* Mobile-only banner image */}
-              <div className="w-full lg:hidden mt-2 mb-8 flex justify-center">
+              <div className="w-full md:hidden mt-2 mb-8 flex justify-center">
                 <Image
                   src={data.bannerImg}
                   alt={`${data.title || slug} Apps`}
@@ -82,9 +93,9 @@ export default function CaseStudyPage({ params }: PageProps) {
 
               {/* Stats list */}
               {data.stats && data.stats.length > 0 && (
-                <ul className="list-none w-full m-0 p-0 mb-[30px]">
+                <ul className={`list-none w-full m-0 p-0 ${imgStyle.statsMbClass || "mb-[30px]"}`}>
                   {data.stats.map((stat: any, index: number) => (
-                    <li key={index} className="flex items-center pb-[15px]">
+                    <li key={index} className={`flex items-center ${imgStyle.statPbClass || "pb-[15px]"}`}>
                       <div className="w-8 h-8 flex items-center justify-center flex-shrink-0">
                         <Image
                           src={stat.icon}
@@ -95,7 +106,8 @@ export default function CaseStudyPage({ params }: PageProps) {
                         />
                       </div>
                       <p
-                        className="text-[17px] md:text-[22px] md:leading-[25px] text-[#2B2B2B] font-medium tracking-tight pl-[15px] m-0 [&>b]:font-bold"
+                        className={`text-[16px] md:text-[20px] md:leading-[24px] text-[#444] font-medium tracking-tight pl-[15px] m-0 [&_b]:font-bold [&_b]:text-[#111] ${imgStyle.statTextClass || ""}`}
+                        style={{ fontFamily: "AvenirNext-Regular, sans-serif" }}
                         dangerouslySetInnerHTML={{ __html: stat.html }}
                       />
                     </li>
@@ -106,18 +118,20 @@ export default function CaseStudyPage({ params }: PageProps) {
               {/* Platforms developed box */}
               {data.platforms && data.platforms.length > 0 && (
                 <div className="w-full">
-                  <p className="text-[15px] font-semibold text-[#2B2B2B] m-0 pb-[10px]">
+                  <p
+                    className="text-[15px] font-semibold text-[#555] m-0 pb-[10px]"
+                    style={{ fontFamily: "AvenirNext-Regular, sans-serif" }}
+                  >
                     Platforms developed :
                   </p>
                   <ul className="inline-flex items-center list-none m-0 p-0 bg-white">
                     {data.platforms.map((platform: any, index: number) => (
                       <li
                         key={index}
-                        className={`inline-flex items-center py-[5px] px-[10px] relative ${
-                          index < data.platforms.length - 1
-                            ? "after:content-[''] after:absolute after:right-0 after:top-[10%] after:h-[80%] after:w-[1px] after:bg-[#bbb]"
-                            : ""
-                        }`}
+                        className={`inline-flex items-center py-[5px] px-[10px] relative ${index < data.platforms.length - 1
+                          ? "after:content-[''] after:absolute after:right-0 after:top-[10%] after:h-[80%] after:w-[1px] after:bg-[#bbb]"
+                          : ""
+                          }`}
                       >
                         <Image
                           src={platform.icon}
@@ -126,7 +140,10 @@ export default function CaseStudyPage({ params }: PageProps) {
                           height={25}
                           className="w-[25px] h-auto object-contain"
                         />
-                        <span className="text-[15px] text-[#2B2B2B] font-medium pl-2">
+                        <span
+                          className="text-[15px] text-[#2B2B2B] font-semibold pl-2"
+                          style={{ fontFamily: "AvenirNext-Regular, sans-serif" }}
+                        >
                           {platform.name}
                         </span>
                       </li>
@@ -137,28 +154,31 @@ export default function CaseStudyPage({ params }: PageProps) {
             </div>
 
             {/* Invisible spacer column – stops left text from flowing under the image */}
-            <div className="hidden lg:block lg:w-[45%]" />
+            <div className="hidden md:block md:w-[40%] lg:w-[42%]" />
           </div>
+        </div>
 
-          {/* ── DESKTOP MOCKUP IMAGE ──
-              Absolutely positioned relative to the container,
-              so right-10 = 40px from container right edge, w-[45%] = 45% of container.
-          */}
-          <div className="hidden lg:block absolute right-10 top-[20px] w-[45%] z-20">
-            <Image
-              src={data.bannerImg}
-              alt={`${data.title || slug} Apps`}
-              width={600}
-              height={750}
-              className="w-full h-auto object-contain"
-              priority
-            />
-          </div>
+        {/* ── DESKTOP MOCKUP IMAGE ──
+            Absolutely positioned relative to the SECTION (full screen viewport width)
+            so that it is flush to browser right edge, matching legacy behavior.
+        */}
+        <div 
+          className={`hidden md:block absolute ${imgStyle.rightClass || "right-[80px] lg:right-[120px] xl:right-[150px]"} ${imgStyle.topClass} ${imgStyle.widthClass || "w-[35%] lg:w-[37%] xl:w-[39%] max-w-[440px]"}`}
+          style={{ zIndex: 40, overflow: "visible" }}
+        >
+          <Image
+            src={data.bannerImg}
+            alt={`${data.title || slug} Apps`}
+            width={760}
+            height={682}
+            className="w-full h-auto object-contain"
+            priority
+          />
         </div>
       </section>
 
       {/* Spacer – lets the absolutely-positioned phone overflow into the white area */}
-      <div className="h-0 lg:h-[150px] bg-white" />
+      <div className={`${imgStyle.spacerClass || "h-0 md:h-[100px] lg:h-[140px]"} bg-white`} />
 
       {/* ── 2. OVERVIEW ── */}
       {data.overview && (
