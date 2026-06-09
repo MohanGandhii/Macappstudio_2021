@@ -1,5 +1,4 @@
-"use client";
-
+import { Metadata } from "next";
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 import HeroSection from "./_components/00_HeroSection";
@@ -8,6 +7,11 @@ import OurApproachSection from "./_components/01b_OurApproachSection";
 import IntelSection from "./_components/01c_IntelSection";
 import InterviewWithIntelSection from "./_components/01d_InterviewWithIntelSection";
 import OdysseyTimeline from "./_components/01e_OdysseyTimeline";
+
+export const metadata: Metadata = {
+  title: "Who We Are",
+  description: "Learn about MacAppStudio, our history, our founders George and Suresh, and our team of digital innovators.",
+};
 
 
 

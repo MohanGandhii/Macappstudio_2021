@@ -1,5 +1,4 @@
-"use client";
-
+import { Metadata } from "next";
 import HeroSection from "./_components/01_HeroSection";
 import DigitalServicesSection from "./_components/02_DigitalServicesSection";
 import DigitizeSection from "./_components/03_DigitizeSection";
@@ -11,30 +10,24 @@ import ToolsSection from "./_components/08_ToolsSection";
 import RapidFrameworkSection from "./_components/09_RapidFrameworkSection";
 import AppDeliverySection from "./_components/10_AppDeliverySection";
 
+export const metadata: Metadata = {
+  title: "App Development",
+  description: "MacAppStudio is a world-class mobile app development company. We build high-performance iOS, Android, and cross-platform mobile apps.",
+};
+
 export default function AppDevelopmentPage() {
   return (
     <div className="bg-white">
       <HeroSection />
-
       <DigitalServicesSection />
-
-      {/* Devices Section */}
       <DigitizeSection />
-
       <WhyChooseUsSection />
-
       <HowWeHelpSection />
-
       <CaseStudiesCarousel />
-
       <DevProcessSection />
-
       <ToolsSection />
-
       <RapidFrameworkSection />
-
       <AppDeliverySection />
-      
     </div>
   );
 }

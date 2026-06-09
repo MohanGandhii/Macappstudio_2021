@@ -1,12 +1,12 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import { caseStudies } from "../_data/caseStudies";
 import { bannerBgColors, DEFAULT_BANNER_BG, slugOverrides, bannerImageStyles } from "../_data/caseStudiesConfig";
 import { AppScreenCarousel } from "../_components/03_CaseStudyDetailComponents";
 import WhatToKnowMore from "../_components/WhatToKnowMore";
+import { CASE_STUDIES } from "../_components/02_AppsGrid";
 
 const getCaseStudyData = (slug: string) => {
   const normalized = slug.toLowerCase();
@@ -18,8 +18,18 @@ interface PageProps {
   params: Promise<{ slug: string }> | { slug: string };
 }
 
-export default function CaseStudyPage({ params }: PageProps) {
-  const resolvedParams = React.use(params as any) as { slug: string };
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const slug = resolvedParams.slug.toLowerCase();
+  const match = CASE_STUDIES.find(study => study.link.split("/").pop()?.toLowerCase() === slug);
+  const displayTitle = match ? match.title : (slug.charAt(0).toUpperCase() + slug.slice(1));
+  return {
+    title: displayTitle,
+  };
+}
+
+export default async function CaseStudyPage({ params }: PageProps) {
+  const resolvedParams = await params;
   const slug = resolvedParams.slug;
   const data = getCaseStudyData(slug);
 

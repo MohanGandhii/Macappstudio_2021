@@ -1,9 +1,13 @@
-"use client";
-
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import GetProposalButton from "@/components/04_GetProposalButton/GetProposalButton";
 import WhatToKnowMore from "../_components/WhatToKnowMore";
+
+export const metadata: Metadata = {
+  title: "Fasttrack",
+  description: "Cloud based end to end Uber Like Cab Aggregation Platform for FastTrack.",
+};
 
 const technologies = [
   { icon: "/assets/images/fasttrack/sketch.svg", name: "Sketch" },

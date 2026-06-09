@@ -65,7 +65,7 @@ export default function PaymentMilestonesSection() {
 
       {/* Desktop Flowchart Layout - hidden below lg */}
       <div className="hidden lg:block w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
-        <div className="min-w-[1040px] flex justify-start py-2" style={{ marginLeft: "-45px" }}>
+        <div className="w-full flex justify-center py-2">
           <div className="w-[1000px] h-[160px] relative">
 
             {/* Connector Paths (Dashed lines with arrows in high contrast dark color) */}

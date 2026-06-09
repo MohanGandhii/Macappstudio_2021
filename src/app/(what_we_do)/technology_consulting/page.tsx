@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import HeroSection from "./_components/01_HeroSection";
 import SmarterServicesSection from "./_components/02_SmarterServicesSection";
 import PropelBusinessSection from "./_components/03_PropelBusinessSection";
@@ -8,6 +9,11 @@ import CustomerInsightSection from "./_components/07_ServiceDetailSections";
 import MarketingSalesSection from "./_components/08_MarketingSalesSection";
 import SpeedLearningBanner from "./_components/09_SpeedLearningBanner";
 import ITConsultingSection from "./_components/10_ITConsultingSection";
+
+export const metadata: Metadata = {
+  title: "Technology Consulting",
+  description: "Transform your business with our technology consulting services. We help companies leverage technology for growth and efficiency.",
+};
 
 export default function TechnologyConsultingPage() {
   return (

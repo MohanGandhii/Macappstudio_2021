@@ -1,5 +1,4 @@
-"use client";
-
+import { Metadata } from "next";
 import React from "react";
 import ExtendedTechTeamHero from "./_components/01_ExtendedTechTeamHero";
 import TeamLimitSection from "./_components/02_TeamLimitSection";
@@ -19,6 +18,11 @@ import YourJourney from "./_components/15_YourJourney";
 import WhatYouReceive from "./_components/16_WhatYouReceive";
 import DreamTeamSection from "./_components/17_DreamTeamSection";
 import DreamTeamCallBanner from "./_components/18_DreamTeamCallBanner";
+
+export const metadata: Metadata = {
+  title: "Packages",
+  description: "Check out our premium packages. Scale your product and business with our dedicated development teams.",
+};
 
 export default function PackagesPage() {
   return (
@@ -44,11 +48,3 @@ export default function PackagesPage() {
     </main>
   );
 }
-
-
-
-
-
-
-
-
