@@ -80,31 +80,33 @@ export default function ChallengesAndSquads() {
         <div className="relative mt-16 mb-10">
 
           {/* Dashed Connector */}
-          <div className="hidden xl:block absolute top-[150px] left-[260px] right-[260px] border-t-[2px] border-dashed border-[#CBD5E1] z-0" />
+          <div className="hidden xl:block absolute top-[150px] left-[310px] right-[310px] border-t-[2px] border-dashed border-[#CBD5E1] z-0" />
 
-          <div className="grid xl:grid-cols-[600px_80px_600px] gap-0 justify-center items-stretch relative z-10">
+          <div className="grid xl:grid-cols-[620px_80px_620px] gap-0 justify-center items-stretch relative z-10">
 
             {/* Left Card */}
-            <div className="bg-[#FFF8F8] border border-[#F5D9D9] rounded-[32px] pt-8 pb-0 px-8 relative flex flex-col mx-auto w-full max-w-[600px] min-h-[300px]">
+            <div className="bg-[#FFF8F8] border border-[#F5D9D9] rounded-[32px] pt-8 pb-0 px-8 relative flex flex-col mx-auto w-full max-w-[620px] min-h-[300px]">
 
               <h3 className="text-center text-[#DC2626] font-bold text-[20px] mb-6 tracking-tight">
                 The Challenges You Face
               </h3>
 
               <div className="flex flex-row items-end flex-1">
-                {/* Image Breaking Out Left & Bottom */}
-                <div className="shrink-0 w-[340px] -ml-[65px] -mb-[20px] relative z-10">
+                {/* Image Fixed inside the box */}
+                <div className="shrink-0 w-[270px] -ml-8 mb-0 relative z-10">
                   <Image
                     src="/assets/images/resources/challenges_and_squads/stressed_developer_v4.png"
                     alt="Challenges"
                     width={500}
                     height={500}
                     className="w-full h-auto object-bottom"
+                    unoptimized
+                    priority
                   />
                 </div>
 
-                {/* Text Content */}
-                <div className="flex-1 pb-8 pl-1 relative z-20">
+                {/* Text Content shifted right */}
+                <div className="flex-grow pb-8 pl-[60px] relative z-20">
                   <ul className="space-y-[14px]">
                     {challenges.map((item) => (
                       <li key={item} className="flex items-start gap-3 text-[14px] leading-[1.3] text-[#334155] font-medium">
@@ -139,26 +141,28 @@ export default function ChallengesAndSquads() {
             </div>
 
             {/* Right Card */}
-            <div className="bg-[#F5FFF8] border border-[#D8F4E3] rounded-[32px] pt-8 pb-0 px-8 relative flex flex-col mx-auto w-full max-w-[600px] min-h-[300px]">
+            <div className="bg-[#F5FFF8] border border-[#D8F4E3] rounded-[32px] pt-8 pb-0 px-8 relative flex flex-col mx-auto w-full max-w-[620px] min-h-[300px]">
 
               <h3 className="text-center text-[#059669] font-bold text-[20px] mb-6 tracking-tight">
                 Your Extended Product Team
               </h3>
 
               <div className="flex flex-row items-end flex-1">
-                {/* Image Breaking Out Left & Bottom */}
-                <div className="shrink-0 w-[330px] -ml-[65px] -mb-[20px] relative z-10">
+                {/* Image Fixed inside the box */}
+                <div className="shrink-0 w-[260px] -ml-8 mb-0 relative z-10">
                   <Image
                     src="/assets/images/resources/challenges_and_squads/team_collaboration_v3.png"
                     alt="Squads"
                     width={500}
                     height={500}
                     className="w-full h-auto object-bottom"
+                    unoptimized
+                    priority
                   />
                 </div>
 
-                {/* Text Content */}
-                <div className="flex-1 pb-8 pl-1 relative z-20">
+                {/* Text Content shifted right */}
+                <div className="flex-grow pb-8 pl-[60px] relative z-20">
                   <ul className="space-y-[14px]">
                     {benefits.map((item) => (
                       <li key={item} className="flex items-start gap-3 text-[14px] leading-[1.3] text-[#334155] font-medium">
