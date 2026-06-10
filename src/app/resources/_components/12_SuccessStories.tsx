@@ -185,15 +185,15 @@ const CATEGORIES = [
   "Others",
 ];
 
-const THEME_MAP: Record<string, { textColor: string; badgeBg: string; shadowColor: string; blobColor: string }> = {
-  Healthcare: { textColor: "text-[#7C3AED]", badgeBg: "bg-[#F3EAFF]", shadowColor: "rgba(124,58,237,0.06)", blobColor: "rgba(124,58,237,0.03)" },
-  Fintech: { textColor: "text-[#0052FF]", badgeBg: "bg-[#EAF2FF]", shadowColor: "rgba(0,82,255,0.06)", blobColor: "rgba(0,82,255,0.03)" },
-  Mobility: { textColor: "text-[#10B981]", badgeBg: "bg-[#EAFDF5]", shadowColor: "rgba(16,185,129,0.06)", blobColor: "rgba(16,185,129,0.03)" },
-  Wellness: { textColor: "text-[#F59E0B]", badgeBg: "bg-[#FFF6D8]", shadowColor: "rgba(245,158,11,0.06)", blobColor: "rgba(245,158,11,0.03)" },
-  Entertainment: { textColor: "text-[#EC4899]", badgeBg: "bg-[#FFF0F6]", shadowColor: "rgba(236,72,153,0.06)", blobColor: "rgba(236,72,153,0.03)" },
-  Education: { textColor: "text-[#4F46E5]", badgeBg: "bg-[#EEF2FF]", shadowColor: "rgba(79,70,229,0.06)", blobColor: "rgba(79,70,229,0.03)" },
-  "Real Estate": { textColor: "text-[#0ea5e9]", badgeBg: "bg-[#f0f9ff]", shadowColor: "rgba(14,165,233,0.06)", blobColor: "rgba(14,165,233,0.03)" },
-  Others: { textColor: "text-[#64748B]", badgeBg: "bg-[#F1F5F9]", shadowColor: "rgba(100,116,139,0.06)", blobColor: "rgba(100,116,139,0.03)" },
+const THEME_MAP: Record<string, { textColor: string; badgeBg: string; shadowColor: string; blobColor: string; imageBg: string }> = {
+  Healthcare: { textColor: "text-[#7C3AED]", badgeBg: "bg-[#F3EAFF]", shadowColor: "rgba(124,58,237,0.06)", blobColor: "rgba(124,58,237,0.08)", imageBg: "linear-gradient(135deg, #F9F5FF 0%, #F3EAFF 40%, #EDE4FF 100%)" },
+  Fintech: { textColor: "text-[#0052FF]", badgeBg: "bg-[#EAF2FF]", shadowColor: "rgba(0,82,255,0.06)", blobColor: "rgba(0,82,255,0.08)", imageBg: "linear-gradient(135deg, #F0F6FF 0%, #E0ECFF 40%, #D6E4FF 100%)" },
+  Mobility: { textColor: "text-[#10B981]", badgeBg: "bg-[#EAFDF5]", shadowColor: "rgba(16,185,129,0.06)", blobColor: "rgba(16,185,129,0.08)", imageBg: "linear-gradient(135deg, #F0FDF9 0%, #DCFCE7 40%, #D1FAE5 100%)" },
+  Wellness: { textColor: "text-[#F59E0B]", badgeBg: "bg-[#FFF6D8]", shadowColor: "rgba(245,158,11,0.06)", blobColor: "rgba(245,158,11,0.08)", imageBg: "linear-gradient(135deg, #FFFBEB 0%, #FFF6D8 40%, #FEF3C7 100%)" },
+  Entertainment: { textColor: "text-[#EC4899]", badgeBg: "bg-[#FFF0F6]", shadowColor: "rgba(236,72,153,0.06)", blobColor: "rgba(236,72,153,0.08)", imageBg: "linear-gradient(135deg, #FFF5F9 0%, #FFF0F6 40%, #FCE7F3 100%)" },
+  Education: { textColor: "text-[#4F46E5]", badgeBg: "bg-[#EEF2FF]", shadowColor: "rgba(79,70,229,0.06)", blobColor: "rgba(79,70,229,0.08)", imageBg: "linear-gradient(135deg, #F5F3FF 0%, #EEF2FF 40%, #E0E7FF 100%)" },
+  "Real Estate": { textColor: "text-[#0ea5e9]", badgeBg: "bg-[#f0f9ff]", shadowColor: "rgba(14,165,233,0.06)", blobColor: "rgba(14,165,233,0.08)", imageBg: "linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 40%, #BAE6FD 100%)" },
+  Others: { textColor: "text-[#64748B]", badgeBg: "bg-[#F1F5F9]", shadowColor: "rgba(100,116,139,0.06)", blobColor: "rgba(100,116,139,0.08)", imageBg: "linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 40%, #E2E8F0 100%)" },
 };
 
 export default function SuccessStories() {
@@ -208,7 +208,7 @@ export default function SuccessStories() {
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const { scrollLeft } = scrollRef.current;
-      const scrollAmount = direction === "left" ? -380 : 380;
+      const scrollAmount = direction === "left" ? -300 : 300;
       scrollRef.current.scrollTo({
         left: scrollLeft + scrollAmount,
         behavior: "smooth",
@@ -274,7 +274,7 @@ export default function SuccessStories() {
           {/* Left Arrow Button */}
           <button
             onClick={() => scroll("left")}
-            className="absolute left-[-16px] md:left-[-24px] top-[40%] -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white border border-slate-200 shadow-md flex items-center justify-center cursor-pointer hover:bg-slate-50 transition-colors opacity-100 lg:opacity-0 group-hover:opacity-100"
+            className="absolute left-[-16px] md:left-[-24px] top-[38%] -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white border border-slate-200 shadow-md flex items-center justify-center cursor-pointer hover:bg-slate-50 transition-colors opacity-100 lg:opacity-0 group-hover:opacity-100"
           >
             <ArrowLeftIcon />
           </button>
@@ -282,7 +282,7 @@ export default function SuccessStories() {
           {/* Right Arrow Button */}
           <button
             onClick={() => scroll("right")}
-            className="absolute right-[-16px] md:right-[-24px] top-[40%] -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white border border-slate-200 shadow-md flex items-center justify-center cursor-pointer hover:bg-slate-50 transition-colors opacity-100 lg:opacity-0 group-hover:opacity-100"
+            className="absolute right-[-16px] md:right-[-24px] top-[38%] -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white border border-slate-200 shadow-md flex items-center justify-center cursor-pointer hover:bg-slate-50 transition-colors opacity-100 lg:opacity-0 group-hover:opacity-100"
           >
             <ArrowRightIcon />
           </button>
@@ -290,78 +290,80 @@ export default function SuccessStories() {
           {/* Scrollable Container */}
           <div
             ref={scrollRef}
-            className="w-full flex gap-6 overflow-x-auto scroll-smooth scrollbar-none pb-6 px-1"
+            className="w-full flex gap-5 overflow-x-auto scroll-smooth scrollbar-none pb-6 px-1"
           >
             {filteredStudies.map((study, idx) => {
               const theme = THEME_MAP[study.category] || THEME_MAP.Others;
               return (
                 <div
                   key={idx}
-                  className="w-[310px] md:w-[350px] shrink-0 border border-slate-100 rounded-[28px] bg-white p-5 flex flex-col shadow-[0_4px_20px_rgba(0,0,0,0.015)] hover:shadow-[0_8px_35px_rgba(0,0,0,0.035)] transition-all relative overflow-hidden group/card"
+                  className="w-[255px] md:w-[268px] shrink-0 border border-slate-200/60 rounded-[20px] bg-white flex flex-col shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all relative overflow-hidden group/card"
                 >
                   
-                  {/* Card Graphic/Phone mockups with radial background decoration */}
-                  <div className="relative w-full h-[220px] rounded-[20px] overflow-hidden bg-slate-50/50 border border-slate-100/40 p-4 flex items-center justify-center select-none">
-                    
-                    {/* Decorative Blob */}
+                  {/* Card Image Area — flush with card edges, colored gradient bg */}
+                  <div
+                    className="relative w-full h-[200px] overflow-hidden flex items-end justify-center select-none"
+                    style={{ background: theme.imageBg }}
+                  >
+                    {/* Decorative radial blob */}
                     <div 
-                      className="absolute inset-0 pointer-events-none -z-10 transition-all group-hover/card:scale-105 duration-500" 
+                      className="absolute inset-0 pointer-events-none transition-all group-hover/card:scale-110 duration-500" 
                       style={{ 
-                        background: `radial-gradient(circle, ${theme.blobColor} 0%, transparent 70%)` 
+                        background: `radial-gradient(ellipse at 50% 80%, ${theme.blobColor} 0%, transparent 65%)` 
                       }} 
                     />
 
                     {/* Image Mockup */}
-                    <div className="relative w-[90%] h-[90%] pointer-events-none">
+                    <div className="relative w-[85%] h-[88%] pointer-events-none">
                       <Image
                         src={study.img}
                         alt={study.title}
                         fill
-                        className="object-contain object-bottom transition-transform duration-500 group-hover/card:scale-[1.03]"
+                        className="object-contain object-bottom transition-transform duration-500 group-hover/card:scale-[1.04]"
                         unoptimized
                       />
                     </div>
                   </div>
 
                   {/* Card Content Stack */}
-                  <div className="flex flex-col items-start gap-4 mt-5 flex-grow">
+                  <div className="flex flex-col items-start gap-1.5 px-4 pt-3 pb-4 flex-grow">
                     
                     {/* Tag badge */}
                     <span 
-                      className={`text-[10px] font-extrabold uppercase tracking-[0.08em] px-3 py-1.5 rounded-lg select-none w-max ${theme.badgeBg} ${theme.textColor}`}
+                      className={`text-[9px] font-bold uppercase tracking-[0.06em] px-2 py-0.5 rounded select-none w-max ${theme.badgeBg} ${theme.textColor}`}
                       style={{ fontFamily: "Outfit, sans-serif" }}
                     >
                       {study.category}
                     </span>
 
                     {/* Title & Desc */}
-                    <div className="flex flex-col gap-1.5 min-h-[75px]">
+                    <div className="flex flex-col gap-0.5">
                       <h3 
-                        className="text-[#0F172A] font-extrabold text-[19px] md:text-[21px] tracking-tight leading-tight"
+                        className="text-[#0F172A] font-extrabold text-[16px] md:text-[17px] tracking-tight leading-tight"
                         style={{ fontFamily: "Outfit, sans-serif" }}
                       >
                         {study.title}
                       </h3>
-                      <p className="text-slate-500 text-[13px] md:text-[13.5px] leading-relaxed font-semibold">
+                      <p className="text-slate-500 text-[12px] md:text-[12.5px] leading-[1.45] font-medium">
                         {study.desc}
                       </p>
                     </div>
 
                     {/* Divider */}
-                    <div className="w-full h-[1px] bg-slate-100" />
+                    <div className="w-full h-[1px] bg-slate-100 mt-auto" />
 
                     {/* Impact Metrics Block */}
-                    <div className="flex flex-col gap-1.5 w-full mt-auto">
-                      <span className="text-[10px] text-slate-400 font-extrabold uppercase tracking-wider">Impact</span>
-                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px] font-extrabold text-[#0F172A]">
+                    <div className="flex flex-col gap-0.5 w-full">
+                      <span className="text-[8px] text-slate-400 font-bold uppercase tracking-wider">Impact</span>
+                      <div className="flex flex-wrap items-center gap-x-2.5 gap-y-0.5 text-[12px] font-extrabold text-[#0F172A]">
                         {study.metrics.map((metric, i) => (
                           <React.Fragment key={i}>
                             {i > 0 && <span className="text-slate-200 font-normal">|</span>}
-                            <span className="flex items-baseline gap-1">
-                              <span className="text-[14.5px] text-[#0052FF] font-extrabold" style={{ fontFamily: "Outfit, sans-serif" }}>
+                            <span className="flex items-baseline gap-0.5">
+                              <span className="text-[12.5px] text-[#0052FF] font-extrabold" style={{ fontFamily: "Outfit, sans-serif" }}>
                                 {metric.value}
                               </span>
-                              <span className="text-[12.5px] text-slate-500 font-bold">
+                              <span className="text-[11px] text-slate-500 font-semibold">
                                 {metric.label}
                               </span>
                             </span>

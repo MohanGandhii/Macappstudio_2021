@@ -199,7 +199,7 @@ export default function FlexibleTeamModels() {
             <div className={`relative px-8 pt-6 pb-4 ${card.topBg} flex-shrink-0 h-[190px] border-b ${card.borderClass}`}>
 
               {/* Right Image */}
-              <div className="absolute right-0 bottom-0 w-[48%] h-full z-0 select-none">
+              <div className="absolute right-0 bottom-0 w-[60%] h-full z-0 select-none">
                 <Image
                   src={card.image}
                   alt={card.title}

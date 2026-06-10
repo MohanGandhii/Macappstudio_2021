@@ -72,53 +72,53 @@ export default function InnovationAndRDLabs() {
   ];
 
   const rdTags = [
-    { name: "AI / ML", icon: <Brain className="w-5 h-5" /> },
-    { name: "Automation", icon: <Cpu className="w-5 h-5" /> },
-    { name: "Cloud", icon: <Cloud className="w-5 h-5" /> },
-    { name: "Data Engineering", icon: <Database className="w-5 h-5" /> },
-    { name: "Blockchain", icon: <Boxes className="w-5 h-5" /> },
-    { name: "IoT", icon: <Wifi className="w-5 h-5" /> },
+    { name: "AI / ML", icon: <Brain className="w-4 h-4" /> },
+    { name: "Automation", icon: <Cpu className="w-4 h-4" /> },
+    { name: "Cloud", icon: <Cloud className="w-4 h-4" /> },
+    { name: "Data Engineering", icon: <Database className="w-4 h-4" /> },
+    { name: "Blockchain", icon: <Boxes className="w-4 h-4" /> },
+    { name: "IoT", icon: <Wifi className="w-4 h-4" /> },
   ];
 
   return (
     <section className="w-full py-16 px-4 bg-[#F8F9FE] flex flex-col justify-center items-center">
 
-      <div className="max-w-[1440px] w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="max-w-[1380px] w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
 
         {/* ── CARD 1: Execution Partner ── */}
-        <div className="bg-white border border-[#ECECF3] rounded-[32px] overflow-hidden relative shadow-[0_4px_24px_rgba(0,0,0,0.02)] flex flex-col justify-stretch min-h-[460px] md:min-h-[500px] lg:min-h-[520px]">
+        <div className="bg-gradient-to-r from-[#EFF4FF] via-[#F5F8FF] to-white border border-[#ECECF3] rounded-[28px] overflow-hidden relative shadow-[0_4px_24px_rgba(0,0,0,0.02)] flex flex-col justify-stretch min-h-[360px] md:min-h-[380px] lg:min-h-[400px]">
 
           {/* Desktop layout: content left, image right — both fill full card height */}
-          <div className="hidden md:flex flex-1 min-h-[500px] lg:min-h-[520px] w-full">
+          <div className="hidden md:flex flex-1 min-h-[380px] lg:min-h-[400px] w-full">
 
             {/* Left: text content */}
-            <div className="p-8 lg:p-10 w-[52%] flex flex-col justify-between relative z-10 shrink-0 h-full">
+            <div className="p-6 lg:p-8 w-[50%] flex flex-col justify-between relative z-10 shrink-0 h-full">
               <div>
                 <span
-                  className="text-[11px] font-bold text-[#0052FF] uppercase tracking-[0.15em] mb-4 block"
+                  className="text-[11px] font-bold text-[#0052FF] uppercase tracking-[0.15em] mb-2 block"
                   style={{ fontFamily: "Outfit, sans-serif" }}
                 >
                   Why Enterprises Choose MacAppStudio
                 </span>
                 <h3
-                  className="text-[#0F172A] font-extrabold text-[32px] lg:text-[36px] leading-[1.15] tracking-[-0.02em] mb-4"
+                  className="text-[#0F172A] font-extrabold text-[24px] lg:text-[28px] leading-[1.15] tracking-[-0.02em] mb-2.5"
                   style={{ fontFamily: "Outfit, sans-serif" }}
                 >
                   More Than A Vendor.<br />
-                  Your <span className="text-[#0052FF]">Execution Partner.</span>
+                  Your <span className="text-[#0052FF]" style={{ fontStyle: "italic" }}>Execution Partner.</span>
                 </h3>
-                <p className="text-gray-500 text-[14px] leading-relaxed font-medium">
+                <p className="text-gray-500 text-[13px] leading-relaxed font-medium">
                   We become your extended team and own the execution from start to scale.
                 </p>
               </div>
 
-              <div className="flex flex-col gap-4 mt-8">
+              <div className="flex flex-col gap-2 mt-4">
                 {executionItems.map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3.5">
-                    <div className="w-7 h-7 rounded-full flex items-center justify-center shrink-0 bg-[#EAF2FF] text-[#0052FF]">
+                  <div key={idx} className="flex items-center gap-3">
+                    <div className="w-5.5 h-5.5 rounded-full flex items-center justify-center shrink-0 bg-[#EAF2FF] text-[#0052FF]">
                       {item.icon}
                     </div>
-                    <span className="text-[#334155] text-[13.5px] font-semibold leading-none">
+                    <span className="text-[#334155] text-[12.5px] font-semibold leading-none">
                       {item.text}
                     </span>
                   </div>
@@ -187,54 +187,71 @@ export default function InnovationAndRDLabs() {
 
 
         {/* ── CARD 2: Innovation & R&D Lab ── */}
-        <div className="bg-white border border-[#ECECF3] rounded-[32px] overflow-hidden relative shadow-[0_4px_24px_rgba(0,0,0,0.02)] min-h-[460px] md:min-h-[500px] lg:min-h-[540px]">
+        <div className="bg-gradient-to-r from-[#EFF3FF] via-[#F4F6FF] to-white border border-[#ECECF3] rounded-[28px] overflow-hidden relative shadow-[0_4px_24px_rgba(0,0,0,0.02)] min-h-[360px] md:min-h-[380px] lg:min-h-[400px]">
 
           {/* Desktop layout */}
-          <div className="hidden md:block h-full min-h-[500px] md:min-h-[500px] lg:min-h-[540px]">
+          <div className="hidden md:block h-full min-h-[380px] md:min-h-[380px] lg:min-h-[400px]">
 
-            {/* Background image — full card, anchored right */}
-            <div className="absolute inset-0 z-0">
+            {/* Background image — constrained to right 65% of card to scale down the details */}
+            <div className="absolute top-0 right-0 bottom-0 w-[65%] z-0 select-none">
               <Image
                 src="/assets/images/resources/07/image 1884 (1).png"
                 alt="Innovation & R&D Lab man pointing at hologram"
                 fill
-                className="object-cover object-right-bottom"
+                className="object-contain object-right-bottom"
                 priority
                 unoptimized
               />
             </div>
 
-            {/* Left content overlay */}
-            <div className="relative z-10 h-full min-h-[500px] md:min-h-[500px] lg:min-h-[540px] flex flex-col justify-between p-8 lg:p-10 w-[52%]">
-              <div>
+            {/* Left-side light lavender/blue fade so text is always readable, blending the left edge of the image */}
+            <div
+              className="absolute inset-0 z-[2] pointer-events-none"
+              style={{
+                background: "linear-gradient(to right, rgba(239,243,255,1) 0%, rgba(239,243,255,1) 36%, rgba(239,243,255,0.9) 45%, rgba(239,243,255,0) 65%)"
+              }}
+            />
+
+            {/* Subtle bottom gradient to smoothly fade the desk image to white at the card bottom border */}
+            <div
+              className="absolute inset-0 z-[1] pointer-events-none"
+              style={{
+                background: "linear-gradient(to bottom, rgba(255,255,255,0) 80%, rgba(255,255,255,0.7) 92%, rgba(255,255,255,1) 100%)"
+              }}
+            />
+
+            {/* Content overlay */}
+            <div className="relative z-10 h-full min-h-[380px] md:min-h-[380px] lg:min-h-[400px] flex flex-col justify-between p-6 lg:p-8">
+              {/* Text content — constrained to left side */}
+              <div className="max-w-[55%]">
                 <span
-                  className="text-[11px] font-bold text-[#0052FF] uppercase tracking-[0.15em] mb-4 block"
+                  className="text-[11px] font-bold text-[#0052FF] uppercase tracking-[0.15em] mb-2 block"
                   style={{ fontFamily: "Outfit, sans-serif" }}
                 >
                   Our Innovation & R&D Lab
                 </span>
                 <h3
-                  className="text-[#0F172A] font-extrabold text-[32px] lg:text-[36px] leading-[1.15] tracking-[-0.02em] mb-4"
+                  className="text-[#0F172A] font-extrabold text-[24px] lg:text-[28px] leading-[1.15] tracking-[-0.02em] mb-2.5"
                   style={{ fontFamily: "Outfit, sans-serif" }}
                 >
-                  Building <span className="text-[#0052FF]">What's Next.</span>
+                  Building <span className="text-[#0052FF]">What&apos;s Next.</span>
                 </h3>
-                <p className="text-gray-500 text-[14px] leading-relaxed font-medium">
+                <p className="text-gray-500 text-[13px] leading-relaxed font-medium">
                   Our R&D team explores emerging technologies to keep your product future-ready.
                 </p>
               </div>
 
-              {/* Tags — 2 column grid matching screenshot */}
-              <div className="mt-auto grid grid-cols-2 gap-3">
+              {/* Tags — full width at bottom, overlapping desk/laptop image */}
+              <div className="mt-auto grid grid-cols-3 gap-2 w-full max-w-[320px] mb-9">
                 {rdTags.map((tag, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center gap-3 px-4 py-3.5 rounded-2xl bg-white border border-[#ECECF3] shadow-[0_4px_20px_rgba(0,0,0,0.06)]"
+                    className="flex items-center gap-1.5 px-1.5 py-3 rounded-[8px] bg-white/95 backdrop-blur-md border border-[#ECECF3] shadow-[0_2px_10px_rgba(0,0,0,0.05)]"
                   >
                     <div className="text-[#0052FF] shrink-0">
                       {tag.icon}
                     </div>
-                    <span className="text-[#1E293B] text-[13px] font-semibold leading-tight">
+                    <span className="text-[#1E293B] text-[11px] font-semibold leading-tight">
                       {tag.name}
                     </span>
                   </div>
