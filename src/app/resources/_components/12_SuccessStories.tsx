@@ -2,6 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // ─── ICON COMPONENTS ──────────────────────────────────────────────────────────
 
@@ -196,6 +197,16 @@ const THEME_MAP: Record<string, { textColor: string; badgeBg: string; shadowColo
   Others: { textColor: "text-[#64748B]", badgeBg: "bg-[#F1F5F9]", shadowColor: "rgba(100,116,139,0.06)", blobColor: "rgba(100,116,139,0.08)", imageBg: "linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 40%, #E2E8F0 100%)" },
 };
 
+const getSlug = (title: string): string => {
+  const t = title.toLowerCase();
+  if (t.includes("mediyosa")) return "mediyoga";
+  if (t.includes("zena")) return "znap";
+  if (t.includes("fastrack")) return "fasttrack";
+  if (t.includes("ags cinemas")) return "ags";
+  if (t.includes("speed learning")) return "speed";
+  return t.replace(/[^a-z0-9]+/g, "");
+};
+
 export default function SuccessStories() {
   const [activeTab, setActiveTab] = useState("All Projects");
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -229,7 +240,7 @@ export default function SuccessStories() {
             <SparkleIcon />
             <span>Success Stories</span>
           </div>
-
+ 
           {/* Heading */}
           <h2 
             className="text-[#0F172A] font-extrabold text-[36px] md:text-[46px] leading-[1.1] tracking-[-0.02em]"
@@ -237,14 +248,14 @@ export default function SuccessStories() {
           >
             Dreams We've Already <span className="text-[#0052FF]">Brought To Life</span>
           </h2>
-
+ 
           {/* Subparagraph */}
           <p className="text-slate-500 text-[15px] md:text-[16px] leading-[1.6] max-w-[650px] mx-auto font-medium">
             From startups to enterprises, we've helped visionary teams turn ideas into
             impactful products loved by millions of users.
           </p>
         </div>
-
+ 
         {/* Categories Tab Bar */}
         <div className="w-full overflow-x-auto scrollbar-none flex justify-start md:justify-center items-center pb-4 -mb-4 px-2 select-none">
           <div className="flex gap-2.5 bg-slate-100/50 p-1.5 rounded-[18px] border border-slate-200/40 w-max shrink-0">
@@ -267,7 +278,7 @@ export default function SuccessStories() {
             })}
           </div>
         </div>
-
+ 
         {/* Carousel Slider Section */}
         <div className="relative w-full group">
           
@@ -278,7 +289,7 @@ export default function SuccessStories() {
           >
             <ArrowLeftIcon />
           </button>
-
+ 
           {/* Right Arrow Button */}
           <button
             onClick={() => scroll("right")}
@@ -286,7 +297,7 @@ export default function SuccessStories() {
           >
             <ArrowRightIcon />
           </button>
-
+ 
           {/* Scrollable Container */}
           <div
             ref={scrollRef}
@@ -295,9 +306,10 @@ export default function SuccessStories() {
             {filteredStudies.map((study, idx) => {
               const theme = THEME_MAP[study.category] || THEME_MAP.Others;
               return (
-                <div
+                <Link
                   key={idx}
-                  className="w-[255px] md:w-[268px] shrink-0 border border-slate-200/60 rounded-[20px] bg-white flex flex-col shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all relative overflow-hidden group/card"
+                  href={`/success_stories/${getSlug(study.title)}`}
+                  className="w-[255px] md:w-[268px] shrink-0 border border-slate-200/60 rounded-[20px] bg-white flex flex-col shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all relative overflow-hidden group/card cursor-pointer"
                 >
                   
                   {/* Card Image Area — flush with card edges, colored gradient bg */}
@@ -307,12 +319,12 @@ export default function SuccessStories() {
                   >
                     {/* Decorative radial blob */}
                     <div 
-                      className="absolute inset-0 pointer-events-none transition-all group-hover/card:scale-110 duration-500" 
+                       className="absolute inset-0 pointer-events-none transition-all group-hover/card:scale-110 duration-500" 
                       style={{ 
                         background: `radial-gradient(ellipse at 50% 80%, ${theme.blobColor} 0%, transparent 65%)` 
                       }} 
                     />
-
+ 
                     {/* Image Mockup */}
                     <div className="relative w-[85%] h-[88%] pointer-events-none">
                       <Image
@@ -324,7 +336,7 @@ export default function SuccessStories() {
                       />
                     </div>
                   </div>
-
+ 
                   {/* Card Content Stack */}
                   <div className="flex flex-col items-start gap-1.5 px-4 pt-3 pb-4 flex-grow">
                     
@@ -335,7 +347,7 @@ export default function SuccessStories() {
                     >
                       {study.category}
                     </span>
-
+ 
                     {/* Title & Desc */}
                     <div className="flex flex-col gap-0.5">
                       <h3 
@@ -348,10 +360,10 @@ export default function SuccessStories() {
                         {study.desc}
                       </p>
                     </div>
-
+ 
                     {/* Divider */}
                     <div className="w-full h-[1px] bg-slate-100 mt-auto" />
-
+ 
                     {/* Impact Metrics Block */}
                     <div className="flex flex-col gap-0.5 w-full">
                       <span className="text-[8px] text-slate-400 font-bold uppercase tracking-wider">Impact</span>
@@ -371,10 +383,10 @@ export default function SuccessStories() {
                         ))}
                       </div>
                     </div>
-
+ 
                   </div>
-
-                </div>
+ 
+                </Link>
               );
             })}
           </div>
