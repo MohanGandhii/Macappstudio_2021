@@ -17,7 +17,7 @@ const steps = [
     bg: "bg-[#FFF8E7]",
     border: "border-[#FDE7B0]",
     titleColor: "text-[#2563EB]",
-    image: "/assets/images/resources/framework/discover.png",
+    image: "/assets/images/resources/ProductFramework/image 1881.png",
   },
   {
     number: "2",
@@ -27,7 +27,7 @@ const steps = [
     bg: "bg-[#EEF4FF]",
     border: "border-[#DCE7FF]",
     titleColor: "text-[#2563EB]",
-    image: "/assets/images/resources/framework/plan.png",
+    image: "/assets/images/resources/ProductFramework/image 1882.png",
   },
   {
     number: "3",
@@ -37,7 +37,7 @@ const steps = [
     bg: "bg-[#FFF0FA]",
     border: "border-[#FFD8F2]",
     titleColor: "text-[#EC4899]",
-    image: "/assets/images/resources/framework/design.png",
+    image: "/assets/images/resources/ProductFramework/image 1883.png",
   },
   {
     number: "4",
@@ -47,7 +47,7 @@ const steps = [
     bg: "bg-[#EDFFF5]",
     border: "border-[#D4FCE6]",
     titleColor: "text-[#22C55E]",
-    image: "/assets/images/resources/framework/build.png",
+    image: "/assets/images/resources/ProductFramework/image 1884.png",
   },
   {
     number: "5",
@@ -57,7 +57,7 @@ const steps = [
     bg: "bg-[#FFF5EC]",
     border: "border-[#FFE4CC]",
     titleColor: "text-[#F97316]",
-    image: "/assets/images/resources/framework/launch.png",
+    image: "/assets/images/resources/ProductFramework/image 1885.png",
   },
   {
     number: "6",
@@ -67,7 +67,7 @@ const steps = [
     bg: "bg-[#F2F4FF]",
     border: "border-[#E0E4FF]",
     titleColor: "text-[#6366F1]",
-    image: "/assets/images/resources/framework/scale.png",
+    image: "/assets/images/resources/ProductFramework/image 1886.png",
   },
 ];
 
@@ -106,70 +106,101 @@ export default function ProductFrameworkSection() {
             <div className="hidden lg:block absolute top-[62px] left-[8.3%] right-[8.3%] h-[6px] rounded-full bg-gradient-to-r from-[#ECE7FF] via-[#DCD2FF] to-[#ECE7FF] shadow-[0_0_15px_rgba(99,102,241,0.18)] z-0" />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 relative z-10">
-              {steps.map((step, index) => (
-                <div
-                  key={index}
-                  className="relative px-5 pt-10 pb-0 flex flex-col items-center text-center min-h-[430px]"
-                >
-                  {/* Step Number */}
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-30 w-9 h-9 rounded-full bg-[#5B4FF8] text-white font-bold text-sm flex items-center justify-center border-[3px] border-white shadow-lg">
-                    {step.number}
-                  </div>
+              {steps.map((step, index) => {
+                // Determine responsive border classes dynamically
+                let borderClasses = "border-[#E8EAF6] ";
+                
+                // Mobile (1 column): bottom border on all except the last card (index 5)
+                if (index < 5) {
+                  borderClasses += "border-b ";
+                }
+                
+                // Tablet (md: 2 columns): 
+                // Right border on even cards (0, 2, 4)
+                if (index % 2 === 0) {
+                  borderClasses += "md:border-r ";
+                } else {
+                  borderClasses += "md:border-r-0 ";
+                }
+                // Bottom border on first 4 cards (rows 1 & 2)
+                if (index < 4) {
+                  borderClasses += "md:border-b ";
+                } else {
+                  borderClasses += "md:border-b-0 ";
+                }
+                
+                // Desktop (lg: 6 columns): 
+                // Right border on all except the last one (index 5), no bottom borders
+                if (index < 5) {
+                  borderClasses += "lg:border-r lg:border-b-0 ";
+                } else {
+                  borderClasses += "lg:border-r-0 lg:border-b-0 ";
+                }
 
-                  {/* Connector Arrow */}
-                  {index < steps.length - 1 && (
-                    <div className="hidden lg:flex absolute right-0 top-[62px] translate-x-1/2 -translate-y-1/2 z-20">
-                      <div className="w-8 h-8 rounded-full bg-white border border-[#E7EAF3] flex items-center justify-center shadow-sm">
-                        <svg
-                          className="w-4 h-4 text-[#B5B9C6]"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={3}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Icon Circle */}
+                return (
                   <div
-                    className={`w-[72px] h-[72px] rounded-full border shadow-md flex items-center justify-center mb-6 ${step.bg} ${step.border}`}
+                    key={index}
+                    className={`relative px-5 pt-10 pb-0 flex flex-col items-center text-center min-h-[420px] md:min-h-[445px] lg:min-h-[400px] ${borderClasses}`}
                   >
-                    {step.icon}
-                  </div>
+                    {/* Step Number */}
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-30 w-9 h-9 rounded-full bg-[#5B4FF8] text-white font-bold text-sm flex items-center justify-center border-[3px] border-white shadow-lg">
+                      {step.number}
+                    </div>
 
-                  {/* Title */}
-                  <h3
-                    className={`font-bold text-[18px] md:text-[20px] mb-2 ${step.titleColor}`}
-                  >
-                    {step.title}
-                  </h3>
+                    {/* Connector Arrow */}
+                    {index < steps.length - 1 && (
+                      <div className="hidden lg:flex absolute right-0 top-[62px] translate-x-1/2 -translate-y-1/2 z-20">
+                        <div className="w-8 h-8 rounded-full bg-white border border-[#E7EAF3] flex items-center justify-center shadow-sm">
+                          <svg
+                            className="w-4 h-4 text-[#B5B9C6]"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={3}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    )}
 
-                  {/* Subtitle */}
-                  <p className="text-[#64748B] text-[14px] leading-[1.6] whitespace-pre-line max-w-[180px]">
-                    {step.subtitle}
-                  </p>
+                    {/* Icon Circle */}
+                    <div
+                      className={`w-[72px] h-[72px] rounded-full border shadow-md flex items-center justify-center mb-6 ${step.bg} ${step.border}`}
+                    >
+                      {step.icon}
+                    </div>
 
-                  {/* Illustration */}
-                  <div className="mt-auto w-full pt-8">
-                    <div className="relative h-[170px] rounded-[20px] overflow-hidden bg-[#FAFBFF] border border-[#F0F2F7]">
+                    {/* Title */}
+                    <h3
+                      className={`font-bold text-[18px] md:text-[20px] mb-2 ${step.titleColor}`}
+                    >
+                      {step.title}
+                    </h3>
+
+                    {/* Subtitle */}
+                    <p className="text-[#64748B] text-[14px] leading-[1.6] whitespace-pre-line max-w-[180px]">
+                      {step.subtitle}
+                    </p>
+
+                    {/* Illustration */}
+                    <div className="mt-auto w-full relative h-[190px] md:h-[210px] lg:h-[175px]">
                       <Image
                         src={step.image}
                         alt={step.title}
                         fill
                         priority
-                        className="object-cover object-bottom"
+                        unoptimized
+                        className="object-contain object-bottom"
                       />
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

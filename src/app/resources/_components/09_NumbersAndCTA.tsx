@@ -145,12 +145,11 @@ export default function NumbersAndCTA() {
           </div>
         </div>
 
-        {/* ── 2. CTA BANNER ── */}
-        <div className="w-full bg-gradient-to-r from-[#F4F6FC] to-[#F1F4FD] border border-[#E8ECF5] rounded-[32px] overflow-hidden relative shadow-[0_4px_30px_rgba(0,0,0,0.02)]">
-          <div className="flex flex-col lg:flex-row items-center justify-between px-8 py-10 lg:py-8 gap-8 lg:gap-4">
+        <div className="w-full bg-gradient-to-r from-[#F4F6FC] to-[#F1F4FD] border border-[#E8ECF5] rounded-[28px] overflow-hidden relative shadow-[0_4px_30px_rgba(0,0,0,0.02)]">
+          <div className="flex flex-col lg:flex-row items-center px-6 lg:px-4 xl:px-6 py-6 lg:py-0 gap-6 lg:gap-4">
             
-            {/* Left side: Rocket Illustration */}
-            <div className="hidden lg:flex w-[200px] xl:w-[240px] shrink-0 self-end -mb-8 relative h-[180px]">
+            {/* Left: Rocket Illustration */}
+            <div className="hidden lg:flex w-[120px] xl:w-[140px] shrink-0 self-end relative h-[120px]">
               <Image
                 src="/assets/images/appdevelopment/rocket@2x.png"
                 alt="Rocket taking off"
@@ -160,43 +159,43 @@ export default function NumbersAndCTA() {
               />
             </div>
 
-            {/* Middle: Text and Tags */}
-            <div className="flex-1 flex flex-col justify-center gap-5 text-center lg:text-left lg:-ml-4">
+            {/* Middle: Text + Tags */}
+            <div className="flex-1 min-w-0 flex flex-col justify-center gap-2.5 text-center lg:text-left lg:pl-2 xl:pl-4 py-4 lg:py-5">
               <div>
                 <h3 
-                  className="text-[#0F172A] font-extrabold text-[28px] md:text-[32px] leading-tight mb-2"
+                  className="text-[#0F172A] font-extrabold text-[20px] md:text-[22px] xl:text-[24px] leading-tight mb-0.5"
                   style={{ fontFamily: "Outfit, sans-serif" }}
                 >
                   Your Dream Is Closer Than You Think
                 </h3>
-                <p className="text-gray-500 text-[15px] font-medium leading-relaxed">
-                  Let's build the next big thing together.
+                <p className="text-gray-500 text-[13px] xl:text-[14px] font-medium leading-relaxed">
+                  Let&apos;s build the next big thing together.
                 </p>
               </div>
 
-              {/* Tags */}
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+              {/* Tags — single row */}
+              <div className="flex items-center justify-center lg:justify-start gap-2 overflow-x-auto">
                 {tags.map((tag, idx) => (
-                  <div key={idx} className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-gray-200/80 shadow-sm text-gray-600">
+                  <div key={idx} className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-white border border-gray-200/80 shadow-sm text-gray-600">
                     <span className="text-[#0052FF]">{tag.icon}</span>
-                    <span className="text-[12px] font-bold tracking-wide">{tag.text}</span>
+                    <span className="text-[10px] xl:text-[11px] font-bold tracking-wide whitespace-nowrap">{tag.text}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Right side: Interactive Buttons */}
-            <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-4 shrink-0 z-10 w-full lg:w-auto mt-4 lg:mt-0">
+            {/* Right: CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-2.5 shrink-0 z-10 w-full lg:w-auto">
               {/* Button 1: Book Call */}
               <button 
                 onClick={() => {
                   const modalEvent = new CustomEvent("openVideoModal");
                   window.dispatchEvent(modalEvent);
                 }}
-                className="bg-[#0052FF] hover:bg-[#0041cc] text-white rounded-2xl py-3.5 px-6 flex items-center gap-3.5 transition-all hover:scale-[1.01] active:scale-95 shadow-[0_4px_20px_rgba(0,82,255,0.2)] border border-transparent cursor-pointer"
+                className="bg-[#0052FF] hover:bg-[#0041cc] text-white rounded-xl py-2.5 px-4 flex items-center gap-2.5 transition-all hover:scale-[1.01] active:scale-95 shadow-[0_4px_20px_rgba(0,82,255,0.2)] border border-transparent cursor-pointer"
               >
-                <div className="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center shrink-0 text-white">
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="w-8 h-8 rounded-lg bg-white/15 flex items-center justify-center shrink-0 text-white">
+                  <svg className="w-4.5 h-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
                     <line x1="16" y1="2" x2="16" y2="6" />
                     <line x1="8" y1="2" x2="8" y2="6" />
@@ -204,22 +203,22 @@ export default function NumbersAndCTA() {
                   </svg>
                 </div>
                 <div className="text-left">
-                  <div className="text-[14px] font-extrabold leading-tight">Book Free Discovery Call</div>
-                  <div className="text-[11px] text-blue-100 font-medium mt-0.5">Free 30-min strategy session</div>
+                  <div className="text-[13px] font-extrabold leading-tight whitespace-nowrap">Book Free Discovery Call</div>
+                  <div className="text-[10px] text-blue-100 font-medium mt-0.5 whitespace-nowrap">Free 30-min strategy session</div>
                 </div>
               </button>
 
               {/* Button 2: Build My Team */}
               <button 
                 onClick={() => window.open("/contactus", "_self")}
-                className="bg-white hover:bg-gray-50 text-[#0F172A] border border-gray-200 rounded-2xl py-3.5 px-6 flex items-center gap-3.5 transition-all hover:scale-[1.01] shadow-sm active:scale-95 cursor-pointer"
+                className="bg-white hover:bg-gray-50 text-[#0F172A] border border-gray-200 rounded-xl py-2.5 px-4 flex items-center gap-2.5 transition-all hover:scale-[1.01] shadow-sm active:scale-95 cursor-pointer"
               >
-                <div className="w-10 h-10 rounded-xl bg-[#F0F4FF] flex items-center justify-center shrink-0 text-[#0052FF]">
+                <div className="w-8 h-8 rounded-lg bg-[#F0F4FF] flex items-center justify-center shrink-0 text-[#0052FF]">
                   <UsersIcon />
                 </div>
                 <div className="text-left">
-                  <div className="text-[14px] font-extrabold leading-tight">Build My Dream Team</div>
-                  <div className="text-[11px] text-gray-500 font-medium mt-0.5">Start building in 1-2 weeks</div>
+                  <div className="text-[13px] font-extrabold leading-tight whitespace-nowrap">Build My Dream Team</div>
+                  <div className="text-[10px] text-gray-500 font-medium mt-0.5 whitespace-nowrap">Start building in 1-2 weeks</div>
                 </div>
               </button>
             </div>

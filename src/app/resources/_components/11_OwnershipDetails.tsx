@@ -1,81 +1,89 @@
-"use client";
+"use client"
 
-import React from "react";
-import Image from "next/image";
+import React from "react"
+import Image from "next/image"
 
 // ─── CARD ICONS ──────────────────────────────────────────────────────────────
 
 const IpIcon = () => (
-  <svg className="w-6 h-6 text-[#7C3AED]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    className="h-8 w-8 text-[#7C3AED]"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-    <circle cx="12" cy="11.5" r="3.5" strokeWidth="2" />
-    <path d="M13 11a1.5 1.5 0 1 0 0 .7" strokeWidth="2" />
+    <path d="m9 11 2 2 4-4" strokeWidth="2.5" />
+    <circle cx="17" cy="17" r="4.5" fill="white" stroke="currentColor" strokeWidth="1.5" />
+    <text
+      x="15.2"
+      y="19.7"
+      fontSize="8"
+      fontWeight="800"
+      fill="currentColor"
+      stroke="none"
+      fontFamily="Outfit, sans-serif"
+    >
+      c
+    </text>
   </svg>
-);
+)
 
 const CodeIcon = () => (
-  <svg className="w-6 h-6 text-[#10B981]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    className="h-8 w-8 text-[#10B981]"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <polyline points="16 18 22 12 16 6" />
     <polyline points="8 6 2 12 8 18" />
   </svg>
-);
+)
 
 const RoadmapIcon = () => (
-  <svg className="w-6 h-6 text-[#F59E0B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    className="h-8 w-8 text-[#F59E0B]"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3V6z" />
     <path d="M9 3v15" />
     <path d="M15 6v15" />
-    <circle cx="12" cy="10" r="2.2" fill="currentColor" />
+    <path
+      d="M12 4c-1.38 0-2.5 1.12-2.5 2.5 0 1.88 2.5 5 2.5 5s2.5-3.12 2.5-5c0-1.38-1.12-2.5-2.5-2.5z"
+      fill="#F59E0B"
+      stroke="none"
+    />
+    <circle cx="12" cy="6.5" r="0.8" fill="white" />
   </svg>
-);
+)
 
 const InfrastructureIcon = () => (
-  <svg className="w-6 h-6 text-[#0052FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    className="h-8 w-8 text-[#0052FF]"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M18 10h-.01M17 14h.01M16 10a5 5 0 0 0-9.58-2.03A5 5 0 0 0 7 18h11a4 4 0 0 0 0-8z" />
-    <rect x="11.5" y="13.5" width="3" height="3.5" rx="0.5" fill="none" strokeWidth="2" />
+    <rect x="10" y="12.5" width="4" height="3" rx="0.8" fill="currentColor" stroke="none" />
+    <path d="M11 12.5V11a1 1 0 0 1 2 0v1.5" stroke="currentColor" strokeWidth="1.2" />
   </svg>
-);
-
-// ─── BANNER ICONS ────────────────────────────────────────────────────────────
-
-const ShieldPartnerIcon = () => (
-  <svg className="w-6 h-6 text-[#4F46E5]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-    <path d="m9 12 2 2 4-4" />
-  </svg>
-);
-
-const UsersIcon = () => (
-  <svg className="w-4 h-4 text-[#0052FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M17 21v-2a4 4 0 0 0-3-3.87" />
-    <path d="M9 21v-2a4 4 0 0 0-3-3.87" />
-    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-    <circle cx="12" cy="7" r="4" />
-  </svg>
-);
-
-const LockIcon = () => (
-  <svg className="w-4 h-4 text-[#0052FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-  </svg>
-);
-
-const ChatIcon = () => (
-  <svg className="w-4 h-4 text-[#0052FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-    <circle cx="8" cy="10" r="1.2" fill="currentColor" stroke="none" />
-    <circle cx="12" cy="10" r="1.2" fill="currentColor" stroke="none" />
-    <circle cx="16" cy="10" r="1.2" fill="currentColor" stroke="none" />
-  </svg>
-);
-
-const ShieldCheckIcon = () => (
-  <svg className="w-4 h-4 text-[#0052FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-    <path d="m9 12 2 2 4-4" />
-  </svg>
-);
+)
 
 export default function OwnershipDetails() {
   const cards = [
@@ -84,149 +92,75 @@ export default function OwnershipDetails() {
       desc: "Full ownership of the intellectual property. It's 100% yours, always.",
       iconBg: "bg-[#F3EAFF]",
       icon: <IpIcon />,
-      image: "/assets/images/resources/own_ip.png",
+      image: "/assets/images/resources/11/image 1883.png",
     },
     {
       title: "You Own The Code",
       desc: "Clean, well-structured code handed over to you with complete rights.",
       iconBg: "bg-[#EAFDF5]",
       icon: <CodeIcon />,
-      image: "/assets/images/resources/own_code.png",
+      image: "/assets/images/resources/11/image 1884 (3).png",
     },
     {
       title: "You Own The Roadmap",
       desc: "You decide what's next. We help you get there with the right technology.",
       iconBg: "bg-[#FFF6D8]/70",
       icon: <RoadmapIcon />,
-      image: "/assets/images/resources/own_roadmap.png",
+      image: "/assets/images/resources/11/image 1885 (1).png",
     },
     {
       title: "You Own The Infrastructure",
       desc: "Your data, your servers, your environment—you stay in control.",
       iconBg: "bg-[#EAF2FF]",
       icon: <InfrastructureIcon />,
-      image: "/assets/images/resources/own_infrastructure.png",
+      image: "/assets/images/resources/11/image 1886 (1).png",
     },
-  ];
-
-  const bannerItems = [
-    {
-      text: (
-        <>
-          We work with you,<br />not for you.
-        </>
-      ),
-      icon: <UsersIcon />,
-    },
-    {
-      text: (
-        <>
-          Transparent process.<br />No hidden surprises.
-        </>
-      ),
-      icon: <LockIcon />,
-    },
-    {
-      text: (
-        <>
-          Clear communication.<br />Always.
-        </>
-      ),
-      icon: <ChatIcon />,
-    },
-    {
-      text: (
-        <>
-          Long-term partnership<br />focused on your success.
-        </>
-      ),
-      icon: <ShieldCheckIcon />,
-    },
-  ];
+  ]
 
   return (
-    <section className="w-full py-12 md:py-16 px-4 bg-white flex flex-col gap-10">
-      <div className="max-w-[1380px] mx-auto w-full flex flex-col gap-10">
-        
+    <section className="w-full bg-white px-4 py-12 md:py-16">
+      <div className="mx-auto w-full max-w-[1380px]">
         {/* ── 4 Ownership Cards Grid ── */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {cards.map((card, idx) => (
-            <div 
-              key={idx} 
-              className="border border-[#ECECF3] rounded-[24px] bg-white p-6 flex flex-col shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.025)] transition-all"
+            <div
+              key={idx}
+              className="flex flex-col justify-between rounded-[32px] border border-[#ECECF3] bg-white p-8 shadow-[0_4px_25px_rgba(0,0,0,0.012)] transition-all hover:shadow-[0_12px_40px_rgba(0,0,0,0.03)] md:p-9"
             >
-              {/* Card Header (Icon & Title/Description) */}
+              {/* Card Header (Icon + Title/Description column) */}
               <div className="flex items-start gap-4">
-                <div className={`w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 ${card.iconBg}`}>
+                <div
+                  className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.02)] ${card.iconBg}`}
+                >
                   {card.icon}
                 </div>
-                <div className="flex flex-col gap-1">
-                  <h4 
-                    className="text-[#0F172A] font-extrabold text-[15px] md:text-[16px] tracking-tight leading-snug"
+                <div className="flex flex-col">
+                  <h4
+                    className="text-[19px] font-extrabold leading-snug tracking-tight text-[#0F172A] md:text-[20px]"
                     style={{ fontFamily: "Outfit, sans-serif" }}
                   >
                     {card.title}
                   </h4>
-                  <p className="text-slate-500 text-[12.5px] md:text-[13px] leading-[1.5] font-semibold">
+                  <p className="mt-2 text-[14px] font-semibold leading-[1.65] text-slate-500 md:text-[15px]">
                     {card.desc}
                   </p>
                 </div>
               </div>
 
               {/* Card Illustration */}
-              <div className="relative w-full h-[155px] mt-6 select-none bg-[#F9FBFC]/50 rounded-2xl overflow-hidden border border-slate-100/40 p-2">
-                <Image 
-                  src={card.image}
+              <div className="relative mt-8 h-[200px] w-full select-none overflow-hidden">
+                <Image
+                  src={card.image || "/placeholder.svg"}
                   alt={card.title}
                   fill
                   className="object-contain object-bottom"
                   unoptimized
                 />
               </div>
-
             </div>
           ))}
         </div>
-
-        {/* ── Bottom Partnership Banner ── */}
-        <div className="w-full bg-[#F8FAFC]/90 border border-[#E8ECF5] rounded-[24px] p-6 lg:py-5 lg:px-8 flex flex-col lg:flex-row items-center gap-6 lg:gap-8 justify-between shadow-[0_4px_20px_rgba(0,0,0,0.015)]">
-          
-          {/* Left Heading Block */}
-          <div className="flex items-center gap-4 shrink-0 w-full lg:w-auto">
-            <div className="w-12 h-12 rounded-full bg-[#EEF2FF] text-[#4F46E5] flex items-center justify-center shrink-0">
-              <ShieldPartnerIcon />
-            </div>
-            <h3 
-              className="text-[#0F172A] font-extrabold text-[17px] md:text-[19px] tracking-tight whitespace-nowrap"
-              style={{ fontFamily: "Outfit, sans-serif" }}
-            >
-              We're Your Partner, Not Your Vendor.
-            </h3>
-          </div>
-
-          {/* Divider Line */}
-          <div className="hidden lg:block w-[1px] h-[36px] bg-slate-200/80" />
-
-          {/* Right Items */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-6 gap-y-5 w-full lg:w-auto flex-grow justify-items-stretch">
-            {bannerItems.map((item, idx) => (
-              <div 
-                key={idx} 
-                className="flex items-center gap-3.5 w-full justify-start sm:justify-center xl:justify-start"
-              >
-                <div className="w-8.5 h-8.5 rounded-full bg-[#EBF5FF] text-[#0052FF] flex items-center justify-center shrink-0">
-                  {item.icon}
-                </div>
-                <p className="text-[#334155] text-[12.5px] md:text-[13px] font-bold leading-snug tracking-wide">
-                  {item.text}
-                </p>
-              </div>
-            ))}
-          </div>
-
-        </div>
-
       </div>
     </section>
-  );
+  )
 }
