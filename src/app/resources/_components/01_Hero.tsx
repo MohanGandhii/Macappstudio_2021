@@ -8,10 +8,7 @@ import {
   FiClock, 
   FiTrendingUp, 
   FiShield, 
-  FiLayers,
-  FiBox,
-  FiHeart,
-  FiPlay
+  FiLayers
 } from "react-icons/fi";
 
 interface HeroProps {
@@ -106,52 +103,51 @@ export default function Hero({ onPlayVideo }: HeroProps) {
 
             {/* Partner Logos Section */}
             <div className="w-full">
-              <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-3">
+              <p className="text-[13px] md:text-[14px] text-gray-500 font-medium mb-3">
                 Trusted by innovative companies worldwide
               </p>
-              {/* CHANGE LOGO IMAGE PATHS HERE: Replace the dummy src paths below with your actual partner logo assets when you have them */}
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-2.5 opacity-60">
-                <div className="h-5 w-16 relative">
+              <div className="flex flex-wrap items-center gap-x-4 md:gap-x-5 gap-y-2">
+                <div className="h-5 w-20 sm:h-6 sm:w-24 md:h-7 md:w-28 relative">
                   <Image
-                    src="/assets/images/resources/daimler.png"
+                    src="/assets/images/resources/hero/dailmer.png"
                     alt="Daimler Logo"
                     fill
-                    className="object-contain filter grayscale brightness-50"
+                    className="object-contain"
                   />
                 </div>
-                <div className="h-5 w-12 relative">
+                <div className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 relative">
                   <Image
-                    src="/assets/images/resources/jio.png"
+                    src="/assets/images/resources/hero/jio.png"
                     alt="Jio Logo"
                     fill
-                    className="object-contain filter grayscale brightness-50"
+                    className="object-contain"
                   />
                 </div>
-                <div className="h-5 w-12 relative">
+                <div className="h-5 w-12 sm:h-6 sm:w-14 md:h-7 md:w-16 relative">
                   <Image
-                    src="/assets/images/resources/intel.png"
+                    src="/assets/images/resources/hero/intel.png"
                     alt="Intel Logo"
                     fill
-                    className="object-contain filter grayscale brightness-50"
+                    className="object-contain"
                   />
                 </div>
-                <div className="h-5 w-12 relative">
+                <div className="h-5 w-12 sm:h-6 sm:w-14 md:h-7 md:w-16 relative">
                   <Image
-                    src="/assets/images/resources/paytm.png"
+                    src="/assets/images/resources/hero/paytm.png"
                     alt="Paytm Logo"
                     fill
-                    className="object-contain filter grayscale brightness-50"
+                    className="object-contain"
                   />
                 </div>
-                <div className="h-5 w-20 relative">
+                <div className="h-5 w-20 sm:h-6 sm:w-24 md:h-7 md:w-28 relative">
                   <Image
-                    src="/assets/images/resources/accesshealthcare.png"
+                    src="/assets/images/resources/hero/healthcare.png"
                     alt="Access Healthcare Logo"
                     fill
-                    className="object-contain filter grayscale brightness-50"
+                    className="object-contain"
                   />
                 </div>
-                <span className="text-[12px] text-gray-400 font-semibold lowercase">and more...</span>
+                <span className="text-[12px] md:text-[13px] text-gray-400 font-semibold lowercase whitespace-nowrap">many more...</span>
               </div>
             </div>
 
@@ -165,108 +161,12 @@ export default function Hero({ onPlayVideo }: HeroProps) {
               
               {/* Winding mountain path image */}
               <Image 
-                src="/assets/images/mountain_vision.png"
+                src="/assets/images/resources/hero/mountain_vision.jpg"
                 alt="Every Great Product starts as an Idea"
                 fill
-                className="object-cover"
+                className="object-contain"
                 priority
               />
-
-              {/* Hand-drawn styled text callouts (SVG overlays) */}
-              <div className="absolute top-[35%] left-[8%] hidden md:block">
-                <div className="flex flex-col text-left">
-                  <span className="font-serif italic text-[#374151] text-[13px] leading-tight">Big Idea</span>
-                  <span className="font-serif italic text-[#374151] text-[13px] leading-tight">+ Ambition</span>
-                  <svg className="w-8 h-8 text-gray-400 mt-1 ml-4" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                  </svg>
-                </div>
-              </div>
-
-              <div className="absolute top-[48%] right-[8%] hidden md:block">
-                <div className="flex flex-col text-right items-end">
-                  <span className="font-serif italic text-[#374151] text-[13px] leading-tight">Market Impact</span>
-                  <span className="font-serif italic text-[#374151] text-[12px] leading-tight">Millions of Users</span>
-                  <svg className="w-8 h-8 text-gray-400 mt-1 mr-4 rotate-180" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                  </svg>
-                </div>
-              </div>
-
-              {/* Glow Overlay for Summit Lightbulb */}
-              <div className="absolute top-[16%] left-[50%] -translate-x-1/2 flex flex-col items-center">
-                <span className="font-bold text-[13px] text-indigo-600 tracking-wider bg-white/90 backdrop-blur-sm px-2.5 py-0.5 rounded-full shadow-sm mb-1 uppercase">
-                  Your Vision
-                </span>
-                <div className="w-1.5 h-6 bg-indigo-500/30 animate-pulse rounded-full" />
-              </div>
-
-              {/* Watch Our Story Play Button Overlay */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/5">
-                <button 
-                  onClick={onPlayVideo}
-                  className="w-16 h-16 rounded-full bg-[#0052FF] hover:bg-[#0041cc] text-white flex items-center justify-center cursor-pointer shadow-lg shadow-blue-500/30 transition-transform duration-300 hover:scale-110 active:scale-95"
-                >
-                  <FiPlay className="ml-1" size={24} />
-                </button>
-                <span className="mt-3 text-[14px] font-bold text-[#111] bg-white/95 px-3.5 py-1 rounded-full shadow-md select-none tracking-tight">
-                  Watch Our Story
-                </span>
-              </div>
-
-              {/* We build the bridge tag */}
-              <div className="absolute bottom-[28%] right-[15%] hidden md:flex items-center gap-1 bg-[#EEF2FF] border border-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-[12px] font-bold shadow-sm">
-                <span>💡</span> We Build the Bridge
-              </div>
-
-              {/* Floating Stat Metrics overlaying the bottom container space */}
-              <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 grid grid-cols-2 sm:grid-cols-4 gap-3 z-20">
-                
-                {/* Metric 1 */}
-                <div className="bg-white/95 backdrop-blur-sm border border-gray-100 rounded-xl p-3 flex items-center gap-3 shadow-md hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 rounded-lg bg-indigo-50 flex items-center justify-center flex-shrink-0 text-indigo-600">
-                    <FiBox size={18} />
-                  </div>
-                  <div className="text-left">
-                    <div className="text-[16px] font-extrabold text-[#111] leading-none">120+</div>
-                    <div className="text-[11px] text-gray-500 font-semibold mt-0.5 leading-tight">Products Delivered</div>
-                  </div>
-                </div>
-
-                {/* Metric 2 */}
-                <div className="bg-white/95 backdrop-blur-sm border border-gray-100 rounded-xl p-3 flex items-center gap-3 shadow-md hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 rounded-lg bg-emerald-50 flex items-center justify-center flex-shrink-0 text-emerald-600">
-                    <FiUsers size={18} />
-                  </div>
-                  <div className="text-left">
-                    <div className="text-[16px] font-extrabold text-[#111] leading-none">100+</div>
-                    <div className="text-[11px] text-gray-500 font-semibold mt-0.5 leading-tight">Founder Dreams</div>
-                  </div>
-                </div>
-
-                {/* Metric 3 */}
-                <div className="bg-white/95 backdrop-blur-sm border border-gray-100 rounded-xl p-3 flex items-center gap-3 shadow-md hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 rounded-lg bg-amber-50 flex items-center justify-center flex-shrink-0 text-amber-600">
-                    <FiShield size={18} />
-                  </div>
-                  <div className="text-left">
-                    <div className="text-[16px] font-extrabold text-[#111] leading-none">10+</div>
-                    <div className="text-[11px] text-gray-500 font-semibold mt-0.5 leading-tight">Years Experience</div>
-                  </div>
-                </div>
-
-                {/* Metric 4 */}
-                <div className="bg-white/95 backdrop-blur-sm border border-gray-100 rounded-xl p-3 flex items-center gap-3 shadow-md hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 rounded-lg bg-rose-50 flex items-center justify-center flex-shrink-0 text-rose-600">
-                    <FiHeart size={18} />
-                  </div>
-                  <div className="text-left">
-                    <div className="text-[16px] font-extrabold text-[#111] leading-none">Millions</div>
-                    <div className="text-[11px] text-gray-500 font-semibold mt-0.5 leading-tight">Users Impacted</div>
-                  </div>
-                </div>
-
-              </div>
 
             </div>
 

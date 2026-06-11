@@ -116,46 +116,47 @@ export default function ExecutionPartnerSection() {
         </div>
 
         {/* CTA Card */}
-        <div className="mt-4 relative bg-[#F5F0FF] rounded-[22px] px-8 lg:px-0 py-4 overflow-hidden">
-          <div className="flex flex-col lg:flex-row items-center">
-            {/* Illustration */}
-            <div className="hidden lg:flex w-[360px] justify-start items-end self-stretch">
-              <div className="relative w-[330px] h-[145px]">
-                <Image
-                  src="/assets/images/team-highfive.png"
-                  alt="Team"
-                  fill
-                  priority
-                  className="object-contain object-left-bottom"
-                />
-              </div>
-            </div>
+        <div className="mt-4 relative bg-[#F5F0FF] rounded-[22px] px-6 lg:px-4 xl:px-8 py-6 overflow-hidden">
+          {/* Desktop Background Illustration */}
+          <div className="hidden lg:block absolute left-[-40px] xl:left-[-30px] top-1/2 -translate-y-1/2 w-[280px] xl:w-[380px] h-[280px] xl:h-[380px] pointer-events-none">
+            <Image
+              src="/assets/images/resources/challenges_and_squads/team_collaboration_v3.png"
+              alt="Team"
+              fill
+              priority
+              className="object-contain object-left"
+            />
+          </div>
 
+          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0">
             {/* Mobile Illustration */}
-            <div className="relative w-full h-[180px] lg:hidden mb-4">
+            <div className="relative w-full h-[220px] lg:hidden mb-2">
               <Image
-                src="/assets/images/team-highfive.png"
+                src="/assets/images/resources/challenges_and_squads/team_collaboration_v3.png"
                 alt="Team"
                 fill
-                className="object-contain"
+                className="object-contain object-bottom"
               />
             </div>
 
+            {/* Spacer for Desktop Illustration */}
+            <div className="hidden lg:block w-[250px] xl:w-[340px] shrink-0"></div>
+
             {/* Content */}
-            <div className="flex-1 px-0 lg:px-2">
-              <h3 className="text-[#0F172A] font-bold text-[22px] lg:text-[24px] leading-tight">
+            <div className="flex-1 px-0 min-w-0">
+              <h3 className="text-[#0F172A] font-bold text-[18px] lg:text-[15px] xl:text-[19px] 2xl:text-[22px] leading-tight whitespace-nowrap">
                 From CTO pressure to predictable product delivery.
               </h3>
 
-              <p className="mt-3 text-[#64748B] text-[15px] leading-[2] max-w-[480px]">
+              <p className="mt-2 text-[#64748B] text-[14px] lg:text-[13px] xl:text-[15px] leading-[1.8] max-w-[480px]">
                 That's why startups, scaleups and enterprises trust
-                <br />
+                <br className="hidden sm:block" />
                 MacAppStudio as their execution partner.
               </p>
             </div>
 
             {/* Buttons */}
-            <div className="mt-5 lg:mt-0 lg:mr-8 flex flex-col gap-3 w-full sm:w-[250px] shrink-0">
+            <div className="flex flex-col gap-3 w-full sm:w-[250px] shrink-0 lg:ml-4 xl:ml-8">
               <button className="h-[50px] rounded-[10px] bg-[#2F63F5] text-white font-semibold text-[15px] flex items-center justify-center gap-2">
                 <svg
                   className="w-5 h-5"

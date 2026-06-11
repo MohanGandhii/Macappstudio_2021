@@ -11,11 +11,12 @@ import ProductFrameworkSection from "./05_ProductFramework";
 import GrowthPartnerSection from "./06_GrowthPartner";
 import InnovationAndRDLabs from "./07_InnovationAndRDLabs";
 import FlexibleTeamModels from "./08_FlexibleTeamModels";
-import NumbersAndCTA from "./09_NumbersAndCTA";
 import OwnershipControl from "./10_OwnershipControl";
 import OwnershipDetails from "./11_OwnershipDetails";
 import SuccessStories from "./12_SuccessStories";
 import FooterCTAStack from "./13_FooterCTAStack";
+import InnovationMetricsSection from "./14_InnovationLab";
+import DreamCTASection from "./15_DreamCTA";
 
 export default function ResourcesClient() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -57,9 +58,6 @@ export default function ResourcesClient() {
       {/* ── 8. FLEXIBLE TEAM MODELS / EIGHTH COMPONENT ── */}
       <FlexibleTeamModels />
 
-      {/* ── 9. NUMBERS & CTA BANNER / NINTH COMPONENT ── */}
-      <NumbersAndCTA />
-
       {/* ── 10. OWNERSHIP & CONTROL / TENTH COMPONENT ── */}
       <OwnershipControl />
 
@@ -71,6 +69,12 @@ export default function ResourcesClient() {
 
       {/* ── 13. FOOTER CTA STACK / THIRTEENTH COMPONENT ── */}
       <FooterCTAStack />
+
+      {/* ── 14. INNOVATION METRICS & LAB / FOURTEENTH COMPONENT ── */}
+      <InnovationMetricsSection />
+
+      {/* ── 15. DREAM CTA BANNER / FIFTEENTH COMPONENT ── */}
+      <DreamCTASection />
 
       {/* ── VIDEO MODAL ── */}
       <AnimatePresence>
