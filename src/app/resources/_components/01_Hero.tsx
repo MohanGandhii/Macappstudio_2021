@@ -161,7 +161,7 @@ export default function Hero({ onPlayVideo }: HeroProps) {
               
               {/* Winding mountain path image */}
               <Image 
-                src="/assets/images/resources/hero/mountain_vision.jpg"
+                src="/assets/images/resources/hero/mountain_vision.png"
                 alt="Every Great Product starts as an Idea"
                 fill
                 className="object-contain"
