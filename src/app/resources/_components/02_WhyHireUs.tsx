@@ -80,8 +80,8 @@ export default function WhyHireUs() {
   ];
 
   return (
-    <section className="bg-white py-12 px-4">
-      <div className="max-w-[1380px] mx-auto">
+    <section className="bg-white py-12 lg:py-16 px-4 md:px-8 w-full">
+      <div className="max-w-[1380px] mx-auto w-full">
         
         {/* Bordered card container */}
         <div className="w-full bg-white border border-[#ECECF3] rounded-[28px] p-6 md:p-8 shadow-[0_4px_25px_rgba(0,0,0,0.01)] flex flex-col lg:flex-row items-stretch gap-6 lg:gap-0">

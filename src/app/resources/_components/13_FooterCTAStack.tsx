@@ -92,7 +92,7 @@ export default function FooterCTAStack() {
   ];
 
   return (
-    <section className="w-full py-12 px-4 bg-white flex flex-col gap-6 select-none">
+    <section className="w-full py-12 lg:py-16 px-4 md:px-8 bg-white flex flex-col gap-6 select-none">
       <div className="max-w-[1380px] mx-auto w-full flex flex-col gap-6">
 
         {/* ── Line 1: Logo & Partner Bar ── */}
@@ -158,30 +158,32 @@ export default function FooterCTAStack() {
           </div>
 
           {/* Right Quote Card Block */}
-          <div className="w-full xl:w-[490px] bg-gradient-to-r from-[#F4F6FC] to-[#F1F4FD] border border-[#E6EAF4] rounded-[20px] p-5.5 flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-4 relative overflow-hidden shrink-0">
+          <div className="w-full xl:w-[580px] bg-gradient-to-r from-[#F4F6FC] to-[#F1F4FD] border border-[#E6EAF4] rounded-[20px] py-6 px-6 md:px-8 flex flex-col justify-center relative overflow-hidden shrink-0 min-h-[160px]">
             {/* Background Quote Mark */}
             <QuoteIcon />
 
-            {/* Testimonial Quote */}
-            <div className="flex-grow flex flex-col justify-center text-center sm:text-left relative z-10">
-              <p className="text-slate-700 text-[13px] md:text-[13.5px] leading-relaxed font-semibold italic">
+            {/* Testimonial Quote (Constrained to left side) */}
+            <div className="w-[45%] flex flex-col justify-center text-left relative z-10 py-1">
+              <p className="text-slate-700 text-[13px] md:text-[14px] leading-relaxed font-semibold italic">
                 "MacAppStudio became our extended team. They understood our vision, moved fast, and delivered beyond expectations."
               </p>
               <span 
-                className="text-[#0F172A] font-extrabold text-[12.5px] mt-2 block"
+                className="text-[#0F172A] font-extrabold text-[12px] md:text-[13px] mt-3 block"
                 style={{ fontFamily: "Outfit, sans-serif" }}
               >
                 — CTO, Daimler
               </span>
             </div>
 
-            {/* Team Illustration */}
-            <div className="w-[125px] h-[105px] relative shrink-0 self-center sm:self-end sm:-mb-5.5 select-none mt-2 sm:mt-0">
+            {/* Team Illustration (Spans the right side with a fade) */}
+            <div className="absolute right-0 top-0 bottom-0 w-[60%] h-full z-0 select-none pointer-events-none">
+              {/* Soft gradient fade on the left to blend image seamlessly into the card background */}
+              <div className="absolute inset-y-0 left-0 w-16 md:w-24 bg-gradient-to-r from-[#F4F6FC] to-transparent z-10"></div>
               <Image
-                src="/assets/images/resources/cto_daimler_illustration.png"
+                src="/assets/images/resources/13/IMG_20260615_125603.png"
                 alt="CTO Daimler Testimonial Illustration"
                 fill
-                className="object-contain object-bottom-right"
+                className="object-cover object-center"
                 unoptimized
               />
             </div>
@@ -189,33 +191,36 @@ export default function FooterCTAStack() {
         </div>
 
         {/* ── Line 3: Closing Success Story CTA Bar ── */}
-        <div className="w-full bg-[#FBFDFF] border border-[#E8ECF5] rounded-[24px] p-6 lg:py-4.5 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-[0_4px_20px_rgba(0,0,0,0.01)]">
-          {/* Left Mountain Illustration */}
-          <div className="w-[145px] h-[80px] shrink-0 relative object-contain select-none">
+        <div className="w-full bg-[#FBFDFF] border border-[#E8ECF5] rounded-[24px] p-6 lg:py-4.5 lg:pr-6 lg:pl-[28%] xl:pl-[26%] flex flex-col lg:flex-row items-center justify-between gap-5 shadow-[0_4px_20px_rgba(0,0,0,0.01)] relative overflow-hidden min-h-[100px] lg:min-h-[110px]">
+          
+          {/* Left Mountain Illustration (Spans the left side with a fade) */}
+          <div className="absolute left-0 top-0 bottom-0 w-[50%] lg:w-[35%] xl:w-[32%] h-full z-0 select-none pointer-events-none">
+            {/* Soft gradient fade on the right to blend image seamlessly into the card background */}
+            <div className="absolute inset-y-0 right-0 w-16 md:w-24 bg-gradient-to-l from-[#FBFDFF] to-transparent z-10"></div>
             <Image
-              src="/assets/images/resources/mountain_peak.png"
+              src="/assets/images/resources/13/Moutain.png"
               alt="Mountain peak with flag"
               fill
-              className="object-contain"
+              className="object-cover object-left"
               unoptimized
             />
           </div>
 
           {/* Middle Headline Text */}
-          <div className="flex-grow flex flex-col text-center lg:text-left gap-1 lg:-ml-2">
+          <div className="flex-grow flex flex-col text-center lg:text-left gap-0.5 z-10 relative">
             <h3 
-              className="text-[#0F172A] font-extrabold text-[20px] md:text-[22px] tracking-tight leading-tight"
+              className="text-[#0F172A] font-extrabold text-[20px] md:text-[22px] tracking-tight leading-tight lg:whitespace-nowrap"
               style={{ fontFamily: "Outfit, sans-serif" }}
             >
               Your Success Story Could Be Next
             </h3>
-            <p className="text-slate-500 text-[13.5px] md:text-[14px] font-semibold leading-normal">
+            <p className="text-slate-500 text-[13px] md:text-[14px] font-semibold leading-normal lg:whitespace-nowrap">
               Let's turn your idea into the next big success.
             </p>
           </div>
 
           {/* Right Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 shrink-0 w-full lg:w-auto">
+          <div className="flex flex-col sm:flex-row gap-4 shrink-0 w-full lg:w-auto z-10 relative">
             {/* Blue Button */}
             <button 
               onClick={() => {

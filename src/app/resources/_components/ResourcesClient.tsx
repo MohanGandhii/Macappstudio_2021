@@ -11,6 +11,7 @@ import ProductFrameworkSection from "./05_ProductFramework";
 import GrowthPartnerSection from "./06_GrowthPartner";
 import InnovationAndRDLabs from "./07_InnovationAndRDLabs";
 import FlexibleTeamModels from "./08_FlexibleTeamModels";
+import NumbersBehindDreams from "./08_1_NumbersBehindDreams";
 import OwnershipControl from "./10_OwnershipControl";
 import OwnershipDetails from "./11_OwnershipDetails";
 import SuccessStories from "./12_SuccessStories";
@@ -57,6 +58,9 @@ export default function ResourcesClient() {
 
       {/* ── 8. FLEXIBLE TEAM MODELS / EIGHTH COMPONENT ── */}
       <FlexibleTeamModels />
+
+      {/* ── 8.1 THE NUMBERS BEHIND THE DREAMS / LIGHT CTA BANNER ── */}
+      <NumbersBehindDreams />
 
       {/* ── 10. OWNERSHIP & CONTROL / TENTH COMPONENT ── */}
       <OwnershipControl />

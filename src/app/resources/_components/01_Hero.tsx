@@ -17,9 +17,9 @@ interface HeroProps {
 
 export default function Hero({ onPlayVideo }: HeroProps) {
   return (
-    <section className="relative py-12 md:py-16 bg-[#FAF9F6] overflow-hidden">
-      <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+    <section className="relative py-16 lg:py-24 bg-[#FAF9F6] overflow-hidden">
+      <div className="mx-auto px-4 md:px-8 max-w-[1380px] w-full relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Content (Columns 1-6) */}
           <div className="lg:col-span-6 flex flex-col items-start text-left">

@@ -61,20 +61,19 @@ const features = [
 
 export default function ExecutionPartnerSection() {
   return (
-    <section className="w-full py-10 px-4">
-      <div className="max-w-[1380px] mx-auto border border-[#ECECF3] rounded-[24px] bg-white p-8 lg:p-10">
+    <section className="w-full py-12 lg:py-16 px-4 md:px-8">
+      <div className="max-w-[1380px] mx-auto border border-[#ECECF3] rounded-[24px] bg-white p-6 md:p-8 lg:p-10">
         {/* Heading */}
         <div className="text-center">
-          <h2 className="font-extrabold text-[#0F172A] leading-[1.15] text-[34px] md:text-[48px] lg:text-[54px]">
+          <h2 className="font-extrabold text-[#0F172A] leading-[1.15] text-[32px] md:text-[44px] lg:text-[54px]">
             You focus on the vision.
-            <br />
+            <br className="hidden sm:block" />
 
-            <span className="relative inline-block text-[#2F63F5]">
+            <span className="relative inline-block text-[#2F63F5] mt-2 sm:mt-0">
               We handle the execution.
 
               <svg
-                className="absolute left-1/2 -translate-x-1/2 -bottom-2"
-                width="300"
+                className="absolute left-1/2 -translate-x-1/2 -bottom-2 w-[80%] sm:w-full"
                 height="12"
                 viewBox="0 0 300 12"
                 fill="none"
@@ -91,13 +90,13 @@ export default function ExecutionPartnerSection() {
         </div>
         {/* Features */}
         <div className="mt-12 border border-[#ECECF3] rounded-[20px] overflow-hidden bg-white">
-          <div className="grid grid-cols-1 md:grid-cols-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
             {features.map((item, index) => (
               <div
                 key={index}
                 className={`flex items-center gap-3 px-4 xl:px-6 py-6 ${
                   index !== features.length - 1
-                    ? "border-b md:border-b-0 md:border-r border-[#ECECF3]"
+                    ? "border-b lg:border-b-0 lg:border-r border-[#ECECF3]"
                     : ""
                 }`}
               >
@@ -116,7 +115,7 @@ export default function ExecutionPartnerSection() {
         </div>
 
         {/* CTA Card */}
-        <div className="mt-4 relative bg-[#F5F0FF] rounded-[22px] px-6 lg:px-4 xl:px-8 py-6 overflow-hidden">
+        <div className="mt-6 md:mt-8 relative bg-[#F5F0FF] rounded-[22px] px-6 lg:px-4 xl:px-8 py-6 md:py-8 lg:py-6 overflow-hidden">
           {/* Desktop Background Illustration */}
           <div className="hidden lg:block absolute left-[-40px] xl:left-[-30px] top-1/2 -translate-y-1/2 w-[280px] xl:w-[380px] h-[280px] xl:h-[380px] pointer-events-none">
             <Image
@@ -143,12 +142,12 @@ export default function ExecutionPartnerSection() {
             <div className="hidden lg:block w-[250px] xl:w-[340px] shrink-0"></div>
 
             {/* Content */}
-            <div className="flex-1 px-0 min-w-0">
-              <h3 className="text-[#0F172A] font-bold text-[18px] lg:text-[15px] xl:text-[19px] 2xl:text-[22px] leading-tight whitespace-nowrap">
+            <div className="flex-1 px-0 min-w-0 text-center lg:text-left">
+              <h3 className="text-[#0F172A] font-bold text-[18px] md:text-[22px] lg:text-[17px] xl:text-[20px] 2xl:text-[22px] leading-tight xl:whitespace-nowrap">
                 From CTO pressure to predictable product delivery.
               </h3>
 
-              <p className="mt-2 text-[#64748B] text-[14px] lg:text-[13px] xl:text-[15px] leading-[1.8] max-w-[480px]">
+              <p className="mt-2 text-[#64748B] text-[14px] md:text-[16px] lg:text-[13px] xl:text-[15px] leading-[1.8] max-w-[480px] mx-auto lg:mx-0">
                 That's why startups, scaleups and enterprises trust
                 <br className="hidden sm:block" />
                 MacAppStudio as their execution partner.
@@ -156,8 +155,8 @@ export default function ExecutionPartnerSection() {
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-col gap-3 w-full sm:w-[250px] shrink-0 lg:ml-4 xl:ml-8">
-              <button className="h-[50px] rounded-[10px] bg-[#2F63F5] text-white font-semibold text-[15px] flex items-center justify-center gap-2">
+            <div className="flex flex-col sm:flex-row lg:flex-col gap-3 w-full lg:w-[250px] shrink-0 lg:ml-4 xl:ml-8">
+              <button className="flex-1 h-[50px] rounded-[10px] bg-[#2F63F5] text-white font-semibold text-[15px] flex items-center justify-center gap-2">
                 <svg
                   className="w-5 h-5"
                   fill="none"
@@ -175,7 +174,7 @@ export default function ExecutionPartnerSection() {
                 Book Free Discovery Call
               </button>
 
-              <button className="h-[50px] rounded-[10px] border-2 border-[#2F63F5] bg-white text-[#2F63F5] font-semibold text-[15px] flex items-center justify-center gap-2">
+              <button className="flex-1 h-[50px] rounded-[10px] border-2 border-[#2F63F5] bg-white text-[#2F63F5] font-semibold text-[15px] flex items-center justify-center gap-2">
                 <svg
                   className="w-5 h-5"
                   fill="none"

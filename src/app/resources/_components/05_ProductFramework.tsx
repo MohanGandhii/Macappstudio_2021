@@ -73,7 +73,7 @@ const steps = [
 
 export default function ProductFrameworkSection() {
   return (
-    <section className="w-full py-24 px-4 bg-white">
+    <section className="w-full py-12 lg:py-16 px-4 md:px-8 bg-white">
       <div className="max-w-[1380px] mx-auto">
         {/* Badge */}
         <div className="flex justify-center">
@@ -103,7 +103,7 @@ export default function ProductFrameworkSection() {
         <div className="relative mt-20">
           <div className="relative bg-white border border-[#E8EAF6] rounded-[32px] overflow-visible shadow-sm">
             {/* Connector Line */}
-            <div className="hidden lg:block absolute top-[62px] left-[8.3%] right-[8.3%] h-[6px] rounded-full bg-gradient-to-r from-[#ECE7FF] via-[#DCD2FF] to-[#ECE7FF] shadow-[0_0_15px_rgba(99,102,241,0.18)] z-0" />
+            <div className="hidden lg:block absolute top-0 left-[8.3%] right-[8.3%] h-[6px] -translate-y-1/2 rounded-full bg-gradient-to-r from-[#ECE7FF] via-[#DCD2FF] to-[#ECE7FF] shadow-[0_0_15px_rgba(99,102,241,0.18)] z-0" />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 relative z-10">
               {steps.map((step, index) => {
@@ -140,19 +140,14 @@ export default function ProductFrameworkSection() {
                 return (
                   <div
                     key={index}
-                    className={`relative px-5 pt-10 pb-0 flex flex-col items-center text-center min-h-[420px] md:min-h-[445px] lg:min-h-[400px] ${borderClasses}`}
+                    className={`relative px-4 pt-10 pb-0 flex flex-col items-center text-center min-h-[270px] md:min-h-[290px] lg:min-h-[270px] lg:pt-[48px] ${borderClasses}`}
                   >
-                    {/* Step Number */}
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-30 w-9 h-9 rounded-full bg-[#5B4FF8] text-white font-bold text-sm flex items-center justify-center border-[3px] border-white shadow-lg">
-                      {step.number}
-                    </div>
-
                     {/* Connector Arrow */}
                     {index < steps.length - 1 && (
-                      <div className="hidden lg:flex absolute right-0 top-[62px] translate-x-1/2 -translate-y-1/2 z-20">
-                        <div className="w-8 h-8 rounded-full bg-white border border-[#E7EAF3] flex items-center justify-center shadow-sm">
+                      <div className="hidden lg:flex absolute right-0 top-0 translate-x-1/2 -translate-y-1/2 z-20">
+                        <div className="flex items-center justify-center">
                           <svg
-                            className="w-4 h-4 text-[#B5B9C6]"
+                            className="w-6 h-6 text-[#DCD2FF]"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -170,25 +165,30 @@ export default function ProductFrameworkSection() {
 
                     {/* Icon Circle */}
                     <div
-                      className={`w-[72px] h-[72px] rounded-full border shadow-md flex items-center justify-center mb-6 ${step.bg} ${step.border}`}
+                      className={`lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-[72px] h-[72px] rounded-full border shadow-sm flex items-center justify-center z-30 mb-4 lg:mb-0 mx-auto ${step.bg} ${step.border}`}
                     >
                       {step.icon}
+                      
+                      {/* Step Number */}
+                      <div className="absolute -top-[30px] left-1/2 -translate-x-1/2 w-[26px] h-[26px] rounded-full bg-[#5B4FF8] text-white font-bold text-[12px] flex items-center justify-center shadow-md">
+                        {step.number}
+                      </div>
                     </div>
 
                     {/* Title */}
                     <h3
-                      className={`font-bold text-[18px] md:text-[20px] mb-2 ${step.titleColor}`}
+                      className={`font-bold text-[18px] md:text-[20px] mb-1 ${step.titleColor}`}
                     >
                       {step.title}
                     </h3>
 
                     {/* Subtitle */}
-                    <p className="text-[#64748B] text-[14px] leading-[1.6] whitespace-pre-line max-w-[180px]">
+                    <p className="text-[#64748B] text-[13px] leading-[1.5] whitespace-pre-line max-w-[180px]">
                       {step.subtitle}
                     </p>
 
                     {/* Illustration */}
-                    <div className="mt-auto w-full relative h-[190px] md:h-[210px] lg:h-[175px]">
+                    <div className="mt-auto w-full relative h-[140px] md:h-[160px] lg:h-[130px]">
                       <Image
                         src={step.image}
                         alt={step.title}

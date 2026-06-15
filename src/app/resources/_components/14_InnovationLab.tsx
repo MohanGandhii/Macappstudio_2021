@@ -72,7 +72,7 @@ export default function InnovationMetricsSection() {
   ];
 
   return (
-    <section className="w-full py-12 px-4 bg-white">
+    <section className="w-full py-12 lg:py-16 px-4 md:px-8 bg-white">
       <div className="max-w-[1380px] mx-auto flex flex-col gap-6">
 
         {/* ── TOP THIN BANNER ── */}
@@ -89,7 +89,7 @@ export default function InnovationMetricsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch w-full">
 
           {/* ── LEFT COLUMN: INNOVATION LAB ── */}
-          <div className="lg:col-span-6 bg-white border border-[#ECECF3] rounded-[24px] p-6 flex flex-col justify-between shadow-[0_4px_25px_rgba(0,0,0,0.015)] relative overflow-hidden min-h-[380px]">
+          <div className="lg:col-span-6 bg-white border border-[#ECECF3] rounded-[24px] p-6 md:p-8 flex flex-col justify-between shadow-[0_4px_25px_rgba(0,0,0,0.015)] relative overflow-hidden min-h-[380px]">
             <div className="flex flex-col text-left">
               <h3 
                 className="font-extrabold text-[#0F172A] leading-tight text-[24px] md:text-[26px] tracking-tight"
@@ -99,14 +99,14 @@ export default function InnovationMetricsSection() {
                 <br />
                 Without Building One
               </h3>
-              <p className="text-gray-500 text-[13px] md:text-[13.5px] font-medium leading-relaxed mt-2 max-w-[420px]">
+              <p className="text-gray-500 text-[13px] md:text-[14px] font-medium leading-relaxed mt-2 max-w-[420px]">
                 Our R&D experts help you explore, experiment and validate new ideas faster.
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-6 mt-6">
+            <div className="flex flex-col sm:flex-row items-center gap-6 mt-6">
               {/* Grid of 6 Tiles */}
-              <div className="w-full md:w-[50%] grid grid-cols-2 gap-3 shrink-0">
+              <div className="w-full sm:w-[50%] grid grid-cols-1 sm:grid-cols-2 gap-3 shrink-0">
                 {tiles.map((tile, idx) => (
                   <div 
                     key={idx} 
@@ -123,7 +123,7 @@ export default function InnovationMetricsSection() {
               </div>
 
               {/* Lab Illustration */}
-              <div className="w-full md:flex-1 relative aspect-[1.1] min-h-[220px] select-none pointer-events-none self-end -mb-2">
+              <div className="w-full sm:flex-1 relative aspect-[1.1] min-h-[200px] sm:min-h-[220px] select-none pointer-events-none sm:self-end mt-4 sm:mt-0 sm:-mb-2">
                 <Image 
                   src="/assets/images/resources/14/IMG_20260611_000054.png"
                   alt="Innovation lab collaboration illustration"
@@ -136,7 +136,7 @@ export default function InnovationMetricsSection() {
           </div>
 
           {/* ── RIGHT COLUMN: METRICS & TESTIMONIALS ── */}
-          <div className="lg:col-span-6 bg-white border border-[#ECECF3] rounded-[24px] p-6 flex flex-col justify-between shadow-[0_4px_25px_rgba(0,0,0,0.015)] min-h-[380px]">
+          <div className="lg:col-span-6 bg-white border border-[#ECECF3] rounded-[24px] p-6 md:p-8 flex flex-col justify-between shadow-[0_4px_25px_rgba(0,0,0,0.015)] min-h-[380px]">
             <div className="flex flex-col text-left">
               <h3 
                 className="font-extrabold text-[#0F172A] leading-tight text-[24px] md:text-[26px] tracking-tight"
@@ -147,26 +147,26 @@ export default function InnovationMetricsSection() {
             </div>
 
             {/* Metrics Row */}
-            <div className="grid grid-cols-5 gap-2 py-5 border-b border-gray-100 items-center justify-items-center mt-3 mb-4">
-              <div className="text-center flex flex-col">
+            <div className="flex flex-wrap md:flex-nowrap items-center justify-center md:justify-between gap-y-6 gap-x-4 md:gap-x-2 py-6 border-b border-gray-100 mt-3 mb-5">
+              <div className="text-center flex flex-col min-w-[100px] md:min-w-0 md:flex-1">
                 <span className="text-[#0052FF] text-[22px] md:text-[24px] font-extrabold" style={{ fontFamily: "Outfit, sans-serif" }}>120+</span>
-                <span className="text-[#0F172A] text-[9.5px] md:text-[10px] font-extrabold uppercase tracking-tight leading-tight mt-1">Products<br/>Delivered</span>
+                <span className="text-[#0F172A] text-[10px] md:text-[11px] font-extrabold uppercase tracking-tight leading-tight mt-1">Products<br/>Delivered</span>
               </div>
-              <div className="text-center flex flex-col">
+              <div className="text-center flex flex-col min-w-[100px] md:min-w-0 md:flex-1">
                 <span className="text-[#0052FF] text-[22px] md:text-[24px] font-extrabold" style={{ fontFamily: "Outfit, sans-serif" }}>100+</span>
-                <span className="text-[#0F172A] text-[9.5px] md:text-[10px] font-extrabold uppercase tracking-tight leading-tight mt-1">Founder<br/>Dreams Built</span>
+                <span className="text-[#0F172A] text-[10px] md:text-[11px] font-extrabold uppercase tracking-tight leading-tight mt-1">Founder<br/>Dreams Built</span>
               </div>
-              <div className="text-center flex flex-col">
+              <div className="text-center flex flex-col min-w-[100px] md:min-w-0 md:flex-1">
                 <span className="text-[#0052FF] text-[22px] md:text-[24px] font-extrabold" style={{ fontFamily: "Outfit, sans-serif" }}>10+</span>
-                <span className="text-[#0F172A] text-[9.5px] md:text-[10px] font-extrabold uppercase tracking-tight leading-tight mt-1">Years of<br/>Experience</span>
+                <span className="text-[#0F172A] text-[10px] md:text-[11px] font-extrabold uppercase tracking-tight leading-tight mt-1">Years of<br/>Experience</span>
               </div>
-              <div className="text-center flex flex-col">
+              <div className="text-center flex flex-col min-w-[100px] md:min-w-0 md:flex-1">
                 <span className="text-[#0052FF] text-[22px] md:text-[24px] font-extrabold" style={{ fontFamily: "Outfit, sans-serif" }}>50+</span>
-                <span className="text-[#0F172A] text-[9.5px] md:text-[10px] font-extrabold uppercase tracking-tight leading-tight mt-1">Product<br/>Experts</span>
+                <span className="text-[#0F172A] text-[10px] md:text-[11px] font-extrabold uppercase tracking-tight leading-tight mt-1">Product<br/>Experts</span>
               </div>
-              <div className="text-center flex flex-col">
+              <div className="text-center flex flex-col min-w-[100px] md:min-w-0 md:flex-1">
                 <span className="text-[#0052FF] text-[22px] md:text-[24px] font-extrabold" style={{ fontFamily: "Outfit, sans-serif" }}>95%</span>
-                <span className="text-[#0F172A] text-[9.5px] md:text-[10px] font-extrabold uppercase tracking-tight leading-tight mt-1">Client<br/>Retention</span>
+                <span className="text-[#0F172A] text-[10px] md:text-[11px] font-extrabold uppercase tracking-tight leading-tight mt-1">Client<br/>Retention</span>
               </div>
             </div>
 

@@ -13,8 +13,8 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-b border-gray-200 shadow-sm py-10 lg:py-12">
       <div className="container mx-auto px-4 lg:px-8">
-        {/* CTA Section - Hidden on who_we_are and packages pages */}
-        {pathname !== "/who_we_are" && pathname !== "/packages" && (
+        {/* CTA Section - Hidden on who_we_are, packages, and resources pages */}
+        {pathname !== "/who_we_are" && pathname !== "/packages" && pathname !== "/resources" && (
           <div className="bg-[#FAFAFA] py-20 md:py-28 px-4 flex flex-col items-center justify-center mb-16 max-w-5xl mx-auto">
             <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
               Let’s Transform your business for a change that matters

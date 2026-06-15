@@ -228,7 +228,7 @@ export default function SuccessStories() {
   };
 
   return (
-    <section className="w-full py-16 md:py-24 px-4 bg-[#FBFDFF] overflow-hidden relative border-t border-[#ECECF3]/40">
+    <section className="w-full py-12 lg:py-16 px-4 md:px-8 bg-[#FBFDFF] overflow-hidden relative border-t border-[#ECECF3]/40">
       
       {/* Container wrapper */}
       <div className="max-w-[1380px] mx-auto w-full flex flex-col gap-12">

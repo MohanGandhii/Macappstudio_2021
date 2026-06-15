@@ -172,7 +172,7 @@ export default function FlexibleTeamModels() {
   ];
 
   return (
-    <section className="w-full py-20 px-4 bg-white flex flex-col gap-12">
+    <section className="w-full py-12 lg:py-16 px-4 md:px-8 bg-white flex flex-col gap-12">
       {/* Header */}
       <div className="max-w-[800px] mx-auto text-center flex flex-col gap-4">
         <h4 className="text-[#0052FF] font-bold text-[12px] md:text-[14px] tracking-[0.15em] uppercase">
@@ -231,12 +231,12 @@ export default function FlexibleTeamModels() {
             {/* Bottom Section */}
             <div className="p-6 flex flex-col gap-5 flex-grow bg-white">
 
-              <div className="grid grid-cols-2 gap-x-0 relative">
-                {/* Vertical Divider */}
-                <div className={`absolute top-0 bottom-0 left-1/2 border-r ${card.borderClass} -translate-x-1/2 z-0`} />
+              <div className="flex flex-col sm:grid sm:grid-cols-2 gap-6 sm:gap-0 relative">
+                {/* Vertical Divider (Desktop) */}
+                <div className={`hidden sm:block absolute top-0 bottom-0 left-1/2 border-r ${card.borderClass} -translate-x-1/2 z-0`} />
 
                 {/* Includes Column */}
-                <div className="flex flex-col gap-3 pr-8 relative z-10">
+                <div className="flex flex-col gap-3 sm:pr-6 md:pr-8 relative z-10">
                   <h5 className={`font-bold text-[14px] ${card.themeColor}`}>Includes</h5>
                   <ul className="flex flex-col gap-2.5">
                     {card.includes.map((item, i) => (
@@ -248,10 +248,13 @@ export default function FlexibleTeamModels() {
                   </ul>
                 </div>
 
+                {/* Horizontal Divider (Mobile) */}
+                <div className={`sm:hidden w-full border-b ${card.borderClass}`} />
+
                 {/* Ideal For Column */}
-                <div className="flex flex-col pl-8 relative z-10 flex-grow">
+                <div className="flex flex-col sm:pl-6 md:pl-8 relative z-10 flex-grow">
                   <h5 className={`font-bold text-[14px] mb-3 ${card.themeColor}`}>Ideal For</h5>
-                  <ul className="flex flex-col justify-between flex-grow pb-0.5">
+                  <ul className="flex flex-col justify-between flex-grow gap-2.5 sm:gap-0 pb-0.5">
                     {card.idealFor.map((item, i) => {
                       const IdealForIcon = item.Icon;
                       return (

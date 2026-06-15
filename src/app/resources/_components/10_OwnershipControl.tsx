@@ -20,7 +20,7 @@ const ShieldCheckIcon = () => (
 
 export default function OwnershipControl() {
   return (
-    <section className="relative w-full py-16 md:py-24 px-4 bg-white overflow-hidden isolate">
+    <section className="relative w-full py-12 lg:py-16 px-4 md:px-8 bg-white overflow-hidden isolate">
 
 
 

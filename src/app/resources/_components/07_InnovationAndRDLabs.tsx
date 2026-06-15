@@ -81,7 +81,7 @@ export default function InnovationAndRDLabs() {
   ];
 
   return (
-    <section className="w-full py-16 px-4 bg-[#F8F9FE] flex flex-col justify-center items-center">
+    <section className="w-full py-12 lg:py-16 px-4 md:px-8 bg-[#F8F9FE] flex flex-col justify-center items-center">
 
       <div className="max-w-[1380px] w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
 
