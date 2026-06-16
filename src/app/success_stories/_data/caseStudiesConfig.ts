@@ -61,6 +61,8 @@ export const bannerImageStyles: Record<
     titleFontWeight?: string;
     titleTracking?: string;
     titleTextColor?: string;
+    imageZIndex?: number;
+    leftClass?: string;
 }
 > = {
   spony: {
