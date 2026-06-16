@@ -56,7 +56,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
       <section 
         className={`relative ${heroBgColor} mb-0`} 
         id="bannersection"
-        style={{ overflow: "visible", zIndex: 30 }}
+        style={{ overflow: imgStyle.sectionOverflow || "visible", zIndex: 30 }}
       >
 
         {/* LEFT CONTENT ─ inside the 1170px centred container */}
@@ -80,12 +80,16 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
               {/* Headline */}
               <h2
-                className={`text-[28px] md:text-[32px] md:leading-[38px] lg:text-[38px] lg:leading-[44px] font-bold text-[#111] m-0 ${imgStyle.titlePbClass || "pb-[38px]"} tracking-tight max-w-[95%]`}
-                style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
+                className={`text-[28px] md:text-[32px] md:leading-[38px] lg:text-[38px] lg:leading-[44px] ${imgStyle.titleFontWeight || "font-bold"} ${imgStyle.titleTextColor || "text-[#111]"} m-0 ${imgStyle.titlePbClass || "pb-[38px]"} ${imgStyle.titleTracking || "tracking-tight"} max-w-[95%]`}
+                style={{ fontFamily: imgStyle.titleFontFamily || "CircularStd-Bold, sans-serif" }}
                 dangerouslySetInnerHTML={{
                   __html: slug.toLowerCase() === "atg"
-                    ? data.title.replace(" to enjoy ", " to enjoy <br class='hidden md:inline' />")
-                    : data.title
+                    ? data.title.replace(" to enjoy ", " to enjoy <br class='hidden md:block' />")
+                    : slug.toLowerCase() === "znap"
+                      ? data.title.replace(" digital ", " digital <br class='hidden md:block' />")
+                      : slug.toLowerCase() === "dabb"
+                        ? data.title.replace(" for real ", " for <br class='hidden md:block' />real ")
+                        : data.title
                 }}
               />
 
@@ -173,8 +177,12 @@ export default async function CaseStudyPage({ params }: PageProps) {
             so that it is flush to browser right edge, matching legacy behavior.
         */}
         <div 
-          className={`hidden md:block absolute ${imgStyle.rightClass || "right-[80px] lg:right-[120px] xl:right-[150px]"} ${imgStyle.topClass} ${imgStyle.widthClass || "w-[35%] lg:w-[37%] xl:w-[39%] max-w-[440px]"}`}
-          style={{ zIndex: 40, overflow: "visible" }}
+          className={`hidden md:block absolute ${imgStyle.rightClass || "right-[80px] lg:right-[120px] xl:right-[150px]"} ${imgStyle.topClass || ""} ${imgStyle.widthClass || "w-[35%] lg:w-[37%] xl:w-[39%] max-w-[440px]"}`}
+          style={{ 
+            zIndex: imgStyle.imageZIndex !== undefined ? imgStyle.imageZIndex : 40, 
+            overflow: "visible",
+            ...imgStyle.styleOverrides 
+          }}
         >
           <Image
             src={data.bannerImg}

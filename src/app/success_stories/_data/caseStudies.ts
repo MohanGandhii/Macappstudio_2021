@@ -1121,7 +1121,7 @@ export const caseStudies: Record<string, any> = {
     "slug": "znap",
     "logo": "/assets/images/znap/znap_logo.svg",
     "bannerImg": "/assets/images/znap/banner_rigth_image.png",
-    "title": "Buy > Click > Redeem. UAE’s #1 digital Cashback app.",
+    "title": "Buy > Click > Redeem. UAE's #1 digital Cashback app.",
     "stats": [
       {
         "icon": "/assets/images/znap/znap_desc_icon1.svg",
