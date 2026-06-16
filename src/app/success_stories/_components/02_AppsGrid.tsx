@@ -25,23 +25,23 @@ export default function CraftedAppsGrid() {
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {CASE_STUDIES.map((study, index) => {
             const slug = study.link.split("/").pop()?.toLowerCase() || "";
             const isWideCard = ["atg", "nir", "godmusic"].includes(slug);
             return (
-            <div key={index} className="relative bg-[#f4f6f9] hover:bg-[#eceef2] rounded-xl overflow-hidden flex flex-col pt-8 px-8 h-[440px] group border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200/80 transition-all duration-300">
+            <div key={index} className="relative bg-[#f4f6f9] hover:bg-[#eceef2] rounded-xl overflow-hidden flex flex-col pt-6 md:pt-8 px-6 md:px-8 h-[380px] sm:h-[400px] md:h-[440px] group border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200/80 transition-all duration-300">
               
               {/* Header Info */}
-              <div className="mb-4">
+              <div className="mb-4 relative z-10">
                 <h3 
-                  className="text-[28px] font-bold text-[#111] mb-2 tracking-tight"
+                  className="text-[22px] sm:text-[24px] md:text-[28px] font-bold text-[#111] mb-2 tracking-tight"
                   style={{ fontFamily: "CircularStd-Bold, sans-serif" }}
                 >
                   {study.title}
                 </h3>
                 <p 
-                  className="text-[16px] text-[#555] leading-[1.4] max-w-[95%] font-medium"
+                  className="text-[14px] md:text-[16px] text-[#555] leading-[1.4] max-w-full sm:max-w-[95%] font-medium"
                   style={{ fontFamily: "AvenirNext-Regular, sans-serif" }}
                 >
                   {study.desc}
@@ -51,25 +51,25 @@ export default function CraftedAppsGrid() {
               {/* Mockup Container */}
               {isWideCard ? (
                 /* Wide card special layout: image positioned to right side, larger scale */
-                <div className="absolute bottom-0 right-[-20px] pointer-events-none" style={{ width: "75%", height: "340px" }}>
+                <div className="absolute bottom-0 right-[-10px] sm:right-[-20px] pointer-events-none w-[85%] sm:w-[80%] md:w-[75%] h-[240px] sm:h-[280px] md:h-[340px]">
                   <Image 
                     src={study.img} 
                     alt={study.title} 
                     fill
                     className="object-contain object-right-bottom drop-shadow-lg group-hover:scale-[1.03] group-hover:-translate-y-2 transition-transform duration-500"
-                    priority
+                    priority={index < 6}
                   />
                 </div>
               ) : (
-                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center pointer-events-none">
-                  <div className="relative w-full h-[300px] flex items-end justify-center">
+                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center pointer-events-none px-4 sm:px-6">
+                  <div className="relative w-full h-[220px] sm:h-[260px] md:h-[300px] flex items-end justify-center">
                     <Image 
                       src={study.img} 
                       alt={study.title} 
                       width={400}
                       height={300}
                       className="w-full h-auto object-contain object-bottom drop-shadow-lg group-hover:scale-[1.03] group-hover:-translate-y-2 transition-transform duration-500"
-                      priority
+                      priority={index < 6}
                     />
                   </div>
                 </div>
@@ -78,10 +78,10 @@ export default function CraftedAppsGrid() {
               {/* Read Case Study Button (Exact Bottom Right Tab) */}
               <Link 
                 href={study.link}
-                className="absolute bottom-0 right-0 bg-[#545d7a] group-hover:bg-[#0052FF] text-white flex items-center justify-center gap-3 px-6 py-4 rounded-tl-[24px] hover:!bg-[#0041cc] transition-all z-30 shadow-md"
+                className="absolute bottom-0 right-0 bg-[#545d7a] group-hover:bg-[#0052FF] text-white flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-tl-[20px] sm:rounded-tl-[24px] hover:!bg-[#0041cc] transition-all z-30 shadow-md"
               >
-                <span className="text-[16px] font-bold">Read Case Study</span>
-                <FiArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                <span className="text-[13px] sm:text-[14px] md:text-[16px] font-bold">Read Case Study</span>
+                <FiArrowRight size={18} className="group-hover:translate-x-1 transition-transform w-[16px] sm:w-[18px] h-[16px] sm:h-[18px]" />
               </Link>
             </div>
           )})}
