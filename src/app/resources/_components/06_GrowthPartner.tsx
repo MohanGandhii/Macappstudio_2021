@@ -12,10 +12,10 @@ export default function GrowthPartnerSection() {
 
         {/* ── 1. HEADING AND PILARS + MOUNTAIN ILLUSTRATION ── */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 w-full relative">
-          
+
           {/* LEFT COLUMN: Heading + Cards */}
           <div className="w-full lg:w-[60%] xl:w-[60%] flex flex-col gap-6 lg:gap-8 z-20 shrink-0">
-            
+
             {/* Centered Heading (Over the cards) */}
             <div className="text-center w-full px-2 lg:px-0">
               <h2
@@ -178,51 +178,47 @@ export default function GrowthPartnerSection() {
         </div>
 
         {/* ── 3. CTA BANNER ── */}
-        <div className="w-full bg-[#F5F5FA] rounded-[24px] flex flex-col md:flex-row items-center justify-between mt-4 md:mt-6 relative overflow-hidden px-6 md:px-10 py-8 md:py-0 min-h-[160px] lg:min-h-[180px]">
+        <div className="w-full bg-[#F6F8FD] rounded-[24px] flex flex-col xl:flex-row items-center justify-between pl-6 md:pl-8 lg:pl-10 pr-6 md:pr-8 py-6 md:py-4 mt-4 md:mt-6 overflow-hidden border border-[#ECECF3] shadow-sm gap-6 xl:gap-8">
           
-          {/* Left Image (Desktop: Absolute flush bottom-left) */}
-          <div className="hidden md:block absolute left-2 lg:left-4 bottom-0 w-[240px] lg:w-[280px] h-[140px] lg:h-[160px] z-0 pointer-events-none">
-             <Image 
-               src="/assets/images/resources/challenges_and_squads/team_collaboration_v3.png" 
-               alt="Team Collaboration" 
-               fill 
-               className="object-contain object-bottom" 
-               unoptimized 
-             />
+          {/* Left Illustration */}
+          <div className="relative w-[180px] md:w-[160px] lg:w-[180px] xl:w-[200px] h-[120px] md:h-[110px] lg:h-[120px] shrink-0 z-10">
+            <Image
+              src="/assets/images/resources/journey_team_placeholder.png"
+              alt="Ready to start"
+              fill
+              priority
+              className="object-contain object-center"
+              unoptimized
+            />
           </div>
 
-          {/* Left Image (Mobile: Flowing) */}
-          <div className="block md:hidden relative w-[220px] h-[120px] z-0 mb-4 pointer-events-none">
-             <Image 
-               src="/assets/images/resources/challenges_and_squads/team_collaboration_v3.png" 
-               alt="Team Collaboration" 
-               fill 
-               className="object-contain object-bottom" 
-               unoptimized 
-             />
-          </div>
-
-          {/* Middle: Text Context */}
-          <div className="flex flex-col text-center md:text-left justify-center z-10 md:pl-[250px] lg:pl-[290px] py-2 md:py-8 lg:py-10">
-            <h3 className="font-extrabold text-[20px] lg:text-[24px] text-[#0F172A] mb-1.5 leading-tight" style={{ fontFamily: "Outfit, sans-serif" }}>
-              From CTO pressure to predictable product delivery.
+          {/* Middle Content */}
+          <div className="flex-1 text-center xl:text-left z-10 min-w-[280px]">
+            <h3 className="text-[#0F172A] font-extrabold text-[18px] md:text-[20px] xl:text-[22px] leading-tight mb-1.5" style={{ fontFamily: "Outfit, sans-serif" }}>
+              Ready To Start Your Journey?
             </h3>
-            <p className="text-[13px] lg:text-[15px] text-[#64748B] font-medium leading-relaxed">
-              That&apos;s why startups, scaleups and enterprises trust <br className="hidden lg:block"/>
-              MacAppStudio as their execution partner.
+            <p className="text-[#64748B] text-[13px] md:text-[14px] leading-relaxed max-w-[500px] mx-auto xl:mx-0 font-medium">
+              Let's build something incredible together.
             </p>
           </div>
 
-          {/* Right side: Action Buttons (Stacked Vertically) */}
-          <div className="flex flex-col gap-3 w-full md:w-[240px] lg:w-[260px] z-10 shrink-0 mt-4 md:mt-0 py-2 md:py-8 lg:py-10">
-             <button className="flex items-center justify-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] transition-colors text-white rounded-[12px] px-6 py-3.5 w-full font-semibold text-[14px]">
-               <Calendar className="w-4 h-4 shrink-0" />
-               Book Free Discovery Call
-             </button>
-             <button className="flex items-center justify-center gap-2 bg-white hover:bg-slate-50 transition-colors border border-[#2563EB] text-[#2563EB] rounded-[12px] px-6 py-3.5 w-full font-semibold text-[14px] shadow-sm">
-               <Users className="w-4 h-4 shrink-0" />
-               Build My Team
-             </button>
+          {/* Right Buttons - SIDE BY SIDE */}
+          <div className="flex flex-col md:flex-row gap-3 lg:gap-4 w-full xl:w-auto shrink-0 z-10 justify-center">
+            <button className="w-full md:w-[240px] xl:w-[260px] rounded-[14px] bg-[#2F63F5] hover:bg-[#2552CC] transition-colors text-white flex items-center justify-center lg:justify-start gap-3 p-3.5 shadow-sm">
+              <Calendar className="w-[20px] h-[20px] shrink-0 md:ml-3" />
+              <div className="flex flex-col items-start text-left">
+                <span className="font-semibold text-[13px] lg:text-[14px] leading-tight">Book Free Discovery Call</span>
+                <span className="text-[10px] lg:text-[11px] font-normal text-blue-100 mt-0.5">30-minute strategy session</span>
+              </div>
+            </button>
+
+            <button className="w-full md:w-[240px] xl:w-[260px] rounded-[14px] bg-white border border-[#ECECF3] hover:border-gray-300 hover:bg-gray-50 transition-colors text-[#2F63F5] flex items-center justify-center lg:justify-start gap-3 p-3.5 shadow-sm">
+              <Users className="w-[20px] h-[20px] shrink-0 md:ml-3" />
+              <div className="flex flex-col items-start text-left">
+                <span className="font-semibold text-[13px] lg:text-[14px] leading-tight">Build My Team</span>
+                <span className="text-[10px] lg:text-[11px] font-normal text-slate-500 mt-0.5">Dedicated squad ready in 1-2 weeks</span>
+              </div>
+            </button>
           </div>
         </div>
 

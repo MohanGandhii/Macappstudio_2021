@@ -103,7 +103,7 @@ export default function Hero({ onPlayVideo }: HeroProps) {
 
             {/* Partner Logos Section */}
             <div className="w-full">
-              <p className="text-[13px] md:text-[14px] text-gray-500 font-medium mb-3">
+              <p className="text-[13px] md:text-[14px] text-[#475569] font-medium mb-3">
                 Trusted by innovative companies worldwide
               </p>
               <div className="flex flex-wrap items-center gap-x-4 md:gap-x-5 gap-y-2">
@@ -147,7 +147,7 @@ export default function Hero({ onPlayVideo }: HeroProps) {
                     className="object-contain"
                   />
                 </div>
-                <span className="text-[12px] md:text-[13px] text-gray-400 font-semibold lowercase whitespace-nowrap">many more...</span>
+                <span className="text-[12px] md:text-[13px] text-[#475569] font-medium whitespace-nowrap">and more...</span>
               </div>
             </div>
 

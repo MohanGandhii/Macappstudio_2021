@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FiCalendar, FiUsers } from "react-icons/fi";
 
 const features = [
   {
@@ -94,11 +95,10 @@ export default function ExecutionPartnerSection() {
             {features.map((item, index) => (
               <div
                 key={index}
-                className={`flex items-center gap-3 px-4 xl:px-6 py-6 ${
-                  index !== features.length - 1
+                className={`flex items-center gap-3 px-4 xl:px-6 py-6 ${index !== features.length - 1
                     ? "border-b lg:border-b-0 lg:border-r border-[#ECECF3]"
                     : ""
-                }`}
+                  }`}
               >
                 <div
                   className={`w-[58px] h-[58px] rounded-full flex items-center justify-center text-[24px] shrink-0 ${item.bg}`}
@@ -115,80 +115,42 @@ export default function ExecutionPartnerSection() {
         </div>
 
         {/* CTA Card */}
-        <div className="mt-6 md:mt-8 relative bg-[#F5F0FF] rounded-[22px] px-6 lg:px-4 xl:px-8 py-6 md:py-8 lg:py-6 overflow-hidden">
-          {/* Desktop Background Illustration */}
-          <div className="hidden lg:block absolute left-[-40px] xl:left-[-30px] top-1/2 -translate-y-1/2 w-[280px] xl:w-[380px] h-[280px] xl:h-[380px] pointer-events-none">
+        <div className="w-full bg-[#F6F8FD] rounded-[24px] flex flex-col md:flex-row items-stretch justify-between mt-8 relative overflow-hidden border border-[#ECECF3] shadow-sm">
+          
+          {/* Left Illustration */}
+          <div className="relative w-full md:w-[280px] lg:w-[340px] xl:w-[420px] min-h-[160px] md:min-h-[180px] shrink-0 border-b md:border-b-0 md:border-r border-[#ECECF3]">
             <Image
-              src="/assets/images/resources/challenges_and_squads/team_collaboration_v3.png"
-              alt="Team"
+              src="/assets/images/resources/4/IMG_20260611_102620.png"
+              alt="Team High Five"
               fill
               priority
-              className="object-contain object-left"
+              quality={100}
+              className="object-cover object-center"
             />
           </div>
 
-          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0">
-            {/* Mobile Illustration */}
-            <div className="relative w-full h-[220px] lg:hidden mb-2">
-              <Image
-                src="/assets/images/resources/challenges_and_squads/team_collaboration_v3.png"
-                alt="Team"
-                fill
-                className="object-contain object-bottom"
-              />
-            </div>
-
-            {/* Spacer for Desktop Illustration */}
-            <div className="hidden lg:block w-[250px] xl:w-[340px] shrink-0"></div>
-
-            {/* Content */}
-            <div className="flex-1 px-0 min-w-0 text-center lg:text-left">
-              <h3 className="text-[#0F172A] font-bold text-[18px] md:text-[22px] lg:text-[17px] xl:text-[20px] 2xl:text-[22px] leading-tight xl:whitespace-nowrap">
+          {/* Middle Content & Buttons Wrapper */}
+          <div className="flex-1 flex flex-col md:flex-row items-center justify-between p-6 md:p-6 lg:p-8 gap-6 md:gap-4 lg:gap-8">
+            {/* Middle Content */}
+            <div className="flex-1 text-center md:text-left z-10">
+              <h3 className="text-[#0F172A] font-extrabold text-[17px] md:text-[19px] xl:text-[21px] leading-tight mb-2" style={{ fontFamily: "Outfit, sans-serif" }}>
                 From CTO pressure to predictable product delivery.
               </h3>
-
-              <p className="mt-2 text-[#64748B] text-[14px] md:text-[16px] lg:text-[13px] xl:text-[15px] leading-[1.8] max-w-[480px] mx-auto lg:mx-0">
+              <p className="text-[#64748B] text-[13px] md:text-[14px] leading-relaxed max-w-[500px] mx-auto md:mx-0 font-medium">
                 That's why startups, scaleups and enterprises trust
-                <br className="hidden sm:block" />
-                MacAppStudio as their execution partner.
+                <br className="hidden xl:block" /> MacAppStudio as their execution partner.
               </p>
             </div>
 
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row lg:flex-col gap-3 w-full lg:w-[250px] shrink-0 lg:ml-4 xl:ml-8">
-              <button className="flex-1 h-[50px] rounded-[10px] bg-[#2F63F5] text-white font-semibold text-[15px] flex items-center justify-center gap-2">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
-
+            {/* Right Buttons */}
+            <div className="flex flex-col gap-2.5 w-full md:w-[220px] lg:w-[260px] shrink-0 z-10">
+              <button className="w-full h-[46px] rounded-[14px] bg-[#2F63F5] hover:bg-[#2552CC] transition-colors text-white font-semibold text-[13px] lg:text-[14px] flex items-center justify-center gap-2.5 shadow-sm">
+                <FiCalendar className="w-[18px] h-[18px]" />
                 Book Free Discovery Call
               </button>
 
-              <button className="flex-1 h-[50px] rounded-[10px] border-2 border-[#2F63F5] bg-white text-[#2F63F5] font-semibold text-[15px] flex items-center justify-center gap-2">
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-
+              <button className="w-full h-[46px] rounded-[14px] bg-white border border-[#ECECF3] hover:border-gray-300 hover:bg-gray-50 transition-colors text-[#2F63F5] font-semibold text-[13px] lg:text-[14px] flex items-center justify-center gap-2.5 shadow-sm">
+                <FiUsers className="w-[18px] h-[18px]" />
                 Build My Team
               </button>
             </div>
