@@ -2,17 +2,17 @@ import Image from "next/image";
 
 const challenges = [
   "Hiring takes too long",
-  "Specialized talent\nis hard to find",
-  "Internal teams are\noverloaded",
+  "Specialized talent is hard to find",
+  "Internal teams are overloaded",
   "Innovation gets pushed aside",
-  "Product delivery becomes\nunpredictable",
-  "Scaling creates management\nheadaches",
+  "Product delivery becomes unpredictable",
+  "Scaling creates management headaches",
 ];
 
 const benefits = [
   "Dedicated team starts in 1-2 weeks",
   "Senior specialists available instantly",
-  "Product strategy +\nexecution together",
+  "Product strategy + execution together",
   "R&D experts on demand",
   "Weekly progress visibility",
   "Scale up or down anytime",
@@ -20,8 +20,8 @@ const benefits = [
 
 export default function ChallengesAndSquads() {
   return (
-    <section className="w-full py-12 lg:py-16 px-4 md:px-8">
-      <div className="max-w-[1380px] mx-auto relative bg-[#FAFAFC] border border-[#ECECF3] rounded-[32px] overflow-hidden px-6 lg:px-12 pt-8 pb-10">
+    <section className="w-full py-10 lg:py-12 px-2 md:px-4 lg:px-6">
+      <div className="max-w-[1536px] mx-auto relative bg-[#FAFAFC] border border-[#ECECF3] rounded-[32px] overflow-hidden px-4 lg:px-6 xl:px-10 pt-8 pb-10">
 
         {/* Decorations */}
         <div className="absolute left-10 top-16 opacity-40 hidden lg:block">
@@ -77,38 +77,39 @@ export default function ChallengesAndSquads() {
         </div>
 
         {/* Cards Section */}
-        <div className="relative mt-12 md:mt-16 mb-6 md:mb-10">
-          <div className="grid grid-cols-1 xl:grid-cols-[1fr_160px_1fr] gap-10 xl:gap-0 justify-center items-center xl:items-stretch relative z-10 w-full">
+        <div className="relative mt-8 md:mt-10 mb-6 md:mb-8 w-full">
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-4 xl:gap-8 justify-center items-center lg:items-stretch relative z-10 w-full">
 
             {/* Left Card */}
-            <div className="bg-[#FFF8F8] border border-[#F5D9D9] rounded-[32px] pt-5 pb-5 px-5 xl:px-8 relative z-20 flex flex-col w-full max-w-[680px] mx-auto">
-              <h3 className="text-center text-[#DC2626] font-bold text-[18px] xl:text-[20px] mb-3 xl:mb-4 tracking-tight">
+            <div className="bg-[#FFF8F8] border border-[#F5D9D9] rounded-[32px] overflow-hidden relative z-20 flex flex-col w-full max-w-[680px] lg:max-w-none mx-auto lg:flex-[1]">
+              
+              <h3 className="text-center text-[#DC2626] font-bold text-[22px] lg:text-[24px] pt-6 lg:pt-6 px-6 tracking-tight">
                 The Challenges You Face
               </h3>
 
-              <div className="grid grid-cols-[150px_1fr] sm:grid-cols-[180px_1fr] xl:grid-cols-[240px_1fr] items-center gap-3 xl:gap-5 flex-1 w-full mt-1">
+              <div className="flex flex-col lg:flex-row items-stretch flex-1 w-full mt-4 lg:mt-6">
                 {/* Image */}
-                <div className="flex justify-center items-end h-full w-full">
+                <div className="w-full lg:w-[50%] xl:w-[52%] flex items-center justify-center lg:justify-start pl-0 lg:pl-2 xl:pl-4">
                   <Image
                     src="/assets/images/resources/challenges_and_squads/stressed_developer_v4.png"
                     alt="Challenges"
                     width={800}
                     height={800}
-                    className="w-full max-w-[240px] h-auto object-contain object-bottom"
+                    className="w-full max-w-[380px] lg:max-w-[105%] h-auto object-contain object-center lg:scale-[1.05] transform origin-center"
                     unoptimized
                     priority
                   />
                 </div>
 
                 {/* Text Content */}
-                <div className="flex flex-col justify-center h-full w-full">
-                  <ul className="space-y-[4px] xl:space-y-[6px]">
+                <div className="flex-1 flex flex-col justify-center p-6 lg:p-0 lg:pr-6 lg:pb-6 lg:pl-2">
+                  <ul className="space-y-3 lg:space-y-3 w-full">
                     {challenges.map((item) => (
-                      <li key={item} className="flex items-start gap-2.5 xl:gap-3 text-[12.5px] xl:text-[13.5px] leading-[1.15] text-[#334155] font-medium">
-                        <span className="w-[16px] h-[16px] xl:w-[18px] xl:h-[18px] rounded-full bg-[#DC2626] text-white flex items-center justify-center text-[9px] xl:text-[10px] mt-[1px] shrink-0">
+                      <li key={item} className="flex items-start gap-3 md:gap-4 text-[15px] md:text-[16px] leading-snug text-[#334155] font-medium">
+                        <span className="w-5 h-5 rounded-full bg-[#DC2626] text-white flex items-center justify-center text-[10px] mt-0.5 shrink-0">
                           ✕
                         </span>
-                        <span className="whitespace-pre-line">{item}</span>
+                        <span>{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -117,14 +118,21 @@ export default function ChallengesAndSquads() {
             </div>
 
             {/* Center Arrow */}
-            <div className="flex flex-col items-center justify-center relative z-10">
-              <div className="relative w-[114px] h-[114px] flex items-center justify-center">
-                <div className="hidden xl:block absolute top-1/2 right-full w-[100px] -translate-y-1/2 border-t-[2px] border-dashed border-[#FCA5A5] z-0 opacity-80" />
-                <div className="hidden xl:block absolute top-1/2 left-full w-[100px] -translate-y-1/2 border-t-[2px] border-dashed border-[#86EFAC] z-0 opacity-80" />
-                <div className="absolute inset-0 rounded-full border border-dashed border-[#D5D8F3] z-10" />
-                <div className="w-[88px] h-[88px] rounded-full bg-white shadow-[0_8px_30px_rgba(0,0,0,0.06)] flex items-center justify-center relative z-20">
+            <div className="flex flex-col items-center justify-center relative z-10 shrink-0 lg:w-[60px] xl:w-[100px] my-4 lg:my-0">
+              <div className="relative w-[60px] h-[60px] xl:w-[80px] xl:h-[80px] flex items-center justify-center">
+                
+                {/* Desktop Horizontal Lines */}
+                <div className="hidden lg:block absolute top-1/2 right-1/2 w-[100px] xl:w-[150px] -translate-y-1/2 border-t-[2px] border-dashed border-[#FCA5A5] z-[-1] opacity-80" />
+                <div className="hidden lg:block absolute top-1/2 left-1/2 w-[100px] xl:w-[150px] -translate-y-1/2 border-t-[2px] border-dashed border-[#86EFAC] z-[-1] opacity-80" />
+                
+                {/* Mobile Vertical Lines */}
+                <div className="lg:hidden absolute bottom-1/2 left-1/2 h-[150px] -translate-x-1/2 border-l-[2px] border-dashed border-[#FCA5A5] z-[-1] opacity-80" />
+                <div className="lg:hidden absolute top-1/2 left-1/2 h-[150px] -translate-x-1/2 border-l-[2px] border-dashed border-[#86EFAC] z-[-1] opacity-80" />
+
+                <div className="absolute inset-0 rounded-full border border-dashed border-[#D5D8F3] z-10 bg-[#FAFAFC]" />
+                <div className="w-[48px] h-[48px] xl:w-[60px] xl:h-[60px] rounded-full bg-white shadow-[0_8px_30px_rgba(0,0,0,0.06)] flex items-center justify-center relative z-20">
                   <svg
-                    className="w-8 h-8 text-[#2563EB]"
+                    className="w-5 h-5 xl:w-6 xl:h-6 text-[#2563EB] transform lg:rotate-0 rotate-90 transition-transform duration-300"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -134,40 +142,41 @@ export default function ChallengesAndSquads() {
                   </svg>
                 </div>
               </div>
-              <p className="text-[#2563EB] text-center font-semibold mt-4 leading-[1.4] text-[15px] relative z-10">
-                What if you<br />could skip all<br />of this?
+              <p className="text-[#2563EB] text-center font-bold mt-3 lg:mt-4 leading-[1.3] text-[15px] lg:text-[14px] xl:text-[15px] relative z-10 w-[140px] lg:absolute lg:top-[calc(50%+40px)] xl:top-[calc(50%+50px)] bg-[#FAFAFC] lg:bg-transparent px-2 py-1">
+                What if you<br className="hidden lg:block"/> could skip all<br className="hidden lg:block"/> of this?
               </p>
             </div>
 
             {/* Right Card */}
-            <div className="bg-[#F0FDF4] border border-[#DCFCE7] rounded-[32px] pt-5 pb-5 px-5 xl:px-8 relative z-20 flex flex-col w-full max-w-[680px] mx-auto">
-              <h3 className="text-center text-[#059669] font-bold text-[18px] xl:text-[20px] mb-3 xl:mb-4 tracking-tight">
+            <div className="bg-[#F0FDF4] border border-[#DCFCE7] rounded-[32px] overflow-hidden relative z-20 flex flex-col w-full max-w-[680px] lg:max-w-none mx-auto lg:flex-[1]">
+              
+              <h3 className="text-center text-[#059669] font-bold text-[22px] lg:text-[24px] pt-6 lg:pt-6 px-6 tracking-tight">
                 Your Extended Product Team
               </h3>
 
-              <div className="grid grid-cols-[150px_1fr] sm:grid-cols-[180px_1fr] xl:grid-cols-[240px_1fr] items-center gap-3 xl:gap-5 flex-1 w-full mt-1">
+              <div className="flex flex-col lg:flex-row items-stretch flex-1 w-full mt-4 lg:mt-6">
                 {/* Image */}
-                <div className="flex justify-center items-end h-full w-full">
+                <div className="w-full lg:w-[50%] xl:w-[52%] flex items-center justify-center lg:justify-start pl-0 lg:pl-2 xl:pl-4">
                   <Image
                     src="/assets/images/resources/challenges_and_squads/team_collaboration_v3.png"
                     alt="Squads"
                     width={800}
                     height={800}
-                    className="w-full max-w-[240px] h-auto object-contain object-bottom"
+                    className="w-full max-w-[380px] lg:max-w-[105%] h-auto object-contain object-center lg:scale-[1.05] transform origin-center"
                     unoptimized
                     priority
                   />
                 </div>
 
                 {/* Text Content */}
-                <div className="flex flex-col justify-center h-full w-full">
-                  <ul className="space-y-[4px] xl:space-y-[6px]">
+                <div className="flex-1 flex flex-col justify-center p-6 lg:p-0 lg:pr-6 lg:pb-6 lg:pl-2">
+                  <ul className="space-y-3 lg:space-y-3 w-full">
                     {benefits.map((item) => (
-                      <li key={item} className="flex items-start gap-2.5 xl:gap-3 text-[12.5px] xl:text-[13.5px] leading-[1.15] text-[#334155] font-medium">
-                        <span className="w-[16px] h-[16px] xl:w-[18px] xl:h-[18px] rounded-full bg-[#059669] text-white flex items-center justify-center text-[9px] xl:text-[10px] mt-[1px] shrink-0">
+                      <li key={item} className="flex items-start gap-3 md:gap-4 text-[15px] md:text-[16px] leading-snug text-[#334155] font-medium">
+                        <span className="w-5 h-5 rounded-full bg-[#059669] text-white flex items-center justify-center text-[10px] mt-0.5 shrink-0">
                           ✓
                         </span>
-                        <span className="whitespace-pre-line">{item}</span>
+                        <span>{item}</span>
                       </li>
                     ))}
                   </ul>
