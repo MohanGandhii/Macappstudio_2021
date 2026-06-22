@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { FiCalendar, FiUsers } from "react-icons/fi";
+import { useModal } from "@/context/ModalContext";
 
 const features = [
   {
@@ -61,6 +64,7 @@ const features = [
 
 
 export default function ExecutionPartnerSection() {
+  const { openProposalModal } = useModal();
   return (
     <section className="w-full py-12 lg:py-16 px-4 md:px-8">
       <div className="max-w-[1380px] mx-auto border border-[#ECECF3] rounded-[24px] bg-white p-6 md:p-8 lg:p-10">
@@ -144,12 +148,12 @@ export default function ExecutionPartnerSection() {
 
             {/* Right Buttons */}
             <div className="flex flex-col gap-2.5 w-full md:w-[220px] lg:w-[260px] shrink-0 z-10">
-              <button className="w-full h-[46px] rounded-[14px] bg-[#2F63F5] hover:bg-[#2552CC] transition-colors text-white font-semibold text-[13px] lg:text-[14px] flex items-center justify-center gap-2.5 shadow-sm">
+              <button onClick={openProposalModal} className="w-full h-[46px] rounded-[14px] bg-[#2F63F5] hover:bg-[#2552CC] transition-colors text-white font-semibold text-[13px] lg:text-[14px] flex items-center justify-center gap-2.5 shadow-sm">
                 <FiCalendar className="w-[18px] h-[18px]" />
                 Book Free Discovery Call
               </button>
 
-              <button className="w-full h-[46px] rounded-[14px] bg-white border border-[#ECECF3] hover:border-gray-300 hover:bg-gray-50 transition-colors text-[#2F63F5] font-semibold text-[13px] lg:text-[14px] flex items-center justify-center gap-2.5 shadow-sm">
+              <button className="invisible pointer-events-none w-full h-[46px] rounded-[14px] bg-white border border-[#ECECF3] hover:border-gray-300 hover:bg-gray-50 transition-colors text-[#2F63F5] font-semibold text-[13px] lg:text-[14px] flex items-center justify-center gap-2.5 shadow-sm">
                 <FiUsers className="w-[18px] h-[18px]" />
                 Build My Team
               </button>

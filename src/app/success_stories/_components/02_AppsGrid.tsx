@@ -22,10 +22,10 @@ export const CASE_STUDIES = [
 
 export default function CraftedAppsGrid() {
   return (
-    <section className="py-12 bg-white">
-      <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
+    <section className="py-12 bg-white w-full overflow-hidden">
+      <div className="w-full mx-auto px-4 md:px-6 lg:px-8 max-w-[1600px]">
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 min-[1440px]:grid-cols-4 gap-6 md:gap-8">
           {CASE_STUDIES.map((study, index) => {
             const slug = study.link.split("/").pop()?.toLowerCase() || "";
             const isWideCard = ["atg", "nir", "godmusic"].includes(slug);

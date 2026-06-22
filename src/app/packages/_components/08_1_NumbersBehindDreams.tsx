@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { useModal } from "@/context/ModalContext";
 
 // ─── ICON COMPONENTS ──────────────────────────────────────────────────────────
 
@@ -78,6 +79,7 @@ const UserOutlineIcon = () => (
 );
 
 export default function NumbersBehindDreams() {
+  const { openProposalModal } = useModal();
   const stats = [
     { value: "120+", label: "Products Delivered", icon: <BoxIcon />, bg: "bg-[#F3EAFF]", color: "text-[#7C3AED]" },
     { value: "100+", label: "Founder Dreams Built", icon: <GroupIcon />, bg: "bg-[#EFF6FF]", color: "text-[#3B82F6]" },
@@ -112,7 +114,7 @@ export default function NumbersBehindDreams() {
                   {stat.icon}
                 </div>
                 <div className="flex flex-col">
-                  <span 
+                  <span
                     className="text-[#0F172A] text-[18px] md:text-[20px] xl:text-[22px] font-extrabold leading-none mb-1"
                     style={{ fontFamily: "Outfit, sans-serif" }}
                   >
@@ -129,10 +131,10 @@ export default function NumbersBehindDreams() {
 
         {/* ── 2. LIGHT PURPLE DREAM CTA BANNER ── */}
         <div className="w-full bg-[#F6F8FF] border border-[#E8ECF5] rounded-[24px] py-8 px-5 md:px-8 relative flex flex-col xl:flex-row xl:items-center justify-between gap-8 xl:gap-12 overflow-hidden min-h-[140px] shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
-          
+
           {/* Left: Rocket Illustration */}
           <div className="hidden lg:block absolute bottom-0 left-0 w-[180px] xl:w-[220px] h-[105%] select-none pointer-events-none z-10">
-            <Image 
+            <Image
               src="/assets/images/resources/15/image 1884 (4).png"
               alt="Rocket illustration"
               fill
@@ -170,10 +172,7 @@ export default function NumbersBehindDreams() {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-3 shrink-0 mt-6 xl:mt-0 z-20 relative w-full xl:w-auto">
             {/* Blue Button */}
             <button
-              onClick={() => {
-                const modalEvent = new CustomEvent("openVideoModal");
-                window.dispatchEvent(modalEvent);
-              }}
+              onClick={openProposalModal}
               className="w-full sm:w-auto bg-[#0C54EC] hover:bg-[#0a47c9] text-white text-left py-3 px-4 rounded-[12px] shadow-[0_4px_15px_rgba(12,84,236,0.15)] transition-all hover:scale-[1.02] flex items-center justify-center sm:justify-start gap-2.5 cursor-pointer shrink-0"
             >
               <div className="shrink-0">
@@ -195,7 +194,7 @@ export default function NumbersBehindDreams() {
             </button>
 
             {/* Outline Button */}
-            <button className="w-full sm:w-auto bg-white hover:bg-slate-50 border border-slate-200 text-[#0F172A] text-left py-3 px-4 rounded-[12px] shadow-[0_4px_15px_rgba(0,0,0,0.02)] transition-all hover:scale-[1.02] flex items-center justify-center sm:justify-start gap-2.5 cursor-pointer shrink-0">
+            <button className="invisible pointer-events-none w-full sm:w-auto bg-white hover:bg-slate-50 border border-slate-200 text-[#0F172A] text-left py-3 px-4 rounded-[12px] shadow-[0_4px_15px_rgba(0,0,0,0.02)] transition-all hover:scale-[1.02] flex items-center justify-center sm:justify-start gap-2.5 cursor-pointer shrink-0">
               <div className="shrink-0">
                 <svg className="w-5 h-5 text-[#0C54EC]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />

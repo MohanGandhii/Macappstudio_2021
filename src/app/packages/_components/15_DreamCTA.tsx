@@ -2,8 +2,10 @@
 
 import React from "react";
 import Image from "next/image";
+import { useModal } from "@/context/ModalContext";
 
 export default function DreamCTASection() {
+  const { openProposalModal } = useModal();
   return (
     <section className="w-full py-12 lg:py-16 px-4 md:px-8 bg-white">
       <div className="max-w-[1380px] mx-auto w-full relative rounded-[20px] bg-gradient-to-r from-[#0F55FA] via-[#0C4EE0] to-[#0A3CB5] overflow-hidden shadow-[0_10px_35px_rgba(12,84,236,0.12)] min-h-[120px] lg:min-h-[140px] flex items-center">
@@ -12,7 +14,7 @@ export default function DreamCTASection() {
 
         {/* Left: Rocket Illustration */}
         <div className="hidden lg:block absolute bottom-[-5%] left-[-2%] w-[180px] xl:w-[240px] h-[120%] select-none pointer-events-none z-10">
-          <Image 
+          <Image
             src="/assets/images/resources/15/image 1884 (4).png"
             alt="Rocket illustration"
             fill
@@ -95,10 +97,7 @@ export default function DreamCTASection() {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-3 xl:gap-4 shrink-0 mt-6 xl:mt-0 w-full xl:w-auto">
             {/* Button 1 */}
             <button
-              onClick={() => {
-                const modalEvent = new CustomEvent("openVideoModal");
-                window.dispatchEvent(modalEvent);
-              }}
+              onClick={openProposalModal}
               className="w-full sm:w-auto bg-white hover:bg-white/95 text-[#0C54EC] text-left py-3 px-4 xl:px-5 rounded-[12px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] transition-all hover:scale-[1.02] flex flex-col justify-center min-w-0 sm:min-w-[170px] xl:min-w-[190px] min-h-[64px] cursor-pointer"
             >
               <span className="font-bold text-[12px] xl:text-[13px] tracking-tight">
@@ -110,7 +109,7 @@ export default function DreamCTASection() {
             </button>
 
             {/* Button 2 */}
-            <button className="w-full sm:w-auto bg-white hover:bg-white/95 text-[#0C54EC] text-left py-3 px-4 xl:px-5 rounded-[12px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] transition-all hover:scale-[1.02] flex flex-col justify-center min-w-0 sm:min-w-[170px] xl:min-w-[190px] min-h-[64px] cursor-pointer">
+            <button className="invisible pointer-events-none w-full sm:w-auto bg-white hover:bg-white/95 text-[#0C54EC] text-left py-3 px-4 xl:px-5 rounded-[12px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] transition-all hover:scale-[1.02] flex flex-col justify-center min-w-0 sm:min-w-[170px] xl:min-w-[190px] min-h-[64px] cursor-pointer">
               <span className="font-bold text-[12px] xl:text-[13px] tracking-tight">
                 Build My Dream Team
               </span>

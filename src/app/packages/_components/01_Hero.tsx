@@ -2,12 +2,13 @@
 
 import React from "react";
 import Image from "next/image";
-import { 
-  FiCalendar, 
-  FiUsers, 
-  FiClock, 
-  FiTrendingUp, 
-  FiShield, 
+import { useModal } from "@/context/ModalContext";
+import {
+  FiCalendar,
+  FiUsers,
+  FiClock,
+  FiTrendingUp,
+  FiShield,
   FiLayers
 } from "react-icons/fi";
 
@@ -16,21 +17,22 @@ interface HeroProps {
 }
 
 export default function Hero({ onPlayVideo }: HeroProps) {
+  const { openProposalModal } = useModal();
   return (
     <section className="relative py-16 lg:py-24 bg-[#FAF9F6] overflow-hidden">
       <div className="mx-auto px-4 md:px-8 max-w-[1380px] w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
+
           {/* Left Content (Columns 1-6) */}
           <div className="lg:col-span-6 flex flex-col items-start text-left">
-            
+
             {/* Badge */}
             <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-[13px] font-bold mb-3 tracking-wide shadow-sm">
               <span className="animate-pulse">✨</span> Your Extended Product Team
             </div>
 
             {/* Title */}
-            <h1 className="text-[34px] sm:text-[40px] lg:text-[46px] font-black text-[#111] leading-[1.15] tracking-tight mb-3" style={{ fontFamily: "Outfit, sans-serif" }}>
+            <h1 className="text-[34px] sm:text-[40px] lg:text-[46px] font-black text-[#111] leading-[1.15] tracking-tight mb-5" style={{ fontFamily: "Outfit, sans-serif" }}>
               Every Great Product <br />
               Starts As An Idea. <br />
               <span className="text-[#0052FF]">
@@ -39,8 +41,8 @@ export default function Hero({ onPlayVideo }: HeroProps) {
             </h1>
 
             {/* Description */}
-            <div className="text-[14px] md:text-[15px] text-gray-600 leading-relaxed max-w-[520px] mb-4 font-medium">
-              <p className="mb-1 text-[#111] font-semibold">
+            <div className="text-[14px] md:text-[15px] text-gray-600 leading-relaxed max-w-[520px] mb-4 font-medium flex flex-col gap-3">
+              <p className="text-[#111] font-semibold">
                 For founders, CTOs and enterprises that need to build faster without losing control.
               </p>
               <p className="text-gray-500 font-normal">
@@ -70,10 +72,10 @@ export default function Hero({ onPlayVideo }: HeroProps) {
 
             {/* CTA Buttons Box */}
             <div className="flex flex-col sm:flex-row gap-3.5 w-full max-w-[520px] mb-6">
-              
+
               {/* Book call button */}
-              <button 
-                onClick={onPlayVideo}
+              <button
+                onClick={openProposalModal}
                 className="flex-1 bg-[#0052FF] hover:bg-[#0041cc] text-white rounded-xl py-2.5 px-4 flex items-center gap-3.5 text-left transition-all hover:scale-[1.02] shadow-lg shadow-blue-500/10 active:scale-95 border border-transparent"
               >
                 <div className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 text-white">
@@ -86,9 +88,9 @@ export default function Hero({ onPlayVideo }: HeroProps) {
               </button>
 
               {/* Build dream team button */}
-              <button 
+              <button
                 onClick={() => window.open("/contactus", "_self")}
-                className="flex-1 bg-white hover:bg-gray-50 text-gray-800 border border-gray-200/80 rounded-xl py-2.5 px-4 flex items-center gap-3.5 text-left transition-all hover:scale-[1.02] shadow-sm active:scale-95"
+                className="invisible pointer-events-none flex-1 bg-white hover:bg-gray-50 text-gray-800 border border-gray-200/80 rounded-xl py-2.5 px-4 flex items-center gap-3.5 text-left transition-all hover:scale-[1.02] shadow-sm active:scale-95"
               >
                 <div className="w-9 h-9 rounded-lg bg-gray-50 flex items-center justify-center flex-shrink-0 text-[#0052FF]">
                   <FiUsers size={18} />
@@ -155,12 +157,12 @@ export default function Hero({ onPlayVideo }: HeroProps) {
 
           {/* Right Side: Mountain Graphic & Floating Cards (Columns 7-12) */}
           <div className="lg:col-span-6 w-full flex flex-col justify-center relative">
-            
+
             {/* Main Graphic Box */}
             <div className="w-full aspect-square md:aspect-[1.2] max-w-[600px] mx-auto rounded-3xl overflow-hidden relative shadow-xl border border-gray-200/50 bg-white">
-              
+
               {/* Winding mountain path image */}
-              <Image 
+              <Image
                 src="/assets/images/resources/hero/mountain_vision.png"
                 alt="Every Great Product starts as an Idea"
                 fill

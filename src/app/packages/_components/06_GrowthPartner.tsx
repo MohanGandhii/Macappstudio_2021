@@ -3,9 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import { Package, Users, Shield, Heart, Calendar, Brain, FlaskConical, TrendingUp } from "lucide-react";
+import { useModal } from "@/context/ModalContext";
 
 
 export default function GrowthPartnerSection() {
+  const { openProposalModal } = useModal();
   return (
     <section className="w-full py-12 lg:py-16 px-4 md:px-8 bg-white overflow-hidden">
       <div className="max-w-[1380px] mx-auto flex flex-col">
@@ -178,47 +180,50 @@ export default function GrowthPartnerSection() {
         </div>
 
         {/* ── 3. CTA BANNER ── */}
-        <div className="w-full bg-[#F6F8FD] rounded-[24px] flex flex-col xl:flex-row items-center justify-between pl-6 md:pl-8 lg:pl-10 pr-6 md:pr-8 py-6 md:py-4 mt-4 md:mt-6 overflow-hidden border border-[#ECECF3] shadow-sm gap-6 xl:gap-8">
-          
+        <div className="w-full bg-[#F6F8FD] rounded-[24px] flex flex-col md:flex-row items-stretch justify-between mt-4 md:mt-6 relative overflow-hidden border border-[#ECECF3] shadow-sm">
+
           {/* Left Illustration */}
-          <div className="relative w-[180px] md:w-[160px] lg:w-[180px] xl:w-[200px] h-[120px] md:h-[110px] lg:h-[120px] shrink-0 z-10">
+          <div className="relative w-full md:w-[220px] lg:w-[260px] xl:w-[320px] min-h-[140px] md:min-h-[160px] shrink-0 border-b md:border-b-0 md:border-r border-[#ECECF3]">
             <Image
-              src="/assets/images/resources/journey_team_placeholder.png"
+              src="/assets/images/resources/team_collaboration.png"
               alt="Ready to start"
               fill
               priority
-              className="object-contain object-center"
-              unoptimized
+              quality={100}
+              className="object-cover object-top"
             />
           </div>
 
-          {/* Middle Content */}
-          <div className="flex-1 text-center xl:text-left z-10 min-w-[280px]">
-            <h3 className="text-[#0F172A] font-extrabold text-[18px] md:text-[20px] xl:text-[22px] leading-tight mb-1.5" style={{ fontFamily: "Outfit, sans-serif" }}>
-              Ready To Start Your Journey?
-            </h3>
-            <p className="text-[#64748B] text-[13px] md:text-[14px] leading-relaxed max-w-[500px] mx-auto xl:mx-0 font-medium">
-              Let's build something incredible together.
-            </p>
-          </div>
+          {/* Middle Content & Buttons Wrapper */}
+          <div className="flex-1 flex flex-col xl:flex-row items-center justify-between p-5 md:p-6 gap-5 md:gap-4 lg:gap-6">
+            {/* Middle Content */}
+            <div className="flex-1 text-center xl:text-left z-10 min-w-[280px]">
+              <h3 className="text-[#0F172A] font-extrabold text-[17px] md:text-[19px] xl:text-[21px] leading-tight mb-1" style={{ fontFamily: "Outfit, sans-serif" }}>
+                Ready To Start Your Journey?
+              </h3>
+              <p className="text-[#64748B] text-[13px] md:text-[14px] leading-relaxed max-w-[500px] mx-auto xl:mx-0 font-medium">
+                Let's build something incredible together.
+              </p>
+            </div>
 
-          {/* Right Buttons - SIDE BY SIDE */}
-          <div className="flex flex-col md:flex-row gap-3 lg:gap-4 w-full xl:w-auto shrink-0 z-10 justify-center">
-            <button className="w-full md:w-[240px] xl:w-[260px] rounded-[14px] bg-[#2F63F5] hover:bg-[#2552CC] transition-colors text-white flex items-center justify-center lg:justify-start gap-3 p-3.5 shadow-sm">
-              <Calendar className="w-[20px] h-[20px] shrink-0 md:ml-3" />
-              <div className="flex flex-col items-start text-left">
-                <span className="font-semibold text-[13px] lg:text-[14px] leading-tight">Book Free Discovery Call</span>
-                <span className="text-[10px] lg:text-[11px] font-normal text-blue-100 mt-0.5">30-minute strategy session</span>
-              </div>
-            </button>
+            {/* Right Buttons - SIDE BY SIDE */}
+            <div className="flex flex-col md:flex-row gap-3 lg:gap-4 w-full xl:w-auto shrink-0 z-10 justify-center">
+              <button onClick={openProposalModal} className="w-full md:w-[220px] xl:w-[240px] rounded-[14px] bg-[#2F63F5] hover:bg-[#2552CC] transition-colors text-white flex items-center justify-center lg:justify-start gap-3 p-3 shadow-sm">
+                <Calendar className="w-[18px] h-[18px] shrink-0 md:ml-3" />
+                <div className="flex flex-col items-start text-left">
+                  <span className="font-semibold text-[13px] leading-tight">Book Free Discovery Call</span>
+                  <span className="text-[10px] font-normal text-blue-100 mt-0.5">30-minute strategy session</span>
+                </div>
+              </button>
 
-            <button className="w-full md:w-[240px] xl:w-[260px] rounded-[14px] bg-white border border-[#ECECF3] hover:border-gray-300 hover:bg-gray-50 transition-colors text-[#2F63F5] flex items-center justify-center lg:justify-start gap-3 p-3.5 shadow-sm">
-              <Users className="w-[20px] h-[20px] shrink-0 md:ml-3" />
-              <div className="flex flex-col items-start text-left">
-                <span className="font-semibold text-[13px] lg:text-[14px] leading-tight">Build My Team</span>
-                <span className="text-[10px] lg:text-[11px] font-normal text-slate-500 mt-0.5">Dedicated squad ready in 1-2 weeks</span>
-              </div>
-            </button>
+              <button className="invisible pointer-events-none w-full md:w-[220px] xl:w-[240px] rounded-[14px] bg-white border border-[#ECECF3] hover:border-gray-300 hover:bg-gray-50 transition-colors text-[#2F63F5] flex items-center justify-center lg:justify-start gap-3 p-3 shadow-sm">
+                <Users className="w-[18px] h-[18px] shrink-0 md:ml-3" />
+                <div className="flex flex-col items-start text-left">
+                  <span className="font-semibold text-[13px] leading-tight">Build My Team</span>
+                  <span className="text-[10px] font-normal text-slate-500 mt-0.5">Squad ready in 1-2 weeks</span>
+                </div>
+              </button>
+            </div>
           </div>
         </div>
 

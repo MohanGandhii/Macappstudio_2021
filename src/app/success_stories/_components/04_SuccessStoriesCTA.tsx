@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function SuccessStoriesCTA() {
   return (
     <section className="py-24 bg-[#fce7f3] overflow-hidden">
-      <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
+      <div className="w-full mx-auto px-4 md:px-6 lg:px-8 max-w-[1600px]">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
           
           {/* Left Content */}

@@ -41,7 +41,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
   const imgStyle = bannerImageStyles[slug.toLowerCase()] || { topClass: "md:top-[30px] lg:top-[40px]" };
 
   return (
-    <main className="bg-white min-h-screen font-sans">
+    <main className="bg-white min-h-screen font-sans overflow-x-hidden">
 
       {/* ── 1. HERO BANNER ── matches legacy exactly ── */}
       {/*
@@ -60,7 +60,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
       >
 
         {/* LEFT CONTENT ─ inside the 1170px centred container */}
-        <div className="w-full max-w-[1170px] mx-auto px-10 relative">
+        <div className="w-full max-w-[1170px] mx-auto px-4 md:px-6 lg:px-8 relative">
           <div className={`flex flex-col md:flex-row items-stretch ${imgStyle.containerMinHeight || "min-h-[500px]"}`}>
 
             {/* Left Content – Keeps clear of the absolutely-positioned right image */}
@@ -205,8 +205,8 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
       {/* ── 3. PROJECT APPS MOSAIC ── */}
       {data.projectAppsImg && (
-        <section className="bg-[#f4f6f9] py-[50px]" id="project_apps_section">
-          <div className="w-full max-w-[1170px] mx-auto px-10">
+        <section className="bg-[#f4f6f9] py-[40px] md:py-[50px]" id="project_apps_section">
+          <div className="w-full max-w-[1170px] mx-auto px-4 md:px-6 lg:px-8">
             <div className="w-full text-center">
               <Image
                 src={data.projectAppsImg}
@@ -230,15 +230,15 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
       {/* ── 5. SOLUTION ── */}
       {data.solutionHtml && (
-        <section className="py-[50px] bg-[#fbfbfb]">
-          <div className="w-full max-w-[1170px] mx-auto px-10">
-            <div className="flex flex-col lg:flex-row mb-12">
-              <div className="w-full lg:w-1/3">
+        <section className="py-[40px] md:py-[50px] bg-[#fbfbfb]">
+          <div className="w-full max-w-[1170px] mx-auto px-4 md:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-8 mb-8 md:mb-12">
+              <div className="w-full md:w-1/3">
                 <h2 className="text-[24px] md:text-[32px] md:leading-[35px] font-medium text-[#2B2B2B] text-left capitalize">
                   Solution
                 </h2>
               </div>
-              <div className="w-full lg:w-2/3 mt-4 lg:mt-0">
+              <div className="w-full md:w-2/3">
                 <div
                   className="text-[16px] md:text-[18px] md:leading-[34px] text-[#333333] [&>p]:mb-4 [&>p:last-child]:mb-0 [&_b]:font-bold [&_b]:text-[#2B2B2B]"
                   dangerouslySetInnerHTML={{ __html: data.solutionHtml }}
@@ -256,18 +256,18 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
       {/* ── 6. TECHNOLOGY & CURRENT STATUS ── */}
       {(data.technology?.length > 0 || data.currentStatus) && (
-        <section className="py-[50px] bg-[#fbfbfb] border-t border-gray-100">
-          <div className="w-full max-w-[1170px] mx-auto px-10">
+        <section className="py-[40px] md:py-[50px] bg-[#fbfbfb] border-t border-gray-100">
+          <div className="w-full max-w-[1170px] mx-auto px-4 md:px-6 lg:px-8">
 
             {/* Technology */}
             {data.technology && data.technology.length > 0 && (
-              <div className="flex flex-col lg:flex-row pb-12 border-b border-gray-200">
-                <div className="w-full lg:w-1/3">
+              <div className="flex flex-col md:flex-row gap-4 md:gap-8 pb-8 md:pb-12 border-b border-gray-200">
+                <div className="w-full md:w-1/3">
                   <h2 className="text-[24px] md:text-[32px] md:leading-[35px] font-medium text-[#2B2B2B] text-left capitalize">
                     Technology
                   </h2>
                 </div>
-                <div className="w-full lg:w-2/3 mt-6 lg:mt-0 flex flex-wrap items-start gap-x-8 gap-y-6">
+                <div className="w-full md:w-2/3 flex flex-wrap items-start gap-x-6 gap-y-6">
                   {data.technology.map((tech: any, index: number) => (
                     <div key={index} className="flex flex-col items-center gap-2 min-w-[80px]">
                       <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center p-3 border border-gray-100">
@@ -290,13 +290,13 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
             {/* Current Status */}
             {data.currentStatus && (
-              <div className={`flex flex-col lg:flex-row ${data.technology?.length > 0 ? "pt-12" : ""}`}>
-                <div className="w-full lg:w-1/3">
+              <div className={`flex flex-col md:flex-row gap-4 md:gap-8 ${data.technology?.length > 0 ? "pt-8 md:pt-12" : ""}`}>
+                <div className="w-full md:w-1/3">
                   <h2 className="text-[24px] md:text-[32px] md:leading-[35px] font-medium text-[#2B2B2B] text-left capitalize">
                     Current Status
                   </h2>
                 </div>
-                <div className="w-full lg:w-2/3 mt-4 lg:mt-0">
+                <div className="w-full md:w-2/3">
                   <div
                     className="text-[16px] md:text-[18px] md:leading-[34px] text-[#333333] [&>p]:mb-4 [&>p:last-child]:mb-0 [&_b]:font-bold [&_b]:text-[#2B2B2B]"
                     dangerouslySetInnerHTML={{ __html: data.currentStatus }}
@@ -327,14 +327,14 @@ function SplitSection({
 }) {
   return (
     <section className={`py-[40px] border-b border-gray-100 ${bgColor}`}>
-      <div className="w-full max-w-[1170px] mx-auto px-10">
-        <div className="flex flex-col lg:flex-row">
-          <div className="w-full lg:w-1/3">
+      <div className="w-full max-w-[1170px] mx-auto px-4 md:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-8">
+          <div className="w-full md:w-1/3">
             <h2 className="text-[24px] md:text-[32px] md:leading-[35px] font-medium text-[#2B2B2B] text-left capitalize">
               {title}
             </h2>
           </div>
-          <div className="w-full lg:w-2/3 mt-4 lg:mt-0">
+          <div className="w-full md:w-2/3">
             <div
               className="text-[16px] md:text-[18px] md:leading-[34px] text-[#333333] [&>p]:mb-4 [&>p:last-child]:mb-0 [&_b]:font-bold [&_b]:text-[#2B2B2B]"
               dangerouslySetInnerHTML={{ __html: content }}

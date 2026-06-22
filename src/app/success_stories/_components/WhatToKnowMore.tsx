@@ -69,7 +69,7 @@ export default function WhatToKnowMore({ currentSlug }: { currentSlug?: string }
 
   return (
     <section className="py-24 bg-white border-t border-gray-100 overflow-visible">
-      <div className="container mx-auto px-4 lg:px-8 max-w-[1240px] relative">
+      <div className="w-full mx-auto px-4 md:px-6 lg:px-8 max-w-[1170px] relative">
 
         {/* Header */}
         <div className="text-center mb-14">

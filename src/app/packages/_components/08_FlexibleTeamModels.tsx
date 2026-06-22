@@ -6,33 +6,34 @@ import Image from "next/image";
 // ─── ICON COMPONENTS ──────────────────────────────────────────────────────────
 
 const RocketIcon = ({ className }: { className?: string }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M4.5 16.5c-1.5 1.25-2.5 3.5-2.5 3.5s2.25-1 3.5-2.5" />
     <path d="M12 12l9-9-3 12-4 1-2-2-1-4z" />
+    <circle cx="14" cy="10" r="2" />
     <path d="M9 15l-3-3" />
   </svg>
 );
 
 const FloatingTrendIcon = ({ className }: { className?: string }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="m23 6-9.5 9.5-5-5L1 18" />
-    <path d="M17 6h6v6" />
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M6 20v-4" />
+    <path d="M12 20v-8" />
+    <path d="M18 20v-12" />
+    <path d="M2 14l5-5 4 4 11-11" />
+    <path d="M17 2h5v5" />
   </svg>
 );
 
 const BuildingIcon = ({ className }: { className?: string }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
-    <path d="M9 22v-4h6v4" />
-    <path d="M8 6h.01" />
-    <path d="M16 6h.01" />
-    <path d="M12 6h.01" />
-    <path d="M12 10h.01" />
-    <path d="M12 14h.01" />
-    <path d="M16 10h.01" />
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M4 22v-16a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16" />
+    <path d="M14 10h4a2 2 0 0 1 2 2v10" />
+    <path d="M8 22v-4" />
+    <path d="M8 8h.01" />
+    <path d="M8 12h.01" />
+    <path d="M8 16h.01" />
     <path d="M16 14h.01" />
-    <path d="M8 10h.01" />
-    <path d="M8 14h.01" />
+    <path d="M16 18h.01" />
   </svg>
 );
 
@@ -99,7 +100,7 @@ export default function FlexibleTeamModels() {
   const teamCards = [
     {
       title: "Startup Team",
-      desc: "Perfect for founders building their MVP.",
+      desc: "Perfect for founders\nbuilding their MVP.",
       themeColor: "text-[#7C3AED]",
       badgeBg: "bg-[#F3EAFF]",
       topBg: "bg-gradient-to-b from-[#F3EAFF]/50 to-white",
@@ -123,7 +124,7 @@ export default function FlexibleTeamModels() {
     },
     {
       title: "Growth Team",
-      desc: "For products gaining traction.",
+      desc: "For products\ngaining traction.",
       themeColor: "text-[#2563EB]",
       badgeBg: "bg-[#EFF6FF]",
       topBg: "bg-gradient-to-b from-[#EFF6FF]/60 to-white",
@@ -147,7 +148,7 @@ export default function FlexibleTeamModels() {
     },
     {
       title: "Enterprise Team",
-      desc: "For large-scale products and transformation initiatives.",
+      desc: "For large-scale products\nand transformation\ninitiatives.",
       themeColor: "text-[#16A34A]",
       badgeBg: "bg-[#ECFDF5]",
       topBg: "bg-gradient-to-b from-[#ECFDF5]/60 to-white",
@@ -196,15 +197,15 @@ export default function FlexibleTeamModels() {
           <div key={idx} className={`border ${card.borderClass} rounded-[32px] bg-white overflow-hidden flex flex-col shadow-sm transition-all hover:shadow-md`}>
 
             {/* Top Section */}
-            <div className={`relative px-8 pt-6 pb-4 ${card.topBg} flex-shrink-0 h-[190px] border-b ${card.borderClass}`}>
+            <div className={`relative px-8 pt-8 pb-4 ${card.topBg} flex-shrink-0 h-[230px] border-b ${card.borderClass} overflow-hidden`}>
 
               {/* Right Image */}
-              <div className="absolute right-0 bottom-0 w-[60%] h-full z-0 select-none">
+              <div className="absolute right-0 bottom-0 w-full h-full z-0 select-none pointer-events-none mix-blend-multiply">
                 <Image
                   src={card.image}
                   alt={card.title}
                   fill
-                  className="object-contain object-bottom-right"
+                  className="object-contain object-[right_bottom]"
                   priority
                   unoptimized
                 />
@@ -213,15 +214,15 @@ export default function FlexibleTeamModels() {
               {/* Left Content */}
               <div className="w-[55%] relative z-10 flex flex-col gap-3">
                 {/* Badge */}
-                <div className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full w-max ${card.badgeBg} ${card.themeColor}`}>
+                <div className={`inline-flex items-center gap-2.5 px-4 py-[6px] rounded-[10px] w-max ${card.badgeBg} ${card.themeColor}`}>
                   {(() => {
                     const BadgeIcon = card.BadgeIcon;
-                    return <BadgeIcon className="w-[16px] h-[16px]" />;
+                    return <BadgeIcon className="w-[18px] h-[18px]" />;
                   })()}
-                  <span className="font-bold text-[13px] tracking-wide">{card.title}</span>
+                  <span className="font-semibold text-[14.5px]">{card.title}</span>
                 </div>
                 {/* Desc */}
-                <p className="text-[#475569] text-[13.5px] leading-[1.5] font-medium pr-1">
+                <p className="text-[#475569] text-[13.5px] leading-[1.5] font-medium pr-1 whitespace-pre-line mt-1">
                   {card.desc}
                 </p>
               </div>
@@ -271,10 +272,15 @@ export default function FlexibleTeamModels() {
               </div>
 
               {/* Button */}
-              <button className={`mt-auto w-full py-[12px] rounded-[12px] text-white font-semibold text-[14px] flex items-center justify-center gap-2 ${card.buttonBgClass} shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-all hover:opacity-90 active:scale-[0.98] cursor-pointer`}>
+              <a 
+                href="https://calendar.app.google/ZPn2aKE98ZrzV1HNA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`mt-auto w-full py-[12px] rounded-[12px] text-white font-semibold text-[14px] flex items-center justify-center gap-2 ${card.buttonBgClass} shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-all hover:opacity-90 active:scale-[0.98] cursor-pointer`}
+              >
                 {card.buttonText}
                 <ArrowRightIcon className="w-[16px] h-[16px]" />
-              </button>
+              </a>
             </div>
           </div>
         ))}

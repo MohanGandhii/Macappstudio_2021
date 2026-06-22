@@ -26,13 +26,13 @@ interface SplitSectionProps {
 
 export function SplitSection({ title, content, bgColor }: SplitSectionProps) {
   return (
-    <section className={`py-24 border-b border-gray-100 ${bgColor}`}>
-      <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-20">
-          <div className="lg:w-1/3">
+    <section className={`py-12 md:py-16 lg:py-24 border-b border-gray-100 ${bgColor}`}>
+      <div className="w-full mx-auto px-4 md:px-6 lg:px-8 max-w-[1170px]">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-20">
+          <div className="w-full md:w-1/3">
             <h2 className="text-[24px] font-black uppercase tracking-tight text-[#111]">{title}</h2>
           </div>
-          <div className="lg:w-2/3">
+          <div className="w-full md:w-2/3">
             <div 
               className="text-[18px] lg:text-[20px] text-[#444] leading-relaxed font-medium [&>p]:mb-6 [&>p:last-child]:mb-0 [&>b]:text-[#111] [&>b]:font-black [&>span]:font-black [&>span]:text-[#111]"
               dangerouslySetInnerHTML={{ __html: content }}

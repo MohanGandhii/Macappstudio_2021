@@ -24,7 +24,7 @@ export default function HeroSection() {
 
   return (
     <section className="relative pt-10 pb-12 lg:pt-16 lg:pb-32 overflow-hidden bg-white">
-      <div className="container mx-auto px-4 lg:px-8 max-w-[1240px]">
+      <div className="w-full mx-auto px-4 md:px-6 lg:px-8 max-w-[1600px]">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
           
           {/* Text Content */}

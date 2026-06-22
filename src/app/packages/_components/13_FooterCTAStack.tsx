@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { useModal } from "@/context/ModalContext";
 
 // ─── ICON COMPONENTS ──────────────────────────────────────────────────────────
 
@@ -75,6 +76,7 @@ const TeamBtnIcon = () => (
 );
 
 export default function FooterCTAStack() {
+  const { openProposalModal } = useModal();
   const logos = [
     { name: "DAIMLER", image: "/assets/images/resources/logos/daimler.png", width: 90, height: 28 },
     { name: "Jio", image: "/assets/images/resources/logos/jio.png", width: 34, height: 34 },
@@ -103,7 +105,7 @@ export default function FooterCTAStack() {
               <ShieldIcon />
             </div>
             <div className="flex flex-col">
-              <h4 
+              <h4
                 className="text-[#0F172A] font-extrabold text-[14px] md:text-[14.5px] leading-snug tracking-tight"
                 style={{ fontFamily: "Outfit, sans-serif" }}
               >
@@ -143,7 +145,7 @@ export default function FooterCTAStack() {
                   {stat.icon}
                 </div>
                 <div className="flex flex-col text-left">
-                  <span 
+                  <span
                     className="text-[#0F172A] text-[18px] md:text-[20px] font-extrabold leading-none mb-0.5"
                     style={{ fontFamily: "Outfit, sans-serif" }}
                   >
@@ -167,7 +169,7 @@ export default function FooterCTAStack() {
               <p className="text-slate-700 text-[13px] md:text-[14px] leading-relaxed font-semibold italic">
                 "MacAppStudio became our extended team. They understood our vision, moved fast, and delivered beyond expectations."
               </p>
-              <span 
+              <span
                 className="text-[#0F172A] font-extrabold text-[12px] md:text-[13px] mt-3 block"
                 style={{ fontFamily: "Outfit, sans-serif" }}
               >
@@ -192,7 +194,7 @@ export default function FooterCTAStack() {
 
         {/* ── Line 3: Closing Success Story CTA Bar ── */}
         <div className="w-full bg-[#FBFDFF] border border-[#E8ECF5] rounded-[24px] p-6 lg:py-4.5 lg:pr-6 lg:pl-[28%] xl:pl-[26%] flex flex-col lg:flex-row items-center justify-between gap-5 shadow-[0_4px_20px_rgba(0,0,0,0.01)] relative overflow-hidden min-h-[100px] lg:min-h-[110px]">
-          
+
           {/* Left Mountain Illustration (Spans the left side with a fade) */}
           <div className="absolute left-0 top-0 bottom-0 w-[50%] lg:w-[35%] xl:w-[32%] h-full z-0 select-none pointer-events-none">
             {/* Soft gradient fade on the right to blend image seamlessly into the card background */}
@@ -208,7 +210,7 @@ export default function FooterCTAStack() {
 
           {/* Middle Headline Text */}
           <div className="flex-grow flex flex-col text-center lg:text-left gap-0.5 z-10 relative">
-            <h3 
+            <h3
               className="text-[#0F172A] font-extrabold text-[20px] md:text-[22px] tracking-tight leading-tight lg:whitespace-nowrap"
               style={{ fontFamily: "Outfit, sans-serif" }}
             >
@@ -222,18 +224,15 @@ export default function FooterCTAStack() {
           {/* Right Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 shrink-0 w-full lg:w-auto z-10 relative">
             {/* Blue Button */}
-            <button 
-              onClick={() => {
-                const modalEvent = new CustomEvent("openVideoModal");
-                window.dispatchEvent(modalEvent);
-              }}
+            <button
+              onClick={openProposalModal}
               className="bg-[#0052FF] hover:bg-[#0041cc] text-white rounded-[16px] py-2.5 px-5.5 flex items-center gap-3.5 shadow-[0_4px_15px_rgba(0,82,255,0.18)] cursor-pointer text-left transition-all active:scale-98 w-full sm:w-auto justify-start"
             >
               <div className="w-9 h-9 rounded-xl bg-white/15 flex items-center justify-center shrink-0 text-white">
                 <CalendarIcon />
               </div>
               <div className="flex flex-col">
-                <span 
+                <span
                   className="font-extrabold text-[13.5px] leading-tight"
                   style={{ fontFamily: "Outfit, sans-serif" }}
                 >
@@ -246,14 +245,14 @@ export default function FooterCTAStack() {
             </button>
 
             {/* Outline Button */}
-            <button 
-              className="bg-white border border-slate-200 hover:bg-slate-50 text-slate-800 rounded-[16px] py-2.5 px-5.5 flex items-center gap-3.5 cursor-pointer text-left transition-all active:scale-98 w-full sm:w-auto justify-start"
+            <button
+              className="invisible pointer-events-none bg-white border border-slate-200 hover:bg-slate-50 text-slate-800 rounded-[16px] py-2.5 px-5.5 flex items-center gap-3.5 cursor-pointer text-left transition-all active:scale-98 w-full sm:w-auto justify-start"
             >
               <div className="w-9 h-9 rounded-xl bg-[#EBF5FF] flex items-center justify-center shrink-0 text-[#0052FF]">
                 <TeamBtnIcon />
               </div>
               <div className="flex flex-col">
-                <span 
+                <span
                   className="font-extrabold text-[13.5px] leading-tight text-[#0F172A]"
                   style={{ fontFamily: "Outfit, sans-serif" }}
                 >

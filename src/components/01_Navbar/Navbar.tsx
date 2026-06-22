@@ -37,7 +37,6 @@ export default function Navbar() {
     { name: "Success Stories", href: "/success_stories" },
     { name: "Who we are?", href: "/who_we_are" },
     { name: "Packages", href: "/packages" },
-    { name: "Resources", href: "/resources" },
   ];
 
   const whatWeDoLinks = [
@@ -236,13 +235,6 @@ export default function Navbar() {
                   className="font-bold text-[18px] text-[#2B2B2B] hover:text-black transition-colors"
                 >
                   Packages
-                </Link>
-                <Link
-                  href="/resources"
-                  onClick={closeMenu}
-                  className="font-bold text-[18px] text-[#2B2B2B] hover:text-black transition-colors"
-                >
-                  Resources
                 </Link>
                 <Link
                   href="/contactus"
