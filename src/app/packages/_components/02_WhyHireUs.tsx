@@ -63,7 +63,7 @@ export default function WhyHireUs() {
       ),
       bgColor: "bg-[#EAF7F0]",
       textColor: "text-[#047857]",
-    }, ,
+    },
   ];
 
   return (
