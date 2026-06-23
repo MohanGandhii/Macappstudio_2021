@@ -43,7 +43,7 @@ interface CaseStudy {
 
 const CASE_STUDIES_DATA: CaseStudy[] = [
   {
-    title: "Mediyosa",
+    title: "Mediyoga",
     category: "Healthcare",
     desc: "Digital prescription platform for doctors and patients.",
     img: "/assets/images/success_stories/Mediyoga.png",
@@ -53,7 +53,7 @@ const CASE_STUDIES_DATA: CaseStudy[] = [
     ],
   },
   {
-    title: "Zena (UAE)",
+    title: "Znap(UAE)",
     category: "Fintech",
     desc: "Fintech app for digital banking and payments.",
     img: "/assets/images/success_stories/Znap.png",
@@ -199,8 +199,8 @@ const THEME_MAP: Record<string, { textColor: string; badgeBg: string; shadowColo
 
 const getSlug = (title: string): string => {
   const t = title.toLowerCase();
-  if (t.includes("mediyosa")) return "mediyoga";
-  if (t.includes("zena")) return "znap";
+  if (t.includes("mediyoga")) return "mediyoga";
+  if (t.includes("znap")) return "znap";
   if (t.includes("fastrack")) return "fasttrack";
   if (t.includes("ags cinemas")) return "ags";
   if (t.includes("speed learning")) return "speed";

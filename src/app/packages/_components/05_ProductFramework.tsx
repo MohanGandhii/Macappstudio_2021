@@ -109,12 +109,12 @@ export default function ProductFrameworkSection() {
               {steps.map((step, index) => {
                 // Determine responsive border classes dynamically
                 let borderClasses = "border-[#E8EAF6] ";
-                
+
                 // Mobile (1 column): bottom border on all except the last card (index 5)
                 if (index < 5) {
                   borderClasses += "border-b ";
                 }
-                
+
                 // Tablet (md: 2 columns): 
                 // Right border on even cards (0, 2, 4)
                 if (index % 2 === 0) {
@@ -128,7 +128,7 @@ export default function ProductFrameworkSection() {
                 } else {
                   borderClasses += "md:border-b-0 ";
                 }
-                
+
                 // Desktop (lg: 6 columns): 
                 // Right border on all except the last one (index 5), no bottom borders
                 if (index < 5) {
@@ -168,7 +168,7 @@ export default function ProductFrameworkSection() {
                       className={`lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-[72px] h-[72px] rounded-full border shadow-sm flex items-center justify-center z-30 mb-4 lg:mb-0 mx-auto ${step.bg} ${step.border}`}
                     >
                       {step.icon}
-                      
+
                       {/* Step Number */}
                       <div className="absolute -top-[30px] left-1/2 -translate-x-1/2 w-[26px] h-[26px] rounded-full bg-[#5B4FF8] text-white font-bold text-[12px] flex items-center justify-center shadow-md">
                         {step.number}
